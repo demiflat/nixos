@@ -17,6 +17,7 @@
     cargo
     cfssl
     chromium
+    clinfo
     clolcat
     colordiff
     cri-o
@@ -26,12 +27,16 @@
     debootstrap
     delta
     diffuse
+    difftastic
+    dig
     dina-font
+    doublecmd
     duf
     eternal-terminal
     fd
     ffmpeg_6-full
     figlet
+    file
     firefox
     fish
     fnm
@@ -40,22 +45,25 @@
     fzf
     gdu
     gitFull
+    git-repo
     gitAndTools.git-extras
+    git-repo-updater
     glow
     gnome.gedit
     gnome.gnome-tweaks
     gnome.simple-scan
     graphviz
-    graalvm19-ce
-    graalvmCEPackages.graalvm19-ce-full
+    gron
     gvproxy
     hack-font
     htop
+    imagemagick
+#    input-remapper
     iotop
     iperf3
     iproute2
-    jetbrains.idea-community
     jq
+    killall
     kubebuilder
     kubecolor
     kubectl
@@ -64,6 +72,7 @@
     kubernetes
     kubetail
     kubevirt
+    lazygit
     librewolf-wayland
     libreoffice-fresh
     libvirt
@@ -74,6 +83,8 @@
     ltunify
     luajit
     mako
+    maven
+    mc
     meld
     microcodeAmd
     mpv
@@ -82,7 +93,6 @@
     nettools
     nfs-utils
     nftables
-    nix-direnv
     nix-top
     nmap
     nodejs_20
@@ -106,6 +116,7 @@
     pv
     python3Full
     python311Packages.bootstrapped-pip
+    pywal
     qemu
     qrencode
     rgp
@@ -119,6 +130,7 @@
     rustup
     skopeo
     socat
+    spacevim
     sqlite
     strace
     sudo-font
@@ -126,17 +138,46 @@
     taskwarrior
     tmux
     tockloader
+    tig
     tpmmanager
     tpm2-tools
     transmission
     transmission-gtk
     tree
+    tree-sitter
+    tree-sitter-grammars.tree-sitter-bash
+    tree-sitter-grammars.tree-sitter-c
+    tree-sitter-grammars.tree-sitter-cpp
+    tree-sitter-grammars.tree-sitter-dot
+    tree-sitter-grammars.tree-sitter-fish
+    tree-sitter-grammars.tree-sitter-go
+    tree-sitter-grammars.tree-sitter-html
+    tree-sitter-grammars.tree-sitter-http
+    tree-sitter-grammars.tree-sitter-java
+    tree-sitter-grammars.tree-sitter-json
+    tree-sitter-grammars.tree-sitter-llvm
+    tree-sitter-grammars.tree-sitter-lua
+    tree-sitter-grammars.tree-sitter-make
+    tree-sitter-grammars.tree-sitter-nix
+    tree-sitter-grammars.tree-sitter-rust
+    tree-sitter-grammars.tree-sitter-sql
+    tree-sitter-grammars.tree-sitter-toml
+    tree-sitter-grammars.tree-sitter-vim
+    tree-sitter-grammars.tree-sitter-yaml
+    tree-sitter-grammars.tree-sitter-zig
     treesheets
+    unzip
+    unpaper
+    unrar
     usbtop
     usbutils
-    vim
+    ustreamer
+    via
+    vimPlugins.nvim-treesitter.withAllGrammars
+    vimPlugins.SpaceVim
     virt-manager
     virt-top
+    virtiofsd
     vit
     vscodium
     w3m
@@ -148,10 +189,14 @@
     wl-clipboard
     wlsunset
     wofi
+    wpgtk
     wshowkeys
     xkcd-font
+    yarn
     zathura
     zenmonitor
+    yt-dlp
+    zip
     zstd
   ];
 }

@@ -28,7 +28,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
-  networking.hostName = "yoshi"; # Define your hostname.
+  # networking.hostName = "yoshi"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -40,10 +40,17 @@
 
   networking = {
     useNetworkd = true;
+    hostName = "yoshi";
     domain = "demiflat.org";
+    fqdn = "yoshi.demiflat.org";
+    search = [ "demiflat.org" ];
   };
 
   systemd.network = {
+    links."10-lan" = {
+    matchConfig.PermanentMACAddress = "3c:7c:3f:d9:a1:0a";
+    linkConfig.Name = "lan";
+    };
     netdevs = {
       "20-sonic" = {
         netdevConfig = {
@@ -76,8 +83,8 @@
     };
 
     networks = {
-      "30-enp5s0" = {
-        matchConfig.Name = "enp5s0";
+      "30-lan" = {
+        matchConfig.Name = "lan";
         # tag vlan on this link
         vlan = [
           "sonic"
@@ -85,32 +92,66 @@
           "cloud"
           "iot"
         ];
-        networkConfig.DHCP = "yes";
+        networkConfig = {
+          DHCP = "yes";
+          DNSSEC = "no";
+          #DefaultRouteOnDevice = "no";
+          ConfigureWithoutCarrier = "no";
+          IPv6PrivacyExtensions="no";
+        };
+        dhcpV4Config.UseHostname = "yes";
+        dhcpV4Config.SendHostname = "yes";
+        dhcpV4Config.RouteMetric = 10;
+        dhcpV6Config.RouteMetric = 10;
         domains = [ "demiflat.org" ];
         linkConfig.RequiredForOnline = "routable";
       };
       "40-sonic" = {
         matchConfig.Name = "sonic";
         # add relevant configuration here
-        networkConfig.DHCP = "ipv4";
+        networkConfig = {
+          DHCP = "ipv4";
+          DNSSEC = "no";
+          DefaultRouteOnDevice = "no";
+          ConfigureWithoutCarrier = "no";
+        };
+        dhcpV4Config.RouteMetric = 1024; 
         linkConfig.RequiredForOnline = "no";
       };
       "40-public" = {
         matchConfig.Name = "public";
         # add relevant configuration here
-        networkConfig.DHCP = "ipv4";
+        networkConfig = {
+          DHCP = "ipv4";
+          DNSSEC = "no";
+          DefaultRouteOnDevice = "no";
+          ConfigureWithoutCarrier = "no";
+        };
+        dhcpV4Config.RouteMetric = 1024; 
         linkConfig.RequiredForOnline = "no";
       };
       "40-cloud" = {
         matchConfig.Name = "cloud";
         # add relevant configuration here
-        networkConfig.DHCP = "ipv4";
+        networkConfig = {
+          DHCP = "ipv4";
+          DNSSEC = "no";
+          DefaultRouteOnDevice = "no";
+          ConfigureWithoutCarrier = "no";
+        };
+        dhcpV4Config.RouteMetric = 1024; 
         linkConfig.RequiredForOnline = "no";
       };
       "40-iot" = {
         matchConfig.Name = "iot";
         # add relevant configuration here
-        networkConfig.DHCP = "ipv4";
+        networkConfig = {
+          DHCP = "ipv4";
+          DNSSEC = "no";
+          DefaultRouteOnDevice = "no";
+          ConfigureWithoutCarrier = "no";
+        };
+        dhcpV4Config.RouteMetric = 1024; 
         linkConfig.RequiredForOnline = "no";
       };
     };
@@ -144,24 +185,38 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  # Configure keymap in X11
+  # Enable the gnome windowing system.
   services.xserver = {
+    enable = true;
     layout = "us";
     xkbVariant = "";
+    videoDrivers = [ "amdgpu" ];
+    displayManager.gdm.enable = true;
+    displayManager.gdm.wayland = true;
+    desktopManager.gnome.enable = true;
   };
+
+  hardware.cpu.amd.updateMicrocode = true;
+  hardware.enableRedistributableFirmware = true;
+  hardware.opengl.enable = true;
+  hardware.opengl.driSupport = true;
+  hardware.opengl.extraPackages = with pkgs; [
+    amdvlk
+    rocm-opencl-icd
+    rocm-opencl-runtime
+  ];
+
+  # qt compatibility with gtk
+  qt.enable = true;
+  qt.platformTheme = "gtk2";
+  qt.style = "gtk2"; 
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
   # Enable sound with pipewire.
   sound.enable = true;
+  hardware.keyboard.qmk.enable = true;
   hardware.pulseaudio.enable = false;
   hardware.sane.enable = true;
   security.rtkit.enable = true;
@@ -180,6 +235,8 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
+
+  #services.clickhouse.enable = true;
 
   security.sudo.wheelNeedsPassword = false;
 
@@ -219,12 +276,27 @@
     pkgs.virt-manager
   ];
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu.ovmf.enable = true;
+  };
+
   programs.dconf.enable = true;
+
+  programs.direnv.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   programs.mtr.enable = true;
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+#    plugins = [
+#      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+#    ];
+  };
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;
@@ -264,7 +336,7 @@
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
