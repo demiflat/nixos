@@ -216,7 +216,7 @@
 
   # Enable sound with pipewire.
   sound.enable = true;
-  hardware.keyboard.qmk.enable = true;
+  #hardware.keyboard.qmk.enable = true;
   hardware.pulseaudio.enable = false;
   hardware.sane.enable = true;
   security.rtkit.enable = true;
@@ -237,6 +237,14 @@
   # services.xserver.libinput.enable = true;
 
   #services.clickhouse.enable = true;
+
+  # udev
+  services.udev.extraRules = ''
+# solokey  
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d6b", ATTRS{idProduct}=="0002", TAG+="uaccess", MODE="0666", SYMLINK+="solo"
+# cidoo
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1ea7", ATTRS{idProduct}=="7777", TAG+="uaccess", MODE="0666", SYMLINK+="cidoo"
+  '';
 
   security.sudo.wheelNeedsPassword = false;
 
@@ -268,7 +276,7 @@
   };
 
   environment.systemPackages = [
-    pkgs.qmk-udev-rules
+#    pkgs.qmk-udev-rules
     pkgs.logitech-udev-rules
     pkgs.teensy-udev-rules
     pkgs.platformio

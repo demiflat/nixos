@@ -32,6 +32,7 @@
     dina-font
     doublecmd
     duf
+    envsubst
     eternal-terminal
     fd
     ffmpeg_6-full
