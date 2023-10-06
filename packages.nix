@@ -42,6 +42,7 @@
     fish
     fnm
     font-awesome
+    foot
     fortune
     fzf
     gdu
@@ -80,6 +81,7 @@
     light
     links2
     litestream
+    logitech-udev-rules
     lsd
     ltunify
     luajit
@@ -88,12 +90,14 @@
     mc
     meld
     microcodeAmd
+    most
     mpv
     neovim
     nerdfonts
     nettools
     nfs-utils
     nftables
+    nil
     nix-top
     nmap
     nodejs_20
@@ -104,11 +108,13 @@
     noto-fonts-extra
     nushell
     nrfutil
+    openocd
     openssl
     openvswitch
     p7zip
     pass
     perf-tools
+    platformio
     podman
     podman-compose
     podman-tui
@@ -119,6 +125,7 @@
     python311Packages.bootstrapped-pip
     pywal
     qemu
+    qmk-udev-rules
     qrencode
     rgp
     ripgrep
@@ -137,6 +144,7 @@
     sudo-font
     sway
     taskwarrior
+    teensy-udev-rules
     tmux
     tockloader
     tig
@@ -185,6 +193,7 @@
     watch
     waybar
     wdisplays
+    wezterm
     wget
     wireguard-tools
     wl-clipboard
