@@ -119,8 +119,15 @@
           "cloud"
           "iot"
         ];
+#        address = [
+#          "10.1.1.213/24"
+#        ];
+#        routes = [
+#          { routeConfig.Gateway = "10.1.1.1"; }
+#        ];
         networkConfig = {
           DHCP = "yes";
+#          DHCP = "no";
           DNSSEC = "no";
           #DefaultRouteOnDevice = "no";
           ConfigureWithoutCarrier = "no";
@@ -128,6 +135,7 @@
         };
         dhcpV4Config.UseHostname = "yes";
         dhcpV4Config.SendHostname = "yes";
+        dhcpV4Config.Hostname = "yoshi";
         dhcpV4Config.RouteMetric = 10;
         dhcpV6Config.RouteMetric = 10;
         domains = [ "demiflat.org" ];
@@ -310,6 +318,11 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="1ea7", ATTRS{idProduct}=="7777", TAG+="uacc
 
 #  environment.systemPackages = [
 #  ];
+
+  virtualization.cri-o.enable
+  virtualization.cri-o.runtime = "crun";
+  #virtualization.cri-o.settings = { "crun"; }
+  virtualization.cri-o.storageDriver = "btrfs";
 
   virtualisation.libvirtd = {
     enable = true;

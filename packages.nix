@@ -75,6 +75,7 @@
     kubetail
     kubevirt
     lazygit
+    lego
     librewolf-wayland
     libreoffice-fresh
     libvirt
