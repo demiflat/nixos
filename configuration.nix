@@ -319,10 +319,10 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="1ea7", ATTRS{idProduct}=="7777", TAG+="uacc
 #  environment.systemPackages = [
 #  ];
 
-  virtualization.cri-o.enable
-  virtualization.cri-o.runtime = "crun";
-  #virtualization.cri-o.settings = { "crun"; }
-  virtualization.cri-o.storageDriver = "btrfs";
+  virtualisation.cri-o.enable = true;
+  virtualisation.cri-o.runtime = "crun";
+  #virtualisation.cri-o.settings = { "crun"; }
+  virtualisation.cri-o.storageDriver = "btrfs";
 
   virtualisation.libvirtd = {
     enable = true;
