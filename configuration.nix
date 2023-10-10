@@ -16,6 +16,7 @@
      ./security.nix
      ./services.nix
      ./programs.nix
+     ./virtualization.nix
     ];
 
   nix = {
