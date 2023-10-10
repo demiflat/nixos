@@ -1,5 +1,6 @@
 { config, lib, ... }:
 {
+# https://moverest.xyz/blog/control-display-with-ddc-ci/
   boot.kernelModules = ["i2c-dev"];
   services.udev.extraRules = ''
     # RGB controllers

@@ -24,6 +24,7 @@
     cri-tools
     criu
     crun
+    ddcutil
     debootstrap
     delta
     diffuse
