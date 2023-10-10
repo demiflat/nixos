@@ -8,6 +8,8 @@
   boot.kernel.sysctl = {
     "net.core.default_qdisc" = "fq";
     "net.ipv4.tcp_congestion_control" = "bbr";
+    # Generate stable, but per-boot random SLAAC addresses, don't use EUI64.
+    "net.ipv6.conf.all.addr_gen_mode" = 3;
   };
 
   boot.extraModprobeConfig = "options kvm_amd nested=1";

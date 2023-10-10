@@ -66,6 +66,7 @@
     iproute2
     jq
     killall
+    kitty
     kubebuilder
     kubecolor
     kubectl

@@ -3,12 +3,22 @@
     services.resolved = {
     enable = true;
     dnssec = "false";
+    llmnr = "false";
     #domains = [ "demiflat.org" ];
-    #fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+    fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
     #extraConfig = ''
     #  DNSOverTLS=yes
     #'';
   };
+
+  services.lldpd.enable = true;
+
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+  };
+
+  services.fwupd.enable = true;
 
   # Enable the gnome windowing system.
   services.xserver = {
@@ -21,8 +31,18 @@
     desktopManager.gnome.enable = true;
   };
 
+  # gnome-keyring for the secrets management service. Also adds its
+  # password prompter GUIs to the session bus's service list, so it
+  # can fire interactive prompts for auth.
+  services.gnome.gnome-keyring.enable = true;
+
+  # Flatpak is useful to get a couple things that aren't packaged for
+  # NixOS, like Parsec.
+  services.flatpak.enable = true;  
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  programs.system-config-printer.enable = true;
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -33,7 +53,7 @@
   services.pipewire = {
     enable = true;
     alsa.enable = true;
-    alsa.support32Bit = true;
+#    alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
 
@@ -51,10 +71,10 @@
 
   # udev
   services.udev.extraRules = ''
-# solokey  
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d6b", ATTRS{idProduct}=="0002", TAG+="uaccess", MODE="0666", SYMLINK+="solo"
-# cidoo
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1ea7", ATTRS{idProduct}=="7777", TAG+="uaccess", MODE="0666", SYMLINK+="cidoo"
+    # solokey  
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d6b", ATTRS{idProduct}=="0002", TAG+="uaccess", MODE="0666", SYMLINK+="solo"
+    # cidoo
+    SUBSYSTEMS=="usb", ATTRS{idVendor}=="1ea7", ATTRS{idProduct}=="7777", TAG+="uaccess", MODE="0666", SYMLINK+="cidoo"
   '';
 
   # List services that you want to enable:

@@ -8,6 +8,8 @@
   imports =
     [
      ./boot.nix 
+     ./cpufreq.nix 
+     ./ddc.nix 
      ./locale.nix 
      ./hardware.nix 
      ./packages.nix
@@ -44,6 +46,22 @@
     daemonIOSchedPriority = 7;
     #package = pkgs.nixFlakes;
   };
+
+  # For the hacking.
+  documentation = {
+    man.enable = true;
+    doc.enable = true;
+    dev.enable = true;
+    info.enable = true;
+    nixos.enable = true;
+  };
+
+  # Make more wayland things like screensharing work.
+#  xdg.portal = {
+#    enable = true;
+#    wlr.enable = true;
+#    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+#  };
 
   # # Bootloader
   # boot.kernelParams = [ "mitigations=off" ];

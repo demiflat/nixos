@@ -5,6 +5,9 @@
   programs.dconf.enable = true;
   programs.direnv.enable = true;
   programs.mtr.enable = true;
+  programs.wireshark.enable = true;
+  programs.iotop.enable = true;
+  programs.iftop.enable = true;
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -20,6 +23,7 @@
   };
 
   programs.sway.enable = true;
+  programs.hyprland.enable = true;
   security.polkit.enable = true;
   programs.fish.enable = true;
 

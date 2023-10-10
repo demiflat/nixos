@@ -2,6 +2,7 @@
 {
   # Enable networking
   networking.networkmanager.enable = false;
+  networking.iproute2.enable = true;
 
   networking = {
     useNetworkd = true;
