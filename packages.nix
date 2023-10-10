@@ -205,6 +205,7 @@
     wpgtk
     wshowkeys
     xkcd-font
+    xkcdpass
     yarn
     zathura
     zenmonitor

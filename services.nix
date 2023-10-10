@@ -1,6 +1,6 @@
 { config, lib, modulesPath, ... }:
 {
-    services.resolved = {
+  services.resolved = {
     enable = true;
     dnssec = "false";
     llmnr = "false";
@@ -10,6 +10,13 @@
     #  DNSOverTLS=yes
     #'';
   };
+
+  # Good for SSD
+  services.fstrim = {
+    enable = true;
+  };
+
+  # services.qemuGuest.enable = true;
 
   services.lldpd.enable = true;
 
