@@ -2,6 +2,11 @@
 {
   
   virtualisation = {
+    # doesn't work:
+    # WARN[0000] Failed to decode the keys ["driver"] from "/etc/containers/storage.conf" 
+    # WARN[0000] The storage 'driver' option should be set in /etc/containers/storage.conf. A driver was picked automatically.
+    # containers.storage.settings.driver = "btrfs";
+
     podman = {
       enable = true;
       # Create a `docker` alias for podman, to use it as a drop-in replacement
