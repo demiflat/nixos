@@ -35,6 +35,7 @@
     duf
     envsubst
     eternal-terminal
+    evtest
     fd
     ffmpeg_6-full
     figlet
