@@ -133,10 +133,28 @@
     qrencode
     rgp
     ripgrep
+    rocminfo
+    rocm-core
+    rocm-comgr
+    rocm-cmake
     rocm-device-libs
     rocm-opencl-icd
     rocm-opencl-runtime
+    rocm-runtime
+    rocm-thunk
     rocm-smi
+    rocmlir-rock
+    rocsparse
+    rocsolver
+    rocprim
+    rocalution
+    rccl
+    miopen
+    miopengemm
+    hipsparse
+    hipsolver
+    hipblas
+    rocgdb
     runc
     rustc
     rustup
