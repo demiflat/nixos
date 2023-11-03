@@ -41,8 +41,8 @@
       min-free = lib.mkDefault (512 * 1024 * 1024);
     };
     # https://nixos.org/manual/nixos/stable/options#opt-nix.daemonCPUSchedPolicy
-    daemonCPUSchedPolicy = "idle"; # default "other", server "batch", desktop "idle"
-    daemonIOSchedClass = "idle"; # default "best-effort"
+    daemonCPUSchedPolicy = "other"; # default "other", server "batch", desktop "idle"
+    daemonIOSchedClass = "best-effort"; # default "best-effort"
     daemonIOSchedPriority = 7;
     #package = pkgs.nixFlakes;
   };

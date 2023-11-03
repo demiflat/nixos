@@ -3,7 +3,7 @@
 
   # Bootloader
   boot.kernelParams = [
-#    "mitigations=off"
+    "mitigations=off"
     "video=card0-DP-1:2560x1440@59.95"
     "video=card0-DP-2:2560x1440@59.95"
   ];
@@ -21,6 +21,7 @@
   boot.loader.systemd-boot.consoleMode = "max";
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 3;
+  boot.loader.systemd-boot.memtest86.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 

@@ -67,8 +67,10 @@
     iperf3
     iproute2
     jq
+    jupyter
     killall
     kitty
+    koreader
     kubebuilder
     kubecolor
     kubectl
@@ -98,11 +100,13 @@
     mpv
     neovim
     nerdfonts
+    netbird-ui
     nettools
     nfs-utils
     nftables
     nil
     nix-top
+    nixos-option
     nmap
     nodejs_20
     noto-fonts
@@ -125,8 +129,41 @@
     profont
     pstree
     pv
-    python3Full
-    python311Packages.bootstrapped-pip
+    python310Full
+    #python310Packages.bootstrapped-pip
+    python310Packages.pip
+    python310Packages.python
+    # ml:
+    python310Packages.venvShellHook
+    python310Packages.numpy
+    python310Packages.requests
+    python310Packages.pre-commit-hooks
+    python310Packages.pandas
+    python310Packages.matplotlib
+    python310Packages.seaborn
+    python310Packages.kaggle
+    python310Packages.tqdm
+    python310Packages.wandb
+    python310Packages.scikit-learn
+    python310Packages.xgboost
+    python310Packages.lightgbm
+    python310Packages.catboost
+    python310Packages.tensorboard
+    python310Packages.torchWithRocm
+    python310Packages.torchvision
+    python310Packages.torchaudio
+    python310Packages.jupyter
+    python310Packages.jupyter-core    
+    python310Packages.notebook
+    python310Packages.ipykernel
+    streamlit
+    taglib
+    openssl
+    libxml2
+    libxslt
+    libzip
+    zlib
+
     pywal
     qemu
     qmk-udev-rules

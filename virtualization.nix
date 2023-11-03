@@ -35,6 +35,8 @@
       qemu.ovmf.enable = true;
     };
 
+    #waydroid.enable = true;
+
   };
 
 }
