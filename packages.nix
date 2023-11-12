@@ -56,6 +56,20 @@
     gnome.gedit
     gnome.gnome-tweaks
     gnome.simple-scan
+#go
+    go
+    gopls
+    delve
+    gomodifytags
+    impl
+    gotests
+    go-tools
+    golangci-lint
+    golangci-lint-langserver
+
+    gomi
+    gossa
+    gotty
     graphviz
     gron
     gvproxy
@@ -123,6 +137,7 @@
     pass
     perf-tools
     platformio
+    platformio-core
     podman
     podman-compose
     podman-tui
@@ -248,6 +263,12 @@
     virtiofsd
     vit
     vscodium
+#    (vscode-with-extensions.override {
+#      vscode = vscodium;
+#      vscodeExtensions = with vscode-extensions; [
+#        ms-vscode.cpptools
+#      ];
+#    })
     w3m
     watch
     waybar
