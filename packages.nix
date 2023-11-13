@@ -81,7 +81,7 @@
     iperf3
     iproute2
     jq
-    jupyter
+#    jupyter
     killall
     kitty
     koreader
@@ -167,8 +167,8 @@
     python310Packages.torchWithRocm
     python310Packages.torchvision
     python310Packages.torchaudio
-    python310Packages.jupyter
-    python310Packages.jupyter-core    
+#    python310Packages.jupyter
+#    python310Packages.jupyter-core    
     python310Packages.notebook
     python310Packages.ipykernel
     streamlit
