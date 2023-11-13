@@ -32,6 +32,7 @@
 
     jupyter = {
       group = "jupyter";
+      isNormalUser = true;
       initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
     };
 
