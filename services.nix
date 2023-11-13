@@ -116,13 +116,13 @@
 
   #services.netbird.enable = true;
 
-  services.jupyter = {
-    enable = true;
-    user = "jupyter";
-    group = "jupyter";
-    password = "'sha1:1b961dc713fb:88483270a63e57d18d43cf337e629539de1436ba'";
-    port = 9999;
-  };
+#  services.jupyter = {
+#    enable = true;
+#    user = "jupyter";
+#    group = "jupyter";
+#    password = "'sha1:1b961dc713fb:88483270a63e57d18d43cf337e629539de1436ba'";
+#    port = 9999;
+#  };
   
   # services.jupyterhub.enable = true;
     
