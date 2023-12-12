@@ -24,7 +24,7 @@
     ];
 
   nix = {
-    extraOptions = "experimental-features = nix-command flakes";
+    extraOptions = "experimental-features = nix-command flakes cgroups";
     registry = {
       nixpkgs = {
         flake = inputs.nixpkgs;
@@ -330,7 +330,7 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.05"; # Did you read the comment?
+  system.stateVersion = "23.11"; # Did you read the comment?
 
   # # Avoid TOFU MITM with github by providing their public key here.
   # programs.ssh.knownHosts = {

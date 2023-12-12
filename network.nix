@@ -34,20 +34,20 @@
     #   linkConfig.Name = "wifi";
     # };    
     netdevs = {
-    #   "20-sonic" = {
-    #     netdevConfig = {
-    #       Kind = "vlan";
-    #       Name = "sonic";
-    #     };
-    #     vlanConfig.Id = 5;
-    #   };
-    #   "20-public" = {
-    #     netdevConfig = {
-    #       Kind = "vlan";
-    #       Name = "public";
-    #     };
-    #     vlanConfig.Id = 15;
-    #   };
+      "20-sonic" = {
+        netdevConfig = {
+          Kind = "vlan";
+          Name = "sonic";
+        };
+        vlanConfig.Id = 5;
+      };
+      "20-public" = {
+        netdevConfig = {
+          Kind = "vlan";
+          Name = "public";
+        };
+        vlanConfig.Id = 15;
+      };
       "20-cloud" = {
         netdevConfig = {
           Kind = "vlan";
@@ -55,13 +55,13 @@
         };
         vlanConfig.Id = 25;
       };
-    #   "20-iot" = {
-    #     netdevConfig = {
-    #       Kind = "vlan";
-    #       Name = "iot";
-    #     };
-    #     vlanConfig.Id = 99;
-    #   };
+      "20-iot" = {
+        netdevConfig = {
+          Kind = "vlan";
+          Name = "iot";
+        };
+        vlanConfig.Id = 99;
+      };
     };
 
     networks = {
@@ -69,10 +69,10 @@
         matchConfig.Name = "lan";
         # tag vlan on this link
         vlan = [
-        #   "sonic"
-        #   "public"
+          "sonic"
+          "public"
           "cloud"
-        #   "iot"
+          "iot"
         ];
 #        address = [
 #          "10.1.1.213/24"
@@ -119,28 +119,28 @@
       #   domains = [ "demiflat.org" ];
       #   linkConfig.RequiredForOnline = "no";
       # };      
-      # "40-sonic" = {
-      #   matchConfig.Name = "sonic";
-      #   networkConfig = {
-      #     DHCP = "ipv4";
-      #     DNSSEC = "no";
-      #     DefaultRouteOnDevice = "no";
-      #     ConfigureWithoutCarrier = "no";
-      #   };
-      #   dhcpV4Config.RouteMetric = 2048; 
-      #   linkConfig.RequiredForOnline = "no";
-      # };
-      # "40-public" = {
-      #   matchConfig.Name = "public";
-      #   networkConfig = {
-      #     DHCP = "ipv4";
-      #     DNSSEC = "no";
-      #     DefaultRouteOnDevice = "no";
-      #     ConfigureWithoutCarrier = "no";
-      #   };
-      #   dhcpV4Config.RouteMetric = 2048; 
-      #   linkConfig.RequiredForOnline = "no";
-      # };
+      "40-sonic" = {
+        matchConfig.Name = "sonic";
+        networkConfig = {
+          DHCP = "ipv4";
+          DNSSEC = "no";
+          DefaultRouteOnDevice = "no";
+          ConfigureWithoutCarrier = "no";
+        };
+        dhcpV4Config.RouteMetric = 2048; 
+        linkConfig.RequiredForOnline = "no";
+      };
+      "40-public" = {
+        matchConfig.Name = "public";
+        networkConfig = {
+          DHCP = "ipv4";
+          DNSSEC = "no";
+          DefaultRouteOnDevice = "no";
+          ConfigureWithoutCarrier = "no";
+        };
+        dhcpV4Config.RouteMetric = 2048; 
+        linkConfig.RequiredForOnline = "no";
+      };
       "40-cloud" = {
         matchConfig.Name = "cloud";
         networkConfig = {
@@ -152,17 +152,17 @@
         dhcpV4Config.RouteMetric = 2048; 
         linkConfig.RequiredForOnline = "no";
       };
-      # "40-iot" = {
-      #   matchConfig.Name = "iot";
-      #   networkConfig = {
-      #     DHCP = "ipv4";
-      #     DNSSEC = "no";
-      #     DefaultRouteOnDevice = "no";
-      #     ConfigureWithoutCarrier = "no";
-      #   };
-      #   dhcpV4Config.RouteMetric = 2048; 
-      #   linkConfig.RequiredForOnline = "no";
-      # };
+      "40-iot" = {
+        matchConfig.Name = "iot";
+        networkConfig = {
+          DHCP = "ipv4";
+          DNSSEC = "no";
+          DefaultRouteOnDevice = "no";
+          ConfigureWithoutCarrier = "no";
+        };
+        dhcpV4Config.RouteMetric = 2048; 
+        linkConfig.RequiredForOnline = "no";
+      };
       # "50-shire" = {
       #   matchConfig = { 
       #     Name = "wifi";
