@@ -33,7 +33,7 @@
     #   matchConfig.PermanentMACAddress = "98:48:27:46:90:76";
     #   linkConfig.Name = "wifi";
     # };    
-    # netdevs = {
+    netdevs = {
     #   "20-sonic" = {
     #     netdevConfig = {
     #       Kind = "vlan";
@@ -48,13 +48,13 @@
     #     };
     #     vlanConfig.Id = 15;
     #   };
-    #   "20-cloud" = {
-    #     netdevConfig = {
-    #       Kind = "vlan";
-    #       Name = "cloud";
-    #     };
-    #     vlanConfig.Id = 25;
-    #   };
+      "20-cloud" = {
+        netdevConfig = {
+          Kind = "vlan";
+          Name = "cloud";
+        };
+        vlanConfig.Id = 25;
+      };
     #   "20-iot" = {
     #     netdevConfig = {
     #       Kind = "vlan";
@@ -62,18 +62,18 @@
     #     };
     #     vlanConfig.Id = 99;
     #   };
-    # };
+    };
 
     networks = {
       "30-lan" = {
         matchConfig.Name = "lan";
         # tag vlan on this link
-        # vlan = [
+        vlan = [
         #   "sonic"
         #   "public"
-        #   "cloud"
+          "cloud"
         #   "iot"
-        # ];
+        ];
 #        address = [
 #          "10.1.1.213/24"
 #        ];
@@ -141,17 +141,17 @@
       #   dhcpV4Config.RouteMetric = 2048; 
       #   linkConfig.RequiredForOnline = "no";
       # };
-      # "40-cloud" = {
-      #   matchConfig.Name = "cloud";
-      #   networkConfig = {
-      #     DHCP = "ipv4";
-      #     DNSSEC = "no";
-      #     DefaultRouteOnDevice = "no";
-      #     ConfigureWithoutCarrier = "no";
-      #   };
-      #   dhcpV4Config.RouteMetric = 2048; 
-      #   linkConfig.RequiredForOnline = "no";
-      # };
+      "40-cloud" = {
+        matchConfig.Name = "cloud";
+        networkConfig = {
+          DHCP = "ipv4";
+          DNSSEC = "no";
+          DefaultRouteOnDevice = "no";
+          ConfigureWithoutCarrier = "no";
+        };
+        dhcpV4Config.RouteMetric = 2048; 
+        linkConfig.RequiredForOnline = "no";
+      };
       # "40-iot" = {
       #   matchConfig.Name = "iot";
       #   networkConfig = {
