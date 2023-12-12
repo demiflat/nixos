@@ -24,6 +24,7 @@
     ];
 
   nix = {
+    extraOptions = "experimental-features = nix-command flakes";
     registry = {
       nixpkgs = {
         flake = inputs.nixpkgs;
@@ -43,6 +44,11 @@
         "flakes"
         "cgroups"
       ];
+      extra-experimental-features = [
+        "nix-command"
+        "flakes"
+        "cgroups"
+      ];      
       # Fallback quickly if substituters are not available.
       connect-timeout = 5;
 
