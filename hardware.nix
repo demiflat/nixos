@@ -13,8 +13,14 @@
   fileSystems."/" =
     { device = "/dev/disk/by-label/nixos";
       fsType = "btrfs";
-      options = [ "subvol=@" ];
+      options = [ "subvol=@" "compress=zstd" ];
     };
+
+  # fileSystems."/nix" =
+  #   { device = "/dev/disk/by-label/nixos";
+  #     fsType = "btrfs";
+  #     options = [ "subvol=nix" "compress=zstd" "noatime" ];
+  #   };    
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-label/boot";

@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ lib, ... }:
+{ inputs, lib, ... }:
 
 {
   imports =
@@ -19,25 +19,44 @@
      ./services.nix
      ./programs.nix
      ./virtualization.nix
+     ./rocm.nix
+    #  ./jupiter.nix
     ];
 
   nix = {
-      gc.automatic = true;
+    registry = {
+      nixpkgs = {
+        flake = inputs.nixpkgs;
+      };
+    };
+
+    nixPath = [
+      "nixpkgs=${inputs.nixpkgs.outPath}"
+      "nixos-config=/etc/nixos/configuration.nix"
+      "/nix/var/nix/profiles/per-user/root/channels"
+    ];    
+    gc.automatic = true;
     settings = {
       auto-optimise-store = true;
       experimental-features = [
         "nix-command"
         "flakes"
+        "cgroups"
       ];
       # Fallback quickly if substituters are not available.
       connect-timeout = 5;
 
-      # The default at 10 is rarely enough.
-      log-lines = lib.mkDefault 25;
+        # The default at 10 is rarely enough.
+        log-lines = lib.mkDefault 25;
 
-      # Avoid disk full issues
-      max-free = lib.mkDefault (3000 * 1024 * 1024);
-      min-free = lib.mkDefault (512 * 1024 * 1024);
+        # Avoid disk full issues
+        max-free = lib.mkDefault (3000 * 1024 * 1024);
+        min-free = lib.mkDefault (512 * 1024 * 1024);
+        use-cgroups = true;
+        system-features = [
+          "kvm"
+          "big-parallel"
+        ];
     };
     # https://nixos.org/manual/nixos/stable/options#opt-nix.daemonCPUSchedPolicy
     #daemonCPUSchedPolicy = "other"; # default "other", server "batch", desktop "idle"

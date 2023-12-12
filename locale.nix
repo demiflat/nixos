@@ -7,6 +7,14 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
+  i18n.inputMethod = {
+    enabled = "ibus";
+    ibus.engines = with pkgs.ibus-engines; [
+      libpinyin
+      rime
+    ];
+  };
+
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";
     LC_IDENTIFICATION = "en_US.UTF-8";
@@ -21,8 +29,8 @@
 
   # fonts
   fonts = {
-    enableDefaultFonts = true;
-    fonts = with pkgs; [ 
+    enableDefaultPackages = true;
+    packages = with pkgs; [ 
       nerdfonts
     ];
 
