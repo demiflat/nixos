@@ -85,12 +85,13 @@
           DNSSEC = "no";
           ConfigureWithoutCarrier = "no";
           IPv6PrivacyExtensions = "no";
+          DefaultRouteOnDevice = "yes";
         };
         # dhcpV4Config.UseHostname = "yes"; #default
         # dhcpV4Config.SendHostname = "yes"; #default
         # dhcpV4Config.Hostname = "yoshi";
-        # dhcpV4Config.RouteMetric = 10;
-        # dhcpV6Config.RouteMetric = 1024;
+        dhcpV4Config.RouteMetric = 10;
+        dhcpV6Config.RouteMetric = 10;
         # ipv6AcceptRAConfig = {
         #   DHCPv6Client = "always";
         #   UseDNS = false;
@@ -126,6 +127,7 @@
           DNSSEC = "no";
           DefaultRouteOnDevice = "no";
           ConfigureWithoutCarrier = "no";
+          IPv6PrivacyExtensions = "no";
         };
         dhcpV4Config.RouteMetric = 2048; 
         linkConfig.RequiredForOnline = "no";
@@ -137,6 +139,7 @@
           DNSSEC = "no";
           DefaultRouteOnDevice = "no";
           ConfigureWithoutCarrier = "no";
+          IPv6PrivacyExtensions = "no";
         };
         dhcpV4Config.RouteMetric = 2048; 
         linkConfig.RequiredForOnline = "no";
@@ -148,6 +151,7 @@
           DNSSEC = "no";
           DefaultRouteOnDevice = "no";
           ConfigureWithoutCarrier = "no";
+          IPv6PrivacyExtensions = "no";
         };
         dhcpV4Config.RouteMetric = 2048; 
         linkConfig.RequiredForOnline = "no";
@@ -159,6 +163,7 @@
           DNSSEC = "no";
           DefaultRouteOnDevice = "no";
           ConfigureWithoutCarrier = "no";
+          IPv6PrivacyExtensions = "no";
         };
         dhcpV4Config.RouteMetric = 2048; 
         linkConfig.RequiredForOnline = "no";
