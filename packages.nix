@@ -36,6 +36,7 @@
     envsubst
     eternal-terminal
     evtest
+    fastgron
     fd
     ffmpeg_6-full
     figlet
@@ -71,7 +72,7 @@
     gossa
     gotty
     graphviz
-    gron
+    # gron
     gvproxy
     hack-font
     htop
@@ -80,8 +81,10 @@
     iotop
     iperf3
     iproute2
+    jc
     jq
-#    jupyter
+    jql
+    # jupyter
     killall
     kitty
     koreader
@@ -114,7 +117,7 @@
     mpv
     neovim
     nerdfonts
-    netbird-ui
+    # netbird-ui
     nettools
     nfs-utils
     nftables
@@ -144,40 +147,53 @@
     profont
     pstree
     pv
-    python310Full
-    #python310Packages.bootstrapped-pip
-    python310Packages.pip
-    python310Packages.python
+    pwgen
+
+    # python311Full
+    # python311Packages.setuptools
+    # python311Packages.pip
+    # python311Packages.pyserial
+    # python312Full
+    # python312Packages.setuptools
+    # python312Packages.pip
+    # python312Packages.pyserial
+    # esphome
+    # platformio
+    # openocd
+
+    # broken
+    # python312Packages.pip
+    # python312Packages.python
     # ml:
-#    python310Packages.venvShellHook
-#    python310Packages.numpy
-#    python310Packages.requests
-#    python310Packages.pre-commit-hooks
-#    python310Packages.pandas
-#    python310Packages.matplotlib
-#    python310Packages.seaborn
-#    python310Packages.kaggle
-#    python310Packages.tqdm
-#    python310Packages.wandb
-#    python310Packages.scikit-learn
-#    python310Packages.xgboost
-#    python310Packages.lightgbm
-#    python310Packages.catboost
-#    python310Packages.tensorboard
-#    python310Packages.torchWithRocm
-#    python310Packages.torchvision
-#    python310Packages.torchaudio
-#    python310Packages.jupyter
-#    python310Packages.jupyter-core    
-#    python310Packages.notebook
-#    python310Packages.ipykernel
-#    streamlit
-#    taglib
-#    openssl
-#    libxml2
-#    libxslt
-#    libzip
-#    zlib
+    # python310Packages.venvShellHook
+    # python310Packages.numpy
+    # python310Packages.requests
+    # python310Packages.pre-commit-hooks
+    # python310Packages.pandas
+    # python310Packages.matplotlib
+    # python310Packages.seaborn
+    # python310Packages.kaggle
+    # python310Packages.tqdm
+    # python310Packages.wandb
+    # python310Packages.scikit-learn
+    # python310Packages.xgboost
+    # python310Packages.lightgbm
+    # python310Packages.catboost
+    # python310Packages.tensorboard
+    # python310Packages.torchWithRocm
+    # python310Packages.torchvision
+    # python310Packages.torchaudio
+    # python310Packages.jupyter
+    # python310Packages.jupyter-core    
+    # python310Packages.notebook
+    # python310Packages.ipykernel
+    # streamlit
+    # taglib
+    # openssl
+    # libxml2
+    # libxslt
+    # libzip
+    # zlib
 
     pywal
     qemu
@@ -185,28 +201,45 @@
     qrencode
     rgp
     ripgrep
-    rocminfo
-    rocm-core
-    rocm-comgr
-    rocm-cmake
-    rocm-device-libs
-    rocm-opencl-icd
-    rocm-opencl-runtime
-    rocm-runtime
-    rocm-thunk
-    rocm-smi
-    rocmlir-rock
-    rocsparse
-    rocsolver
-    rocprim
-    rocalution
-    rccl
-    miopen
-    miopengemm
-    hipsparse
-    hipsolver
-    hipblas
-    rocgdb
+    # rocm
+    # rocmPackages.rocmlir
+    # rocmPackages.rocminfo
+    # rocmPackages.rocm-core
+    # rocmPackages.rocm-thunk
+    # rocmPackages.rocm-comgr
+    # rocmPackages.rocm-cmake
+    # rocmPackages.rocmlir-rock
+    # rocmPackages.rocm-runtime
+    # rocmPackages.rocm-docs-core
+    # rocmPackages.rocm-device-libs
+    # rocmPackages.llvm.rocmClangStdenv
+    # rocmPackages.llvm.pstl
+    # rocmPackages.llvm.polly
+    # rocmPackages.llvm.openmp
+    # rocmPackages.llvm.mlir
+    # rocmPackages.llvm.llvm
+    # rocmPackages.llvm.lldb
+    # rocmPackages.llvm.lld
+    # rocmPackages.llvm.libunwind
+    # rocmPackages.llvm.libcxxabi
+    # rocmPackages.llvm.libcxx
+    # rocmPackages.llvm.libc
+    # rocmPackages.llvm.compiler-rt
+    # rocmPackages.llvm.clang-tools-extra
+    # rocmPackages.llvm.clang
+    # rocmPackages.llvm.bintools
+    # rocmPackages.rocsparse
+    # rocmPackages.rocsolver
+    # rocmPackages.rocprim
+    # rocmPackages.rocalution
+    # rocmPackages.rccl
+    # rocmPackages.miopen
+    # rocmPackages.miopengemm
+    # rocmPackages.hipsparse
+    # rocmPackages.hipsolver
+    # rocmPackages.hipblas
+    # rocmPackages.rocgdb
+    # end rocm
     runc
     rustc
     rustup
@@ -273,6 +306,7 @@
     watch
     waybar
     wdisplays
+    webex
     wezterm
     wget
     wireguard-tools
