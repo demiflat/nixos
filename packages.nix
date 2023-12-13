@@ -306,7 +306,7 @@
     watch
     waybar
     wdisplays
-    webex
+#    webex
     wezterm
     wget
     wireguard-tools
