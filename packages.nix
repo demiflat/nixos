@@ -76,6 +76,7 @@
     gvproxy
     hack-font
     htop
+    hyprpaper
     imagemagick
 #    input-remapper
     iotop
