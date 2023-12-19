@@ -200,6 +200,7 @@
     qemu
     qmk-udev-rules
     qrencode
+    rename
     rgp
     ripgrep
     # rocm
