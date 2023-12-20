@@ -250,6 +250,7 @@
     # rocmPackages.hipblas
     # rocmPackages.rocgdb
     # end rocm
+    rofi
     runc
     rustc
     rustup
