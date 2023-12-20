@@ -76,7 +76,12 @@
     gvproxy
     hack-font
     htop
+# hyprland
     hyprpaper
+    hyprland-protocols
+    hyprland-share-picker
+    xdg-desktop-portal-hyprland
+
     imagemagick
 #    input-remapper
     iotop
