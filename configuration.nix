@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ inputs, lib, ... }:
+{ config, inputs, lib, ... }:
 
 {
   imports =
@@ -216,6 +216,15 @@
 
 #  environment.systemPackages = [
 #  ];
+
+ environment.etc."current-system-packages".text =
+  let
+    packages = builtins.map (p: "${p.name}") config.environment.systemPackages;
+    sortedUnique = builtins.sort builtins.lessThan (lib.unique packages);
+    formatted = builtins.concatStringsSep "\n" sortedUnique;
+
+  in
+    formatted;
 
   # virtualisation.cri-o.enable = true;
   # virtualisation.cri-o.runtime = "crun";
