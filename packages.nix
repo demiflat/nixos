@@ -77,9 +77,12 @@
     hack-font
     htop
 # hyprland
+    hypr
+    hyprland
     hyprpaper
     hyprland-protocols
     hyprpicker
+    hyprshade
     xdg-desktop-portal-hyprland
 
     imagemagick
