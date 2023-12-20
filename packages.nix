@@ -79,7 +79,7 @@
 # hyprland
     hyprpaper
     hyprland-protocols
-    hyprland-share-picker
+    hyprpicker
     xdg-desktop-portal-hyprland
 
     imagemagick
