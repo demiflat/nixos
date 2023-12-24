@@ -58,7 +58,7 @@
     rocm-opencl-icd
     rocm-opencl-runtime
   ];
-  #hardware.keyboard.qmk.enable = true;
+  hardware.keyboard.qmk.enable = true;
   hardware.sane.enable = true;
   hardware.pulseaudio.enable = false;
 
