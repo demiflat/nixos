@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, inputs, lib, ... }:
+{ config, inputs, lib, pkgs, modulesPath, ... }:
 
 {
   imports =
@@ -35,7 +35,7 @@
       "nixpkgs=${inputs.nixpkgs.outPath}"
       "nixos-config=/etc/nixos/configuration.nix"
       "/nix/var/nix/profiles/per-user/root/channels"
-    ];    
+    ];
     gc.automatic = true;
     settings = {
       auto-optimise-store = true;
