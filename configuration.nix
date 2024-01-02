@@ -81,18 +81,22 @@
   };
 
   # Make more wayland things like screensharing work.
-#  xdg.portal = {
-#    enable = true;
-#    wlr.enable = true;
-#    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-#  };
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+    xdgOpenUsePortal = true;
+    extraPortals = [ 
+      pkgs.xdg-desktop-portal-hyprland
+      # pkgs.xdg-desktop-portal-gtk
+    ];
+  };
 
   # # Bootloader
   # boot.kernelParams = [ "mitigations=off" ];
 
   # # use TCP BBR has significantly increased throughput and reduced latency for connections
   # boot.kernel.sysctl = {
-  #   "net.core.default_qdisc" = "fq";
+  #   "net.core.default_qdisc" = "fq_codel";
   #   "net.ipv4.tcp_congestion_control" = "bbr";
   # };
 
