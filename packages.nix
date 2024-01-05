@@ -208,6 +208,7 @@
     qemu
     qmk-udev-rules
     qrencode
+    ranger
     rename
     rgp
     ripgrep
