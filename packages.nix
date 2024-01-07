@@ -33,6 +33,8 @@
     dina-font
     doublecmd
     duf
+    easyeffects
+    gnomeExtensions.easyeffects-preset-selector
     envsubst
     eternal-terminal
     evtest
