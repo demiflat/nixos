@@ -267,6 +267,7 @@
     strace
     sudo-font
     sway
+    swaylock-effects
     taskwarrior
     teensy-udev-rules
     tmux
