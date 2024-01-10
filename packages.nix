@@ -31,6 +31,7 @@
     difftastic
     dig
     dina-font
+    dive
     doublecmd
     duf
     easyeffects
@@ -75,6 +76,7 @@
     gotty
     graphviz
     # gron
+    gping
     gvproxy
     hack-font
     htop
@@ -157,6 +159,7 @@
     podman-tui
     profont
     pstree
+    pulseaudio
     pv
     pwgen
 
