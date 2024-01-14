@@ -112,6 +112,7 @@
     kubevirt
     lazygit
     lego
+    libnotify
     librewolf-wayland
     libreoffice-fresh
     libvirt
