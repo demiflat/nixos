@@ -18,6 +18,7 @@
     cfssl
     chromium
     clinfo
+    cliphist
     clolcat
     colordiff
     cri-o
