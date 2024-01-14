@@ -303,6 +303,7 @@
     tree-sitter-grammars.tree-sitter-yaml
     tree-sitter-grammars.tree-sitter-zig
     treesheets
+    udiskie
     unzip
     unpaper
     unrar
