@@ -89,6 +89,7 @@
     hyprpicker
     hyprshade
     xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
 
     imagemagick
 #    input-remapper
