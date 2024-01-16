@@ -153,9 +153,11 @@
 qt = {
   enable = true;
 
-  platformTheme = "qt5ct";
+  #platformTheme = "qt5ct";
+  platformTheme = "gnome";
 
-  style = "kvantum";
+  #style = "kvantum";
+  style = "adwaita-dark";
 };
 
   # # Enable CUPS to print documents.
