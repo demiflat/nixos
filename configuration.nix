@@ -145,9 +145,18 @@
   # };
 
   # qt compatibility with gtk
-  qt.enable = true;
-  qt.platformTheme = "gtk2";
-  qt.style = "gtk2"; 
+#  qt.enable = true;
+#  qt.platformTheme = "gnome";
+#  #qt.style = "adwaita-dark"; 
+#  qt.style = "kvantum"; 
+
+qt = {
+  enable = true;
+
+  platformTheme = "qt5ct";
+
+  style = "kvantum";
+};
 
   # # Enable CUPS to print documents.
   # services.printing.enable = true;
