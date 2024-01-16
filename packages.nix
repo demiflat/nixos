@@ -116,6 +116,9 @@
     libnotify
     librewolf-wayland
     libreoffice-fresh
+    libsForQt5.qt5ct
+    libsForQt5.qtstyleplugin-kvantum
+    libsForQt5.qt5.qtwayland
     libvirt
     light
     links2
@@ -155,6 +158,7 @@
     p7zip
     pass
     perf-tools
+    plasma-theme-switcher
     platformio
     platformio-core
     podman
@@ -216,6 +220,7 @@
     qemu
     qmk-udev-rules
     qrencode
+    qt6.qtwayland
     ranger
     rename
     rgp
@@ -310,6 +315,7 @@
     usbtop
     usbutils
     ustreamer
+    utterly-nord-plasma
     via
     vimPlugins.nvim-treesitter.withAllGrammars
     vimPlugins.SpaceVim
