@@ -272,6 +272,7 @@
     socat
     spacevim
     sqlite
+    sqlitebrowser
     strace
     sudo-font
     sway
