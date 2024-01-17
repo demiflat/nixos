@@ -24,6 +24,7 @@
     ];
 
   nix = {
+    trustedUsers = [ "root" "dak" ];
     extraOptions = "experimental-features = nix-command flakes cgroups";
     registry = {
       nixpkgs = {
