@@ -152,6 +152,7 @@
     noto-fonts-extra
     nushell
     nrfutil
+    nvtop-amd
     openocd
     openssl
     openvswitch
