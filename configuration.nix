@@ -24,7 +24,6 @@
     ];
 
   nix = {
-    trustedUsers = [ "root" "dak" ];
     extraOptions = "experimental-features = nix-command flakes cgroups";
     registry = {
       nixpkgs = {
@@ -39,6 +38,7 @@
     ];
     gc.automatic = true;
     settings = {
+      trusted-users = [ "root" "dak" ];
       auto-optimise-store = true;
       experimental-features = [
         "nix-command"
