@@ -39,6 +39,12 @@
     gc.automatic = true;
     settings = {
       trusted-users = [ "root" "dak" ];
+      extra-sandbox-paths = [ 
+        "/dev/kfd" 
+        "/sys/devices/virtual/kfd" 
+        "/dev/dri/renderD128"
+      ];
+
       auto-optimise-store = true;
       experimental-features = [
         "nix-command"
