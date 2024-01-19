@@ -2,27 +2,27 @@
 
 {
   environment.systemPackages = with pkgs; [
-    python312Packages.catboost
-    python312Packages.ipykernel
-    python312Packages.jupyter
-    python312Packages.jupyter-core    
-    python312Packages.kaggle
-    python312Packages.lightgbm
-    python312Packages.matplotlib
-    python312Packages.notebook
-    python312Packages.numpy
-    python312Packages.pandas
-    python312Packages.pre-commit-hooks
-    python312Packages.requests
-    python312Packages.scikit-learn
-    python312Packages.seaborn
-    python312Packages.tensorboard
-    python312Packages.torchaudio
-    python312Packages.torchvision
-    python312Packages.torchWithRocm
-    python312Packages.tqdm
-    python312Packages.venvShellHook
-    python312Packages.wandb
-    python312Packages.xgboost
+    python311Packages.catboost
+    python311Packages.ipykernel
+    python311Packages.jupyter
+    python311Packages.jupyter-core    
+    python311Packages.kaggle
+    python311Packages.lightgbm
+    python311Packages.matplotlib
+    python311Packages.notebook
+    python311Packages.numpy
+    python311Packages.pandas
+    python311Packages.pre-commit-hooks
+    python311Packages.requests
+    python311Packages.scikit-learn
+    python311Packages.seaborn
+    python311Packages.tensorboard
+    python311Packages.torchaudio
+    python311Packages.torchvision
+    python311Packages.torchWithRocm
+    python311Packages.tqdm
+    python311Packages.venvShellHook
+    python311Packages.wandb
+    python311Packages.xgboost
   ];
 }    
