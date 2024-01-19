@@ -155,7 +155,7 @@
     nvtop-amd
     openocd
     openssl
-    openvswitch
+    #openvswitch
     p7zip
     pass
     perf-tools
