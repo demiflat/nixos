@@ -22,7 +22,8 @@
 
   services.avahi = {
     enable = true;
-    nssmdns4 = true;
+    #nssmdns4 = true;
+    nssmdns = true;
   };
 
   services.fwupd.enable = true;
