@@ -11,6 +11,7 @@
      ./cpufreq.nix 
      ./ddc.nix 
      ./locale.nix 
+     ./environment.nix
      ./hardware.nix 
      ./packages.nix
      ./users.nix
