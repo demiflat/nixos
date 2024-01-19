@@ -18,6 +18,7 @@
      ./network.nix
      ./security.nix
      ./services.nix
+     ./qt.nix
      ./programs.nix
      ./virtualization.nix
      ./rocm.nix
@@ -158,16 +159,16 @@
 #  #qt.style = "adwaita-dark"; 
 #  qt.style = "kvantum"; 
 
-qt = {
-  enable = true;
-
-  #platformTheme = "qt5ct";
-  #platformTheme = "gnome";
-  platformTheme = "gtk2";
-
-  #style = "kvantum";
-  style = "adwaita-dark";
-};
+#qt = {
+#  enable = true;
+#
+#  platformTheme = "qt5ct";
+#  #platformTheme = "gnome";
+#  #platformTheme = "gtk2";
+#
+#  style = "kvantum";
+#  #style = "adwaita-dark";
+#};
 
   # # Enable CUPS to print documents.
   # services.printing.enable = true;
