@@ -58,7 +58,7 @@
     gitAndTools.git-extras
     git-repo-updater
     glow
-    gnome.gedit
+    gedit
     gnome.gnome-tweaks
     gnome.simple-scan
 #go
