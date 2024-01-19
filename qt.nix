@@ -1,4 +1,4 @@
-{ config, lib, modulesPath, nixpkgs, ... }:
+{ config, lib, modulesPath, nixpkgs, pkgs, ... }:
 {
 
   qt = {
