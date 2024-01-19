@@ -163,7 +163,7 @@ qt = {
 
   #platformTheme = "qt5ct";
   #platformTheme = "gnome";
-  platformTheme = "gtk";
+  platformTheme = "gtk2";
 
   #style = "kvantum";
   style = "adwaita-dark";
