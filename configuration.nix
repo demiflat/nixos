@@ -89,15 +89,15 @@
   };
 
   # Make more wayland things like screensharing work.
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-    xdgOpenUsePortal = true;
-    extraPortals = [ 
-      pkgs.xdg-desktop-portal-hyprland
-      #pkgs.xdg-desktop-portal-gtk
-    ];
-  };
+  #xdg.portal = {
+  #  enable = true;
+  #  wlr.enable = true;
+  #  xdgOpenUsePortal = true;
+  #  extraPortals = [ 
+  #    pkgs.xdg-desktop-portal-hyprland
+  #    #pkgs.xdg-desktop-portal-gtk
+  #  ];
+  #};
 
   # # Bootloader
   # boot.kernelParams = [ "mitigations=off" ];
@@ -161,11 +161,12 @@
 qt = {
   enable = true;
 
-  platformTheme = "qt5ct";
+  #platformTheme = "qt5ct";
   #platformTheme = "gnome";
+  platformTheme = "gtk";
 
-  style = "kvantum";
-  #style = "adwaita-dark";
+  #style = "kvantum";
+  style = "adwaita-dark";
 };
 
   # # Enable CUPS to print documents.
@@ -220,19 +221,19 @@ qt = {
   # #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   # #  wget
   # ];
-  environment.etc = {
-    "xdg/gtk-2.0/gtkrc".text = "gtk-error-bell=0";
-    "xdg/gtk-3.0/settings.ini".text = ''
-      [Settings]
-      gtk-error-bell=false
-      gtk-application-prefer-dark-them=1
-    '';
-    "xdg/gtk-4.0/settings.ini".text = ''
-      [Settings]
-      gtk-error-bell=false
-      gtk-application-prefer-dark-them=1
-    '';
-  };
+  #environment.etc = {
+  #  "xdg/gtk-2.0/gtkrc".text = "gtk-error-bell=0";
+  #  "xdg/gtk-3.0/settings.ini".text = ''
+  #    [Settings]
+  #    gtk-error-bell=false
+  #    gtk-application-prefer-dark-theme=1
+  #  '';
+  #  "xdg/gtk-4.0/settings.ini".text = ''
+  #    [Settings]
+  #    gtk-error-bell=false
+  #    gtk-application-prefer-dark-theme=1
+  #  '';
+  #};
 
   # # Print the URL instead on servers
   # environment.variables.BROWSER = "echo";
