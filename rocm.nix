@@ -56,7 +56,7 @@
     rocmPackages.rocblas
     rocmPackages.rocfft
     rocmPackages.rocgdb
-    rocmPackages.rocgdbapi
+    rocmPackages.rocdbgapi
     rocmPackages.rocm-cmake
     rocmPackages.rocm-comgr
     rocmPackages.rocm-core
