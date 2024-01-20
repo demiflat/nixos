@@ -27,7 +27,7 @@
     rocmPackages.llvm.clang-tools-extra
     rocmPackages.llvm.clang-unwrapped
     rocmPackages.llvm.compiler-rt
-    rocmPackages.llvm.flang
+    #rocmPackages.llvm.flang
     rocmPackages.llvm.libc
     rocmPackages.llvm.libclc
     rocmPackages.llvm.libcxx
