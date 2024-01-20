@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  systemd.tmpfiles.rules = [
+    "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
+  ];
+
   environment.systemPackages = with pkgs; [
     rocmPackages.rocmlir
     rocmPackages.rocminfo
