@@ -29,7 +29,7 @@
     rocmPackages.llvm.compiler-rt
     #rocmPackages.llvm.flang
     rocmPackages.llvm.libc
-    rocmPackages.llvm.libclc
+    #rocmPackages.llvm.libclc
     rocmPackages.llvm.libcxx
     rocmPackages.llvm.libcxxabi
     rocmPackages.llvm.libunwind
