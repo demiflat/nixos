@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+d config, pkgs, ... }:
 
 {
   systemd.tmpfiles.rules = [
@@ -51,7 +51,7 @@
     rocmPackages.mivisionx-hip
     rocmPackages.mivisionx-opencl
     rocmPackages.rccl
-    rocmPackages.rdc
+    #rocmPackages.rdc
     rocmPackages.rocalution
     rocmPackages.rocblas
     rocmPackages.rocfft
