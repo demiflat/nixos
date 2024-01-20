@@ -41,7 +41,7 @@
     rocmPackages.llvm.polly
     rocmPackages.llvm.pstl
     rocmPackages.llvm.rocmClangStdenv
-    rocmPackages.migraphx
+    #rocmPackages.migraphx
     rocmPackages.miopen
     rocmPackages.miopengemm
     rocmPackages.miopen-hip
