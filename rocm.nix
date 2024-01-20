@@ -10,7 +10,7 @@
     rocmPackages.rocm-cmake
     rocmPackages.rocmlir-rock
     rocmPackages.rocm-runtime
-    rocmPackages.rocm-docs-core
+    #rocmPackages.rocm-docs-core
     rocmPackages.rocm-device-libs
     rocmPackages.llvm.rocmClangStdenv
     rocmPackages.llvm.pstl
