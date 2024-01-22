@@ -22,6 +22,22 @@
     enableSSHSupport = true;
   };
 
+  programs.bash.vteIntegration = true;
+  
+  programs.chromium.enable = true;
+  programs.criu.enable = true;
+  programs.evince.enable = true;
+  programs.file-roller.enable = true;
+  programs.firefox.enable = true;
+  programs.fish.enable = true;
+  programs.git.enable = true;
+  programs.git.prompt.enable = true;
+  programs.gnupg.agent.enable = true;
+  programs.gnupg.agent.enableSSHSupport = true;
+  programs.htop.enable = true;
+  programs.iotop.enable = true;
+  programs.mosh.enable = true;
+
   programs.sway.enable = true;
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
