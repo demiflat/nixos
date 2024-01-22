@@ -33,7 +33,6 @@
   programs.git.enable = true;
   programs.git.prompt.enable = true;
   programs.htop.enable = true;
-  programs.iotop.enable = true;
   programs.mosh.enable = true;
 
   programs.sway.enable = true;
