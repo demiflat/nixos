@@ -29,7 +29,6 @@
   programs.evince.enable = true;
   programs.file-roller.enable = true;
   programs.firefox.enable = true;
-  programs.fish.enable = true;
   programs.git.enable = true;
   programs.git.prompt.enable = true;
   programs.htop.enable = true;
