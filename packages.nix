@@ -171,7 +171,7 @@
     pv
     pwgen
 
-    python3
+    python3Full
 
     # python311Full
     # python311Packages.setuptools
