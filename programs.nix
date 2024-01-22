@@ -32,8 +32,6 @@
   programs.fish.enable = true;
   programs.git.enable = true;
   programs.git.prompt.enable = true;
-  programs.gnupg.agent.enable = true;
-  programs.gnupg.agent.enableSSHSupport = true;
   programs.htop.enable = true;
   programs.iotop.enable = true;
   programs.mosh.enable = true;
