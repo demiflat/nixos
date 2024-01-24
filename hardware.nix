@@ -55,8 +55,9 @@
   hardware.opengl.driSupport = true;
   hardware.opengl.extraPackages = with pkgs; [
     amdvlk
-    rocm-opencl-icd
-    rocm-opencl-runtime
+    rocmPackages.clr
+    #rocm-opencl-icd
+    #rocm-opencl-runtime
   ];
   hardware.keyboard.qmk.enable = true;
   hardware.sane.enable = true;
