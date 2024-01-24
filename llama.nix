@@ -26,6 +26,7 @@
     python311Packages.torchWithRocm
     python311Packages.tqdm
     python311Packages.transformers
+    python311Packages.typing-extensions
     python311Packages.venvShellHook
     python311Packages.wandb
     python311Packages.xgboost
