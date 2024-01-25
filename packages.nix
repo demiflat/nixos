@@ -160,6 +160,7 @@
     pass
     perf-tools
     plasma-theme-switcher
+    planify
     platformio
     platformio-core
     podman
