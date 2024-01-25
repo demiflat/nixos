@@ -40,6 +40,7 @@
     envsubst
     eternal-terminal
     evtest
+    fastfetch
     fastgron
     fd
     ffmpeg_6-full
@@ -89,7 +90,7 @@
     hyprpicker
     hyprshade
     xdg-desktop-portal-hyprland
-    xdg-desktop-portal-gtk
+    # xdg-desktop-portal-gtk
 
     imagemagick
 #    input-remapper
