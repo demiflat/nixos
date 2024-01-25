@@ -26,8 +26,9 @@
      #HSA_OVERRIDE_GFX_VERSION = "10.3.0";
      HSA_OVERRIDE_GFX_VERSION = "9.0.0";
      #DEVICE = "cuda";
-     #PYTORCH_ROCM_ARCH = "gfx900";
-     PYTORCH_ROCM_ARCH = "gfx1030";
+     #PYTORCH_ROCM_ARCH = "gfx90c";
+     PYTORCH_ROCM_ARCH = "gfx900";
+     #PYTORCH_ROCM_ARCH = "gfx1030";
      USE_ROCM = "1";
   };
 
