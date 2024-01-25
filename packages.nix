@@ -19,8 +19,10 @@
     chromium
     clinfo
     cliphist
+    clipman
     clolcat
     colordiff
+    copyq
     cri-o
     cri-tools
     criu
@@ -346,6 +348,7 @@
     wget
     wireguard-tools
     wl-clipboard
+    wl-clip-persist
     wlsunset
     wofi
     wpgtk
