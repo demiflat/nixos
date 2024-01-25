@@ -18,6 +18,7 @@
   # env
 #  environment.variables = { 
   environment.sessionVariables = { 
+     GTK_THEME = "Mojave-Dark";
      QT_QPA_PLATFORMTHEME = "qt5ct";
      # Print the URL instead on servers
      #BROWSER = "echo";
