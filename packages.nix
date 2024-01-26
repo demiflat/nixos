@@ -130,6 +130,7 @@
     lsd
     ltunify
     luajit
+    lunarvim
     mako
     maven
     mc
