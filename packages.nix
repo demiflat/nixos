@@ -30,6 +30,7 @@
     ddcutil
     debootstrap
     delta
+    detox
     diffuse
     difftastic
     dig
