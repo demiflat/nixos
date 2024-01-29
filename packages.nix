@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    alacritty
     amd-blis
     amdctl
     amdgpu_top
