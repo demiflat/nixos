@@ -82,6 +82,7 @@
     gotty
     graphviz
     # gron
+    gparted
     gping
     gvproxy
     hack-font
