@@ -36,6 +36,7 @@
 
   programs.sway.enable = true;
   programs.hyprland.enable = true;
+  programs.hyprland.nvidiaPatches = false;
   programs.hyprland.xwayland.enable = true;
   #programs.waybar.enable = true;
   security.polkit.enable = true;
