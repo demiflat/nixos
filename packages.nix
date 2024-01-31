@@ -1510,7 +1510,6 @@
     vimPlugins.sonokai
     vimPlugins.sort-nvim
     vimPlugins.sourcemap
-    vimPlugins.sourcemap-vim
     vimPlugins.sourcemap.vim
     vimPlugins.space-vim
     vimPlugins.spacevim
