@@ -1,4 +1,4 @@
-{ config, lib, modulesPath, ... }:
+{ config, lib, modulesPath, pkgs, ... }:
 {
 	systemd = {
 	  user.services.polkit-gnome-authentication-agent-1 = {
