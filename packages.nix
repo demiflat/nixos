@@ -50,6 +50,7 @@
     ffmpeg_6-full
     figlet
     file
+    fio
     firefox
     fish
     fnm
