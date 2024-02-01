@@ -28,7 +28,6 @@
     ];
 
   nix = {
-    cores = 8;
     extraOptions = "experimental-features = nix-command flakes cgroups";
     registry = {
       nixpkgs = {
@@ -43,6 +42,7 @@
     ];
     gc.automatic = true;
     settings = {
+      cores = 8;
       trusted-users = [ "root" "dak" ];
       extra-sandbox-paths = [ 
         "/dev/kfd" 
