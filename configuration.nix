@@ -28,6 +28,7 @@
     ];
 
   nix = {
+    cores = 8;
     extraOptions = "experimental-features = nix-command flakes cgroups";
     registry = {
       nixpkgs = {
