@@ -58,6 +58,7 @@
     foot
     fortune
     fzf
+    gBar
     gdu
     gitFull
     git-repo
@@ -167,6 +168,7 @@
     openssl
     #openvswitch
     p7zip
+    pamixer
     pass
     perf-tools
     plasma-theme-switcher
