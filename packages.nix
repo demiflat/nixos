@@ -179,6 +179,7 @@
     profont
     pstree
     pulseaudio
+    pulsemixer
     pv
     pwgen
 
