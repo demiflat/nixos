@@ -58,7 +58,7 @@
     foot
     fortune
     fzf
-    gBar
+    gbar
     gdu
     gitFull
     git-repo
