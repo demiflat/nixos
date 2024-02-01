@@ -12,6 +12,7 @@
     b612
     bat
     bc
+    blueberry
     bluez-tools
     brasero
     btop
