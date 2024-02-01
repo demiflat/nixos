@@ -134,6 +134,8 @@
     lsd
     ltunify
     luajit
+    luaPackages.telescope-nvim
+    luajitPackages.telescope-nvim
     lunarvim
     mako
     maven
@@ -292,6 +294,7 @@
     swaylock-effects
     taskwarrior
     teensy-udev-rules
+    telescope
     tmux
     tockloader
     tig
