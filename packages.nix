@@ -12,6 +12,7 @@
     b612
     bat
     bc
+    bluez-tools
     brasero
     btop
     buildah
