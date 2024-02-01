@@ -134,7 +134,7 @@
     lsd
     ltunify
     luajit
-    luaPackages.telescope-nvim
+    #luaPackages.telescope-nvim
     luajitPackages.telescope-nvim
     lunarvim
     mako
