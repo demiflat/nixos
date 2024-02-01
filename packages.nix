@@ -148,6 +148,7 @@
     most
     mpv
     neovim
+    neovide
     nerdfonts
     # netbird-ui
     nettools
