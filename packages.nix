@@ -174,6 +174,7 @@
     p7zip
     pamixer
     pass
+    pavucontrol
     perf-tools
     plasma-theme-switcher
     planify
