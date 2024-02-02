@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    asciinema
     alacritty
     amd-blis
     amdctl
