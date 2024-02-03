@@ -31,8 +31,8 @@
   # Enable the gnome windowing system.
   services.xserver = {
     enable = true;
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    xkb.variant = "";
     videoDrivers = [ "amdgpu" ];
     displayManager.gdm.enable = true;
     displayManager.gdm.wayland = true;
