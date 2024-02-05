@@ -63,6 +63,7 @@
     fzf
     gbar
     gdu
+    gimp
     gitFull
     git-repo
     gitAndTools.git-extras
