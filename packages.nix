@@ -20,6 +20,7 @@
     buildah
     cargo
     cfssl
+    chafa
     chromium
     clinfo
     cliphist
