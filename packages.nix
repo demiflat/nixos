@@ -27,6 +27,7 @@
     clipman
     clolcat
     colordiff
+    conky
     copyq
     cri-o
     cri-tools
