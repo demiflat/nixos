@@ -102,6 +102,7 @@
     hyprland-protocols
     hyprpicker
     hyprshade
+    hyprshot
     xdg-desktop-portal-hyprland
     # xdg-desktop-portal-gtk
 
