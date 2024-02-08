@@ -4,5 +4,5 @@ echo "* nix flake update done.                                                  
 echo "********************************************************************************"
 git status
 echo "********************************************************************************"
-#sudo nixos-rebuild boot --upgrade --show-trace --flake .#yoshi
-sudo nixos-rebuild switch  --upgrade --show-trace --flake .#yoshi
+sudo nixos-rebuild boot --upgrade --show-trace --flake .#yoshi
+#sudo nixos-rebuild switch  --upgrade --show-trace --flake .#yoshi
