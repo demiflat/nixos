@@ -345,6 +345,7 @@
     usbutils
     ustreamer
     utterly-nord-plasma
+    vhs
     via
     virt-manager
     virt-top
