@@ -187,7 +187,7 @@
     podman
     podman-compose
     podman-tui
-    popcorntime
+#    popcorntime
     profont
     pstree
     pulseaudio
