@@ -68,7 +68,7 @@
     rocmPackages.rocm-comgr
     rocmPackages.rocm-core
     rocmPackages.rocm-device-libs
-    rocmPackages.rocm-docs-core
+#    rocmPackages.rocm-docs-core
     rocmPackages.rocm-runtime
     rocmPackages.rocm-smi
     rocmPackages.rocm-thunk
