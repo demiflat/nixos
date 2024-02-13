@@ -76,7 +76,7 @@
     rocmPackages.rocmlir
     rocmPackages.rocmlir-rock
     rocmPackages.rocprim
-    rocmPackages.rocprofiler
+#    rocmPackages.rocprofiler
     rocmPackages.rocr-debug-agent
     rocmPackages.rocrand
     rocmPackages.rocsolver
