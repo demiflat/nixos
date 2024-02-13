@@ -378,6 +378,7 @@
     yarn
     zathura
     zenmonitor
+    zoxide
     yt-dlp
     zip
     zstd
