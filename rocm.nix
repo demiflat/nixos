@@ -7,6 +7,11 @@
 
   environment.systemPackages = with pkgs; [
     ocl-icd
+    python311Packages.pysigset
+    python311Packages.torchWithRocm
+    python312Packages.procmon-parser
+    python312Packages.pysigset
+    python312Packages.torchWithRocm    
     rocm-opencl-icd
     rocm-opencl-runtime
     rocmPackages.clang-ocl

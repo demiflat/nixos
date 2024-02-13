@@ -1,15 +1,9 @@
 opensyclWithRocm
-perl536Packages.FCGIProcManager
-perl538Packages.FCGIProcManager
-perlPackages.FCGIProcManager
-python311Packages.procmon-parser
 python311Packages.pysigset
 python311Packages.torchWithRocm
-python311Packages.torchWithoutRocm
 python312Packages.procmon-parser
 python312Packages.pysigset
 python312Packages.torchWithRocm
-python312Packages.torchWithoutRocm
 rocm-opencl-icd
 rocm-opencl-runtime
 rocmPackages.clang-ocl
