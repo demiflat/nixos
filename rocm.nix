@@ -53,7 +53,7 @@
     rocmPackages.miopen-hip
     rocmPackages.miopen-opencl
     rocmPackages.miopengemm
-    rocmPackages.mivisionx
+#    rocmPackages.mivisionx
 #    rocmPackages.mivisionx-cpu
 #    rocmPackages.mivisionx-hip
 #    rocmPackages.mivisionx-opencl
