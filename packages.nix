@@ -26,6 +26,7 @@
     cliphist
     clipman
     clolcat
+    cmake
     colordiff
     conky
     copyq
@@ -195,7 +196,8 @@
     pv
     pwgen
 
-    python3Full
+    python3
+    #python3Full
     python311Packages.pip
 
     # python311Full
@@ -236,13 +238,14 @@
     # python310Packages.jupyter-core    
     # python310Packages.notebook
     # python310Packages.ipykernel
-    # streamlit
-    # taglib
-    # openssl
-    # libxml2
-    # libxslt
-    # libzip
-    # zlib
+    streamlit
+    taglib
+    openssl
+    libedit
+    libxml2
+    libxslt
+    libzip
+    zlib
 
     pywal
     qemu
@@ -381,6 +384,7 @@
     zoxide
     yt-dlp
     zip
+    zlib
     zstd
   ];
 }
