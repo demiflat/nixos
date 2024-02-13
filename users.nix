@@ -21,6 +21,7 @@
         "scanner"
         "lp"
         "tss"
+        "render"
         # "jupyter"
       ];
       # mkpasswd
