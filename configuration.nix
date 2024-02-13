@@ -22,7 +22,7 @@
      ./qt.nix
      ./programs.nix
      ./virtualization.nix
-    # ./rocm.nix
+     ./rocm.nix
     #  ./jupiter.nix
     #  ./llama.nix
     ];
