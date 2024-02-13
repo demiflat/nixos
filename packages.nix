@@ -238,7 +238,7 @@
     # python310Packages.jupyter-core    
     # python310Packages.notebook
     # python310Packages.ipykernel
-    streamlit
+    #streamlit
     taglib
     openssl
     libedit
