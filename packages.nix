@@ -108,6 +108,7 @@
     # xdg-desktop-portal-gtk
 
     imagemagick
+    imhex
 #    input-remapper
     iotop
     iperf3
