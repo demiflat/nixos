@@ -311,6 +311,7 @@
     sway
     swaylock-effects
     taskwarrior
+    taskwarrior-tui
     teensy-udev-rules
     telescope
     tmux
