@@ -67,6 +67,7 @@
     gbar
     gdu
     gimp
+    gitbatch
     gitFull
     git-repo
     gitAndTools.git-extras
