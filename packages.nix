@@ -22,6 +22,7 @@
     cfssl
     chafa
     chromium
+    cinnamon.nemo-with-extensions
     clinfo
     cliphist
     clipman
