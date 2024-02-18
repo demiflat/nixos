@@ -21,8 +21,8 @@
      
     # Print the URL instead on servers
     #BROWSER = "echo";
-    #HSA_OVERRIDE_GFX_VERSION = "10.3.0";
-    HSA_OVERRIDE_GFX_VERSION = "9.0.0";
+    HSA_OVERRIDE_GFX_VERSION = "10.3.0";
+    #HSA_OVERRIDE_GFX_VERSION = "9.0.0";
     #DEVICE = "cuda";
     #PYTORCH_ROCM_ARCH = "gfx90c";
     PYTORCH_ROCM_ARCH = "gfx900";
