@@ -131,6 +131,7 @@
     kubetail
     kubevirt
     lazygit
+    ledger
     lego
     libnotify
     librewolf-wayland
