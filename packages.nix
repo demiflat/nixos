@@ -184,6 +184,7 @@
     p7zip
     pamixer
     pass
+    passExtensions.pass-otp
     pavucontrol
     perf-tools
     plasma-theme-switcher
