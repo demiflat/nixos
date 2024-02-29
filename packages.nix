@@ -178,6 +178,7 @@
     nushell
     nrfutil
     nvtop-amd
+    ollama
     openocd
     openssl
     #openvswitch
