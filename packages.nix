@@ -133,6 +133,7 @@
     lazygit
     ledger
     lego
+    libfido2
     libnotify
     librewolf-wayland
     libreoffice-fresh
