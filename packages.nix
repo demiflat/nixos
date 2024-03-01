@@ -246,6 +246,7 @@
     # python310Packages.notebook
     # python310Packages.ipykernel
     #streamlit
+    solo2-cli
     taglib
     openssl
     libedit
