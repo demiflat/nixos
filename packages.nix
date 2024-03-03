@@ -167,6 +167,7 @@
     nettools
     nfs-utils
     nftables
+    nginx
     nil
     nix-top
     nixos-option
