@@ -77,6 +77,7 @@
     gedit
     gnome.gnome-tweaks
     gnome.simple-scan
+    gptfdisk
 #go
     go
     gopls
