@@ -189,6 +189,7 @@
     passExtensions.pass-otp
     pavucontrol
     perf-tools
+    picocom
     plasma-theme-switcher
     planify
     platformio
