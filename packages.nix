@@ -157,6 +157,7 @@
     mc
     meld
     microcodeAmd
+    minicom
     most
     mpv
     neovim
@@ -325,6 +326,7 @@
     tmux
     tockloader
     tig
+    tio
     tpmmanager
     tpm2-tools
     transmission
