@@ -23,7 +23,7 @@
      ./programs.nix
      ./virtualization.nix
      ./rocm.nix
-    #  ./jupiter.nix
+     ./jupiter.nix
     #  ./llama.nix
     ];
 
