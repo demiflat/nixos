@@ -129,5 +129,6 @@
   };
   
   services.jupyterhub.enable = true;
+  services.clickhouse.enable = true;
     
 }
