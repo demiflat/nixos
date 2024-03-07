@@ -33,19 +33,19 @@
       ];
     };
 
-    jupyter = {
-      isNormalUser = true;
-      description = "jupyter";
-      extraGroups = [
-       "jupyter"
-      ];
-      initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
-    };
+#    jupyter = {
+#       isNormalUser = true;
+##      isNormalUser = true;
+#      description = "jupyter";
+#      extraGroups = [
+#       "jupyter"
+#      ];
+#      initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
+#    };
 
   };
 
-  users.groups = {
-    juypter = {};
-  };
+  users.users.jupyter.group = "jupyter";
+  users.groups.jupyter = {};
 
 }
