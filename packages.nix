@@ -205,6 +205,7 @@
     podman-compose
     podman-tui
 #    popcorntime
+    poppler_utils
     profont
     pstree
     pulseaudio
