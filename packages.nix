@@ -102,7 +102,7 @@
     hack-font
     htop
     hunspell
-    hunspell.en_US
+    hunspellDicts.en_US
 # hyprland
     hypr
     hyprland
