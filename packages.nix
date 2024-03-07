@@ -101,6 +101,8 @@
     gvproxy
     hack-font
     htop
+    hunspell
+    hunspell.en_US
 # hyprland
     hypr
     hyprland
