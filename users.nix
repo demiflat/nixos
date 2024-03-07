@@ -35,7 +35,10 @@
 
     jupyter = {
       isNormalUser = true;
-      group = "jupyter";
+      description = "jupyter";
+      extraGroups = [
+       "jupyter"
+      ];
       initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
     };
 
