@@ -33,16 +33,16 @@
       ];
     };
 
-    # jupyter = {
-    #   isNormalUser = true;
-    #   group = "jupyter";
-    #   initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
-    # };
+    jupyter = {
+      isNormalUser = true;
+      group = "jupyter";
+      initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
+    };
 
   };
 
-  # users.groups = {
-  #   juypter = {};
-  # };
+  users.groups = {
+    juypter = {};
+  };
 
 }
