@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    abiword
     asciinema
     alacritty
     amd-blis
@@ -77,6 +78,7 @@
     gedit
     gnome.gnome-tweaks
     gnome.simple-scan
+    gnumeric
     gptfdisk
 #go
     go
