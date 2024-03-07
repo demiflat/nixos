@@ -46,6 +46,7 @@
   };
 
   users.users.jupyter.group = "jupyter";
+  users.users.jupyter.initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
   users.groups.jupyter = {};
 
 }
