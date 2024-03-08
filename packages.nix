@@ -113,7 +113,7 @@
     hyprshot
     xdg-desktop-portal-hyprland
     # xdg-desktop-portal-gtk
-
+    idevicerestore
     imagemagick
     imhex
 #    input-remapper
