@@ -114,6 +114,7 @@
     xdg-desktop-portal-hyprland
     # xdg-desktop-portal-gtk
     idevicerestore
+    usbmuxd
     imagemagick
     imhex
 #    input-remapper
