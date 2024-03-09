@@ -115,6 +115,7 @@
     # xdg-desktop-portal-gtk
     idevicerestore
     usbmuxd
+    libimobiledevice
     imagemagick
     imhex
 #    input-remapper
