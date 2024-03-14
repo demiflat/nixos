@@ -20,7 +20,7 @@
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;
-    pinentryFlavor = "curses";
+    pinentryPackage = "pinentry-curses";
   };
 
   programs.bash.vteIntegration = true;
