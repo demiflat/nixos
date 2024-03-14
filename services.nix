@@ -131,5 +131,6 @@
   services.jupyterhub.enable = true;
   services.clickhouse.enable = true;
   services.usbmuxd.enable = true;
-    
+
+  services.pcscd.enable = true;
 }

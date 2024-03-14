@@ -200,6 +200,7 @@
     pavucontrol
     perf-tools
     picocom
+    pinentry-curses
     plasma-theme-switcher
     planify
     platformio
