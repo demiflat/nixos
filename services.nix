@@ -115,7 +115,7 @@
       (lib.mkForce [ "/etc/ssh/authorized_keys.d/%u" ]);
 
     # unbind gnupg sockets if they exists
-    #extraConfig = "StreamLocalBindUnlink yes";
+    extraConfig = "StreamLocalBindUnlink yes";
   };
 
   #services.netbird.enable = true;
