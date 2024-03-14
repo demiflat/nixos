@@ -1,4 +1,4 @@
-{ config, lib, modulesPath, ... }:
+{ config, lib, modulesPath, pkgs, ... }:
 {
   programs.bcc.enable = true;
   programs.sysdig.enable = true;
@@ -20,7 +20,7 @@
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;
-    pinentryPackage = "pinentry-curses";
+    pinentryPackage = pkgs.pinentry-curses;
   };
 
   programs.bash.vteIntegration = true;
