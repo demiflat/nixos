@@ -321,6 +321,7 @@
     runc
     rustc
     rustup
+    scrot
     skopeo
     socat
     spacevim
