@@ -334,6 +334,7 @@
     taskwarrior-tui
     teensy-udev-rules
     telescope
+    tesseract
     tmux
     tockloader
     tig
