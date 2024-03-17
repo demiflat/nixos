@@ -29,7 +29,7 @@
   boot.kernelModules = [ "8821au" ];
   boot.extraModulePackages = [
     config.boot.kernelPackages.rtl8821au
-    confib.boot.kernelPackages.exfat-nofuse
+    config.boot.kernelPackages.exfat-nofuse
   ];
   
 }
