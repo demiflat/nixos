@@ -189,6 +189,7 @@
     noto-fonts-extra
     nushell
     nrfutil
+    ntfs3g
     nvtop-amd
     ollama
     openocd
