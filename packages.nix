@@ -52,6 +52,7 @@
     envsubst
     eternal-terminal
     evtest
+    exfat
     fastfetch
     fastgron
     fd
