@@ -25,6 +25,7 @@
     chromium
     cinnamon.nemo-with-extensions
     clinfo
+    clipgrab
     cliphist
     clipman
     clolcat

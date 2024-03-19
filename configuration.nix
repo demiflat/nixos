@@ -24,7 +24,7 @@
      ./virtualization.nix
      ./rocm.nix
      ./jupiter.nix
-    #  ./llama.nix
+     #./llama.nix
     ];
 
   nix = {
