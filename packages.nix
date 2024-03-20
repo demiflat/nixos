@@ -102,6 +102,7 @@
     gping
     gvproxy
     hack-font
+    htmlq
     htop
     hunspell
     hunspellDicts.en_US
