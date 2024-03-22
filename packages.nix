@@ -192,7 +192,7 @@
     nushell
     nrfutil
     ntfs3g
-    nvtop-amd
+    nvtopPackages.amd
     ollama
     openocd
     openssl
