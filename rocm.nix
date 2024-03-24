@@ -49,10 +49,10 @@
     rocmPackages.llvm.pstl
     rocmPackages.llvm.rocmClangStdenv
     rocmPackages.migraphx
-    rocmPackages.miopen
-    rocmPackages.miopen-hip
+#    rocmPackages.miopen
+#    rocmPackages.miopen-hip
 #    rocmPackages.miopen-opencl
-    rocmPackages.miopengemm
+#    rocmPackages.miopengemm
 #    rocmPackages.mivisionx
 #    rocmPackages.mivisionx-cpu
 #    rocmPackages.mivisionx-hip
