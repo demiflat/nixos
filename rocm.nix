@@ -51,7 +51,7 @@
     rocmPackages.migraphx
     rocmPackages.miopen
     rocmPackages.miopen-hip
-    rocmPackages.miopen-opencl
+#    rocmPackages.miopen-opencl
     rocmPackages.miopengemm
 #    rocmPackages.mivisionx
 #    rocmPackages.mivisionx-cpu
