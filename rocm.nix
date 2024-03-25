@@ -7,13 +7,13 @@
 
   environment.systemPackages = with pkgs; [
     ocl-icd
-    python311Packages.pysigset
-    python311Packages.torchWithRocm
+    #python311Packages.pysigset
+    #python311Packages.torchWithRocm
 #    python312Packages.procmon-parser
 #    python312Packages.pysigset
 #    python312Packages.torchWithRocm    
-    rocm-opencl-icd
-    rocm-opencl-runtime
+    #rocm-opencl-icd
+    #rocm-opencl-runtime
     rocmPackages.clang-ocl
     rocmPackages.clr
     rocmPackages.composable_kernel
@@ -48,7 +48,7 @@
     rocmPackages.llvm.polly
     rocmPackages.llvm.pstl
     rocmPackages.llvm.rocmClangStdenv
-    rocmPackages.migraphx
+    #rocmPackages.migraphx
 #    rocmPackages.miopen
 #    rocmPackages.miopen-hip
 #    rocmPackages.miopen-opencl
@@ -85,9 +85,9 @@
     rocmPackages.roctracer
     rocmPackages.rocwmma
     rocmPackages.rpp
-    rocmPackages.rpp-cpu
+    #rocmPackages.rpp-cpu
     rocmPackages.rpp-hip
-    rocmPackages.rpp-opencl
+    #rocmPackages.rpp-opencl
     rocmPackages.tensile
   ];
 }    
