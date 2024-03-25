@@ -108,6 +108,7 @@
     hunspellDicts.en_US
 # hyprland
     hypr
+    hyprcursor
     hyprland
     hyprpaper
     hyprland-protocols
