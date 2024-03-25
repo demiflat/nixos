@@ -76,8 +76,6 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  #services.clickhouse.enable = true;
-
   services.mullvad-vpn.enable = true;
 
   # udev
@@ -134,7 +132,7 @@
   services.tabby.enable = true;
   services.tabby.acceleration = "rocm";
 
-  services.clickhouse.enable = true;
+#  services.clickhouse.enable = true;
   services.usbmuxd.enable = true;
   services.pcscd.enable = true;
 }
