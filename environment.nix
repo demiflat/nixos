@@ -21,6 +21,7 @@
      
     # Print the URL instead on servers
     #BROWSER = "echo";
+    HSA_ENABLE_SDMA="0";
     HSA_OVERRIDE_GFX_VERSION = "10.3.0";
     #HSA_OVERRIDE_GFX_VERSION = "9.0.0";
     #DEVICE = "cuda";
