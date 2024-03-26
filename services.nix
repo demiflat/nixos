@@ -39,7 +39,7 @@
 #    displayManager.sddm.enable = true;
 #    desktopManager.plasma5.enable = true;
 #    desktopManager.plasma6.enable = true;
-    windowManager.hypr.enable = true;
+#    windowManager.hypr.enable = true;
   };
 
   # gnome-keyring for the secrets management service. Also adds its
