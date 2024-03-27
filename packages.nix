@@ -24,6 +24,7 @@
     chafa
     chromium
     cinnamon.nemo-with-extensions
+    circt
     clblast
     clinfo
     clipgrab
@@ -157,6 +158,7 @@
     light
     links2
     litestream
+    llvmPackages.mlir
     logitech-udev-rules
     lsd
     ltunify
