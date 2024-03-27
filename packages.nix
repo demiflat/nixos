@@ -24,6 +24,7 @@
     chafa
     chromium
     cinnamon.nemo-with-extensions
+    clblast
     clinfo
     clipgrab
     cliphist
