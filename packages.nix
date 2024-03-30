@@ -267,6 +267,8 @@
     # python310Packages.jupyter-core    
     # python310Packages.notebook
     # python310Packages.ipykernel
+
+    pywalfox-native
     #streamlit
     solo2-cli
     taglib
