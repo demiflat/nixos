@@ -104,6 +104,7 @@
     gping
     gvproxy
     hack-font
+    helix
     htmlq
     htop
     hunspell
@@ -416,6 +417,7 @@
     xkcdpass
     yarn
     zathura
+    zellij
     zenmonitor
     zoxide
     yt-dlp
