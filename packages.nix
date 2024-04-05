@@ -159,6 +159,7 @@
     light
     links2
     litestream
+    lldb
     llvmPackages.mlir
     logitech-udev-rules
     lsd
