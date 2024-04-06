@@ -266,7 +266,7 @@
     # python310Packages.torchvision
     # python310Packages.torchaudio
     # python310Packages.jupyter
-    # python310Packages.jupyter-core    
+    # python310Packages.jupyter-core
     # python310Packages.notebook
     # python310Packages.ipykernel
 
