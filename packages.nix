@@ -44,6 +44,7 @@
     delta
     detox
     diffuse
+    #diffoscope
     difftastic
     dig
     dina-font
