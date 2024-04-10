@@ -129,8 +129,8 @@
   services.jupyterhub.enable = true;
   services.ollama.acceleration = "rocm";
 
-  services.tabby.enable = true;
-  services.tabby.acceleration = "rocm";
+#  services.tabby.enable = true;
+#  services.tabby.acceleration = "rocm";
 
 #  services.clickhouse.enable = true;
   services.usbmuxd.enable = true;
