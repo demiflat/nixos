@@ -227,6 +227,7 @@
     pulsemixer
     pv
     pwgen
+    pw-volume
 
     python3
     #python3Full
