@@ -39,7 +39,7 @@
   programs.sway.enable = true;
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
-#  programs.waybar.enable = true;
+  programs.waybar.enable = true;
   security.polkit.enable = true;
   programs.fish.enable = true;
 
