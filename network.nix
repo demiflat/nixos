@@ -131,6 +131,7 @@
           IPv6PrivacyExtensions = "no";
         };
         dhcpV4Config.UseRoutes = "no";
+        dhcpV4Config.UseDNS = "no";        
         linkConfig.RequiredForOnline = "no";
         # dhcpV4Config.RouteMetric = 2048; 
         # dhcpV6Config.RouteMetric = 2048; 
@@ -145,6 +146,7 @@
           IPv6PrivacyExtensions = "no";
         };
         dhcpV4Config.UseRoutes = "no";
+        dhcpV4Config.UseDNS = "no";
         linkConfig.RequiredForOnline = "no";
         # dhcpV4Config.RouteMetric = 2048; 
         # dhcpV6Config.RouteMetric = 2048; 
@@ -159,6 +161,7 @@
           IPv6PrivacyExtensions = "no";
         };
         dhcpV4Config.UseRoutes = "no";
+        dhcpV4Config.UseDNS = "no";
         linkConfig.RequiredForOnline = "no";
         # dhcpV4Config.RouteMetric = 2048; 
         # dhcpV6Config.RouteMetric = 2048; 
@@ -173,6 +176,7 @@
           IPv6PrivacyExtensions = "no";
         };
         dhcpV4Config.UseRoutes = "no";
+        dhcpV4Config.UseDNS = "no";
         linkConfig.RequiredForOnline = "no";
         # dhcpV4Config.RouteMetric = 2048; 
         # dhcpV6Config.RouteMetric = 2048; 
