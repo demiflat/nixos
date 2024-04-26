@@ -404,7 +404,7 @@
 #    })
     w3m
     watch
-    waybar
+#    waybar
     wdisplays
 #    webex
     wezterm
