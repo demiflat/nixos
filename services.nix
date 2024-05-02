@@ -37,9 +37,9 @@
     displayManager.gdm.wayland = true;
     desktopManager.gnome.enable = true;
 #    displayManager.sddm.enable = true;
+#    displayManager.sddm.wayland.enable = true;
 #    desktopManager.plasma5.enable = true;
 #    desktopManager.plasma6.enable = true;
-#    windowManager.hypr.enable = true;
   };
 
   # gnome-keyring for the secrets management service. Also adds its
