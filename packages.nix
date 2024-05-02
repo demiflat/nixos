@@ -35,6 +35,7 @@
     colordiff
     conky
     copyq
+    cosmic-term
     cri-o
     cri-tools
     criu
