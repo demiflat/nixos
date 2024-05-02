@@ -22,6 +22,7 @@
      ./qt.nix
      ./programs.nix
      ./virtualization.nix
+     ./3d-printer.nix
      #./rocm.nix
      #./jupiter.nix
      #./llama.nix
