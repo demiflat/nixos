@@ -198,7 +198,7 @@
     noto-fonts-emoji
     noto-fonts-extra
     nushell
-    nrfutil
+#    nrfutil
     ntfs3g
     nvtopPackages.amd
     ollama
