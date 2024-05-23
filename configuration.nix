@@ -23,7 +23,7 @@
      ./programs.nix
      ./virtualization.nix
      ./3d-printer.nix
-     #./rocm.nix
+     ./rocm.nix
      #./jupiter.nix
      #./llama.nix
     ];
