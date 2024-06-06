@@ -168,6 +168,7 @@
     llvmPackages.mlir
     logitech-udev-rules
     lsd
+    lsix
     ltunify
     luajit
     lua51Packages.telescope-nvim
