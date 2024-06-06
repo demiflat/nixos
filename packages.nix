@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
     abiword
     asciinema
@@ -53,6 +55,7 @@
     doublecmd
     duf
     easyeffects
+    gnome.gnome-themes-extra
     gnomeExtensions.easyeffects-preset-selector
     envsubst
     eternal-terminal
@@ -86,7 +89,7 @@
     gnome.simple-scan
     gnumeric
     gptfdisk
-#go
+    #go
     go
     gopls
     delve
@@ -111,7 +114,7 @@
     htop
     hunspell
     hunspellDicts.en_US
-# hyprland
+    # hyprland
     hypr
     hyprcursor
     hyprland
@@ -128,7 +131,7 @@
     libimobiledevice
     imagemagick
     imhex
-#    input-remapper
+    #    input-remapper
     iotop
     iperf3
     iproute2
@@ -169,7 +172,7 @@
     luajit
     lua51Packages.telescope-nvim
     luajitPackages.telescope-nvim
-    lunarvim
+    #lunarvim
     lynx
     mako
     maven
@@ -198,7 +201,7 @@
     noto-fonts-emoji
     noto-fonts-extra
     nushell
-#    nrfutil
+    #    nrfutil
     ntfs3g
     nvtopPackages.amd
     ollama
@@ -220,7 +223,7 @@
     podman
     podman-compose
     podman-tui
-#    popcorntime
+    #    popcorntime
     poppler_utils
     profont
     pstree
@@ -397,17 +400,17 @@
     virtiofsd
     vit
     vscodium
-#    (vscode-with-extensions.override {
-#      vscode = vscodium;
-#      vscodeExtensions = with vscode-extensions; [
-#        ms-vscode.cpptools
-#      ];
-#    })
+    #    (vscode-with-extensions.override {
+    #      vscode = vscodium;
+    #      vscodeExtensions = with vscode-extensions; [
+    #        ms-vscode.cpptools
+    #      ];
+    #    })
     w3m
     watch
-#    waybar
+    #    waybar
     wdisplays
-#    webex
+    #    webex
     wezterm
     wget
     wireguard-tools
