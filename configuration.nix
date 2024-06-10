@@ -1,32 +1,35 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, inputs, lib, pkgs, modulesPath, ... }:
-
 {
-  imports =
-    [
-     ./boot.nix 
-     ./cpufreq.nix 
-     ./ddc.nix 
-     ./locale.nix 
-     ./environment.nix
-     ./hardware.nix 
-     ./packages.nix
-     ./users.nix
-     ./network.nix
-     ./security.nix
-     ./services.nix
-     ./user-services.nix
-     ./qt.nix
-     ./programs.nix
-     ./virtualization.nix
-     ./3d-printer.nix
-     #./rocm.nix
-     #./jupiter.nix
-     #./llama.nix
-    ];
+  config,
+  inputs,
+  lib,
+  pkgs,
+  modulesPath,
+  ...
+}: {
+  imports = [
+    ./boot.nix
+    ./cpufreq.nix
+    ./ddc.nix
+    ./locale.nix
+    ./environment.nix
+    ./hardware.nix
+    ./packages.nix
+    ./users.nix
+    ./network.nix
+    ./security.nix
+    ./services.nix
+    ./user-services.nix
+    ./qt.nix
+    ./programs.nix
+    ./virtualization.nix
+    ./3d-printer.nix
+    #./rocm.nix
+    #./jupiter.nix
+    #./llama.nix
+  ];
 
   nix = {
     extraOptions = "experimental-features = nix-command flakes cgroups";
@@ -44,10 +47,10 @@
     gc.automatic = true;
     settings = {
       cores = 8;
-      trusted-users = [ "root" "dak" ];
-      extra-sandbox-paths = [ 
-        "/dev/kfd" 
-        "/sys/devices/virtual/kfd" 
+      trusted-users = ["root" "dak"];
+      extra-sandbox-paths = [
+        "/dev/kfd"
+        "/sys/devices/virtual/kfd"
         "/dev/dri/renderD128"
       ];
 
@@ -61,21 +64,21 @@
         "nix-command"
         "flakes"
         "cgroups"
-      ];      
+      ];
       # Fallback quickly if substituters are not available.
       connect-timeout = 5;
 
-        # The default at 10 is rarely enough.
-        log-lines = lib.mkDefault 25;
+      # The default at 10 is rarely enough.
+      log-lines = lib.mkDefault 25;
 
-        # Avoid disk full issues
-        max-free = lib.mkDefault (3000 * 1024 * 1024);
-        min-free = lib.mkDefault (512 * 1024 * 1024);
-        use-cgroups = true;
-        system-features = [
-          "kvm"
-          "big-parallel"
-        ];
+      # Avoid disk full issues
+      max-free = lib.mkDefault (3000 * 1024 * 1024);
+      min-free = lib.mkDefault (512 * 1024 * 1024);
+      use-cgroups = true;
+      system-features = [
+        "kvm"
+        "big-parallel"
+      ];
     };
     # https://nixos.org/manual/nixos/stable/options#opt-nix.daemonCPUSchedPolicy
     #daemonCPUSchedPolicy = "other"; # default "other", server "batch", desktop "idle"
@@ -98,7 +101,7 @@
     enable = true;
     #wlr.enable = true;
     xdgOpenUsePortal = true;
-    extraPortals = [ 
+    extraPortals = [
       pkgs.xdg-desktop-portal-hyprland
       #pkgs.xdg-desktop-portal-gtk
     ];
@@ -158,57 +161,57 @@
   # };
 
   # qt compatibility with gtk
-#  qt.enable = true;
-#  qt.platformTheme = "gnome";
-#  #qt.style = "adwaita-dark"; 
-#  qt.style = "kvantum"; 
+  #  qt.enable = true;
+  #  qt.platformTheme = "gnome";
+  #  #qt.style = "adwaita-dark";
+  #  qt.style = "kvantum";
 
-#qt = {
-#  enable = true;
-#
-#  platformTheme = "qt5ct";
-#  #platformTheme = "gnome";
-#  #platformTheme = "gtk2";
-#
-#  style = "kvantum";
-#  #style = "adwaita-dark";
-#};
+  #qt = {
+  #  enable = true;
+  #
+  #  platformTheme = "qt5ct";
+  #  #platformTheme = "gnome";
+  #  #platformTheme = "gtk2";
+  #
+  #  style = "kvantum";
+  #  #style = "adwaita-dark";
+  #};
 
   # # Enable CUPS to print documents.
   # services.printing.enable = true;
 
-#   # Enable sound with pipewire.
-#   sound.enable = true;
-#   security.rtkit.enable = true;
+  #   # Enable sound with pipewire.
+  #   sound.enable = true;
+  security.rtkit.enable = true;
 
-#   hardware.pulseaudio.enable = false;
+  #   hardware.pulseaudio.enable = false;
 
-#   services.pipewire = {
-#     enable = true;
-#     alsa.enable = true;
-#     alsa.support32Bit = true;
-#     pulse.enable = true;
-#     jack.enable = true;
+  #   services.pipewire = {
+  #     enable = true;
+  #     alsa.enable = true;
+  #     alsa.support32Bit = true;
+  #     pulse.enable = true;
+  #     jack.enable = true;
 
-#     # use the example session manager (no others are packaged yet so this is enabled by default,
-#     # no need to redefine it in your config for now)
-#     #media-session.enable = true;
-#   };
+  #     # use the example session manager (no others are packaged yet so this is enabled by default,
+  #     # no need to redefine it in your config for now)
+  #     #media-session.enable = true;
+  #   };
 
-#   # Enable touchpad support (enabled default in most desktopManager).
-#   # services.xserver.libinput.enable = true;
+  #   # Enable touchpad support (enabled default in most desktopManager).
+  #   # services.xserver.libinput.enable = true;
 
-#   #services.clickhouse.enable = true;
+  #   #services.clickhouse.enable = true;
 
-#   services.mullvad-vpn.enable = true;
+  #   services.mullvad-vpn.enable = true;
 
-#   # udev
-#   services.udev.extraRules = ''
-# # solokey  
-# SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d6b", ATTRS{idProduct}=="0002", TAG+="uaccess", MODE="0666", SYMLINK+="solo"
-# # cidoo
-# SUBSYSTEMS=="usb", ATTRS{idVendor}=="1ea7", ATTRS{idProduct}=="7777", TAG+="uaccess", MODE="0666", SYMLINK+="cidoo"
-#   '';
+  #   # udev
+  #   services.udev.extraRules = ''
+  # # solokey
+  # SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d6b", ATTRS{idProduct}=="0002", TAG+="uaccess", MODE="0666", SYMLINK+="solo"
+  # # cidoo
+  # SUBSYSTEMS=="usb", ATTRS{idVendor}=="1ea7", ATTRS{idProduct}=="7777", TAG+="uaccess", MODE="0666", SYMLINK+="cidoo"
+  #   '';
 
   # security.sudo.enable = true;
   # security.sudo.wheelNeedsPassword = false;
@@ -243,15 +246,13 @@
   # # Print the URL instead on servers
   # environment.variables.BROWSER = "echo";
 
-#  environment.systemPackages = [
-#  ];
+  #  environment.systemPackages = [
+  #  ];
 
- environment.etc."current-system-packages".text =
-  let
+  environment.etc."current-system-packages".text = let
     packages = builtins.map (p: "${p.name}") config.environment.systemPackages;
     sortedUnique = builtins.sort builtins.lessThan (lib.unique packages);
     formatted = builtins.concatStringsSep "\n" sortedUnique;
-
   in
     formatted;
 
@@ -265,24 +266,24 @@
   #   qemu.ovmf.enable = true;
   # };
 
-#   programs.bcc.enable = true;
-#   programs.sysdig.enable = true;
-#   programs.dconf.enable = true;
-#   programs.direnv.enable = true;
-#   programs.mtr.enable = true;
-#   programs.neovim = {
-#     enable = true;
-#     defaultEditor = true;
-#     viAlias = true;
-#     vimAlias = true;
-# #    plugins = [
-# #      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-# #    ];
-#   };
-#   programs.gnupg.agent = {
-#     enable = true;
-#     enableSSHSupport = true;
-#   };
+  #   programs.bcc.enable = true;
+  #   programs.sysdig.enable = true;
+  #   programs.dconf.enable = true;
+  #   programs.direnv.enable = true;
+  #   programs.mtr.enable = true;
+  #   programs.neovim = {
+  #     enable = true;
+  #     defaultEditor = true;
+  #     viAlias = true;
+  #     vimAlias = true;
+  # #    plugins = [
+  # #      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+  # #    ];
+  #   };
+  #   programs.gnupg.agent = {
+  #     enable = true;
+  #     enableSSHSupport = true;
+  #   };
 
   # # List services that you want to enable:
   # # Enable the OpenSSH daemon.
@@ -317,28 +318,28 @@
   # security.polkit.enable = true;
   # programs.fish.enable = true;
 
-#   # firefox
-#   environment.sessionVariables = {
-#      MOZ_ENABLE_WAYLAND = "1";
-#      MOZ_DBUS_REMOTE = "1";
-#  #    XDG_CURRENT_DESKTOP = "sway"; 
-#   };
+  #   # firefox
+  #   environment.sessionVariables = {
+  #      MOZ_ENABLE_WAYLAND = "1";
+  #      MOZ_DBUS_REMOTE = "1";
+  #  #    XDG_CURRENT_DESKTOP = "sway";
+  #   };
 
-#   # fonts
-#   fonts = {
-#     enableDefaultFonts = true;
-#     fonts = with pkgs; [ 
-#       nerdfonts
-#     ];
+  #   # fonts
+  #   fonts = {
+  #     enableDefaultFonts = true;
+  #     fonts = with pkgs; [
+  #       nerdfonts
+  #     ];
 
-#     fontconfig = {
-#       defaultFonts = {
-# #        serif = [ "NotoSerif Nerd Font Propo" ];
-# #        sansSerif = [ "FiraCode Nerd Font Propo" ];
-#         monospace = [ "FiraCode Nerd Font Mono" ];
-#       };
-#     };
-#   };
+  #     fontconfig = {
+  #       defaultFonts = {
+  # #        serif = [ "NotoSerif Nerd Font Propo" ];
+  # #        sansSerif = [ "FiraCode Nerd Font Propo" ];
+  #         monospace = [ "FiraCode Nerd Font Mono" ];
+  #       };
+  #     };
+  #   };
 
   # # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ 80 8080 8888 ];
