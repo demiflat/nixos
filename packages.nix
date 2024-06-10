@@ -167,6 +167,7 @@
     lldb
     llvmPackages.mlir
     logitech-udev-rules
+    losslesscut-bin
     lsd
     lsix
     ltunify
