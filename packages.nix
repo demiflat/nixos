@@ -350,6 +350,7 @@
     strace
     sudo-font
     sway
+    swayidle
     swaylock-effects
     taskwarrior
     taskwarrior-tui
