@@ -170,6 +170,7 @@
     losslesscut-bin
     lsd
     lsix
+    lsof
     ltunify
     luajit
     lua51Packages.telescope-nvim
