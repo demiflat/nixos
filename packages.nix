@@ -17,6 +17,7 @@
     bat
     bc
     blueberry
+    bluetuith
     bluez-tools
     brasero
     btop
