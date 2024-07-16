@@ -123,23 +123,23 @@
 
   #services.netbird.enable = true;
 
-  services.jupyter = {
-    enable = true;
-    user = "jupyter";
-    group = "jupyter";
-    password = "'sha1:1b961dc713fb:88483270a63e57d18d43cf337e629539de1436ba'";
-    port = 9999;
-  };
+  #services.jupyter = {
+  #  enable = true;
+  #  user = "jupyter";
+  #  group = "jupyter";
+  #  password = "'sha1:1b961dc713fb:88483270a63e57d18d43cf337e629539de1436ba'";
+  #  port = 9999;
+  #};
 
-  services.jupyterhub.enable = true;
-  services.ollama = {
-    enable = true;
-    acceleration = "rocm";
-    #    environmentVariables = {
-    #      HCC_AMDGPU_TARGET = "gfx900";
-    #      HSA_OVERRIDE_GFX_VERSION = "9.0.0";
-    #    };
-  };
+  #  services.jupyterhub.enable = true;
+  #  services.ollama = {
+  #    enable = true;
+  #    acceleration = "rocm";
+  #    #    environmentVariables = {
+  #    #      HCC_AMDGPU_TARGET = "gfx900";
+  #    #      HSA_OVERRIDE_GFX_VERSION = "9.0.0";
+  #    #    };
+  #  };
 
   #  services.tabby.enable = true;
   #  services.tabby.acceleration = "rocm";
