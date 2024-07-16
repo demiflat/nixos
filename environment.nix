@@ -1,6 +1,9 @@
-{ config, lib, modulesPath, ... }:
 {
-
+  config,
+  lib,
+  modulesPath,
+  ...
+}: {
   environment.etc = {
     "xdg/gtk-2.0/gtkrc".text = "gtk-error-bell=0";
     "xdg/gtk-3.0/settings.ini".text = ''
@@ -16,15 +19,14 @@
   };
 
   # env
-#  environment.variables = { 
-  environment.sessionVariables = { 
-     
+  #  environment.variables = {
+  environment.sessionVariables = {
     # Print the URL instead on servers
     #BROWSER = "echo";
 
     #HSA_ENABLE_SDMA="0";
     #HSA_OVERRIDE_GFX_VERSION = "10.3.0";
-    #HSA_OVERRIDE_GFX_VERSION = "9.0.0";
+    HSA_OVERRIDE_GFX_VERSION = "9.0.0";
     #DEVICE = "cuda";
     #PYTORCH_ROCM_ARCH = "gfx90c";
     #PYTORCH_ROCM_ARCH = "gfx900";
@@ -54,5 +56,4 @@
     OZONE_PLATFORM = "wayland";
     NIXOS_OZONE_WL = "1";
   };
-
 }
