@@ -1,11 +1,10 @@
-
-{ config, pkgs, ... }:
-
 {
-
+  config,
+  pkgs,
+  ...
+}: {
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users = {
-
     dak = {
       isNormalUser = true;
       description = "dak";
@@ -34,20 +33,18 @@
       ];
     };
 
-#    jupyter = {
-#       isNormalUser = true;
-##      isNormalUser = true;
-#      description = "jupyter";
-#      extraGroups = [
-#       "jupyter"
-#      ];
-#      initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
-#    };
-
+    #    jupyter = {
+    #       isNormalUser = true;
+    ##      isNormalUser = true;
+    #      description = "jupyter";
+    #      extraGroups = [
+    #       "jupyter"
+    #      ];
+    #      initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
+    #    };
   };
 
-  users.users.jupyter.group = "jupyter";
-  users.users.jupyter.initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
-  users.groups.jupyter = {};
-
+  #  users.users.jupyter.group = "jupyter";
+  #  users.users.jupyter.initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
+  #  users.groups.jupyter = {};
 }
