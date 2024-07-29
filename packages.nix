@@ -22,6 +22,7 @@
     brasero
     btop
     buildah
+    can-utils
     cargo
     cfssl
     chafa
