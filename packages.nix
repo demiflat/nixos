@@ -242,6 +242,10 @@
     #python3Full
     python311Packages.pip
 
+    # klipper graphs
+    python311Packages.matplotlib
+    python311Packages.numpy
+
     # python311Full
     # python311Packages.setuptools
     # python311Packages.pip
