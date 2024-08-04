@@ -138,6 +138,7 @@
     environmentVariables = {
       HCC_AMDGPU_TARGET = "gfx900";
       HSA_OVERRIDE_GFX_VERSION = "9.0.0";
+      HSA_ENABLE_SDMA = "0";
     };
   };
 
