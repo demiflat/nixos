@@ -56,6 +56,7 @@
     dive
     doublecmd
     duf
+    dust
     easyeffects
     gnome.gnome-themes-extra
     gnomeExtensions.easyeffects-preset-selector
@@ -76,6 +77,7 @@
     font-awesome
     foot
     fortune
+    fx
     fzf
     gbar
     gdu
@@ -231,6 +233,7 @@
     #    popcorntime
     poppler_utils
     profont
+    procs
     pstree
     pulseaudio
     pulsemixer
@@ -287,6 +290,7 @@
 
     pywalfox-native
     #streamlit
+    sd
     solo2-cli
     taglib
     openssl
