@@ -132,16 +132,16 @@
   #};
 
   #  services.jupyterhub.enable = true;
-  services.ollama = {
-    enable = true;
-    acceleration = "rocm";
-    environmentVariables = {
-      HCC_AMDGPU_TARGET = "gfx900";
-      HSA_OVERRIDE_GFX_VERSION = "9.0.0";
-      HSA_ENABLE_SDMA = "0";
-    };
-    rocmOverrideGfx = "9.0.0";
-  };
+  # services.ollama = {
+  #   enable = true;
+  #   acceleration = "rocm";
+  #   environmentVariables = {
+  #     HCC_AMDGPU_TARGET = "gfx900";
+  #     HSA_OVERRIDE_GFX_VERSION = "9.0.0";
+  #     HSA_ENABLE_SDMA = "0";
+  #   };
+  #   rocmOverrideGfx = "9.0.0";
+  # };
 
   #  services.tabby.enable = true;
   #  services.tabby.acceleration = "rocm";
