@@ -159,7 +159,7 @@
     lego
     libfido2
     libnotify
-    librewolf-wayland
+    #librewolf-wayland
     libreoffice-fresh
     libsForQt5.qt5ct
     libsForQt5.qtstyleplugin-kvantum
