@@ -27,7 +27,7 @@
     cfssl
     chafa
     chromium
-    cinnamon.nemo-with-extensions
+    nemo-with-extensions
     circt
     clblast
     clinfo
@@ -58,7 +58,7 @@
     duf
     dust
     easyeffects
-    gnome.gnome-themes-extra
+    gnome-themes-extra
     gnomeExtensions.easyeffects-preset-selector
     envsubst
     eternal-terminal
@@ -89,8 +89,8 @@
     git-repo-updater
     glow
     gedit
-    gnome.gnome-tweaks
-    gnome.simple-scan
+    gnome-tweaks
+    simple-scan
     gnumeric
     gptfdisk
     #go
@@ -363,7 +363,7 @@
     sway
     swayidle
     swaylock-effects
-    taskwarrior
+    taskwarrior3
     taskwarrior-tui
     teensy-udev-rules
     telescope
