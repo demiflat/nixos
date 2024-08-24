@@ -60,7 +60,7 @@
   programs.system-config-printer.enable = true;
 
   # Enable sound with pipewire.
-  sound.enable = true;
+  #sound.enable = true;
   security.rtkit.enable = true;
 
   hardware.pulseaudio.enable = false;
