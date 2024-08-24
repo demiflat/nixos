@@ -56,9 +56,8 @@
   # specific hardware
   hardware.cpu.amd.updateMicrocode = true;
   hardware.enableRedistributableFirmware = true;
-  hardware.opengl.enable = true;
-  #hardware.opengl.driSupport = true;
-  hardware.opengl.extraPackages = with pkgs; [
+  hardware.graphics.enable = true;
+  hardware.graphics.extraPackages = with pkgs; [
     amdvlk
     rocmPackages.clr
     rocm-opencl-icd
