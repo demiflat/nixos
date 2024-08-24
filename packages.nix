@@ -374,8 +374,8 @@
     tio
     tpmmanager
     tpm2-tools
-    transmission
-    transmission-gtk
+    transmission_4
+    transmission_4-gtk
     tree
     tree-sitter
     tree-sitter-grammars.tree-sitter-bash
