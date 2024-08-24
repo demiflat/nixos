@@ -242,12 +242,12 @@
     pw-volume
 
     python3
-    #python3Full
-    python311Packages.pip
+    python3Full
+    #python311Packages.pip
 
     # klipper graphs
-    python311Packages.matplotlib
-    python311Packages.numpy
+    #python311Packages.matplotlib
+    #python311Packages.numpy
 
     # python311Full
     # python311Packages.setuptools
