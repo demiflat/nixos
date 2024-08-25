@@ -1,11 +1,13 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
     freecad
-    cura
+    #cura
     orca-slicer
-    prusa-slicer
-    super-slicer-latest
+    #prusa-slicer
+    #super-slicer-latest
   ];
 }
