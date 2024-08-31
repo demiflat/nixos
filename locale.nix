@@ -15,8 +15,7 @@
     #enabled = "ibus";
     enable = true;
     ibus.engines = with pkgs.ibus-engines; [
-      libpinyin
-      rime
+      pinyin
     ];
   };
 
