@@ -1,14 +1,19 @@
-{ config, lib, pkgs, modulesPath, ... }:
 {
-
-    # Set your time zone.
+  config,
+  lib,
+  pkgs,
+  modulesPath,
+  ...
+}: {
+  # Set your time zone.
   time.timeZone = "America/Los_Angeles";
-  
+
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.inputMethod = {
-    enabled = "ibus";
+    #enabled = "ibus";
+    enable = true;
     ibus.engines = with pkgs.ibus-engines; [
       libpinyin
       rime
@@ -30,17 +35,16 @@
   # fonts
   fonts = {
     enableDefaultPackages = true;
-    packages = with pkgs; [ 
+    packages = with pkgs; [
       nerdfonts
     ];
 
     fontconfig = {
       defaultFonts = {
-#        serif = [ "NotoSerif Nerd Font Propo" ];
-#        sansSerif = [ "FiraCode Nerd Font Propo" ];
-        monospace = [ "FiraCode Nerd Font Mono" ];
+        #        serif = [ "NotoSerif Nerd Font Propo" ];
+        #        sansSerif = [ "FiraCode Nerd Font Propo" ];
+        monospace = ["FiraCode Nerd Font Mono"];
       };
     };
-  };  
-
+  };
 }
