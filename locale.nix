@@ -12,8 +12,8 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.inputMethod = {
-    #enabled = "ibus";
-    enable = true;
+    enabled = "ibus";
+    #enable = true;
     ibus.engines = with pkgs.ibus-engines; [
       pinyin
     ];
