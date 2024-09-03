@@ -167,7 +167,7 @@
     libvirt
     light
     links2
-    litestream
+    #    litestream
     lix
     lldb
     llvmPackages.mlir
