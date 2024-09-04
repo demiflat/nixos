@@ -122,7 +122,7 @@
     hypr
     hyprcursor
     hyprland
-    hyprpaper
+    #    hyprpaper
     hyprland-protocols
     hyprpicker
     hyprshade
