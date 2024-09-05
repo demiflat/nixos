@@ -140,6 +140,7 @@
     iperf3
     iproute2
     jc
+    jeezyvim
     jq
     jql
     # jupyter
