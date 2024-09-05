@@ -23,7 +23,7 @@
       #      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
       #    ];
     };
-    nixvim.enable = true;
+    #    nixvim.enable = true;
     ssh.startAgent = true;
     gnupg.agent = {
       enable = true;
