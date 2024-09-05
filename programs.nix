@@ -14,16 +14,16 @@
     wireshark.enable = true;
     iotop.enable = true;
     iftop.enable = true;
+    #nixvim.enable = true;
     neovim = {
       enable = true;
       defaultEditor = true;
       viAlias = true;
       vimAlias = true;
-      #    plugins = [
-      #      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-      #    ];
+      #      #    plugins = [
+      #      #      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+      #      #    ];
     };
-    nixvim.enable = true;
     ssh.startAgent = true;
     gnupg.agent = {
       enable = true;
