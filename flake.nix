@@ -4,18 +4,21 @@
     nixos-unstable-small.url = "github:NixOS/nixpkgs/nixos-unstable-small";
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    jeezyvim.url = "github:LGUG2Z/JeezyVim";
     #home-manager.url = "github:nix-community/home-manager";
     #home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = inputs: let
     system = "x86_64-linux";
     unstable-small-pkgs = import inputs.nixos-unstable-small {inherit system;};
-    xdphOverlay = final: prev: {
+    jeezyvim-pkgs = import inputs.jeezyvim {inherit system;};
+    overlays = final: prev: {
       inherit (unstable-small-pkgs) xdg-desktop-portal-hyprland;
+      inherit (jeezyvim-pkgs) jeezyvim;
     };
     pkgs = import inputs.nixpkgs {
       inherit system;
-      overlays = [xdphOverlay];
+      overlays = [overlays];
       config = {
         permittedInsecurePackages = [];
         allowUnfree = true;
