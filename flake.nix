@@ -11,14 +11,15 @@
   outputs = inputs: let
     system = "x86_64-linux";
     unstable-small-pkgs = import inputs.nixos-unstable-small {inherit system;};
-    jeezyvim-pkgs = import inputs.jeezyvim {inherit system;};
-    overlays = final: prev: {
+    xdphOverlay = final: prev: {
       inherit (unstable-small-pkgs) xdg-desktop-portal-hyprland;
-      inherit (jeezyvim-pkgs) jeezyvim;
     };
     pkgs = import inputs.nixpkgs {
       inherit system;
-      overlays = [overlays];
+      overlays = [
+        xdphOverlay
+        inputs.jeezyvim.overlays.default
+      ];
       config = {
         permittedInsecurePackages = [];
         allowUnfree = true;
