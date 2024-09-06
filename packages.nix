@@ -122,7 +122,7 @@
     hypr
     hyprcursor
     hyprland
-    #    hyprpaper
+    hyprpaper
     hyprland-protocols
     hyprpicker
     hyprshade
@@ -364,7 +364,7 @@
     sudo-font
     sway
     swayidle
-    #swaylock-effects
+    swaylock-effects
     swaylock
     taskwarrior3
     taskwarrior-tui
