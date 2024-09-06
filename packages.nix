@@ -77,6 +77,7 @@
     font-awesome
     foot
     fortune
+    freetube
     fx
     fzf
     gbar
