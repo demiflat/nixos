@@ -2,9 +2,9 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     #nixos-unstable-small.url = "github:NixOS/nixpkgs/nixos-unstable-small";
-    #nixvim.url = "github:nix-community/nixvim";
-    #nixvim.inputs.nixpkgs.follows = "nixpkgs";
-    jeezyvim.url = "github:LGUG2Z/JeezyVim";
+    nixvim.url = "github:nix-community/nixvim";
+    nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    #jeezyvim.url = "github:LGUG2Z/JeezyVim";
     #home-manager.url = "github:nix-community/home-manager";
     #home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -33,6 +33,7 @@
         specialArgs = {inherit inputs pkgs;};
         modules = [
           ./configuration.nix
+          inputs.nixvim.nixosModules.nixvim
         ];
       };
     };
