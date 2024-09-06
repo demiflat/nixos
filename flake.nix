@@ -18,7 +18,7 @@
       inherit system;
       overlays = [
         #        xdphOverlay
-        inputs.jeezyvim.overlays.default
+        #        inputs.jeezyvim.overlays.default
       ];
       config = {
         permittedInsecurePackages = [];
