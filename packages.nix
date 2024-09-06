@@ -291,6 +291,7 @@
     # python310Packages.notebook
     # python310Packages.ipykernel
 
+    pywal
     pywalfox-native
     #streamlit
     sd
