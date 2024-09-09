@@ -85,6 +85,7 @@
     gimp
     gitbatch
     gitFull
+    git-lfs
     git-repo
     gitAndTools.git-extras
     git-repo-updater
