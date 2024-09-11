@@ -7,6 +7,7 @@
     abiword
     asciinema
     alacritty
+    alsa-utils
     amd-blis
     amdctl
     amdgpu_top
