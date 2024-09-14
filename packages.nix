@@ -125,6 +125,7 @@
     hypr
     hyprcursor
     hyprland
+    hyprlock
     hyprpaper
     hyprland-protocols
     hyprpicker
