@@ -45,7 +45,7 @@
 
   systemd = {
     network = {
-      network.enable = true;
+      enable = true;
       links."10-wired" = {
         matchConfig.PermanentMACAddress = "3c:7c:3f:d9:a1:0a";
         linkConfig.Name = "wired";
