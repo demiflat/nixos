@@ -300,6 +300,7 @@
     sd
     solo2-cli
     taglib
+    termdown
     openssl
     libedit
     libxml2
