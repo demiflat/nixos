@@ -217,6 +217,7 @@
     #    nrfutil
     ntfs3g
     nvtopPackages.amd
+    nwg-look
     ollama
     openocd
     openssl
