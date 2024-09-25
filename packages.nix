@@ -124,6 +124,7 @@
     # hyprland
     hypr
     hyprcursor
+    hypridle
     hyprland
     hyprlock
     hyprpaper
