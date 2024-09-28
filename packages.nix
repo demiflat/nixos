@@ -305,7 +305,7 @@
     taglib
     termdown
     openssl
-    opentoonz
+    #    opentoonz
     libedit
     libxml2
     libxslt
