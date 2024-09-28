@@ -301,6 +301,7 @@
     #streamlit
     sd
     solo2-cli
+    synfigstudio
     taglib
     termdown
     openssl
