@@ -312,6 +312,7 @@
     libzip
     zlib
 
+    paperless-ngx
     pywal
     qemu
     qmk-udev-rules
