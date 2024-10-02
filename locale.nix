@@ -42,7 +42,7 @@
     fontconfig = {
       defaultFonts = {
         serif = ["NotoSerif Nerd Font Propo"];
-        sansSerif = ["FiraCode Nerd Font Propo"];
+        sansSerif = ["NotoSans Nerd Font Propo"];
         monospace = ["FiraCode Nerd Font Mono"];
       };
     };
