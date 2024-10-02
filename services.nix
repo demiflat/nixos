@@ -31,16 +31,15 @@
 
   services.fwupd.enable = true;
 
-  # Enable the gnome windowing system.
+  services.displayManager.defaultSession = "hyprland";
   services.xserver = {
     enable = true;
     xkb.layout = "us";
     xkb.variant = "";
     videoDrivers = ["amdgpu"];
+    desktopManager.gnome.enable = true;
     displayManager.gdm.enable = true;
     displayManager.gdm.wayland = true;
-    displayManager.defaultSession = "hyprland";
-    desktopManager.gnome.enable = true;
     #    displayManager.sddm.enable = true;
     #    displayManager.sddm.wayland.enable = true;
     #    desktopManager.plasma5.enable = true;
