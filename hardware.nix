@@ -54,16 +54,22 @@
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
   # specific hardware
-  hardware.cpu.amd.updateMicrocode = true;
-  hardware.enableRedistributableFirmware = true;
-  hardware.graphics.enable = true;
-  hardware.graphics.extraPackages = with pkgs; [
-    amdvlk
-    rocmPackages.clr
-    rocm-opencl-icd
-    rocm-opencl-runtime
-  ];
-  hardware.keyboard.qmk.enable = true;
-  hardware.sane.enable = true;
-  hardware.pulseaudio.enable = false;
+  hardware = {
+    bluetooth = {
+      enable = true;
+      powerOnBoot = true;
+    };
+    cpu.amd.updateMicrocode = true;
+    enableRedistributableFirmware = true;
+    graphics.enable = true;
+    graphics.extraPackages = with pkgs; [
+      amdvlk
+      rocmPackages.clr
+      rocm-opencl-icd
+      rocm-opencl-runtime
+    ];
+    keyboard.qmk.enable = true;
+    sane.enable = true;
+    pulseaudio.enable = false;
+  };
 }

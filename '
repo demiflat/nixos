@@ -98,16 +98,16 @@
   };
 
   # Make more wayland things like screensharing work.
-  #  xdg.portal = {
-  #    enable = true;
-  #    #    #wlr.enable = true;
-  #    xdgOpenUsePortal = true;
-  #    extraPortals = [
-  #      pkgs.xdg-desktop-portal-hyprland
-  #      pkgs.xdg-desktop-portal-gtk
-  #      pkgs.xdg-desktop-portal-gnome
-  #    ];
-  #  };
+  xdg.portal = {
+    enable = true;
+    #    #wlr.enable = true;
+    xdgOpenUsePortal = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-hyprland
+      pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal-gnome
+    ];
+  };
 
   # # Bootloader
   # boot.kernelParams = [ "mitigations=off" ];
