@@ -39,8 +39,8 @@
     videoDrivers = ["amdgpu"];
     displayManager.gdm.enable = true;
     displayManager.gdm.wayland = true;
+    displayManager.defaultSession = "hyprland";
     desktopManager.gnome.enable = true;
-    xserver.displayManager.defaultSession = "hyprland";
     #    displayManager.sddm.enable = true;
     #    displayManager.sddm.wayland.enable = true;
     #    desktopManager.plasma5.enable = true;
