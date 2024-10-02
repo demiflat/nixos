@@ -40,11 +40,14 @@
     displayManager.gdm.enable = true;
     displayManager.gdm.wayland = true;
     desktopManager.gnome.enable = true;
+    xserver.displayManager.defaultSession = "hyprland";
     #    displayManager.sddm.enable = true;
     #    displayManager.sddm.wayland.enable = true;
     #    desktopManager.plasma5.enable = true;
     #    desktopManager.plasma6.enable = true;
   };
+
+  services.hypridle.enable = true;
 
   # gnome-keyring for the secrets management service. Also adds its
   # password prompter GUIs to the session bus's service list, so it
