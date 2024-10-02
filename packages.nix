@@ -132,7 +132,7 @@
     hyprpicker
     hyprshade
     hyprshot
-    xdg-desktop-portal-hyprland
+    # xdg-desktop-portal-hyprland
     # xdg-desktop-portal-gtk
     idevicerestore
     usbmuxd
