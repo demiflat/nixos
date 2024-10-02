@@ -44,8 +44,12 @@
     mosh.enable = true;
 
     #  sway.enable = true;
-    hyprland.enable = true;
-    hyprland.xwayland.enable = true;
+    hyprland = {
+      enable = true;
+      portalPackage = pkgs.xdg-desktop-portal-hyprland;
+      xwayland.enable = true;
+    };
+    hyprlock.enable = true;
     waybar.enable = true;
     fish.enable = true;
 
