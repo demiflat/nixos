@@ -47,6 +47,7 @@
   };
 
   services.hypridle.enable = true;
+  services.blueman.enable = true;
 
   # gnome-keyring for the secrets management service. Also adds its
   # password prompter GUIs to the session bus's service list, so it
