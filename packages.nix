@@ -447,6 +447,7 @@
     wl-clipboard
     wl-clip-persist
     wl-screenrec
+    wlogout
     wlsunset
     wofi
     wpgtk
