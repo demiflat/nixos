@@ -375,13 +375,15 @@
 
   system.autoUpgrade = {
     enable = true;
+    operation = "boot";
     flake = inputs.self.outPath;
     flags = [
       "--update-input"
       "nixpkgs"
       "-L" # print build logs
+      "--commit-lock-file"
     ];
-    dates = "23:00";
+    dates = "23:05";
     #randomizedDelaySec = "45min";
   };
 
