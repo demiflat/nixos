@@ -373,6 +373,18 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.05"; # Did you read the comment?
 
+  system.autoUpgrade = {
+    enable = true;
+    flake = inputs.self.outPath;
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "-L" # print build logs
+    ];
+    dates = "23:00";
+    #randomizedDelaySec = "45min";
+  };
+
   # # Avoid TOFU MITM with github by providing their public key here.
   # programs.ssh.knownHosts = {
   #   "github.com".hostNames = [ "github.com" ];
