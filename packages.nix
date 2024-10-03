@@ -57,6 +57,7 @@
     dive
     doublecmd
     duf
+    dunst
     dust
     easyeffects
     gnome-themes-extra
