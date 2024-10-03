@@ -48,7 +48,7 @@
 
   services.hypridle.enable = true;
   services.blueman.enable = true;
-  services.geoclue2.enable = true;
+  #services.geoclue2.enable = true;
   services.automatic-timezoned.enable = true;
 
   # gnome-keyring for the secrets management service. Also adds its
