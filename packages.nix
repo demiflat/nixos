@@ -302,6 +302,7 @@
     #streamlit
     sd
     solo2-cli
+    starship
     synfigstudio
     taglib
     termdown
