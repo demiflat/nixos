@@ -446,6 +446,7 @@
     wireguard-tools
     wl-clipboard
     wl-clip-persist
+    wl-screenrec
     wlsunset
     wofi
     wpgtk
