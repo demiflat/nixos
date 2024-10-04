@@ -46,7 +46,7 @@
     #  sway.enable = true;
     hyprland = {
       enable = true;
-      portalPackage = pkgs.xdg-desktop-portal-hyprland;
+      # portalPackage = pkgs.xdg-desktop-portal-hyprland;
       xwayland.enable = true;
     };
     hyprlock.enable = true;

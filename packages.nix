@@ -142,6 +142,7 @@
     libimobiledevice
     imagemagick
     imhex
+    imv
     #    input-remapper
     iotop
     iperf3
