@@ -316,6 +316,7 @@
     zlib
 
     paperless-ngx
+    playerctl
     pywal
     qemu
     qmk-udev-rules
