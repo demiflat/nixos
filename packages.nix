@@ -17,6 +17,7 @@
     b612
     bat
     bc
+    bottom
     blueberry
     bluetuith
     bluez-tools
