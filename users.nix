@@ -11,17 +11,18 @@
       extraGroups = [
         "audio"
         "dialout"
-        "podman"
-        "video"
-        "wireshark"
-        "libvirtd"
-        "networkmanager"
-        "wheel"
-        "scanner"
-        "lp"
-        "tss"
-        "render"
+        "input"
         # "jupyter"
+        "libvirtd"
+        "lp"
+        "networkmanager"
+        "podman"
+        "render"
+        "scanner"
+        "tss"
+        "video"
+        "wheel"
+        "wireshark"
       ];
       # mkpasswd
       initialHashedPassword = "$y$j9T$clx0E6zSB7Hy.dfMmVoWR/$ccFvlRUaWJj5.1tpqxeyaIJEiNBSSUfoidWryKksJPA";
