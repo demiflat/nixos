@@ -88,6 +88,20 @@
     #package = pkgs.nixFlakes;
   };
 
+  # system.autoUpgrade = {
+  #   enable = true;
+  #   operation = "boot";
+  #   flake = inputs.self.outPath;
+  #   flags = [
+  #     "--update-input"
+  #     "nixpkgs"
+  #     "-L" # print build logs
+  #     "--commit-lock-file"
+  #   ];
+  #   dates = "13:05";
+  #   #randomizedDelaySec = "45min";
+  # };  
+
   # For the hacking.
   documentation = {
     man.enable = true;
@@ -372,20 +386,6 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.05"; # Did you read the comment?
-
-  system.autoUpgrade = {
-    enable = true;
-    operation = "boot";
-    flake = inputs.self.outPath;
-    flags = [
-      "--update-input"
-      "nixpkgs"
-      "-L" # print build logs
-      "--commit-lock-file"
-    ];
-    dates = "23:05";
-    #randomizedDelaySec = "45min";
-  };
 
   # # Avoid TOFU MITM with github by providing their public key here.
   # programs.ssh.knownHosts = {
