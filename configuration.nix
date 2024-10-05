@@ -30,6 +30,7 @@
     # ./rocm.nix
     #./jupiter.nix
     #./llama.nix
+    #./auto-upgrade.nix
   ];
 
   nix = {
@@ -87,20 +88,6 @@
     #daemonIOSchedPriority = 7;
     #package = pkgs.nixFlakes;
   };
-
-  # system.autoUpgrade = {
-  #   enable = true;
-  #   operation = "boot";
-  #   flake = inputs.self.outPath;
-  #   flags = [
-  #     "--update-input"
-  #     "nixpkgs"
-  #     "-L" # print build logs
-  #     "--commit-lock-file"
-  #   ];
-  #   dates = "13:05";
-  #   #randomizedDelaySec = "45min";
-  # };  
 
   # For the hacking.
   documentation = {
