@@ -208,6 +208,7 @@
     nftables
     nginx
     nil
+    nixfmt-rfc-style
     nix-top
     nixos-option
     nmap
