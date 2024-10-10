@@ -19,7 +19,7 @@
       inherit system;
       overlays = [
         #        xdphOverlay
-        # inputs.nixvim.overlays.default
+        inputs.nixvim.overlays.default
       ];
       config = {
         permittedInsecurePackages = [];
