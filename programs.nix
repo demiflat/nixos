@@ -14,7 +14,7 @@
     wireshark.enable = true;
     iotop.enable = true;
     iftop.enable = true;
-    nixvim.enable = true;
+    # nixvim.enable = true;
     neovim = {
       enable = true;
       defaultEditor = true;
