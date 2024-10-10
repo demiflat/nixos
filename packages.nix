@@ -6,7 +6,6 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    inputs.nixvim.packages.${system}.default
     abiword
     asciinema
     alacritty

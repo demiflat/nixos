@@ -11,15 +11,12 @@
   };
   outputs = inputs: let
     system = "x86_64-linux";
-    #unstable-small-pkgs = import inputs.nixos-unstable-small {inherit system;};
-    #xdphOverlay = final: prev: {
-    #  inherit (unstable-small-pkgs) xdg-desktop-portal-hyprland;
-    #};
     pkgs = import inputs.nixpkgs {
       inherit system;
       overlays = [
-        #        xdphOverlay
-        inputs.nixvim.overlays.default
+        (final: prev: {
+          neovim = inputs.nixvim.packages.${pkgs.system}.default;
+        })
       ];
       config = {
         permittedInsecurePackages = [];
