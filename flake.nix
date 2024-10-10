@@ -4,7 +4,7 @@
     #nixos-unstable-small.url = "github:NixOS/nixpkgs/nixos-unstable-small";
     #nixvim.url = "github:nix-community/nixvim";
     #nixvim.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.nixvim.url = "github:mikaelfangel/nixvim-config"
+    inputs.nixvim.url = "github:mikaelfangel/nixvim-config";
     # jeezyvim.url = "github:LGUG2Z/JeezyVim";
     #home-manager.url = "github:nix-community/home-manager";
     #home-manager.inputs.nixpkgs.follows = "nixpkgs";
