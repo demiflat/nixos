@@ -305,6 +305,7 @@
     #streamlit
     sd
     solo2-cli
+    sommelier
     starship
     synfigstudio
     taglib
