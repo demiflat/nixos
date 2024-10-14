@@ -4,7 +4,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   environment.systemPackages = with pkgs; [
     abiword
     asciinema
@@ -31,7 +32,7 @@
     cfssl
     chafa
     chromium
-    nemo-with-extensions
+    ##nemo-with-extensions
     circt
     clblast
     clinfo
@@ -63,8 +64,8 @@
     dunst
     dust
     easyeffects
-    gnome-themes-extra
-    gnomeExtensions.easyeffects-preset-selector
+    # gnome-themes-extra
+    # gnomeExtensions.easyeffects-preset-selector
     envsubst
     eternal-terminal
     evtest
@@ -96,7 +97,7 @@
     git-repo-updater
     glow
     gedit
-    gnome-tweaks
+    # gnome-tweaks
     simple-scan
     gnumeric
     gptfdisk
