@@ -185,6 +185,7 @@
     llvmPackages.mlir
     logitech-udev-rules
     losslesscut-bin
+    loupe
     lsd
     lsix
     lsof
