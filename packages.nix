@@ -307,6 +307,7 @@
     pywalfox-native
     #streamlit
     sd
+    sioyek
     solo2-cli
     # sommelier
     starship
