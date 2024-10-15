@@ -465,6 +465,7 @@
     xkcd-font
     xkcdpass
     yarn
+    yazi
     zathura
     zellij
     zenmonitor
