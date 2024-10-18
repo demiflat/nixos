@@ -37,7 +37,7 @@
     clblast
     clinfo
     clipgrab
-    cliphist
+    #    cliphist
     clipman
     clolcat
     cmake
