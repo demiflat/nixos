@@ -14,7 +14,7 @@
     amd-blis
     amdctl
     amdgpu_top
-    amdvlk
+    #amdvlk
     appimage-run
     aria2
     b612
