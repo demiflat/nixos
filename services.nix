@@ -3,13 +3,17 @@
   lib,
   modulesPath,
   ...
-}: {
+}:
+{
   services.resolved = {
     enable = true;
     dnssec = "false";
     llmnr = "false";
     #domains = [ "demiflat.org" ];
-    fallbackDns = ["1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one"];
+    fallbackDns = [
+      "1.1.1.1#one.one.one.one"
+      "1.0.0.1#one.one.one.one"
+    ];
     #extraConfig = ''
     #  DNSOverTLS=yes
     #'';
@@ -36,7 +40,7 @@
     enable = true;
     xkb.layout = "us";
     xkb.variant = "";
-    videoDrivers = ["amdgpu"];
+    videoDrivers = [ "amdgpu" ];
     #desktopManager.gnome.enable = true;
     displayManager.gdm.enable = true;
     displayManager.gdm.wayland = true;
@@ -49,7 +53,7 @@
   services.hypridle.enable = true;
   services.blueman.enable = true;
   #services.geoclue2.enable = true;
-  services.automatic-timezoned.enable = true;
+  #  services.automatic-timezoned.enable = true;
 
   # gnome-keyring for the secrets management service. Also adds its
   # password prompter GUIs to the session bus's service list, so it
@@ -118,9 +122,12 @@
     # However those match blocks cannot be put after other `extraConfig` lines
     # with the current sshd config module, which is however something the sshd
     # config parser mandates.
-    authorizedKeysFiles =
-      lib.mkIf (!config.services.gitea.enable && !config.services.gitlab.enable && !config.services.gitolite.enable && !config.services.gerrit.enable)
-      (lib.mkForce ["/etc/ssh/authorized_keys.d/%u"]);
+    authorizedKeysFiles = lib.mkIf (
+      !config.services.gitea.enable
+      && !config.services.gitlab.enable
+      && !config.services.gitolite.enable
+      && !config.services.gerrit.enable
+    ) (lib.mkForce [ "/etc/ssh/authorized_keys.d/%u" ]);
 
     # unbind gnupg sockets if they exists
     extraConfig = "StreamLocalBindUnlink yes";
