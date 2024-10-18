@@ -204,7 +204,7 @@
     most
     mpv
     neovim
-    neovide
+    #    neovide
     nerdfonts
     # netbird-ui
     nettools
