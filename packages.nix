@@ -431,7 +431,7 @@
     unrar
     usbtop
     usbutils
-    ustreamer
+    #ustreamer
     utterly-nord-plasma
     vhs
     via
