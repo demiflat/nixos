@@ -429,6 +429,7 @@
     unzip
     unpaper
     unrar
+    up
     usbtop
     usbutils
     #ustreamer
