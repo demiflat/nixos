@@ -3,9 +3,20 @@
   lib,
   modulesPath,
   ...
-}: {
+}:
+{
   environment.etc = {
-    "xdg/gtk-2.0/gtkrc".text = "gtk-error-bell=0";
+    "xdg/gtk-2.0/gtkrc".text = ''
+      gtk-application-prefer-dark-theme=1
+      gtk-error-bell=false
+      gtk-theme-name = "Adwaita-dark"
+      gtk-icon-theme-name = "Adwaita"
+      gtk-button-images = 1
+      gtk-menu-images = 1
+      gtk-toolbar-style = GTK_TOOLBAR_BOTH_HORIZ
+      gtk-cursor-theme-name = Adwaita
+      gtk-cursor-theme-size = 24
+    '';
     "xdg/gtk-3.0/settings.ini".text = ''
       [Settings]
       gtk-error-bell=false
