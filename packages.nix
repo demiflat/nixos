@@ -166,6 +166,8 @@
     kubernetes
     kubetail
     kubevirt
+    lagrange
+    lagrange-tui
     lazygit
     ledger
     lego
