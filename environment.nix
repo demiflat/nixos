@@ -7,8 +7,8 @@
 {
   environment.etc = {
     "xdg/gtk-2.0/gtkrc".text = ''
-      gtk-application-prefer-dark-theme=1
-      gtk-error-bell=false
+      gtk-application-prefer-dark-theme = 1
+      gtk-error-bell = false
       gtk-theme-name = "Adwaita-dark"
       gtk-icon-theme-name = "Adwaita"
       gtk-button-images = 1
@@ -19,13 +19,13 @@
     '';
     "xdg/gtk-3.0/settings.ini".text = ''
       [Settings]
-      gtk-error-bell=false
+      gtk-error-bell = false
       gtk-application-prefer-dark-theme=1
     '';
     "xdg/gtk-4.0/settings.ini".text = ''
       [Settings]
-      gtk-error-bell=false
-      gtk-application-prefer-dark-theme=1
+      gtk-error-bell = false
+      gtk-application-prefer-dark-theme = 1
     '';
   };
 

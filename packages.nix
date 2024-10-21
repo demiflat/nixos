@@ -205,6 +205,7 @@
     minicom
     most
     mpv
+    nautilus
     neovim
     #    neovide
     nerdfonts
