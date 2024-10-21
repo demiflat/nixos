@@ -5,16 +5,17 @@
   nixpkgs,
   pkgs,
   ...
-}: {
+}:
+{
   qt = {
     enable = true;
 
     #platformTheme = "qt5ct";
-    #platformTheme = "gnome";
+    platformTheme = "gnome";
     #platformTheme = "gtk2";
 
     #style = "kvantum";
-    #style = "adwaita-dark";
+    style = "adwaita-dark";
   };
 
   #  nixpkgs.config.qt5 = {
