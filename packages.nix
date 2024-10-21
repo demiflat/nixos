@@ -155,6 +155,7 @@
     jq
     jql
     # jupyter
+    kdiff3
     killall
     kitty
     koreader
