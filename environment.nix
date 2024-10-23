@@ -10,12 +10,20 @@
       gtk-application-prefer-dark-theme = 1
       gtk-error-bell = false
       gtk-theme-name = "Adwaita-dark"
-      gtk-icon-theme-name = "Adwaita"
-      gtk-button-images = 1
-      gtk-menu-images = 1
-      gtk-toolbar-style = GTK_TOOLBAR_BOTH_HORIZ
-      gtk-cursor-theme-name = Adwaita
-      gtk-cursor-theme-size = 24
+      gtk-icon-theme-name="Adwaita"
+      gtk-font-name="Cantarell 11"
+      gtk-cursor-theme-name="dmz-black"
+      gtk-cursor-theme-size=24
+      gtk-toolbar-style=GTK_TOOLBAR_ICONS
+      gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+      gtk-button-images=0
+      gtk-menu-images=0
+      gtk-enable-event-sounds=0
+      gtk-enable-input-feedback-sounds=0
+      gtk-xft-antialias=1
+      gtk-xft-hinting=1
+      gtk-xft-hintstyle="hintfull"
+      gtk-xft-rgba="rgb"
     '';
     "xdg/gtk-3.0/settings.ini".text = ''
       [Settings]
@@ -34,7 +42,9 @@
   environment.sessionVariables = {
     # Print the URL instead on servers
     #BROWSER = "echo";
-
+    HYPRCURSOR_THEME = "dmz-black";
+    HYPRCURSOR_SIZE = "24";
+    XCURSOR_THEME = "dmz-black";
     XCURSOR_SIZE = "24";
 
     #HSA_ENABLE_SDMA="0";
