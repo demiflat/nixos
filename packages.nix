@@ -438,6 +438,7 @@
     usbutils
     #ustreamer
     utterly-nord-plasma
+    vanilla-dmz
     vhs
     via
     virt-manager
