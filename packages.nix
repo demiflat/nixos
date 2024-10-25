@@ -474,6 +474,7 @@
     yarn
     yazi
     zathura
+    zed-editor
     zellij
     zenmonitor
     zoxide
