@@ -3,7 +3,8 @@
   lib,
   modulesPath,
   ...
-}: {
+}:
+{
   # Enable networking
   #networking.networkmanager.enable = false;
   #networking.iproute2.enable = true;
@@ -15,11 +16,16 @@
     useNetworkd = true;
     hostName = "yoshi";
     domain = "demiflat.org";
-    fqdn = "yoshi.demiflat.org";
-    search = ["demiflat.org"];
+    #    fqdn = "yoshi.demiflat.org";
+    search = [ "demiflat.org" ];
 
     # Open ports in the firewall.
-    firewall.allowedTCPPorts = [80 443 8080 8888];
+    firewall.allowedTCPPorts = [
+      80
+      443
+      8080
+      8888
+    ];
     # networking.firewall.allowedUDPPorts = [ ... ];
     # Or disable the firewall altogether.
     firewall.enable = true;
@@ -118,7 +124,7 @@
           #   DHCPv6Client = "always";
           #   UseDNS = false;
           # };
-          domains = ["demiflat.org"];
+          domains = [ "demiflat.org" ];
           linkConfig.RequiredForOnline = "routable";
         };
         # "30-wifi" = {
