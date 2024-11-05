@@ -463,7 +463,7 @@
     wireguard-tools
     wl-clipboard
     wl-clip-persist
-    wl-screenrec
+    # wl-screenrec
     wlogout
     wlsunset
     wofi
