@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users = {
     dak = {
@@ -31,6 +32,7 @@
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC5092DTU9UuZeDGo97HYPol8X7lYBkBaroWMFPM3T5G dak@pippin"
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC9+9SRa9IDhgMkqVFwQIGPFUhyreRqE8Sq8Q8PX+MA6 dak@gimli"
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIACd8V9bOv7OmUJS6Jjt+vx2UuHDpRwUXtV8dNR5fyzm dak@toad"
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKL+SZdgvj3FLThAsCG0EMH7b/JmauhRNTDtnmGoSNlo dak@bomba"
       ];
     };
 
