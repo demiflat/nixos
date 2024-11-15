@@ -68,6 +68,11 @@
     options = [ "subvol=@" ];
   };
 
+  fileSystems."/data" = {
+    device = "/dev/disk/by-label/data";
+    fsType = "btrfs";
+    options = [ "subvol=@" ];
+  };
   swapDevices = [ ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
