@@ -256,6 +256,7 @@
     profont
     procs
     progress
+    progress-tracker
     pstree
     pulseaudio
     pulsemixer
