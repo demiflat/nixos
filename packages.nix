@@ -255,6 +255,7 @@
     poppler_utils
     profont
     procs
+    progress
     pstree
     pulseaudio
     pulsemixer
