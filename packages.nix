@@ -98,6 +98,7 @@
     glow
     gedit
     # gnome-tweaks
+    guile
     simple-scan
     gnumeric
     gptfdisk
