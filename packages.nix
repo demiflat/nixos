@@ -187,6 +187,7 @@
     lix
     lldb
     llvmPackages.mlir
+    logiops
     logitech-udev-rules
     losslesscut-bin
     loupe
