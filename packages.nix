@@ -231,7 +231,7 @@
     nushell
     #    nrfutil
     ntfs3g
-    nvtopPackages.amd
+    #nvtopPackages.amd
     nwg-look
     ollama
     openocd
