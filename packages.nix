@@ -198,7 +198,7 @@
     luajit
     lua51Packages.telescope-nvim
     luajitPackages.telescope-nvim
-    lunarvim
+    #lunarvim
     lynx
     mako
     maven
