@@ -478,7 +478,7 @@
     yarn
     yazi
     zathura
-    zed-editor
+    #zed-editor
     zellij
     zenmonitor
     zoxide
