@@ -462,7 +462,7 @@
     wdisplays
     #    webex
     wezterm
-    xfce.thunar
+    #xfce.thunar
     wget
     wireguard-tools
     wl-clipboard
