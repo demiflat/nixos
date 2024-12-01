@@ -211,7 +211,10 @@
     nautilus
     neovim
     #    neovide
-    nerdfonts
+    #nerdfonts
+    nerd-fonts.fira-code
+    nerd-fonts.inconsolata
+    nerd-fonts.terminess-ttf
     # netbird-ui
     nettools
     nfs-utils
