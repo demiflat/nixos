@@ -110,6 +110,7 @@
           networkConfig = {
             DHCP = "yes";
             DNSSEC = "no";
+            DNS = "10.1.1.1";
             ConfigureWithoutCarrier = "no";
             IPv6PrivacyExtensions = "no";
             # DefaultRouteOnDevice = "yes";
