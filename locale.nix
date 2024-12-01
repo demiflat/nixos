@@ -4,7 +4,8 @@
   pkgs,
   modulesPath,
   ...
-}: {
+}:
+{
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
@@ -36,14 +37,16 @@
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [
-      nerdfonts
+      nerd-fonts.fira-code
+      nerd-fonts.inconsolata
+      nerd-fonts.terminess-ttf
     ];
 
     fontconfig = {
       defaultFonts = {
-        serif = ["NotoSerif Nerd Font Propo"];
-        sansSerif = ["NotoSans Nerd Font Propo"];
-        monospace = ["FiraCode Nerd Font Mono"];
+        serif = [ "NotoSerif Nerd Font Propo" ];
+        sansSerif = [ "NotoSans Nerd Font Propo" ];
+        monospace = [ "FiraCode Nerd Font Mono" ];
       };
     };
   };
