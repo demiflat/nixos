@@ -391,6 +391,7 @@
     synfigstudio
     taglib
     termdown
+    terraform-providers.libvirt
     openssl
     #    opentoonz
     libedit
@@ -515,6 +516,7 @@
     via
     virt-manager
     virt-top
+    virter
     virtiofsd
     vit
     vscodium
