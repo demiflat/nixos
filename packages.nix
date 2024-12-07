@@ -22,6 +22,7 @@
     bc
     beets
     bottom
+    blocky
     blueberry
     bluetuith
     bluez-tools
