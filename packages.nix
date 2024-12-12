@@ -52,6 +52,7 @@
     criu
     crun
     cups-browsed
+    cups-filters
     ddcutil
     debootstrap
     delta
