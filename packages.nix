@@ -51,6 +51,7 @@
     cri-tools
     criu
     crun
+    cups-browsed
     ddcutil
     debootstrap
     delta

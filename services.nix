@@ -66,6 +66,8 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  #  services.printing.drivers = [ ];
+
   programs.system-config-printer.enable = true;
 
   # Enable sound with pipewire.
