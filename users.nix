@@ -11,6 +11,7 @@
       description = "dak";
       extraGroups = [
         "audio"
+        "sound"
         "dialout"
         "input"
         # "jupyter"
