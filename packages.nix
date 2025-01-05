@@ -90,7 +90,7 @@
     freetube
     fx
     fzf
-    gbar
+    #    gbar
     gdu
     gimp
     gitbatch
