@@ -336,6 +336,7 @@
     pv
     pwgen
     pw-volume
+    pwru
 
     python3
     python3Full
