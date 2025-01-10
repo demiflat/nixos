@@ -74,6 +74,7 @@
     eternal-terminal
     evtest
     exfat
+    exfatprogs
     fastfetch
     fastgron
     fd
