@@ -94,6 +94,6 @@
     #    ];
     keyboard.qmk.enable = true;
     sane.enable = true;
-    pulseaudio.enable = false;
+    # pulseaudio.enable = false;
   };
 }
