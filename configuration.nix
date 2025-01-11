@@ -3,7 +3,6 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 {
   config,
-  inputs,
   lib,
   pkgs,
   modulesPath,
@@ -35,17 +34,18 @@
 
   nix = {
     extraOptions = "experimental-features = nix-command flakes cgroups";
-    registry = {
-      nixpkgs = {
-        flake = inputs.nixpkgs;
-      };
+    #    registry = {
+    #  nixpkgs = {
+    #    flake = inputs.nixpkgs;
+    #  };
     };
 
-    nixPath = [
-      "nixpkgs=${inputs.nixpkgs.outPath}"
-      "nixos-config=/etc/nixos/configuration.nix"
-      "/nix/var/nix/profiles/per-user/root/channels"
-    ];
+  #    nixPath = [
+  #    "nixpkgs=${inputs.nixpkgs.outPath}"
+  #    "nixos-config=/etc/nixos/configuration.nix"
+  #    "/nix/var/nix/profiles/per-user/root/channels"
+  #  ];
+
     gc.automatic = true;
     settings = {
       cores = 8;
