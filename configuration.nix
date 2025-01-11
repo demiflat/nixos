@@ -7,7 +7,8 @@
   pkgs,
   modulesPath,
   ...
-}: {
+}:
+{
   imports = [
     ./boot.nix
     ./cpufreq.nix
@@ -38,18 +39,21 @@
     #  nixpkgs = {
     #    flake = inputs.nixpkgs;
     #  };
-    };
+    #    };
 
-  #    nixPath = [
-  #    "nixpkgs=${inputs.nixpkgs.outPath}"
-  #    "nixos-config=/etc/nixos/configuration.nix"
-  #    "/nix/var/nix/profiles/per-user/root/channels"
-  #  ];
+    #    nixPath = [
+    #    "nixpkgs=${inputs.nixpkgs.outPath}"
+    #    "nixos-config=/etc/nixos/configuration.nix"
+    #    "/nix/var/nix/profiles/per-user/root/channels"
+    #  ];
 
     gc.automatic = true;
     settings = {
       cores = 8;
-      trusted-users = ["root" "dak"];
+      trusted-users = [
+        "root"
+        "dak"
+      ];
       extra-sandbox-paths = [
         "/dev/kfd"
         "/sys/devices/virtual/kfd"
@@ -252,11 +256,12 @@
   #  environment.systemPackages = [
   #  ];
 
-  environment.etc."current-system-packages".text = let
-    packages = builtins.map (p: "${p.name}") config.environment.systemPackages;
-    sortedUnique = builtins.sort builtins.lessThan (lib.unique packages);
-    formatted = builtins.concatStringsSep "\n" sortedUnique;
-  in
+  environment.etc."current-system-packages".text =
+    let
+      packages = builtins.map (p: "${p.name}") config.environment.systemPackages;
+      sortedUnique = builtins.sort builtins.lessThan (lib.unique packages);
+      formatted = builtins.concatStringsSep "\n" sortedUnique;
+    in
     formatted;
 
   # virtualisation.cri-o.enable = true;
