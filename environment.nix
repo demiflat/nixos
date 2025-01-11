@@ -40,6 +40,7 @@
   # env
   #  environment.variables = {
   environment.sessionVariables = {
+    EDITOR = "nvim";
     # Print the URL instead on servers
     #BROWSER = "echo";
     HYPRCURSOR_THEME = "dmz-black";
