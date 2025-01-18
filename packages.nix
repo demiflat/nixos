@@ -100,6 +100,7 @@
     git-repo
     gitAndTools.git-extras
     git-repo-updater
+    ghostty
     glow
     gedit
     # gnome-tweaks
