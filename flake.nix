@@ -1,7 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    inputs.isd.url = "https://github.com/isd-project/isd"
+    isd.url = "https://github.com/isd-project/isd";
     #nixos-unstable-small.url = "github:NixOS/nixpkgs/nixos-unstable-small";
     #nixvim.url = "github:nix-community/nixvim";
     #nixvim.inputs.nixpkgs.follows = "nixpkgs";
@@ -20,7 +20,7 @@
         yoshi = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            inputs.isd.default
+            isd.default
             ./configuration.nix
           ];
         };
