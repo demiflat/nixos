@@ -396,6 +396,7 @@
     # sommelier
     starship
     synfigstudio
+    systemctl-tui
     taglib
     termdown
     terraform-providers.libvirt
