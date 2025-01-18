@@ -156,7 +156,7 @@
     iotop
     iperf3
     iproute2
-    isd
+    #isd
     jc
     # jeezyvim
     jq
