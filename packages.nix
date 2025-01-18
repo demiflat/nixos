@@ -1,5 +1,5 @@
 {
-  #  inputs,
+#  inputs,
   system,
   config,
   pkgs,
@@ -156,6 +156,7 @@
     iotop
     iperf3
     iproute2
+    isd
     jc
     # jeezyvim
     jq
