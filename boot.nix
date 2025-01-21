@@ -27,8 +27,8 @@
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   # boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelModules = [ "8821au" ];
-  boot.extraModulePackages = [
-    config.boot.kernelPackages.rtl8821au
-  ];
+#  boot.extraModulePackages = [
+#    config.boot.kernelPackages.rtl8821au
+#  ];
   
 }
