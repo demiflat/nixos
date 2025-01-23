@@ -48,9 +48,12 @@
     XCURSOR_THEME = "dmz-black";
     XCURSOR_SIZE = "24";
 
-    #HSA_ENABLE_SDMA="0";
     #HSA_OVERRIDE_GFX_VERSION = "10.3.0";
-    #HSA_OVERRIDE_GFX_VERSION = "9.0.0";
+
+    ### gpu info: https://github.com/ROCm/ROCm/issues/2774
+    HSA_OVERRIDE_GFX_VERSION = "9.0.0";
+    HSA_ENABLE_SDMA="0";
+
     #DEVICE = "cuda";
     #PYTORCH_ROCM_ARCH = "gfx90c";
     #PYTORCH_ROCM_ARCH = "gfx900";
