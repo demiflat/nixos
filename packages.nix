@@ -308,8 +308,8 @@
     ntfs3g
     #nvtopPackages.amd
     nwg-look
-    #ollama
-    ollama-rocm
+    ollama
+    #ollama-rocm
     openocd
     openssl
     #openvswitch
