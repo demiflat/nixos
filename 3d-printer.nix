@@ -7,7 +7,7 @@
   environment.systemPackages = with pkgs; [
     freecad
     #cura
-    orca-slicer
+    #orca-slicer
     #prusa-slicer
     #super-slicer-latest
   ];
