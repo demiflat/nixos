@@ -193,7 +193,7 @@
     #    litestream
     lix
     lldb
-    llvmPackages.mlir
+    #llvmPackages.mlir
     logiops
     logitech-udev-rules
     losslesscut-bin
