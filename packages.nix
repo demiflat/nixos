@@ -65,6 +65,7 @@
     dive
     doublecmd
     duf
+    duff
     dunst
     dust
     easyeffects
