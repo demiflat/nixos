@@ -216,6 +216,7 @@
     minicom
     most
     mpv
+    mupdf
     nautilus
     neovim
     #    neovide
