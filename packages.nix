@@ -145,6 +145,7 @@
     hyprpicker
     hyprshade
     hyprshot
+    hyprsunset
     # xdg-desktop-portal-hyprland
     # xdg-desktop-portal-gtk
     idevicerestore
