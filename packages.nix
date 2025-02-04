@@ -143,6 +143,7 @@
     hyprpaper
     hyprland-protocols
     hyprpicker
+    hyprpolkitagent
     hyprshade
     hyprshot
     hyprsunset
