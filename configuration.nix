@@ -74,6 +74,9 @@
       # Fallback quickly if substituters are not available.
       connect-timeout = 5;
 
+      substituters = ["https://hyprland.cachix.org"];
+      trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+
       # The default at 10 is rarely enough.
       log-lines = lib.mkDefault 25;
 
