@@ -10,6 +10,7 @@
   #networking.iproute2.enable = true;
 
   networking = {
+    useDHCP = false;
     nameservers = [ "10.1.1.1" ];
     networkmanager.enable = false;
     iproute2.enable = true;
