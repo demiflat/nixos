@@ -35,6 +35,8 @@
 
   # fonts
   fonts = {
+    fontDir.enable = true;
+
     enableDefaultPackages = true;
     packages = with pkgs; [
       #nerdfonts
