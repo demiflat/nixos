@@ -25,7 +25,7 @@
   boot.loader.systemd-boot.memtest86.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
-  # boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelModules = [ "8821au" ];
 #  boot.extraModulePackages = [
 #    config.boot.kernelPackages.rtl8821au
