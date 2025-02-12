@@ -49,7 +49,6 @@
 
     gc.automatic = true;
     settings = {
-      download-buffer-size = 671088640;
       cores = 8;
       trusted-users = [
         "root"
