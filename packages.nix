@@ -195,7 +195,7 @@
     links2
     #    litestream
     lix
-    #lldb
+    lldb
     #llvmPackages.mlir
     logiops
     logitech-udev-rules
