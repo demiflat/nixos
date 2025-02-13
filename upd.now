@@ -6,6 +6,6 @@ git status
 echo "********************************************************************************"
 sudo cp -r * /etc/nixos/
 #sudo nixos-rebuild boot --upgrade --show-trace --flake .#yoshi
-sudo nixos-rebuild -j16 switch  --upgrade --show-trace --flake .#yoshi
+#sudo nixos-rebuild -j16 switch  --upgrade --show-trace --flake .#yoshi
 sudo nixos-rebuild -j16 boot --upgrade --show-trace --flake .#yoshi
 #sudo nixos-rebuild -j16 switch --no-eval-cache --upgrade --show-trace --flake .#yoshi
