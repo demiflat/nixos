@@ -186,7 +186,8 @@
     libfido2
     libnotify
     #librewolf-wayland
-    libreoffice-fresh
+    #libreoffice-fresh
+    libreoffice-qt6-fresh
     libsForQt5.qt5ct
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5.qtwayland
