@@ -105,6 +105,7 @@
     glow
     gedit
     # gnome-tweaks
+    glib
     guile
     simple-scan
     gnumeric
