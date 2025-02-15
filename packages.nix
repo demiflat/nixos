@@ -164,6 +164,7 @@
     #isd
     jc
     # jeezyvim
+    jmtpfs
     jq
     jql
     # jupyter
