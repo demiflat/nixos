@@ -53,6 +53,7 @@
     crun
     cups-browsed
     cups-filters
+    cups-brother-hll3230cdw
     ddcutil
     debootstrap
     delta
