@@ -30,8 +30,8 @@
 
   services.avahi = {
     enable = true;
-    nssmdns4 = true;
-    #    openFirewall = true;
+    nssmdns = true;
+    openFirewall = true;
   };
 
   services.fwupd.enable = true;
