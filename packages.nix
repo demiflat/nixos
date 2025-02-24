@@ -7,6 +7,7 @@
 }:
 {
   environment.systemPackages = with pkgs; [
+    akkuPackages.scheme-langserver
     abiword
     asciinema
     alacritty
