@@ -189,7 +189,7 @@
     lego
     libfido2
     libnotify
-    #librewolf-wayland
+    librewolf
     #libreoffice-fresh
     libreoffice-qt6-fresh
     libsForQt5.qt5ct
