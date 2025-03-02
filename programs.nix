@@ -6,6 +6,7 @@
   ...
 }: {
   programs = {
+    nix-ld.enable = true;
     bcc.enable = true;
     sysdig.enable = true;
     dconf.enable = true;
