@@ -105,7 +105,7 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  services.mullvad-vpn.enable = true;
+#  services.mullvad-vpn.enable = true;
 
   #services.gvfs.enable = true;
 
