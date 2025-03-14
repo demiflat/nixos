@@ -1,12 +1,13 @@
 {
-#  inputs,
   system,
   config,
   pkgs,
+  inputs,
   ...
 }:
 {
   environment.systemPackages = with pkgs; [
+    inputs.zen-browser.packages."${system}".specific
     akkuPackages.scheme-langserver
     abiword
     asciinema

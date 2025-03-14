@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
     #isd.url = "https://github.com/isd-project/isd";
     #nixos-unstable-small.url = "github:NixOS/nixpkgs/nixos-unstable-small";
     #nixvim.url = "github:nix-community/nixvim";
@@ -18,7 +19,8 @@
     {
       nixosConfigurations = {
         yoshi = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+#          system = "x86_64-linux";
+          specialArgs = { inherit inputs; system = "x86_64-linux"; };
           modules = [
             #inputs.isd.default
             ./configuration.nix
