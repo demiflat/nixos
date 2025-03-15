@@ -7,7 +7,7 @@
 }:
 {
   environment.systemPackages = with pkgs; [
-    inputs.zen-browser.packages."${system}".specific
+    inputs.zen-browser.packages."${system}".twilight
     akkuPackages.scheme-langserver
     abiword
     asciinema
