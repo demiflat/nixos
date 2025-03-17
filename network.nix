@@ -112,7 +112,7 @@
           networkConfig = {
             DHCP = "yes";
             DNSSEC = "no";
-            ## DNS = "10.1.1.1";
+            DNS = "10.1.1.1";
             ConfigureWithoutCarrier = "no";
             IPv6PrivacyExtensions = "no";
             # DefaultRouteOnDevice = "yes";
@@ -122,8 +122,8 @@
           # dhcpV4Config.Hostname = "yoshi";
           # dhcpV4Config.RouteMetric = 10;
           # dhcpV4Config.UseRoutes = "yes";
-          ## dhcpV4Config.UseDNS = "no";
-          ## dhcpV6Config.UseDNS = "no";
+          dhcpV4Config.UseDNS = "no";
+          dhcpV6Config.UseDNS = "no";
           # dhcpV6Config.RouteMetric = 10;
           # ipv6AcceptRAConfig = {
           #   DHCPv6Client = "always";
