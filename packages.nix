@@ -134,6 +134,7 @@
     gvproxy
     hack-font
     helix
+    hexyl
     htmlq
     htop
     hunspell
