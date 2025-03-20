@@ -401,6 +401,7 @@
 
     pywal
     pywalfox-native
+    racket
     #streamlit
     sd
     sioyek
