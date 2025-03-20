@@ -565,6 +565,7 @@
     wlsunset
     wofi
     wpgtk
+    xan
     wshowkeys
     xkcd-font
     xkcdpass
