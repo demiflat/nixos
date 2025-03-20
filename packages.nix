@@ -424,6 +424,7 @@
     zlib
 
     paperless-ngx
+    pastel
     playerctl
     pywal
     qemu
