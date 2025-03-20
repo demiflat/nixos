@@ -139,6 +139,7 @@
     htop
     hunspell
     hunspellDicts.en_US
+    hyperfine
     # hyprland
     hypr
     hyprcursor
