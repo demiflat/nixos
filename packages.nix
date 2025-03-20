@@ -30,6 +30,7 @@
     bluetuith
     bluez-tools
     brasero
+    broot
     btop
     buildah
     can-utils
