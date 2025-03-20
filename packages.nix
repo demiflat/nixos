@@ -318,6 +318,7 @@
     noto-fonts-cjk-serif
     noto-fonts-emoji
     noto-fonts-extra
+    numbat
     nushell
     #    nrfutil
     ntfs3g
