@@ -24,6 +24,7 @@
     bc
 #    beets
     bottom
+    binocle
     blocky
     blueberry
     bluetuith
