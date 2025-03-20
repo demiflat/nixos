@@ -66,6 +66,7 @@
     difftastic
     dig
     dina-font
+    diskus
     dive
     doublecmd
     duf
@@ -544,6 +545,7 @@
     virter
     virtiofsd
     vit
+    vivid
     vscodium
     #    (vscode-with-extensions.override {
     #      vscode = vscodium;
