@@ -124,8 +124,8 @@
     impl
     gotests
     go-tools
-    golangci-lint
-    golangci-lint-langserver
+    #    golangci-lint
+    #    golangci-lint-langserver
 
     gomi
     gossa
