@@ -82,6 +82,7 @@
       log-lines = lib.mkDefault 25;
 
       # Avoid disk full issues
+      download-buffer-size = 134217728;
       max-free = lib.mkDefault (3000 * 1024 * 1024);
       min-free = lib.mkDefault (512 * 1024 * 1024);
       use-cgroups = true;
