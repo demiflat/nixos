@@ -339,8 +339,8 @@
     pinentry-curses
     plasma-theme-switcher
     planify
-    platformio
-    platformio-core
+    # platformio
+    # platformio-core
     podman
     podman-compose
     podman-tui
