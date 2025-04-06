@@ -92,6 +92,7 @@
     firefox
     fish
     fnm
+    foliate
     font-awesome
     foot
     fortune
