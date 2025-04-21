@@ -49,7 +49,7 @@
     cmake
     colordiff
     conky
-    copyq
+    #    copyq
     cosmic-term
     cri-o
     cri-tools
