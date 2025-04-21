@@ -308,7 +308,7 @@
     nfs-utils
     nftables
     nginx
-    nil
+    #    nil
     nixfmt-rfc-style
     nix-top
     nixos-option
