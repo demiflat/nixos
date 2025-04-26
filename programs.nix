@@ -6,6 +6,7 @@
   ...
 }: {
   programs = {
+    steam.enable = true;
     nix-ld.enable = true;
     bcc.enable = true;
     sysdig.enable = true;
