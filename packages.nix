@@ -33,6 +33,7 @@
     broot
     btop
     buildah
+    bun
     can-utils
     cargo
     cfssl
