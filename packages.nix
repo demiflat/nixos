@@ -129,6 +129,7 @@
     #    golangci-lint
     #    golangci-lint-langserver
 
+    gkrellm
     gomi
     gossa
     gotty
