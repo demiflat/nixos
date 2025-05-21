@@ -204,6 +204,7 @@
     libsForQt5.qt5ct
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5.qtwayland
+    libva-utils
     libvirt
     light
     links2
