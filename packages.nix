@@ -34,6 +34,7 @@
     btop
     buildah
     bun
+    caddy
     can-utils
     cargo
     cfssl
