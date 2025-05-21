@@ -342,7 +342,7 @@
     picocom
     pinentry-curses
     plasma-theme-switcher
-    planify
+    #    planify
     # platformio
     # platformio-core
     podman
