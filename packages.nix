@@ -432,6 +432,7 @@
 
     paperless-ngx
     pastel
+    pciutils
     playerctl
     pywal
     qemu
