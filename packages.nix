@@ -432,7 +432,7 @@
     libzip
     zlib
 
-    paperless-ngx
+    #    paperless-ngx
     pastel
     pciutils
     playerctl
