@@ -17,6 +17,7 @@
     amdctl
     amdgpu_top
     #amdvlk
+    android-file-transfer
     appimage-run
     aria2
     b612
@@ -176,7 +177,7 @@
     #isd
     jc
     # jeezyvim
-    jmtpfs
+    #    jmtpfs
     jq
     jql
     # jupyter
