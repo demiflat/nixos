@@ -486,6 +486,7 @@
     # rocmPackages.rocgdb
     # end rocm
     rofi
+    rr
     runc
     rustc
     rustup
