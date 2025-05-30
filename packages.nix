@@ -58,6 +58,7 @@
     cri-tools
     criu
     crun
+    crrcsim
     cups-browsed
     cups-filters
     cups-brother-hll3230cdw
