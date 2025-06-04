@@ -172,7 +172,8 @@
     imhex
     imv
     #    input-remapper
-    iotop
+    #    iotop
+    iotop-c
     iperf3
     iproute2
     #isd
