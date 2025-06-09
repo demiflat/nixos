@@ -59,6 +59,7 @@
     criu
     crun
     crrcsim
+    flightgear
     cups-browsed
     cups-filters
     cups-brother-hll3230cdw
