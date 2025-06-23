@@ -22,7 +22,7 @@
     ./network.nix
     ./security.nix
     ./services.nix
-    ./user-services.nix
+    #    ./user-services.nix
     ./qt.nix
     ./programs.nix
     ./virtualization.nix
