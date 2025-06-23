@@ -30,7 +30,7 @@
     blueberry
     bluetuith
     bluez-tools
-    brasero
+    #    brasero
     broot
     btop
     buildah
