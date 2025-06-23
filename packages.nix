@@ -447,7 +447,7 @@
     qt6.qtwayland
     ranger
     rename
-    rgp
+    #    rgp
     ripgrep
     # rocm
     # rocmPackages.rocmlir
