@@ -26,7 +26,7 @@
 #      #      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
 #      #    ];
 #    };
-    ssh.startAgent = true;
+    #    ssh.startAgent = true;
     gnupg.agent = {
       enable = true;
       #    enableSSHSupport = true;
