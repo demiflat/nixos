@@ -165,7 +165,7 @@
     hyprsunset
     # xdg-desktop-portal-hyprland
     # xdg-desktop-portal-gtk
-    idevicerestore
+    #    idevicerestore
     usbmuxd
     ifuse
     libimobiledevice
