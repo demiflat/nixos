@@ -333,7 +333,7 @@
     ntfs3g
     #nvtopPackages.amd
     nwg-look
-    ollama
+    #    ollama
     #ollama-rocm
     openocd
     openssl
