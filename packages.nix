@@ -229,6 +229,9 @@
     lua51Packages.telescope-nvim
     luajitPackages.telescope-nvim
     #lunarvim
+    lvm2
+    lvm2_vdo
+    lvm2_dmeventd
     lynx
     mako
     maven
