@@ -5,6 +5,8 @@
   ...
 }:
 {
+  services.lvm.boot.thin.enable = true;
+
   services.resolved = {
     enable = true;
     dnssec = "false";
