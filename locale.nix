@@ -16,9 +16,7 @@
     #enabled = "ibus";
     enable = true;
     type = "ibus";
-    ibus.engines = with pkgs.ibus-engines; [
-      pinyin
-    ];
+    ibus.engines = with pkgs.ibus-engines; [ pinyin ];
   };
 
   i18n.extraLocaleSettings = {

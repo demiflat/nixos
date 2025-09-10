@@ -5,7 +5,7 @@
     python311Packages.catboost
     python311Packages.ipykernel
     python311Packages.jupyter
-    python311Packages.jupyter-core    
+    python311Packages.jupyter-core
     python311Packages.kaggle
     python311Packages.lightgbm
     python311Packages.matplotlib
@@ -25,4 +25,4 @@
     python311Packages.wandb
     python311Packages.xgboost
   ];
-}    
+}
