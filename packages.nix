@@ -320,7 +320,9 @@
     nftables
     nginx
     #    nil
-    nixfmt-rfc-style
+		#nixfmt-rfc-style
+    nixfmt
+    nixfmt-tree
     nix-top
     nixos-option
     nmap
