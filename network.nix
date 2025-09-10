@@ -97,12 +97,12 @@
         "30-wired" = {
           matchConfig.Name = "wired";
           # tag vlan on this link
-#          vlan = [
-#            "sonic"
-#            "public"
-#            "cloud"
-#            "iot"
-#          ];
+          #          vlan = [
+          #            "sonic"
+          #            "public"
+          #            "cloud"
+          #            "iot"
+          #          ];
           # address = [
           #   "10.1.1.213/24"
           # ];

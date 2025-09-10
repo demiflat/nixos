@@ -52,7 +52,7 @@
 
     ### gpu info: https://github.com/ROCm/ROCm/issues/2774
     HSA_OVERRIDE_GFX_VERSION = "9.0.0";
-    HSA_ENABLE_SDMA="0";
+    HSA_ENABLE_SDMA = "0";
 
     #DEVICE = "cuda";
     #PYTORCH_ROCM_ARCH = "gfx90c";

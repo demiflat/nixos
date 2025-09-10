@@ -3,7 +3,8 @@
   lib,
   modulesPath,
   ...
-}: {
+}:
+{
   virtualisation = {
     # doesn't work:
     # WARN[0000] Failed to decode the keys ["driver"] from "/etc/containers/storage.conf"

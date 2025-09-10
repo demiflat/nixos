@@ -7,7 +7,7 @@
 }:
 {
   environment.systemPackages = with pkgs; [
-#    inputs.zen-browser.packages."${system}".twilight
+    #    inputs.zen-browser.packages."${system}".twilight
     akkuPackages.scheme-langserver
     abiword
     asciinema
@@ -23,7 +23,7 @@
     b612
     bat
     bc
-#    beets
+    #    beets
     bottom
     binocle
     blocky

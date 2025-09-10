@@ -6,9 +6,7 @@
   ...
 }:
 {
-  imports = [
-    (modulesPath + "/installer/scan/not-detected.nix")
-  ];
+  imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   boot.initrd.systemd.enable = true;
   boot.initrd.availableKernelModules = [
@@ -95,10 +93,10 @@
     keyboard.qmk.enable = true;
     sane.enable = true;
     # pulseaudio.enable = false;
-#    printers = {
-#      ensurePrinters = [
-#
-#      ];
-#    };
+    #    printers = {
+    #      ensurePrinters = [
+    #
+    #      ];
+    #    };
   };
 }
