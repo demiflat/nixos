@@ -427,7 +427,7 @@
     sioyek
     solo2-cli
     # sommelier
-    spicy
+    spice-gtk
     starship
     synfigstudio
     systemctl-tui
