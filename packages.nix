@@ -448,6 +448,7 @@
     qmk-udev-rules
     qrencode
     qt6.qtwayland
+    quickemu
     ranger
     rename
     #    rgp
