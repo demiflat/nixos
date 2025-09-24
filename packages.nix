@@ -599,6 +599,7 @@
     zellij
     zenmonitor
     zoxide
+    deno
     yt-dlp
     zip
     zlib
