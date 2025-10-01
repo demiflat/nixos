@@ -421,6 +421,7 @@
     pywal
     pywalfox-native
     racket
+    rio
     #streamlit
     sd
     sioyek
