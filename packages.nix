@@ -28,6 +28,7 @@
     binocle
     blocky
     blueberry
+    bluetui
     bluetuith
     bluez-tools
     #    brasero
