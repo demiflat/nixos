@@ -147,6 +147,7 @@
     hexyl
     htmlq
     htop
+    httrack
     hunspell
     hunspellDicts.en_US
     hyperfine
