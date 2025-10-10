@@ -49,6 +49,7 @@
     clipgrab
     #    cliphist
     clipman
+    clipse
     clolcat
     cmake
     colordiff
