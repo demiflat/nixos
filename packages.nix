@@ -84,6 +84,7 @@
     easyeffects
     # gnome-themes-extra
     # gnomeExtensions.easyeffects-preset-selector
+    emacs
     envsubst
     eternal-terminal
     evtest
