@@ -64,8 +64,11 @@
     flightgear
     cups-browsed
     cups-filters
+    cups-printers
     cups-brother-hll3230cdw
+    cups-brother
     cups-zj-58
+    epson-escpr
     ddcutil
     debootstrap
     delta
