@@ -65,6 +65,7 @@
     cups-browsed
     cups-filters
     cups-brother-hll3230cdw
+    cups-zj-58
     ddcutil
     debootstrap
     delta
