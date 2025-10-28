@@ -66,7 +66,6 @@
     cups-filters
     cups-printers
     cups-brother-hll3230cdw
-    cups-brother
     cups-zj-58
     epson-escpr
     ddcutil
