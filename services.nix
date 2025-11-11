@@ -2,6 +2,7 @@
   config,
   lib,
   modulesPath,
+  pkgs,
   ...
 }:
 {
@@ -71,8 +72,8 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  #  services.printing.drivers = [
-  #    "cups-brother-dcpt725dw"
+  services.printing.drivers = [
+  #  "cups-brother-dcpt725dw"
   #  "cups-brother-hl1110"
   #  "cups-brother-hl1210w"
   #  "cups-brother-hl2260d"
@@ -81,10 +82,10 @@
   #  "cups-brother-hll2340dw"
   #  "cups-brother-hll2350dw"
   #  "cups-brother-hll2375dw"
-  #  "cups-brother-hll3230cdw"
+    pkgs.cups-brother-hll3230cdw
   #  "cups-brother-mfcl2750dw"
   #  "cups-brother-mfcl2800dw"
-  #];
+  ];
 
   programs.system-config-printer.enable = true;
 
