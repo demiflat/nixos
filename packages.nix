@@ -460,6 +460,7 @@
     qt6.qtwayland
     quickemu
     ranger
+    recutils
     rename
     #    rgp
     ripgrep
@@ -571,6 +572,7 @@
     virt-top
     virter
     virtiofsd
+    visidata
     vit
     vivid
     vscodium
