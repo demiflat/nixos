@@ -112,7 +112,7 @@
 
   services.mullvad-vpn.enable = true;
 
-  #services.gvfs.enable = true;
+  services.gvfs.enable = true;
 
   # udev
   services.udev.extraRules = ''
