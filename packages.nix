@@ -443,7 +443,8 @@
     systemctl-tui
     taglib
     termdown
-    terraform-providers.libvirt
+		#terraform-providers.libvirt
+    terraform-providers.dmacvicar_libvirt
     openssl
     #    opentoonz
     libedit
