@@ -61,7 +61,7 @@
     criu
     crun
     crrcsim
-    flightgear
+		#    flightgear
     cups-browsed
     cups-filters
     cups-printers
