@@ -609,7 +609,7 @@
     zathura
     #zed-editor
     zellij
-    zenmonitor
+		#    zenmonitor
     zoxide
     deno
     yt-dlp
