@@ -46,7 +46,7 @@
     circt
     clblast
     clinfo
-    clipgrab
+		#    clipgrab
     #    cliphist
     clipman
     clipse
