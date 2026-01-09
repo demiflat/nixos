@@ -8,7 +8,8 @@
 }:
 {
   qt = {
-    enable = true;
+		#enable = true;
+    enable = false;
 
     #platformTheme = "qt5ct";
 		#platformTheme = "gnome";
