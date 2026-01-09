@@ -99,6 +99,7 @@
     ffmpeg_6-full
     figlet
     file
+    file-roller
     fio
     firefox
     fish

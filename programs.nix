@@ -39,7 +39,7 @@
     chromium.enable = true;
     criu.enable = true;
     evince.enable = true;
-    file-roller.enable = true;
+		#    file-roller.enable = true;
     firefox.enable = true;
     git.enable = true;
     git.prompt.enable = true;
