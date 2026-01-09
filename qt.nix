@@ -12,11 +12,11 @@
 
     #platformTheme = "qt5ct";
 		#platformTheme = "gnome";
-    platformTheme = "kde";
+		#    platformTheme = "kde";
     #platformTheme = "gtk2";
 
 		#style = "kvantum";
-    style = "breeze";
+		#    style = "breeze";
 		#style = "adwaita-dark";
   };
 
