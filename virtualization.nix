@@ -36,7 +36,7 @@
 
     libvirtd = {
       enable = true;
-			#      qemu.ovmf.enable = true;
+      #      qemu.ovmf.enable = true;
     };
 
     #waydroid.enable = true;
