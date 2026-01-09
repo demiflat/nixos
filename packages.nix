@@ -116,6 +116,7 @@
     gimp
     gitbatch
     gitFull
+    gitg
     git-lfs
     git-repo
 		#    gitAndTools.git-extras
@@ -246,7 +247,7 @@
     maven
     mc
     meld
-    microcodeAmd
+    microcode-amd
     minicom
     most
     mpv
