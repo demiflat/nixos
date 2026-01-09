@@ -11,11 +11,13 @@
     enable = true;
 
     #platformTheme = "qt5ct";
-    platformTheme = "gnome";
+		#platformTheme = "gnome";
+    platformTheme = "kde";
     #platformTheme = "gtk2";
 
-    #style = "kvantum";
-    style = "adwaita-dark";
+		#style = "kvantum";
+    style = "breeze";
+		#style = "adwaita-dark";
   };
 
   #  nixpkgs.config.qt5 = {
