@@ -30,7 +30,7 @@
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC9+9SRa9IDhgMkqVFwQIGPFUhyreRqE8Sq8Q8PX+MA6 dak@gimli"
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIACd8V9bOv7OmUJS6Jjt+vx2UuHDpRwUXtV8dNR5fyzm dak@toad"
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKL+SZdgvj3FLThAsCG0EMH7b/JmauhRNTDtnmGoSNlo dak@bomba"
-	"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN2svKmWGpomNS8HiAHXy+8JzgRnFsXzPg1oAPjXMLkt dak@gandalf"
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN2svKmWGpomNS8HiAHXy+8JzgRnFsXzPg1oAPjXMLkt dak@gandalf"
 
       ];
     };

@@ -46,7 +46,7 @@
     circt
     clblast
     clinfo
-		#    clipgrab
+    #    clipgrab
     #    cliphist
     clipman
     clipse
@@ -66,7 +66,7 @@
     cups-filters
     cups-printers
     cups-brother-hll3230cdw
-		#    cups-zj-58
+    #    cups-zj-58
     epson-escpr
     ddcutil
     debootstrap
@@ -116,11 +116,11 @@
     gimp
     gitbatch
     gitMinimal
-		#gitFull
+    #gitFull
     gitg
     git-lfs
     git-repo
-		#    gitAndTools.git-extras
+    #    gitAndTools.git-extras
     git-extras
     git-repo-updater
     ghostty
@@ -217,9 +217,9 @@
     librewolf
     #libreoffice-fresh
     libreoffice-qt6-fresh
-		#    libsForQt5.qt5ct
-		#    libsForQt5.qtstyleplugin-kvantum
-		#    libsForQt5.qt5.qtwayland
+    #    libsForQt5.qt5ct
+    #    libsForQt5.qtstyleplugin-kvantum
+    #    libsForQt5.qt5.qtwayland
     libva-utils
     libvirt
     light
@@ -331,7 +331,7 @@
     nftables
     nginx
     #    nil
-    nixfmt-rfc-style
+    nixfmt
     nixfmt-tree
     nix-top
     nixos-option
@@ -360,7 +360,7 @@
     perf-tools
     picocom
     pinentry-curses
-		#    plasma-theme-switcher
+    #    plasma-theme-switcher
     #    planify
     # platformio
     # platformio-core
@@ -382,7 +382,7 @@
     pwru
 
     python3
-		#    python3Full
+    #    python3Full
     #python311Packages.pip
 
     # klipper graphs
@@ -443,7 +443,7 @@
     systemctl-tui
     taglib
     termdown
-		#terraform-providers.libvirt
+    #terraform-providers.libvirt
     terraform-providers.dmacvicar_libvirt
     openssl
     #    opentoonz
@@ -611,7 +611,7 @@
     zathura
     #zed-editor
     zellij
-		#    zenmonitor
+    #    zenmonitor
     zoxide
     deno
     yt-dlp
