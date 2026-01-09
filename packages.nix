@@ -367,7 +367,7 @@
     podman-compose
     podman-tui
     #    popcorntime
-    poppler_utils
+    poppler-utils
     profont
     procs
     progress
