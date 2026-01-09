@@ -334,6 +334,7 @@
     nixfmt
     nixfmt-tree
     nix-top
+    nix-tree
     nixos-option
     nmap
     nodejs_20
