@@ -40,8 +40,8 @@
   services.fwupd.enable = true;
 
   services.displayManager.defaultSession = "hyprland";
-	#  services.displayManager.gdm.enable = true;
-	#  services.displayManager.gdm.wayland = true;
+  #  services.displayManager.gdm.enable = true;
+  #  services.displayManager.gdm.wayland = true;
   services.xserver = {
     enable = true;
     xkb.layout = "us";
