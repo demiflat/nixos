@@ -381,7 +381,7 @@
     pwru
 
     python3
-    python3Full
+		#    python3Full
     #python311Packages.pip
 
     # klipper graphs
