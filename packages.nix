@@ -79,7 +79,7 @@
     dina-font
     diskus
     dive
-    doublecmd
+		#    doublecmd
     duf
     duff
     dunst
