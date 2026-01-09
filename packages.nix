@@ -216,7 +216,7 @@
     libnotify
     librewolf
     #libreoffice-fresh
-    libreoffice-qt6-fresh
+		#    libreoffice-qt6-fresh
     #    libsForQt5.qt5ct
     #    libsForQt5.qtstyleplugin-kvantum
     #    libsForQt5.qt5.qtwayland
