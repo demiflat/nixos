@@ -8,17 +8,16 @@
 }:
 {
   qt = {
-		#enable = true;
-    enable = false;
+    enable = true;
 
     #platformTheme = "qt5ct";
-		#platformTheme = "gnome";
-		#    platformTheme = "kde";
+    #platformTheme = "gnome";
+    platformTheme = "kde";
     #platformTheme = "gtk2";
 
-		#style = "kvantum";
-		#    style = "breeze";
-		#style = "adwaita-dark";
+    style = "kvantum";
+    #    style = "breeze";
+    #style = "adwaita-dark";
   };
 
   #  nixpkgs.config.qt5 = {

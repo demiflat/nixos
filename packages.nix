@@ -61,7 +61,7 @@
     criu
     crun
     crrcsim
-		#    flightgear
+    #    flightgear
     cups-browsed
     cups-filters
     cups-printers
@@ -79,7 +79,7 @@
     dina-font
     diskus
     dive
-		#    doublecmd
+    #    doublecmd
     duf
     duff
     dunst
@@ -216,7 +216,7 @@
     libnotify
     librewolf
     #libreoffice-fresh
-		#    libreoffice-qt6-fresh
+    #    libreoffice-qt6-fresh
     #    libsForQt5.qt5ct
     #    libsForQt5.qtstyleplugin-kvantum
     #    libsForQt5.qt5.qtwayland
@@ -461,7 +461,7 @@
     qemu
     qmk-udev-rules
     qrencode
-		#qt6.qtwayland
+    #qt6.qtwayland
     quickemu
     ranger
     recutils
@@ -517,7 +517,7 @@
     socat
     spacevim
     sqlite
-		#    sqlitebrowser
+    #    sqlitebrowser
     strace
     sudo-font
     sway
@@ -533,7 +533,7 @@
     tockloader
     tig
     tio
-		#    tpmmanager
+    #    tpmmanager
     tpm2-tools
     transmission_4
     transmission_4-gtk
