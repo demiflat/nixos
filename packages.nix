@@ -359,7 +359,7 @@
     perf-tools
     picocom
     pinentry-curses
-    plasma-theme-switcher
+		#    plasma-theme-switcher
     #    planify
     # platformio
     # platformio-core
