@@ -118,7 +118,8 @@
     gitFull
     git-lfs
     git-repo
-    gitAndTools.git-extras
+		#    gitAndTools.git-extras
+    git-extras
     git-repo-updater
     ghostty
     glow
