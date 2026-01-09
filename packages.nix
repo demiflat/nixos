@@ -517,7 +517,7 @@
     socat
     spacevim
     sqlite
-    sqlitebrowser
+		#    sqlitebrowser
     strace
     sudo-font
     sway
@@ -533,7 +533,7 @@
     tockloader
     tig
     tio
-    tpmmanager
+		#    tpmmanager
     tpm2-tools
     transmission_4
     transmission_4-gtk
