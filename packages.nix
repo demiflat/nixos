@@ -66,7 +66,7 @@
     cups-filters
     cups-printers
     cups-brother-hll3230cdw
-    cups-zj-58
+		#    cups-zj-58
     epson-escpr
     ddcutil
     debootstrap
