@@ -461,7 +461,7 @@
     qemu
     qmk-udev-rules
     qrencode
-    qt6.qtwayland
+		#qt6.qtwayland
     quickemu
     ranger
     recutils

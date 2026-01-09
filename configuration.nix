@@ -23,7 +23,7 @@
     ./security.nix
     ./services.nix
     #    ./user-services.nix
-    ./qt.nix
+		#./qt.nix
     ./programs.nix
     ./virtualization.nix
     ./3d-printer.nix
