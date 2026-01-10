@@ -42,8 +42,8 @@
   #services.displayManager.defaultSession = "hyprland";
   #services.displayManager.gdm.enable = true;
   #services.displayManager.gdm.wayland = true;
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  #services.displayManager.sddm.enable = true;
+  #services.displayManager.sddm.wayland.enable = true;
   #services.greetd.enable = true;
   #services.greetd.useTextGreeter = true;
 
