@@ -176,6 +176,7 @@
     hyprshade
     hyprshot
     hyprsunset
+    hyprsysteminfo
     # xdg-desktop-portal-hyprland
     # xdg-desktop-portal-gtk
     idevicerestore
