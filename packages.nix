@@ -172,6 +172,7 @@
     hyprland-protocols
     hyprpicker
     hyprpolkitagent
+    hyprpwcenter
     hyprshade
     hyprshot
     hyprsunset
