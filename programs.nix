@@ -49,7 +49,7 @@
     #  sway.enable = true;
     hyprland = {
       enable = true;
-      # portalPackage = pkgs.xdg-desktop-portal-hyprland;
+      withUWSM = true;
       xwayland.enable = true;
     };
     hyprlock.enable = true;
