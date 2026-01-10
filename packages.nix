@@ -166,6 +166,7 @@
     hyprcursor
     hypridle
     hyprland
+    hyprlauncher
     hyprlock
     hyprpaper
     hyprland-protocols
