@@ -39,7 +39,7 @@
 
   services.fwupd.enable = true;
 
-  services.displayManager.defaultSession = "hyprland";
+  services.displayManager.defaultSession = "";
   services.displayManager.gdm.enable = true;
   services.displayManager.gdm.wayland = true;
 
