@@ -8,6 +8,8 @@
 {
   services.lvm.boot.thin.enable = true;
 
+  services.dbus.implementation = "broker";
+
   services.resolved = {
     enable = true;
     dnssec = "false";
@@ -116,7 +118,7 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  services.mullvad-vpn.enable = true;
+  #services.mullvad-vpn.enable = true;
 
   services.gvfs.enable = true;
 
