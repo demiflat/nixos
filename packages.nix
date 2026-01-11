@@ -85,7 +85,7 @@
     duff
     dunst
     dust
-    easyeffects
+    #easyeffects
     # gnome-themes-extra
     # gnomeExtensions.easyeffects-preset-selector
     emacs
