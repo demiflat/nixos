@@ -72,7 +72,7 @@
   };
 
   services.hypridle.enable = true;
-  services.blueman.enable = true;
+  #services.blueman.enable = true;
   #services.geoclue2.enable = true;
   #  services.automatic-timezoned.enable = true;
 
