@@ -68,6 +68,7 @@
     cups-brother-hll3230cdw
     #    cups-zj-58
     epson-escpr
+    dbus-broker
     ddcutil
     debootstrap
     delta
