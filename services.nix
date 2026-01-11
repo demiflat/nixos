@@ -47,6 +47,12 @@
   #services.displayManager.sddm.enable = true;
   #services.displayManager.sddm.wayland.enable = true;
   services.displayManager.ly.enable = true;
+  services.displayManager.ly.settings = {
+    animation = "matrix";
+    #bigclock = "en";
+    #bigclock_12hr = "true";
+    clock = "%c";
+  };
   #services.greetd.enable = true;
   #services.greetd.useTextGreeter = true;
 
