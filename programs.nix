@@ -8,6 +8,7 @@
 {
   programs = {
     uwsm.enable = true;
+    regreet.enable = true;
     steam.enable = true;
     nix-ld.enable = true;
     bcc.enable = true;

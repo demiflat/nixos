@@ -82,21 +82,40 @@
       powerOnBoot = true;
     };
     cpu.amd.updateMicrocode = true;
+    amdgpu = {
+      initrd.enable = true;
+      opencl.enable = true;
+    };
     enableRedistributableFirmware = true;
     graphics.enable = true;
+    ksm.enable = true;
     #    graphics.extraPackages = with pkgs; [
     #amdvlk
     #rocmPackages.clr
     #rocm-opencl-icd
     #rocm-opencl-runtime
     #    ];
+    libftdi.enable = true;
+    i2c.enable = true;
     keyboard.qmk.enable = true;
-    sane.enable = true;
+    rtl-sdr.enable = true;
+    sane = {
+      enable = true;
+      drivers.scanSnap.enable = true;
+    };
     # pulseaudio.enable = false;
     #    printers = {
     #      ensurePrinters = [
     #
     #      ];
     #    };
+    usbStorage.manageShutdown = true;
+    sensor = {
+      hddtemp.enable = true;
+      hddtemp.drives = [
+        "/dev/nvme0";
+        "/dev/nvme1";
+      ];
+    };
   };
 }
