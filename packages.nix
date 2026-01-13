@@ -608,6 +608,7 @@
     wofi
     wpgtk
     xan
+    wsdd
     wshowkeys
     xkcd-font
     xkcdpass
