@@ -450,6 +450,7 @@
     termdown
     #terraform-providers.libvirt
     terraform-providers.dmacvicar_libvirt
+    tuigreet
     openssl
     #    opentoonz
     libedit
