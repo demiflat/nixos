@@ -337,6 +337,7 @@
     #    nil
     nixfmt
     nixfmt-tree
+    nix-du
     nix-top
     nix-tree
     nixos-option
