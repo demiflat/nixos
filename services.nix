@@ -208,4 +208,9 @@
   #  services.clickhouse.enable = true;
   services.usbmuxd.enable = true;
   services.pcscd.enable = true;
+  #services.jellyfin = {
+  #  enable = true;
+  #  hardwareAcceleration.type = "amf";
+  #  transcoding.hardwareEncodingCodecs.hevc = true;
+  #};
 }
