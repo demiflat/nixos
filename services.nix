@@ -46,15 +46,23 @@
   #services.displayManager.gdm.wayland = true;
   #services.displayManager.sddm.enable = true;
   #services.displayManager.sddm.wayland.enable = true;
-  services.displayManager.ly.enable = true;
-  services.displayManager.ly.settings = {
-    animation = "matrix";
-    bigclock = "en";
-    bigclock_12hr = "true";
-    clock = "%c";
+  #services.displayManager.ly.enable = true;
+  #services.displayManager.ly.settings = {
+  #  animation = "matrix";
+  #  bigclock = "en";
+  #  bigclock_12hr = "true";
+  #  clock = "%c";
+  #};
+  services.greetd = {
+    enable = true;
+    useTextGreeter = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --sessions ${config.services.xserver.displayManager.sessionData.desktops}/share/xsessions:${config.services.xserver.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session";
+        user = "greeter";
+      };
+    };
   };
-  #services.greetd.enable = true;
-  #services.greetd.useTextGreeter = true;
   # no display manager:
   #services.xserver.displayManager.startx.enable = true;
 
