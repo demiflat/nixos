@@ -113,8 +113,8 @@
     sensor = {
       hddtemp.enable = true;
       hddtemp.drives = [
-        "/dev/nvme0";
-        "/dev/nvme1";
+        "/dev/nvme0"
+        "/dev/nvme1"
       ];
     };
   };
