@@ -16,7 +16,7 @@
       cursorTheme.name = "nordzy";
       settings = {
         background = {
-         path = ${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png;
+         path = "${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png";
          fit = "Cover";
         };
       };
