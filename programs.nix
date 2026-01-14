@@ -8,7 +8,21 @@
 {
   programs = {
     uwsm.enable = true;
-    regreet.enable = true;
+    regreet = {
+      enable = true;
+      settings = {
+        background = {
+         path = pkgs.nixos-artwork.wallpapers.stripes;
+         fit = "Cover";
+        };
+        #        GTK = {
+        # cursor_theme_name = "Bibata-Modern-Classic";
+        # font_name = "Jost * 12";
+        # icon_theme_name = "Papirus-Dark";
+        # theme_name = "Catppuccin-Mocha-Compact-Mauve-Dark";
+        #};
+      };
+    };
     steam.enable = true;
     nix-ld.enable = true;
     bcc.enable = true;
