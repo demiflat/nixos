@@ -17,7 +17,7 @@
       settings = {
         background = {
          path = "${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png";
-         fit = "Cover";
+         fit = "Fill";
         };
       };
     };
