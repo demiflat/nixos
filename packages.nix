@@ -38,6 +38,7 @@
     bun
     caddy
     can-utils
+    canta-theme
     cargo
     cfssl
     chafa
