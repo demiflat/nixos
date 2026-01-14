@@ -89,6 +89,7 @@
     #easyeffects
     # gnome-themes-extra
     # gnomeExtensions.easyeffects-preset-selector
+    elementary-xfce-icon-theme
     emacs
     envsubst
     eternal-terminal
@@ -345,6 +346,7 @@
     nixos-option
     nmap
     nodejs_20
+    nordzy-cursor-theme
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
