@@ -11,6 +11,7 @@
     regreet = {
       enable = true;
       theme.name = "canta";
+      font.name = "roboto-mono";
       settings = {
         background = {
          path = pkgs.nixos-artwork.wallpapers.stripes;
