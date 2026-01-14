@@ -340,6 +340,7 @@
     nix-du
     nix-top
     nix-tree
+    nixos-artwork.wallpapers.stripes
     nixos-option
     nmap
     nodejs_20
