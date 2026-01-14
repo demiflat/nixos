@@ -13,7 +13,7 @@
       theme.name = "canta";
       font.name = "roboto-mono";
       iconTheme.name = "elementary-xfce-icon-theme";
-      cursorTheme.name = "nordzy";
+      cursorTheme.name = "nordzy-cursor-theme";
       settings = {
         background = {
          path = "${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png";
