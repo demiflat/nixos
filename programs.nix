@@ -12,6 +12,7 @@
       enable = true;
       theme.name = "canta";
       font.name = "roboto-mono";
+      font.size= "22";
       iconTheme.name = "elementary-xfce-icon-theme";
       cursorTheme.name = "nordzy-cursor-theme";
       settings = {
