@@ -21,6 +21,11 @@
          fit = "Fill";
         };
       };
+      extraCss = "box#body {
+          background-color: rgba(46, 139, 87, 0.8);
+          border-radius: 10px;
+          padding: 50px;
+        }";
     };
     steam.enable = true;
     nix-ld.enable = true;
