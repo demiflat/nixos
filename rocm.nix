@@ -16,7 +16,7 @@
     rocmPackages.amdsmi
     rocmPackages.clr
     rocmPackages.composable_kernel
-    rocmPackages.composable_kernel_base
+    #rocmPackages.composable_kernel_base
     #rocmPackages.half
     rocmPackages.hip-common
     rocmPackages.hipblas-common
