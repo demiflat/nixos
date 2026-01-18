@@ -36,6 +36,7 @@
           # Replace the paths below with the appropriate device paths for your setup.
           # Use `ls /dev/input/by-path/` to find your keyboard devices.
           "/dev/input/by-id/usb-nuphy_NuPhy_Field75_HE_2023-11-15-event-kbd"
+          "/dev/input/by-id/usb-CATEX_TECH._87EC-S_CA2018080005-event-kbd"
         ];
         extraDefCfg = "process-unmapped-keys yes";
         config = ''
