@@ -15,20 +15,25 @@
     #rocmPackages.clang-ocl
     rocmPackages.amdsmi
     rocmPackages.clr
+    rocmPackages.ck4inductor
     rocmPackages.composable_kernel
     #rocmPackages.composable_kernel_base
-    #rocmPackages.half
+    rocmPackages.half
     rocmPackages.hip-common
+    rocmPackages.hipblas
     rocmPackages.hipblas-common
+    rocmPackages.hipblaslt
     #rocmPackages.hipcc
-    #rocmPackages.hipcub
+    rocmPackages.hipcub
     rocmPackages.hipfft
-    #rocmPackages.hipfort
+    rocmPackages.hipfort
     #rocmPackages.hipify
-    #rocmPackages.hiprand
-    #rocmPackages.hipsolver
+    rocmPackages.hiprand
+    rocmPackages.hiprt
+    rocmPackages.hipsolver
     rocmPackages.hipsparse
-    #rocmPackages.hsa-amd-aqlprofile-bin
+    rocmPackages.aqlprofile
+    rocmPackages.hsakmt
     #rocmPackages.llvm.bintools
     #rocmPackages.llvm.clang
     #rocmPackages.llvm.clang-tools-extra
@@ -54,18 +59,18 @@
     #    rocmPackages.miopen-opencl
     #    rocmPackages.miopengemm
     rocmPackages.mivisionx
-    rocmPackages.mivisionx-cpu
+    #rocmPackages.mivisionx-cpu
     rocmPackages.mivisionx-hip
     #rocmPackages.mivisionx-opencl
-    #rocmPackages.rccl
-    #    rocmPackages.rdc
-    #rocmPackages.rocalution
-    #rocmPackages.rocblas
+    rocmPackages.rccl
+    rocmPackages.rdc
+    rocmPackages.rocalution
+    rocmPackages.rocblas
     #rocmPackages.rocdbgapi
     rocmPackages.rocfft
-    #rocmPackages.rocgdb
+    rocmPackages.rocgdb
     #rocmPackages.rocm-cmake
-    #rocmPackages.rocm-comgr
+    rocmPackages.rocm-comgr
     rocmPackages.rocm-core
     rocmPackages.rocm-device-libs
     #rocmPackages.rocm-bandwith-test
@@ -76,19 +81,19 @@
     rocmPackages.rocminfo
     #rocmPackages.rocmlir
     #rocmPackages.rocmlir-rock
-    #rocmPackages.rocprim
-    #    rocmPackages.rocprofiler
+    rocmPackages.rocprim
+    rocmPackages.rocprofiler
     #rocmPackages.rocr-debug-agent
-    #rocmPackages.rocrand
-    #rocmPackages.rocsolver
-    #rocmPackages.rocsparse
-    #rocmPackages.rocthrust
-    #rocmPackages.roctracer
-    #rocmPackages.rocwmma
+    rocmPackages.rocrand
+    rocmPackages.rocsolver
+    rocmPackages.rocsparse
+    rocmPackages.rocthrust
+    rocmPackages.roctracer
+    rocmPackages.rocwmma
     rocmPackages.rpp
     #rocmPackages.rpp-cpu
     rocmPackages.rpp-hip
     #rocmPackages.rpp-opencl
-    #rocmPackages.tensile
+    rocmPackages.tensile
   ];
 }
