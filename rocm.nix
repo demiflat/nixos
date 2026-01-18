@@ -86,9 +86,9 @@
     #rocmPackages.roctracer
     #rocmPackages.rocwmma
     rocmPackages.rpp
-    rocmPackages.rpp-cpu
+    #rocmPackages.rpp-cpu
     rocmPackages.rpp-hip
-    rocmPackages.rpp-opencl
+    #rocmPackages.rpp-opencl
     #rocmPackages.tensile
   ];
 }
