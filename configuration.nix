@@ -28,7 +28,7 @@
     ./virtualization.nix
     #./3d-printer.nix
     #./rocm-hip.nix
-    # ./rocm.nix
+    ./rocm.nix
     #./jupiter.nix
     #./llama.nix
     #./auto-upgrade.nix
