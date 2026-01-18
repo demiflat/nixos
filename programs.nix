@@ -90,5 +90,7 @@
       "git.sr.ht".publicKey =
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMZvRd4EtM7R+IHVMWmDkVU3VLQTSwQDSAvW0t2Tkj60";
     };
+    # post quantum
+    ssh.kexAlgorithms = config.services.openssh.settings.KexAlgorithms;
   };
 }
