@@ -17,8 +17,8 @@
       cursorTheme.name = "nordzy-cursor-theme";
       settings = {
         background = {
-         path = "${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png";
-         fit = "Fill";
+          path = "${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png";
+          fit = "Fill";
         };
       };
       extraCss = "box#body {

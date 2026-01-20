@@ -36,6 +36,7 @@
       self,
       nixpkgs,
       lix-module,
+      lix,
       ...
     }@inputs:
     {
