@@ -37,4 +37,6 @@
   #    config.boot.kernelPackages.rtl8821au
   #  ];
 
+  # nixos-container support
+  boot.enableContainers = true;
 }
