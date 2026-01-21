@@ -38,25 +38,27 @@
           "/dev/input/by-id/usb-nuphy_NuPhy_Field75_HE_2023-11-15-event-kbd"
           "/dev/input/by-id/usb-CATEX_TECH._87EC-S_CA2018080005-event-kbd"
         ];
-        extraDefCfg = "process-unmapped-keys yes";
+        extraDefCfg = "process-unmapped-keys yes
+                       log-layer-changes yes";
         config = ''
           (defsrc
-           caps tab d h j k l
+           caps
+           h j k l
           )
           (defvar
            tap-time 200
            hold-time 200
           )
           (defalias
-           caps (tap-hold 200 200 esc lctl)
-           tab (tap-hold $tap-time $hold-time tab (layer-toggle arrow))
-           del del  ;; Alias for the true delete key action
+           caps (layer-while-held $vim)
           )
-          (deflayer base
-           @caps @tab d h j k l
+          (deflayer default
+           @caps
+           h j k l
           )
-          (deflayer arrow
-           _ _ @del left down up right
+          (deflayer vim
+           _
+           left down up right
           )
         '';
       };
