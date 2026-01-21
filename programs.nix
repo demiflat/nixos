@@ -18,7 +18,8 @@
       settings = {
         background = {
           #path = "${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png";
-          path = "${pkgs.nixos-artwork.wallpapers.stripes.gnomeFilePath} }";
+          #path = "${pkgs.nixos-artwork.wallpapers.stripes.gnomeFilePath} }";
+          path = "/nix/store/9dv4n8qajmbjd7k1yxrnw6q6hs7pxzzy-nix-wallpaper-stripes.png";
           fit = "Fill";
         };
       };
@@ -72,6 +73,7 @@
       enable = true;
       withUWSM = true;
       xwayland.enable = true;
+      portalPackage = pkgs.xdg-desktop-portal-hyprland;
     };
     hyprlock.enable = true;
     waybar.enable = true;
