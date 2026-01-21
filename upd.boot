@@ -1,3 +1,4 @@
+treefmt
 nix flake update
 echo "********************************************************************************"
 echo "* nix flake update done.                                                       *"
