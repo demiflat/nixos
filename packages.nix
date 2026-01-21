@@ -220,7 +220,7 @@
     lego
     libfido2
     libnotify
-    librewolf
+    #librewolf
     #libreoffice-fresh
     #    libreoffice-qt6-fresh
     #    libsForQt5.qt5ct
