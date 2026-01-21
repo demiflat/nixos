@@ -12,6 +12,7 @@
 {
   imports = [
     ./boot.nix
+    ./kb.nix
     ./cpufreq.nix
     ./ddc.nix
     ./locale.nix
