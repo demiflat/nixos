@@ -340,6 +340,7 @@
     nixfmt
     nixfmt-tree
     nix-du
+    nix-search-tv
     nix-top
     nix-tree
     nixos-artwork.wallpapers.stripes
