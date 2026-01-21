@@ -1,4 +1,5 @@
 {
+  pkgs,
   config,
   lib,
   modulesPath,
@@ -86,5 +87,8 @@
     FREETYPE_PROPERTIES = "cff:no-stem-darkening=0 autofitter:no-stem-darkening=0";
   };
 
+  environment.systemPackages = [
+    pkgs.nixos-artwork.wallpapers.stripes;
+  ];
   environment.pathsToLink = [ "/share/backgrounds/nixos" ];
 }
