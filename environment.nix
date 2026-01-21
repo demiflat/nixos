@@ -88,7 +88,7 @@
   };
 
   environment.systemPackages = [
-    pkgs.nixos-artwork.wallpapers.stripes;
+    pkgs.nixos-artwork.wallpapers.stripes
   ];
   environment.pathsToLink = [ "/share/backgrounds/nixos" ];
 }
