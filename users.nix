@@ -10,6 +10,7 @@
         "sound"
         "dialout"
         "input"
+        "uinput"
         # "jupyter"
         "libvirtd"
         "lp"
