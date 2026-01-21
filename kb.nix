@@ -56,7 +56,7 @@
            @caps
            h j k l
           )
-          (deflayer vim
+          (deflayer $vim
            _
            left down up right
           )
