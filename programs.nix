@@ -10,7 +10,7 @@
     uwsm.enable = true;
     regreet = {
       enable = true;
-      theme.name = "canta";
+      theme.name = "Canta-dark";
       font.name = "roboto-mono";
       font.size = 22;
       iconTheme.name = "elementary-xfce-icon-theme";
