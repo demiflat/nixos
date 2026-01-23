@@ -8,28 +8,28 @@
 {
   programs = {
     uwsm.enable = true;
-    regreet = {
-      enable = true;
-      theme.name = "Canta-dark";
-      font.name = "roboto-mono";
-      font.size = 22;
-      iconTheme.name = "elementary-xfce-icon-theme";
-      cursorTheme.name = "nordzy-cursor-theme";
-      settings = {
-        background = {
-          #path = "${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png";
-          #path = "${pkgs.nixos-artwork.wallpapers.stripes.gnomeFilePath} }";
-          path = "/nix/store/9dv4n8qajmbjd7k1yxrnw6q6hs7pxzzy-nix-wallpaper-stripes.png";
-          #fit = "Fill";
-          fit = "Cover";
-        };
-      };
-      extraCss = "box#body {
-          background-color: rgba(46, 139, 87, 0.8);
-          border-radius: 10px;
-          padding: 50px;
-        }";
-    };
+    #    regreet = {
+    #  enable = true;
+    #  theme.name = "Canta-dark";
+    #  font.name = "roboto-mono";
+    #  font.size = 22;
+    #  iconTheme.name = "elementary-xfce-icon-theme";
+    #  cursorTheme.name = "nordzy-cursor-theme";
+    #  settings = {
+    #    background = {
+    #      #path = "${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png";
+    #      #path = "${pkgs.nixos-artwork.wallpapers.stripes.gnomeFilePath} }";
+    #      path = "/nix/store/9dv4n8qajmbjd7k1yxrnw6q6hs7pxzzy-nix-wallpaper-stripes.png";
+    #      #fit = "Fill";
+    #      fit = "Cover";
+    #    };
+    #  };
+    #  extraCss = "box#body {
+    #      background-color: rgba(46, 139, 87, 0.8);
+    #      border-radius: 10px;
+    #      padding: 50px;
+    #    }";
+    #};
     steam.enable = true;
     nix-ld.enable = true;
     bcc.enable = true;
