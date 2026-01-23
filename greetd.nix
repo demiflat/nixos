@@ -13,7 +13,7 @@ in
     enable = true;
     settings = {
       default_session = {
-        command = "${tuigreet} --issue --time --asterisks --remember --remember-session --sessions ${hyprland-session} --greet-align right --theme border=magenta;text=cyan;prompt=green;time=red;action=blue;button=yellow;container=black;input=red";
+        command = "${tuigreet} --issue --time --asterisks --remember --remember-session --sessions ${hyprland-session} --greet-align right --theme 'border=magenta;text=cyan;prompt=green;time=red;action=blue;button=yellow;container=black;input=red'";
         user = "greeter";
       };
     };
