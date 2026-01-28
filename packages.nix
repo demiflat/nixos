@@ -99,6 +99,7 @@
     fastfetch
     fastgron
     fd
+    feishin
     ffmpeg_6-full
     figlet
     file
