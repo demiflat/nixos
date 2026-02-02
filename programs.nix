@@ -35,6 +35,18 @@
     bcc.enable = true;
     sysdig.enable = true;
     dconf.enable = true;
+    dconf.profiles.user.databases = [
+      {
+        settings."org/gnome/desktop/interface" = {
+          gtk-theme = "Adwaita";
+          #icon-theme = "Flat-Remix-Red-Dark";
+          icon-theme = "Adwaita";
+          font-name = "Noto Sans Medium 11";
+          document-font-name = "Noto Sans Medium 11";
+          monospace-font-name = "Noto Sans Mono Medium 11";
+        };
+      }
+    ];
     direnv.enable = true;
     mtr.enable = true;
     wireshark.enable = true;
