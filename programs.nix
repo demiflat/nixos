@@ -39,6 +39,7 @@
       {
         settings."org/gnome/desktop/interface" = {
           gtk-theme = "Adwaita";
+          #gtk-theme = "Mojave-Dark";
           #icon-theme = "Flat-Remix-Red-Dark";
           icon-theme = "Adwaita";
           font-name = "Noto Sans Medium 11";
