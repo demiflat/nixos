@@ -96,7 +96,7 @@
   # gnome-keyring for the secrets management service. Also adds its
   # password prompter GUIs to the session bus's service list, so it
   # can fire interactive prompts for auth.
-  services.gnome.gnome-keyring.enable = true;
+  #services.gnome.gnome-keyring.enable = true;
 
   # Flatpak is useful to get a couple things that aren't packaged for
   # NixOS, like Parsec.
