@@ -23,7 +23,10 @@
     ##############
     RestrictAddressFamilies = "AF_INET AF_INET6 AF_NETLINK AF_UNIX";
     IPAddressDeny = "any";
-    IPAddressAllow = [ "localhost" "10.1.1.0/8" ];
+    IPAddressAllow = [
+      "localhost"
+      "10.1.1.0/8"
+    ];
 
     ###############
     # File system #
