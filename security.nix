@@ -15,4 +15,5 @@
 
   # unlock GPG keyring on login
   security.pam.services.greetd.gnupg.enable = true;
+  security.pam.services.greetd.enableGnomeKeyring.enable = true;
 }
