@@ -233,6 +233,7 @@
     links2
     #    litestream
     lix
+    llama-cpp
     lldb
     #llvmPackages.mlir
     logiops
