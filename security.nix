@@ -17,7 +17,7 @@
   security.pam.services.greetd.gnupg.enable = true;
   security.pam.services.greetd.enableGnomeKeyring = true;
 
-  systemd.services."cups".serviceConfig = {
+  systemd.services.cups.serviceConfig = {
     ##############
     # Networking #
     ##############
@@ -84,7 +84,7 @@
     SystemCallArchitectures = "native";
   };
 
-  systemd.services."sshd".serviceConfig = {
+  systemd.services.sshd.serviceConfig = {
     ##############
     # Networking #
     ##############
