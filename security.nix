@@ -43,6 +43,7 @@
       "/etc/printcap"
       "/var/cache/cups"
       "/var/spool/cups"
+    ];
     LogsDirectory = "cups";
     RuntimeDirectory = "cups";
     PrivateTmp = true;
