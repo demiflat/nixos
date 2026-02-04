@@ -38,7 +38,7 @@
 
     ProtectHome = true;
     ProtectSystem = "strict";
-    #ReadWritePaths = /etc/cups /etc/printcap /var/cache/cups /var/spool/cups
+    ReadWritePaths = /etc/cups /etc/printcap /var/cache/cups /var/spool/cups
     LogsDirectory = "cups";
     RuntimeDirectory = "cups";
     PrivateTmp = true;
