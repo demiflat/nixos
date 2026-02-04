@@ -84,6 +84,13 @@
     SystemCallArchitectures = "native";
   };
 
+  systemd.services."sshd".serviceConfig = {
+    ##############
+    # Networking #
+    ##############
+    IPAccounting = true;
+
+  };
   # template
   #systemd.services."".serviceConfig  =  {
   #};
