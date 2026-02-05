@@ -90,6 +90,7 @@
     #easyeffects
     # gnome-themes-extra
     # gnomeExtensions.easyeffects-preset-selector
+    gnome-firmware
     elementary-xfce-icon-theme
     emacs
     envsubst
