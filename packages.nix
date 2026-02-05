@@ -608,6 +608,7 @@
     wezterm
     #xfce.thunar
     wget
+    whipper
     wireguard-tools
     wl-clipboard
     wl-clip-persist
