@@ -8,6 +8,7 @@
 {
   environment.systemPackages = with pkgs; [
     #    inputs.zen-browser.packages."${system}".twilight
+    abcde
     akkuPackages.scheme-langserver
     abiword
     asciinema
