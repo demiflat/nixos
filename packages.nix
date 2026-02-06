@@ -396,7 +396,8 @@
     pw-volume
     pwru
 
-    python3
+    python313
+    python313Packages.smolagents
     #    python3Full
     #python311Packages.pip
 
