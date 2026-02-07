@@ -92,6 +92,10 @@
   #services.blueman.enable = true;
   #services.geoclue2.enable = true;
   #  services.automatic-timezoned.enable = true;
+  services.timesyncd.servers = [
+    "time.sonic.net"
+    "time2.sonic.net"
+  ];
 
   # gnome-keyring for the secrets management service. Also adds its
   # password prompter GUIs to the session bus's service list, so it
