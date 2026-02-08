@@ -12,6 +12,7 @@
         "input"
         "uinput"
         # "jupyter"
+        "libvirt"
         "libvirtd"
         "lp"
         "networkmanager"
