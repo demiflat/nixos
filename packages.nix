@@ -208,6 +208,7 @@
     killall
     kitty
     koreader
+    kind
     kubebuilder
     kubecolor
     kubectl
@@ -381,6 +382,7 @@
     # platformio-core
     podman
     podman-compose
+    podman-desktop
     podman-tui
     #    popcorntime
     poppler-utils
