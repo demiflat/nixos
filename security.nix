@@ -14,8 +14,14 @@
   security.tpm2.tctiEnvironment.enable = true;
 
   # unlock GPG keyring on login
-  security.pam.services.greetd.gnupg.enable = true;
-  security.pam.services.greetd.enableGnomeKeyring = true;
+  security.pam.services = {
+    login.u2fAuth = true;
+    sudo.u2fAuth = true;
+    greetd = {
+      gnupg.enable = true;
+      enableGnomeKeyring = true;
+    };
+  };
 
   systemd.services.cups.serviceConfig = {
     ##############
