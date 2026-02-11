@@ -142,5 +142,9 @@
     pkgs.system76-wallpapers
     pkgs.texlivePackages.wallpaper
   ];
-  environment.pathsToLink = [ "/share/backgrounds/nixos" ];
+  environment.pathsToLink = [
+    "/share/backgrounds/nixos"
+    "/share/wallpapers"
+    "/share/plasma/wallpapers"
+  ];
 }
