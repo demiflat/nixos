@@ -88,7 +88,43 @@
   };
 
   environment.systemPackages = [
+    pkgs.nixos-artwork.wallpapers.binary-black
+    pkgs.nixos-artwork.wallpapers.binary-blue
+    pkgs.nixos-artwork.wallpapers.binary-red
+    pkgs.nixos-artwork.wallpapers.binary-white
+    pkgs.nixos-artwork.wallpapers.catppuccin-frappe
+    pkgs.nixos-artwork.wallpapers.catppuccin-latte
+    pkgs.nixos-artwork.wallpapers.catppuccin-macchiato
+    pkgs.nixos-artwork.wallpapers.catppuccin-mocha
+    pkgs.nixos-artwork.wallpapers.dracula
+    pkgs.nixos-artwork.wallpapers.gear
+    pkgs.nixos-artwork.wallpapers.gnome-dark
+    pkgs.nixos-artwork.wallpapers.gradient-grey
+    pkgs.nixos-artwork.wallpapers.moonscape
+    pkgs.nixos-artwork.wallpapers.mosaic-blue
+    pkgs.nixos-artwork.wallpapers.nineish
+    pkgs.nixos-artwork.wallpapers.nineish-catppuccin-frappe
+    pkgs.nixos-artwork.wallpapers.nineish-catppuccin-frappe-alt
+    pkgs.nixos-artwork.wallpapers.nineish-catppuccin-latte
+    pkgs.nixos-artwork.wallpapers.nineish-catppuccin-latte-alt
+    pkgs.nixos-artwork.wallpapers.nineish-catppuccin-macchiato
+    pkgs.nixos-artwork.wallpapers.nineish-catppuccin-macchiato-alt
+    pkgs.nixos-artwork.wallpapers.nineish-catppuccin-mocha
+    pkgs.nixos-artwork.wallpapers.nineish-catppuccin-mocha-alt
+    pkgs.nixos-artwork.wallpapers.nineish-dark-gray
+    pkgs.nixos-artwork.wallpapers.nineish-solarized-dark
+    pkgs.nixos-artwork.wallpapers.nineish-solarized-light
+    pkgs.nixos-artwork.wallpapers.recursive
+    pkgs.nixos-artwork.wallpapers.simple-blue
+    pkgs.nixos-artwork.wallpapers.simple-dark-gray
+    pkgs.nixos-artwork.wallpapers.simple-dark-gray-bootloader
+    pkgs.nixos-artwork.wallpapers.simple-dark-gray-bottom
+    pkgs.nixos-artwork.wallpapers.simple-light-gray
+    pkgs.nixos-artwork.wallpapers.simple-red
     pkgs.nixos-artwork.wallpapers.stripes
+    pkgs.nixos-artwork.wallpapers.stripes-logo
+    pkgs.nixos-artwork.wallpapers.waterfall
+    pkgs.nixos-artwork.wallpapers.watersplash
   ];
   environment.pathsToLink = [ "/share/backgrounds/nixos" ];
 }
