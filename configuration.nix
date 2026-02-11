@@ -386,7 +386,8 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.05"; # Did you read the comment?
 
-  system.copySystemConfiguration = true;
+  # not supported on flakes :(
+  #system.copySystemConfiguration = true;
 
   # # Avoid TOFU MITM with github by providing their public key here.
   # programs.ssh.knownHosts = {
