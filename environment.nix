@@ -89,7 +89,6 @@
 
   environment.systemPackages = [
     pkgs.cosmic-wallpapers
-    pkgs.dipc
     pkgs.fedora-backgrounds.f32
     pkgs.fedora-backgrounds.f33
     pkgs.fedora-backgrounds.f34
@@ -97,9 +96,6 @@
     pkgs.fedora-backgrounds.f36
     pkgs.fedora-backgrounds.f37
     pkgs.fedora-backgrounds.f38
-    pkgs.fondo
-    pkgs.hsetroot
-    pkgs.hydrapaper
     pkgs.kdePackages.plasma-workspace-wallpapers
     pkgs.lomiri.lomiri-wallpapers
     pkgs.neowall
@@ -143,7 +139,6 @@
     pkgs.pantheon.elementary-wallpapers
     pkgs.pop-hp-wallpapers
     pkgs.pop-wallpapers
-    pkgs.stylish
     pkgs.system76-wallpapers
     pkgs.texlivePackages.wallpaper
   ];
