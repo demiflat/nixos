@@ -14,6 +14,7 @@
     settings = {
       Resolve = {
         Domains = [ 
+          "demiflat.org"
           "demiflat.com"
           "~."
         ];
