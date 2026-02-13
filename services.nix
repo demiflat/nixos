@@ -9,12 +9,14 @@
   services.lvm.boot.thin.enable = true;
 
   services.dbus.implementation = "broker";
-
   services.resolved = {
     enable = true;
     settings = {
       Resolve = {
-        domains = [ "~." ];
+        Domains = [ 
+          "demiflat.com"
+          "~."
+        ];
         DNSSEC = "false";
         LLMNR = "false";
         FallbackDNS = [
