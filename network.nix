@@ -130,7 +130,10 @@
           #   DHCPv6Client = "always";
           #   UseDNS = false;
           # };
-          domains = [ "demiflat.org" ];
+          domains = [ 
+            "demiflat.org"
+            #            "demiflat.com"
+          ];
           linkConfig.RequiredForOnline = "routable";
         };
         # "30-wifi" = {
