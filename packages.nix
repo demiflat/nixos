@@ -534,7 +534,7 @@
     scrot
     skopeo
     socat
-    spacevim
+    #spacevim
     sqlite
     #    sqlitebrowser
     strace
