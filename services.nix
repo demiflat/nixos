@@ -23,7 +23,7 @@
         ];
       };
     };
-    domains = [ 
+    domains = [
       "demiflat.org"
       "~."
     ];
