@@ -15,7 +15,7 @@
       Resolve = {
         Domains = [
           "demiflat.org"
-          "demiflat.com"
+          #          "demiflat.com"
           "~."
         ];
         DNSSEC = "false";
