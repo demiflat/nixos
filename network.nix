@@ -130,7 +130,7 @@
           #   DHCPv6Client = "always";
           #   UseDNS = false;
           # };
-          domains = [ 
+          domains = [
             "demiflat.org"
             #            "demiflat.com"
           ];

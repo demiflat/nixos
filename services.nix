@@ -13,7 +13,7 @@
     enable = true;
     settings = {
       Resolve = {
-        Domains = [ 
+        Domains = [
           "demiflat.org"
           "demiflat.com"
           "~."
