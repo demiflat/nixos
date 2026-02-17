@@ -20,6 +20,7 @@
         "render"
         "scanner"
         "tss"
+        "tty"
         "video"
         "wheel"
         "wireshark"
