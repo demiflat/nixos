@@ -44,9 +44,9 @@
     {
       nixosConfigurations = {
         yoshi = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
           specialArgs =
             let
+              system = "x86_64-linux";
             in
             {
               # To use packages from nixpkgs-stable,
@@ -57,15 +57,11 @@
                 # installation of non-free software.
                 config.allowUnfree = true;
               };
-              #pkgs-fd40cef8d = import nixpkgs-fd40cef8d {
-              #inherit system;
+              # pkgs-fd40cef8d = import nixpkgs-fd40cef8d {
+              # inherit system;
               #config.allowUnfree = true;
               #};
             };
-          #          specialArgs = {
-          #            inherit inputs;
-          #            system = "x86_64-linux";
-          #          };
           modules = [
             #inputs.isd.default
             ./configuration.nix
