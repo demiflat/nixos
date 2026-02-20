@@ -65,7 +65,7 @@
     rocmPackages.rccl
     rocmPackages.rdc
     rocmPackages.rocalution
-    rocmPackages.rocblas
+    #rocmPackages.rocblas
     #rocmPackages.rocdbgapi
     rocmPackages.rocfft
     rocmPackages.rocgdb
