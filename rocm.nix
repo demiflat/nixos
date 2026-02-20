@@ -30,7 +30,7 @@
     #rocmPackages.hipify
     rocmPackages.hiprand
     rocmPackages.hiprt
-    rocmPackages.hipsolver
+    #rocmPackages.hipsolver
     rocmPackages.hipsparse
     rocmPackages.aqlprofile
     rocmPackages.hsakmt
@@ -53,18 +53,18 @@
     #rocmPackages.llvm.polly
     #rocmPackages.llvm.pstl
     #rocmPackages.llvm.rocmClangStdenv
-    rocmPackages.migraphx
-    rocmPackages.miopen
+    #rocmPackages.migraphx
+    #rocmPackages.miopen
     #    rocmPackages.miopen-hip
     #    rocmPackages.miopen-opencl
     #    rocmPackages.miopengemm
-    rocmPackages.mivisionx
+    #rocmPackages.mivisionx
     #rocmPackages.mivisionx-cpu
     rocmPackages.mivisionx-hip
     #rocmPackages.mivisionx-opencl
     rocmPackages.rccl
     rocmPackages.rdc
-    rocmPackages.rocalution
+    #rocmPackages.rocalution
     #rocmPackages.rocblas
     #rocmPackages.rocdbgapi
     rocmPackages.rocfft
@@ -85,7 +85,7 @@
     rocmPackages.rocprofiler
     #rocmPackages.rocr-debug-agent
     rocmPackages.rocrand
-    rocmPackages.rocsolver
+    #rocmPackages.rocsolver
     rocmPackages.rocsparse
     rocmPackages.rocthrust
     rocmPackages.roctracer
