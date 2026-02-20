@@ -320,6 +320,8 @@
     nerd-fonts.monoid
     nerd-fonts.mononoki
     #    nerd-fonts.mplus
+    noto-fonts-cjk-serif
+    noto-fonts-cjk-sans
     nerd-fonts.noto
     nerd-fonts.open-dyslexic
     nerd-fonts.overpass
