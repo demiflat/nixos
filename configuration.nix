@@ -6,17 +6,17 @@
   config,
   lib,
   pkgs,
-  pkgs-stable,
+  nixpkgs-stable,
   modulesPath,
   ...
 }:
 {
-      nixpkgs.overlays = [
-        (self: super: {
-          transmission_4 = nixpkgs-stable.transmission_4;
-          transmission_4-gtk = nixpkgs-stable.transmission_4-gtk;
-        })
-      ];
+  nixpkgs.overlays = [
+    (self: super: {
+      transmission_4 = nixpkgs-stable.transmission_4;
+      transmission_4-gtk = nixpkgs-stable.transmission_4-gtk;
+    })
+  ];
   imports = [
     ./boot.nix
     ./greetd.nix
