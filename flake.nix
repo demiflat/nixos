@@ -42,6 +42,15 @@
       ...
     }@inputs:
     {
+      nixpkgs.overlays = [
+        # Overlay: Use `self` and `super` to express
+        # the inheritance relationship
+        (self: super: {
+          transmission_4 = nixpkgs-stable.transmission_4;
+          transmission_4-gtk = nixpkgs-stable.transmission_4-gtk;
+        })
+      ];
+
       nixosConfigurations = {
         yoshi = nixpkgs.lib.nixosSystem {
           specialArgs =
