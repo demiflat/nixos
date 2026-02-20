@@ -356,6 +356,7 @@
     nix-tree
     nixos-artwork.wallpapers.stripes
     nixos-option
+    nix-output-monitor
     nmap
     nodejs_20
     nordzy-cursor-theme
