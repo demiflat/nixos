@@ -6,15 +6,15 @@
   config,
   lib,
   pkgs,
-  nixpkgs-stable,
+  pkgs-stable,
   modulesPath,
   ...
 }:
 {
   nixpkgs.overlays = [
     (self: super: {
-      transmission_4 = nixpkgs-stable.transmission_4;
-      transmission_4-gtk = nixpkgs-stable.transmission_4-gtk;
+      transmission_4 = pkgs-stable.transmission_4;
+      transmission_4-gtk = pkgs-stable.transmission_4-gtk;
     })
   ];
   imports = [
