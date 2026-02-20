@@ -7,10 +7,6 @@
   ...
 }:
 {
-  environment.systemPackages = with pkgs-stable; [
-    transmission_4
-    transmission_4-gtk
-  ];
 
   environment.systemPackages = with pkgs; [
     # llm
@@ -564,8 +560,8 @@
     tio
     #    tpmmanager
     tpm2-tools
-    #transmission_4
-    #transmission_4-gtk
+    transmission_4
+    transmission_4-gtk
     tree
     tree-sitter
     tree-sitter-grammars.tree-sitter-bash
