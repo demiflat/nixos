@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
     lix = {
       url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
       flake = false;
@@ -35,6 +36,7 @@
     {
       self,
       nixpkgs,
+      nixpkgs-stable,
       lix-module,
       lix,
       ...
@@ -43,6 +45,23 @@
       nixosConfigurations = {
         yoshi = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs =
+            let
+            in
+            {
+              # To use packages from nixpkgs-stable,
+              # we configure some parameters for it first
+              pkgs-stable = import nixpkgs-stable {
+                inherit system;
+                # To use Chrome, we need to allow the
+                # installation of non-free software.
+                config.allowUnfree = true;
+              };
+              #pkgs-fd40cef8d = import nixpkgs-fd40cef8d {
+              #inherit system;
+              #config.allowUnfree = true;
+              #};
+            };
           #          specialArgs = {
           #            inherit inputs;
           #            system = "x86_64-linux";
