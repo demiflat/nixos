@@ -21,6 +21,7 @@
     ./boot.nix
     ./greetd.nix
     ./kb.nix
+    #./kanata.nix
     ./cpufreq.nix
     ./ddc.nix
     ./locale.nix
