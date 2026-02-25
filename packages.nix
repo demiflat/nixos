@@ -11,7 +11,7 @@
   environment.systemPackages = with pkgs; [
     # llm
     llama-cpp
-    vllm
+    #vllm
     #    inputs.zen-browser.packages."${system}".twilight
     abcde
     akkuPackages.scheme-langserver
