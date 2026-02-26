@@ -1,4 +1,9 @@
-{ config, pkgs, pkgs-stable, ... }:
+{
+  config,
+  pkgs,
+  pkgs-stable,
+  ...
+}:
 {
   environment.systemPackages = with pkgs; [
     pkgs-stable.freecad
