@@ -406,7 +406,7 @@
     pwru
 
     python313
-    python313Packages.smolagents
+    #python313Packages.smolagents
     #    python3Full
     #python311Packages.pip
 
