@@ -1,7 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, pkgs-stable, ... }:
 {
   environment.systemPackages = with pkgs; [
-    freecad
+    pkgs-stable.freecad
     #cura
     orca-slicer
     #prusa-slicer
