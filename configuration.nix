@@ -108,6 +108,8 @@
     #package = pkgs.nixFlakes;
   };
 
+  console.font = "gr737b-9x16-medieval";
+
   # For the hacking.
   documentation = {
     man.enable = true;
