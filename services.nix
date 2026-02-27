@@ -34,10 +34,10 @@
     #  "1.1.1.1#one.one.one.one"
     #  "1.0.0.1#one.one.one.one"
     #];
-    extraConfig = ''
-      #DNSOverTLS=yes
-      MulticastDNS=true
-    '';
+    #extraConfig = ''
+    #  #DNSOverTLS=yes
+    #  MulticastDNS=true
+    #'';
   };
 
   # Good for SSD
