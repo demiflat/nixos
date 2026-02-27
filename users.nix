@@ -16,6 +16,7 @@
         "libvirtd"
         "lp"
         "networkmanager"
+        "netdev"
         "podman"
         "render"
         "scanner"

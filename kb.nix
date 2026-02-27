@@ -19,5 +19,6 @@
 
   # Ensure the uinput group exists
   users.groups.uinput = { };
+  users.groups.netdev = { };
 
 }
