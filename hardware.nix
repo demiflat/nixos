@@ -52,7 +52,12 @@
   fileSystems."/boot/efi" = {
     device = "/dev/disk/by-label/efi";
     fsType = "vfat";
-    options =  [ "uid=0" "gid=0" "fmask=0077" "dmask=0077" ];
+    options = [
+      "uid=0"
+      "gid=0"
+      "fmask=0077"
+      "dmask=0077"
+    ];
   };
 
   fileSystems."/home" = {
