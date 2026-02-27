@@ -34,9 +34,10 @@
     #  "1.1.1.1#one.one.one.one"
     #  "1.0.0.1#one.one.one.one"
     #];
-    #extraConfig = ''
-    #  DNSOverTLS=yes
-    #'';
+    extraConfig = ''
+      #DNSOverTLS=yes
+      MulticastDNS=true
+    '';
   };
 
   # Good for SSD
@@ -48,11 +49,11 @@
 
   services.lldpd.enable = true;
 
-  services.avahi = {
-    enable = true;
-    nssmdns4 = true;
-    openFirewall = true;
-  };
+  #services.avahi = {
+  #  enable = true;
+  #  nssmdns4 = true;
+  #  openFirewall = true;
+  #};
 
   services.fwupd.enable = true;
 
