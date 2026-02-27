@@ -108,7 +108,8 @@
     #package = pkgs.nixFlakes;
   };
 
-  console.font = "gr737b-9x16-medieval";
+  #console.font = "gr737b-9x16-medieval";
+  console.font = "${pkgs.kbd}/share/consolefonts/gr737b-9x16-medieval.psfu.gz";
 
   # For the hacking.
   documentation = {
