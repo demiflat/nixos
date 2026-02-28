@@ -193,6 +193,7 @@
     idevicerestore
     usbmuxd
     ifuse
+    isd
     libimobiledevice
     imagemagick
     imhex
