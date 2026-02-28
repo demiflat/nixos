@@ -87,7 +87,6 @@
     dina-font
     diskus
     dive
-    dot
     #    doublecmd
     duf
     duff
@@ -97,6 +96,7 @@
     # gnome-themes-extra
     # gnomeExtensions.easyeffects-preset-selector
     gnome-firmware
+    graphviz
     elementary-xfce-icon-theme
     emacs
     envsubst
