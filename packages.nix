@@ -87,6 +87,7 @@
     dina-font
     diskus
     dive
+    dot
     #    doublecmd
     duf
     duff
