@@ -2929,7 +2929,7 @@
     vimPlugins.vim-manpager
     vimPlugins.vim-markbar
     vimPlugins.vim-markdown
-#    vimPlugins.vim-markdown-composer
+    #    vimPlugins.vim-markdown-composer
     vimPlugins.vim-markdown-toc
     vimPlugins.vim-matchtag
     vimPlugins.vim-matchup
