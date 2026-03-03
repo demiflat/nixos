@@ -2469,7 +2469,6 @@
     vimPlugins.sort-nvim
     vimPlugins.sourcemap
     vimPlugins.sourcemap-vim
-    vimPlugins.sourcemap.vim
     vimPlugins.SpaceCamp
     vimPlugins.spaceman-nvim
     vimPlugins.space-vim
