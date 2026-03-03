@@ -127,8 +127,8 @@
     gdu
     gimp
     gitbatch
-    gitMinimal
-    #gitFull
+    #gitMinimal
+    gitFull
     gitg
     git-lfs
     git-repo
