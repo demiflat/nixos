@@ -2283,7 +2283,7 @@
     vimPlugins.onedark-vim
     vimPlugins.onehalf
     vimPlugins.onenord-nvim
-#    vimPlugins.one-nvim
+    #    vimPlugins.one-nvim
     vimPlugins.one-small-step-for-vimkind
     vimPlugins.open-browser
     vimPlugins.open-browser-github-vim
