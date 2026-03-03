@@ -9,14 +9,10 @@
 {
 
   environment.systemPackages = with pkgs; [
-    # llm
-    llama-cpp
-    #vllm
-    #    inputs.zen-browser.packages."${system}".twilight
+
     abcde
-    akkuPackages.scheme-langserver
     abiword
-    asciinema
+    akkuPackages.scheme-langserver
     alacritty
     alsa-utils
     amd-blis
@@ -26,30 +22,31 @@
     android-file-transfer
     appimage-run
     aria2
+    asciinema
     b612
     bat
     bc
     #    beets
-    bottom
     binocle
     blocky
     blueberry
     bluetui
     bluetuith
     bluez-tools
+    bottom
     #    brasero
+    # broken
     broot
     btop
     buildah
     bun
     caddy
-    can-utils
     canta-theme
+    can-utils
     cargo
     cfssl
     chafa
     chromium
-    ##nemo-with-extensions
     circt
     clblast
     clinfo
@@ -66,23 +63,23 @@
     cri-o
     cri-tools
     criu
-    crun
     crrcsim
-    #    flightgear
+    crun
+    cups-brother-hll3230cdw
     cups-browsed
     cups-filters
     cups-printers
-    cups-brother-hll3230cdw
     #    cups-zj-58
-    epson-escpr
     dbus-broker
     ddcutil
     debootstrap
     delta
+    delve
+    deno
     detox
-    diffuse
     #diffoscope
     difftastic
+    diffuse
     dig
     dina-font
     diskus
@@ -93,13 +90,12 @@
     dunst
     dust
     #easyeffects
-    # gnome-themes-extra
-    # gnomeExtensions.easyeffects-preset-selector
-    gnome-firmware
-    graphviz
     elementary-xfce-icon-theme
     emacs
+    # end rocm
     envsubst
+    epson-escpr
+    # esphome
     eternal-terminal
     evtest
     exfat
@@ -115,6 +111,7 @@
     fio
     firefox
     fish
+    #    flightgear
     fnm
     foliate
     font-awesome
@@ -125,44 +122,43 @@
     fzf
     #    gbar
     gdu
+    gedit
+    ghostty
     gimp
+    #    gitAndTools.git-extras
     gitbatch
-    #gitMinimal
+    git-extras
     gitFull
     gitg
     git-lfs
+    #gitMinimal
     git-repo
-    #    gitAndTools.git-extras
-    git-extras
     git-repo-updater
-    ghostty
-    glow
-    gedit
-    # gnome-tweaks
+    gkrellm
     glib
-    guile
-    simple-scan
+    glow
+    # gnomeExtensions.easyeffects-preset-selector
+    gnome-firmware
+    # gnome-themes-extra
+    # gnome-tweaks
     gnumeric
-    gptfdisk
     #go
     go
-    gopls
-    delve
-    gomodifytags
-    impl
-    gotests
-    go-tools
     #    golangci-lint
     #    golangci-lint-langserver
-
-    gkrellm
     gomi
+    gomodifytags
+    gopls
     gossa
+    gotests
+    go-tools
     gotty
-    graphviz
-    # gron
     gparted
     gping
+    gptfdisk
+    graphviz
+    # gron
+    guile
     gvproxy
     hack-font
     helix
@@ -173,15 +169,15 @@
     hunspell
     hunspellDicts.en_US
     hyperfine
-    # hyprland
     hypr
     hyprcursor
     hypridle
+    # hyprland
     hyprland
+    hyprland-protocols
     hyprlauncher
     hyprlock
     hyprpaper
-    hyprland-protocols
     hyprpicker
     hyprpolkitagent
     hyprpwcenter
@@ -189,22 +185,20 @@
     hyprshot
     hyprsunset
     hyprsysteminfo
-    # xdg-desktop-portal-hyprland
-    # xdg-desktop-portal-gtk
     idevicerestore
-    usbmuxd
     ifuse
-    isd
-    libimobiledevice
     imagemagick
     imhex
+    impl
     imv
     #    input-remapper
+    #    inputs.zen-browser.packages."${system}".twilight
     #    iotop
     iotop-c
     iperf3
     iproute2
     #isd
+    isd
     jc
     # jeezyvim
     #    jmtpfs
@@ -213,9 +207,10 @@
     # jupyter
     kdiff3
     killall
-    kitty
-    koreader
     kind
+    kitty
+    # klipper graphs
+    koreader
     kubebuilder
     kubecolor
     kubectl
@@ -229,21 +224,28 @@
     lazygit
     ledger
     lego
+    libedit
     libfido2
+    libimobiledevice
     libnotify
-    #librewolf
     libreoffice-fresh
     #    libreoffice-qt6-fresh
+    #librewolf
     #    libsForQt5.qt5ct
-    #    libsForQt5.qtstyleplugin-kvantum
     #    libsForQt5.qt5.qtwayland
+    #    libsForQt5.qtstyleplugin-kvantum
     libva-utils
     libvirt
+    libxml2
+    libxslt
+    libzip
     light
     links2
     #    litestream
     lix
+    llama-cpp
     lldb
+    # llm
     #llvmPackages.mlir
     logiops
     logitech-udev-rules
@@ -253,13 +255,13 @@
     lsix
     lsof
     ltunify
-    luajit
     lua51Packages.telescope-nvim
+    luajit
     luajitPackages.telescope-nvim
     #lunarvim
     lvm2
-    lvm2_vdo
     lvm2_dmeventd
+    lvm2_vdo
     lynx
     mako
     maven
@@ -267,12 +269,15 @@
     meld
     microcode-amd
     minicom
+    # ml:
     most
     mpv
+    #        ms-vscode.cpptools
     mupdf
     nautilus
-    neovim
+    ##nemo-with-extensions
     #    neovide
+    neovim
     #nerdfonts
     nerd-fonts._0xproto
     nerd-fonts._3270
@@ -299,8 +304,8 @@
     nerd-fonts.fira-code
     nerd-fonts.fira-mono
     nerd-fonts.geist-mono
-    nerd-fonts.go-mono
     nerd-fonts.gohufont
+    nerd-fonts.go-mono
     nerd-fonts.hack
     nerd-fonts.hasklug
     nerd-fonts.heavy-data
@@ -324,8 +329,6 @@
     nerd-fonts.monoid
     nerd-fonts.mononoki
     #    nerd-fonts.mplus
-    noto-fonts-cjk-serif
-    noto-fonts-cjk-sans
     nerd-fonts.noto
     nerd-fonts.open-dyslexic
     nerd-fonts.overpass
@@ -350,15 +353,15 @@
     nftables
     nginx
     #    nil
+    nix-du
     nixfmt
     nixfmt-tree
-    nix-du
-    nix-search-tv
-    nix-top
-    nix-tree
     nixos-artwork.wallpapers.stripes
     nixos-option
     nix-output-monitor
+    nix-search-tv
+    nix-top
+    nix-tree
     nmap
     nodejs_20
     nordzy-cursor-theme
@@ -366,37 +369,43 @@
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
     noto-fonts-color-emoji
-    numbat
-    nushell
     #    nrfutil
     ntfs3g
+    numbat
+    nushell
     #nvtopPackages.amd
     nwg-look
     #    ollama
     #ollama-rocm
+    # openocd
     openocd
     openssl
+    #    opentoonz
     #openvswitch
     p7zip
     pamixer
+    #    paperless-ngx
     pass
     passExtensions.pass-otp
+    pastel
     pavucontrol
+    pciutils
     perf-tools
     picocom
     pinentry-curses
-    #    plasma-theme-switcher
     #    planify
+    #    plasma-theme-switcher
     # platformio
     # platformio-core
+    playerctl
     podman
     podman-compose
     podman-desktop
     podman-tui
     #    popcorntime
     poppler-utils
-    profont
     procs
+    profont
     progress
     progress-tracker
     pstree
@@ -404,169 +413,143 @@
     pulsemixer
     pv
     pwgen
-    pw-volume
     pwru
-
+    pw-volume
+    # python310Packages.catboost
+    # python310Packages.ipykernel
+    # python310Packages.jupyter
+    # python310Packages.jupyter-core
+    # python310Packages.kaggle
+    # python310Packages.lightgbm
+    # python310Packages.matplotlib
+    # python310Packages.notebook
+    # python310Packages.numpy
+    # python310Packages.pandas
+    # python310Packages.pre-commit-hooks
+    # python310Packages.requests
+    # python310Packages.scikit-learn
+    # python310Packages.seaborn
+    # python310Packages.tensorboard
+    # python310Packages.torchaudio
+    # python310Packages.torchvision
+    # python310Packages.torchWithRocm
+    # python310Packages.tqdm
+    # python310Packages.venvShellHook
+    # python310Packages.wandb
+    # python310Packages.xgboost
+    # python311Full
+    #python311Packages.matplotlib
+    #python311Packages.numpy
+    # python311Packages.pip
+    #python311Packages.pip
+    # python311Packages.pyserial
+    # python311Packages.setuptools
+    # python312Full
+    # python312Packages.pip
+    # python312Packages.pyserial
+    # python312Packages.python
+    # python312Packages.setuptools
     python313
     #python313Packages.smolagents
     #    python3Full
-    #python311Packages.pip
-
-    # klipper graphs
-    #python311Packages.matplotlib
-    #python311Packages.numpy
-
-    # python311Full
-    # python311Packages.setuptools
-    # python311Packages.pip
-    # python311Packages.pyserial
-    # python312Full
-    # python312Packages.setuptools
-    # python312Packages.pip
-    # python312Packages.pyserial
-    # esphome
-    # platformio
-    # openocd
-
-    # broken
-    # python312Packages.pip
-    # python312Packages.python
-    # ml:
-    # python310Packages.venvShellHook
-    # python310Packages.numpy
-    # python310Packages.requests
-    # python310Packages.pre-commit-hooks
-    # python310Packages.pandas
-    # python310Packages.matplotlib
-    # python310Packages.seaborn
-    # python310Packages.kaggle
-    # python310Packages.tqdm
-    # python310Packages.wandb
-    # python310Packages.scikit-learn
-    # python310Packages.xgboost
-    # python310Packages.lightgbm
-    # python310Packages.catboost
-    # python310Packages.tensorboard
-    # python310Packages.torchWithRocm
-    # python310Packages.torchvision
-    # python310Packages.torchaudio
-    # python310Packages.jupyter
-    # python310Packages.jupyter-core
-    # python310Packages.notebook
-    # python310Packages.ipykernel
-
     pywal
     pywalfox-native
-    racket
-    rio
-    #streamlit
-    sd
-    sioyek
-    solo2-cli
-    # sommelier
-    spice-gtk
-    starship
-    synfigstudio
-    systemctl-tui
-    taglib
-    termdown
-    #terraform-providers.libvirt
-    terraform-providers.dmacvicar_libvirt
-    tuigreet
-    openssl
-    #    opentoonz
-    libedit
-    libxml2
-    libxslt
-    libzip
-    zlib
-
-    #    paperless-ngx
-    pastel
-    pciutils
-    playerctl
-    pywal
     qemu
     qmk-udev-rules
     qrencode
     #qt6.qtwayland
     quickemu
+    racket
     ranger
     recutils
     rename
     #    rgp
+    rio
     ripgrep
     # rocm
-    # rocmPackages.rocmlir
-    # rocmPackages.rocminfo
-    # rocmPackages.rocm-core
-    # rocmPackages.rocm-thunk
-    # rocmPackages.rocm-comgr
-    # rocmPackages.rocm-cmake
-    # rocmPackages.rocmlir-rock
-    # rocmPackages.rocm-runtime
-    # rocmPackages.rocm-docs-core
-    # rocmPackages.rocm-device-libs
-    # rocmPackages.llvm.rocmClangStdenv
-    # rocmPackages.llvm.pstl
-    # rocmPackages.llvm.polly
-    # rocmPackages.llvm.openmp
-    # rocmPackages.llvm.mlir
-    # rocmPackages.llvm.llvm
-    # rocmPackages.llvm.lldb
-    # rocmPackages.llvm.lld
-    # rocmPackages.llvm.libunwind
-    # rocmPackages.llvm.libcxxabi
-    # rocmPackages.llvm.libcxx
-    # rocmPackages.llvm.libc
-    # rocmPackages.llvm.compiler-rt
-    # rocmPackages.llvm.clang-tools-extra
-    # rocmPackages.llvm.clang
+    # rocmPackages.hipblas
+    # rocmPackages.hipsolver
+    # rocmPackages.hipsparse
     # rocmPackages.llvm.bintools
-    # rocmPackages.rocsparse
-    # rocmPackages.rocsolver
-    # rocmPackages.rocprim
-    # rocmPackages.rocalution
-    # rocmPackages.rccl
+    # rocmPackages.llvm.clang
+    # rocmPackages.llvm.clang-tools-extra
+    # rocmPackages.llvm.compiler-rt
+    # rocmPackages.llvm.libc
+    # rocmPackages.llvm.libcxx
+    # rocmPackages.llvm.libcxxabi
+    # rocmPackages.llvm.libunwind
+    # rocmPackages.llvm.lld
+    # rocmPackages.llvm.lldb
+    # rocmPackages.llvm.llvm
+    # rocmPackages.llvm.mlir
+    # rocmPackages.llvm.openmp
+    # rocmPackages.llvm.polly
+    # rocmPackages.llvm.pstl
+    # rocmPackages.llvm.rocmClangStdenv
     # rocmPackages.miopen
     # rocmPackages.miopengemm
-    # rocmPackages.hipsparse
-    # rocmPackages.hipsolver
-    # rocmPackages.hipblas
+    # rocmPackages.rccl
+    # rocmPackages.rocalution
     # rocmPackages.rocgdb
-    # end rocm
+    # rocmPackages.rocm-cmake
+    # rocmPackages.rocm-comgr
+    # rocmPackages.rocm-core
+    # rocmPackages.rocm-device-libs
+    # rocmPackages.rocm-docs-core
+    # rocmPackages.rocminfo
+    # rocmPackages.rocmlir
+    # rocmPackages.rocmlir-rock
+    # rocmPackages.rocm-runtime
+    # rocmPackages.rocm-thunk
+    # rocmPackages.rocprim
+    # rocmPackages.rocsolver
+    # rocmPackages.rocsparse
     rofi
     rr
     runc
     rustc
     rustup
     scrot
+    sd
+    simple-scan
+    sioyek
     skopeo
     socat
+    solo2-cli
+    # sommelier
     #spacevim
+    spice-gtk
     sqlite
     #    sqlitebrowser
+    starship
     strace
+    #streamlit
     sudo-font
     sway
     swayidle
-    swaylock-effects
     swaylock
+    swaylock-effects
+    synfigstudio
+    systemctl-tui
+    taglib
     taskwarrior3
     taskwarrior-tui
     teensy-udev-rules
     telescope
+    termdown
+    terraform-providers.dmacvicar_libvirt
+    #terraform-providers.libvirt
     tesseract
-    tmux
-    tockloader
     tig
     tio
-    #    tpmmanager
+    tmux
+    tockloader
     tpm2-tools
+    #    tpmmanager
     transmission_4
     transmission_4-gtk
     tree
-
+    treesheets
     tree-sitter
     tree-sitter-grammars.tree-sitter-ada
     tree-sitter-grammars.tree-sitter-adl
@@ -585,7 +568,6 @@
     tree-sitter-grammars.tree-sitter-blueprint
     tree-sitter-grammars.tree-sitter-bqn
     tree-sitter-grammars.tree-sitter-c
-    tree-sitter-grammars.tree-sitter-c-sharp
     tree-sitter-grammars.tree-sitter-caddyfile
     tree-sitter-grammars.tree-sitter-cairo
     tree-sitter-grammars.tree-sitter-capnp
@@ -599,6 +581,7 @@
     tree-sitter-grammars.tree-sitter-cpon
     tree-sitter-grammars.tree-sitter-cpp
     tree-sitter-grammars.tree-sitter-crystal
+    tree-sitter-grammars.tree-sitter-c-sharp
     tree-sitter-grammars.tree-sitter-css
     tree-sitter-grammars.tree-sitter-csv
     tree-sitter-grammars.tree-sitter-cuda
@@ -639,19 +622,19 @@
     tree-sitter-grammars.tree-sitter-gemini
     tree-sitter-grammars.tree-sitter-gherkin
     tree-sitter-grammars.tree-sitter-ghostty
-    tree-sitter-grammars.tree-sitter-git-config
-    tree-sitter-grammars.tree-sitter-git-rebase
     tree-sitter-grammars.tree-sitter-gitattributes
     tree-sitter-grammars.tree-sitter-gitcommit
+    tree-sitter-grammars.tree-sitter-git-config
     tree-sitter-grammars.tree-sitter-gitignore
+    tree-sitter-grammars.tree-sitter-git-rebase
     tree-sitter-grammars.tree-sitter-gleam
     tree-sitter-grammars.tree-sitter-glimmer
     tree-sitter-grammars.tree-sitter-glsl
     tree-sitter-grammars.tree-sitter-gn
     tree-sitter-grammars.tree-sitter-go
-    tree-sitter-grammars.tree-sitter-go-template
     tree-sitter-grammars.tree-sitter-godot-resource
     tree-sitter-grammars.tree-sitter-gomod
+    tree-sitter-grammars.tree-sitter-go-template
     tree-sitter-grammars.tree-sitter-gotmpl
     tree-sitter-grammars.tree-sitter-gowork
     tree-sitter-grammars.tree-sitter-gpr
@@ -737,8 +720,8 @@
     tree-sitter-grammars.tree-sitter-pest
     tree-sitter-grammars.tree-sitter-pgn
     tree-sitter-grammars.tree-sitter-php
-    tree-sitter-grammars.tree-sitter-php-only
     tree-sitter-grammars.tree-sitter-phpdoc
+    tree-sitter-grammars.tree-sitter-php-only
     tree-sitter-grammars.tree-sitter-pioasm
     tree-sitter-grammars.tree-sitter-pkl
     tree-sitter-grammars.tree-sitter-po
@@ -843,12 +826,13 @@
     tree-sitter-grammars.tree-sitter-yara
     tree-sitter-grammars.tree-sitter-yuck
     tree-sitter-grammars.tree-sitter-zig
-    treesheets
+    tuigreet
     udiskie
-    unzip
     unpaper
     unrar
+    unzip
     up
+    usbmuxd
     usbtop
     usbutils
     #ustreamer
@@ -856,72 +840,6 @@
     vanilla-dmz
     vhs
     via
-
-    vimPlugins.BetterLua-vim
-    vimPlugins.BufOnly
-    vimPlugins.BufOnly-vim
-    vimPlugins.CSApprox
-    vimPlugins.ChatGPT-nvim
-    vimPlugins.CheckAttach
-    vimPlugins.Colour-Sampler-Pack
-    vimPlugins.Colour_Sampler_Pack
-    vimPlugins.CopilotChat-nvim
-    vimPlugins.Coqtail
-    vimPlugins.Cosco
-    vimPlugins.DoxygenToolkit-vim
-    vimPlugins.FTerm-nvim
-    vimPlugins.FixCursorHold-nvim
-    vimPlugins.GPTModels-nvim
-    vimPlugins.Gist
-    vimPlugins.Gundo
-    vimPlugins.Hoogle
-    vimPlugins.Improved-AnsiEsc
-    vimPlugins.Ionide-vim
-    vimPlugins.Jenkinsfile-vim-syntax
-    vimPlugins.LanguageClient-neovim
-    vimPlugins.LanguageTool-nvim
-    vimPlugins.LazyVim
-    vimPlugins.LeaderF
-    vimPlugins.LibDeflate-nvim
-    vimPlugins.LuaSnip-snippets-nvim
-    vimPlugins.MatchTagAlways
-    vimPlugins.Navigator-nvim
-    vimPlugins.NeoSolarized
-    vimPlugins.NotebookNavigator-nvim
-    vimPlugins.NrrwRgn
-    vimPlugins.Otree-nvim
-    vimPlugins.PreserveNoEOL
-    vimPlugins.Preview-nvim
-    vimPlugins.QFEnter
-    vimPlugins.Recover-vim
-    vimPlugins.Rename
-    vimPlugins.ReplaceWithRegister
-    vimPlugins.SchemaStore-nvim
-    vimPlugins.Shade-nvim
-    vimPlugins.ShowMultiBase
-    vimPlugins.SimpylFold
-    vimPlugins.SmartCase
-    vimPlugins.Solarized
-    vimPlugins.SpaceCamp
-    vimPlugins.SudoEdit-vim
-    vimPlugins.Supertab
-    vimPlugins.Syntastic
-    vimPlugins.SyntaxRange
-    vimPlugins.Tabular
-    vimPlugins.Tagbar
-    vimPlugins.The_NERD_Commenter
-    vimPlugins.The_NERD_tree
-    vimPlugins.UltiSnips
-    vimPlugins.VimCompletesMe
-    vimPlugins.VimOrganizer
-    vimPlugins.Vundle-vim
-    vimPlugins.WebAPI
-    vimPlugins.YUNOcommit-vim
-    vimPlugins.YankAssassin-vim
-    vimPlugins.YankRing-vim
-    vimPlugins.Yankring
-    vimPlugins.YouCompleteMe
-    vimPlugins.a-vim
     vimPlugins.accent-vim
     vimPlugins.ack-vim
     vimPlugins.acp
@@ -929,12 +847,12 @@
     vimPlugins.advanced-git-search-nvim
     vimPlugins.adwaita-nvim
     vimPlugins.aerial-nvim
-    vimPlugins.ag-nvim
     vimPlugins.agda-vim
     vimPlugins.agitator-nvim
-    vimPlugins.ai-vim
+    vimPlugins.ag-nvim
     vimPlugins.aider-nvim
     vimPlugins.airline
+    vimPlugins.ai-vim
     vimPlugins.alabaster-nvim
     vimPlugins.alchemist-vim
     vimPlugins.ale
@@ -956,7 +874,6 @@
     vimPlugins.astrolsp
     vimPlugins.astrotheme
     vimPlugins.astroui
-    vimPlugins.async-vim
     vimPlugins.asyncomplete-buffer-vim
     vimPlugins.asyncomplete-file-vim
     vimPlugins.asyncomplete-lsp-vim
@@ -966,23 +883,25 @@
     vimPlugins.asyncomplete-vim
     vimPlugins.asyncrun-vim
     vimPlugins.asynctasks-vim
+    vimPlugins.async-vim
     vimPlugins.ats-vim
     vimPlugins.augment-vim
     vimPlugins.aurora
+    vimPlugins.autoclose-nvim
     vimPlugins.auto-fix-return-nvim
     vimPlugins.auto-git-diff
     vimPlugins.auto-hlsearch-nvim
-    vimPlugins.auto-pairs
-    vimPlugins.auto-save-nvim
-    vimPlugins.auto-session
-    vimPlugins.autoclose-nvim
     vimPlugins.autolist-nvim
     vimPlugins.autoload_cscope-vim
+    vimPlugins.auto-pairs
+    vimPlugins.auto-save-nvim
     vimPlugins.autosave-nvim
+    vimPlugins.auto-session
     vimPlugins.avante-nvim
+    vimPlugins.a-vim
+    vimPlugins.awesome-vim-colorschemes
     vimPlugins.aw-watcher-nvim
     vimPlugins.aw-watcher-vim
-    vimPlugins.awesome-vim-colorschemes
     vimPlugins.aylin-vim
     vimPlugins.ayu-vim
     vimPlugins.b64-nvim
@@ -993,11 +912,12 @@
     vimPlugins.base16-nvim
     vimPlugins.base16-vim
     vimPlugins.base46
-    vimPlugins.bat-vim
     vimPlugins.bats
     vimPlugins.bats-vim
+    vimPlugins.bat-vim
     vimPlugins.bclose-vim
     vimPlugins.better-escape-nvim
+    vimPlugins.BetterLua-vim
     vimPlugins.bigfile-nvim
     vimPlugins.bitbake-vim
     vimPlugins.blame-nvim
@@ -1035,6 +955,8 @@
     vimPlugins.bufferize-vim
     vimPlugins.bufferline-nvim
     vimPlugins.bufjump-nvim
+    vimPlugins.BufOnly
+    vimPlugins.BufOnly-vim
     vimPlugins.bufresize-nvim
     vimPlugins.bullets-vim
     vimPlugins.calendar
@@ -1049,7 +971,9 @@
     vimPlugins.chad
     vimPlugins.chadtree
     vimPlugins.changeColorScheme-vim
+    vimPlugins.ChatGPT-nvim
     vimPlugins.cheatsheet-nvim
+    vimPlugins.CheckAttach
     vimPlugins.checkmate-nvim
     vimPlugins.ci_dark
     vimPlugins.cinnamon-nvim
@@ -1058,17 +982,17 @@
     vimPlugins.clang_complete
     vimPlugins.clangd_extensions-nvim
     vimPlugins.claude-code-nvim
+    vimPlugins.claudecode-nvim
     vimPlugins.claude-fzf-history-nvim
     vimPlugins.claude-fzf-nvim
-    vimPlugins.claudecode-nvim
     vimPlugins.clever-f-vim
     vimPlugins.clighter8
     vimPlugins.clipboard-image-nvim
     vimPlugins.cloak-nvim
     vimPlugins.close-buffers-vim
     vimPlugins.cmake-tools-nvim
-    vimPlugins.cmd-parser-nvim
     vimPlugins.cmdalias-vim
+    vimPlugins.cmd-parser-nvim
     vimPlugins.cmp-ai
     vimPlugins.cmp-async-path
     vimPlugins.cmp-beancount
@@ -1093,6 +1017,7 @@
     vimPlugins.cmp-greek
     vimPlugins.cmp-latex-symbols
     vimPlugins.cmp-look
+    vimPlugins.cmp_luasnip
     vimPlugins.cmp-neosnippet
     vimPlugins.cmp-nixpkgs-maintainers
     vimPlugins.cmp-npm
@@ -1118,9 +1043,8 @@
     vimPlugins.cmp-vimtex
     vimPlugins.cmp-vimwiki-tags
     vimPlugins.cmp-vsnip
-    vimPlugins.cmp-zsh
-    vimPlugins.cmp_luasnip
     vimPlugins.cmp_yanky
+    vimPlugins.cmp-zsh
     vimPlugins.cobalt2-nvim
     vimPlugins.coc-basedpyright
     vimPlugins.coc-clangd
@@ -1148,6 +1072,7 @@
     vimPlugins.coc-neco
     vimPlugins.coc-nginx
     vimPlugins.coc-nvim
+    vimPlugins.coconut-vim
     vimPlugins.coc-pairs
     vimPlugins.coc-prettier
     vimPlugins.coc-pyright
@@ -1170,7 +1095,6 @@
     vimPlugins.coc-wxml
     vimPlugins.coc-yaml
     vimPlugins.coc-yank
-    vimPlugins.coconut-vim
     vimPlugins.codecompanion-history-nvim
     vimPlugins.codecompanion-lualine-nvim
     vimPlugins.codecompanion-nvim
@@ -1189,23 +1113,25 @@
     vimPlugins.colorful-menu-nvim
     vimPlugins.colorful-winsep-nvim
     vimPlugins.colorizer
-    vimPlugins.colors-solarized
     vimPlugins.colorsamplerpack
+    vimPlugins.colors-solarized
+    vimPlugins.Colour-Sampler-Pack
+    vimPlugins.Colour_Sampler_Pack
     vimPlugins.com-cloudedmountain-ide-neovim
     vimPlugins.comfy-line-numbers-nvim
     vimPlugins.command-t
     vimPlugins.command_T
     vimPlugins.commasemi-nvim
+    vimPlugins.commentary
     vimPlugins.comment-box-nvim
     vimPlugins.comment-nvim
-    vimPlugins.commentary
     vimPlugins.committia
     vimPlugins.committia-vim
     vimPlugins.compe-conjure
     vimPlugins.compe-latex-symbols
     vimPlugins.compe-tabnine
-    vimPlugins.compe-zsh
     vimPlugins.competitest-nvim
+    vimPlugins.compe-zsh
     vimPlugins.compiler-explorer-nvim
     vimPlugins.compiler-nvim
     vimPlugins.completion-buffers
@@ -1217,10 +1143,11 @@
     vimPlugins.conform-nvim
     vimPlugins.conjure
     vimPlugins.conjure-nvim
-    vimPlugins.context-filetype
-    vimPlugins.context-vim
-    vimPlugins.context_filetype-vim
     vimPlugins.contextfiles-nvim
+    vimPlugins.context-filetype
+    vimPlugins.context_filetype-vim
+    vimPlugins.context-vim
+    vimPlugins.CopilotChat-nvim
     vimPlugins.copilot-cmp
     vimPlugins.copilot-lsp
     vimPlugins.copilot-lua
@@ -1228,22 +1155,25 @@
     vimPlugins.copilot-vim
     vimPlugins.coq-artifacts
     vimPlugins.coq-lsp-nvim
+    vimPlugins.coq_nvim
+    vimPlugins.Coqtail
     vimPlugins.coq-thirdparty
     vimPlugins.coq-vim
-    vimPlugins.coq_nvim
     vimPlugins.cord-nvim
     vimPlugins.corePlugins
     vimPlugins.cornelis
+    vimPlugins.Cosco
     vimPlugins.cosco-vim
     vimPlugins.cpsm
     vimPlugins.crates-nvim
     vimPlugins.csapprox
+    vimPlugins.CSApprox
     vimPlugins.csharpls-extended-lsp-nvim
     vimPlugins.cspell-nvim
     vimPlugins.css_color_5056
     vimPlugins.csv
-    vimPlugins.csv-vim
     vimPlugins.csvview-nvim
+    vimPlugins.csv-vim
     vimPlugins.ctrlp
     vimPlugins.ctrlp-cmatcher
     vimPlugins.ctrlp-py-matcher
@@ -1259,8 +1189,8 @@
     vimPlugins.darkearth-nvim
     vimPlugins.dart-nvim
     vimPlugins.dart-vim-plugin
-    vimPlugins.dash-vim
     vimPlugins.dashboard-nvim
+    vimPlugins.dash-vim
     vimPlugins.ddc-filter-matcher_head
     vimPlugins.ddc-filter-sorter_rank
     vimPlugins.ddc-fuzzy
@@ -1317,6 +1247,7 @@
     vimPlugins.doki-theme-vim
     vimPlugins.doom-one-nvim
     vimPlugins.dotnet-nvim
+    vimPlugins.DoxygenToolkit-vim
     vimPlugins.dracula-nvim
     vimPlugins.dracula-vim
     vimPlugins.dressing-nvim
@@ -1369,14 +1300,15 @@
     vimPlugins.fileline-nvim
     vimPlugins.fine-cmdline-nvim
     vimPlugins.firenvim
+    vimPlugins.FixCursorHold-nvim
     vimPlugins.flake8-vim
     vimPlugins.flash-nvim
     vimPlugins.flatten-nvim
     vimPlugins.fleet-theme-nvim
     vimPlugins.flit-nvim
-    vimPlugins.float-preview-nvim
     vimPlugins.floaterm
     vimPlugins.floating-input-nvim
+    vimPlugins.float-preview-nvim
     vimPlugins.floobits-neovim
     vimPlugins.flow-nvim
     vimPlugins.fluent-vim
@@ -1389,6 +1321,7 @@
     vimPlugins.fortune-nvim
     vimPlugins.freeze-nvim
     vimPlugins.friendly-snippets
+    vimPlugins.FTerm-nvim
     vimPlugins.fugit2-nvim
     vimPlugins.fugitive
     vimPlugins.fugitive-gitlab-vim
@@ -1409,36 +1342,38 @@
     vimPlugins.gen-nvim
     vimPlugins.gen_tags-vim
     vimPlugins.gentoo-syntax
-    vimPlugins.gh-nvim
-    vimPlugins.ghc-mod-vim
     vimPlugins.ghcid
     vimPlugins.ghcmod
+    vimPlugins.ghc-mod-vim
     vimPlugins.ghcmod-vim
+    vimPlugins.gh-nvim
     vimPlugins.gina-vim
+    vimPlugins.Gist
     vimPlugins.git-blame-nvim
     vimPlugins.git-conflict-nvim
     vimPlugins.git-dashboard-nvim
-    vimPlugins.git-messenger-vim
-    vimPlugins.git-prompt-string-lualine-nvim
-    vimPlugins.git-worktree-nvim
     vimPlugins.gitgutter
     vimPlugins.github-nvim-theme
     vimPlugins.gitignore-nvim
     vimPlugins.gitignore-vim
     vimPlugins.gitlab-vim
     vimPlugins.gitlinker-nvim
+    vimPlugins.git-messenger-vim
     vimPlugins.gitportal-nvim
+    vimPlugins.git-prompt-string-lualine-nvim
     vimPlugins.gitsigns-nvim
     vimPlugins.gitv
+    vimPlugins.git-worktree-nvim
     vimPlugins.glance-nvim
     vimPlugins.glow-nvim
-    vimPlugins.go-nvim
     vimPlugins.godbolt-nvim
     vimPlugins.golden-ratio
+    vimPlugins.go-nvim
     vimPlugins.gotests-vim
     vimPlugins.goto-preview
     vimPlugins.goyo
     vimPlugins.goyo-vim
+    vimPlugins.GPTModels-nvim
     vimPlugins.grammar-guard-nvim
     vimPlugins.graphviz-vim
     vimPlugins.grapple-nvim
@@ -1457,6 +1392,7 @@
     vimPlugins.guess-indent-nvim
     vimPlugins.guihua-lua
     vimPlugins.gundo
+    vimPlugins.Gundo
     vimPlugins.gundo-vim
     vimPlugins.gv-vim
     vimPlugins.gx-nvim
@@ -1465,14 +1401,14 @@
     vimPlugins.hare-vim
     vimPlugins.harpoon
     vimPlugins.harpoon2
+    vimPlugins.haskellconceal
+    vimPlugins.haskellConceal
+    vimPlugins.haskellConcealPlus
     vimPlugins.haskell-scope-highlighting-nvim
     vimPlugins.haskell-snippets-nvim
     vimPlugins.haskell-tools-nvim
     vimPlugins.haskell-vim
     vimPlugins.haskell-with-unicode-vim
-    vimPlugins.haskellConceal
-    vimPlugins.haskellConcealPlus
-    vimPlugins.haskellconceal
     vimPlugins.hasksyn
     vimPlugins.headhunter-nvim
     vimPlugins.headlines-nvim
@@ -1480,10 +1416,10 @@
     vimPlugins.helm-ls-nvim
     vimPlugins.helpview-nvim
     vimPlugins.hex-nvim
-    vimPlugins.hiPairs
     vimPlugins.hier
     vimPlugins.highlight-undo-nvim
     vimPlugins.himalaya-vim
+    vimPlugins.hiPairs
     vimPlugins.hlargs-nvim
     vimPlugins.hlchunk-nvim
     vimPlugins.hlint-refactor
@@ -1491,6 +1427,7 @@
     vimPlugins.hmts-nvim
     vimPlugins.hologram-nvim
     vimPlugins.hoogle
+    vimPlugins.Hoogle
     vimPlugins.hoon-vim
     vimPlugins.hop-nvim
     vimPlugins.hotpot-nvim
@@ -1503,29 +1440,31 @@
     vimPlugins.hydra-nvim
     vimPlugins.i3config-vim
     vimPlugins.iceberg-vim
-    vimPlugins.idris-vim
     vimPlugins.idris2-nvim
     vimPlugins.idris2-vim
-    vimPlugins.im-select-nvim
+    vimPlugins.idris-vim
     vimPlugins.image-nvim
     vimPlugins.img-clip-nvim
     vimPlugins.impatient-nvim
+    vimPlugins.Improved-AnsiEsc
     vimPlugins.improved-search-nvim
-    vimPlugins.inc-rename-nvim
+    vimPlugins.im-select-nvim
     vimPlugins.incline-nvim
     vimPlugins.increment-activator
+    vimPlugins.inc-rename-nvim
     vimPlugins.incsearch-easymotion-vim
     vimPlugins.incsearch-vim
     vimPlugins.indent-blankline-nvim
     vimPlugins.indent-blankline-nvim-lua
+    vimPlugins.indentLine
     vimPlugins.indent-o-matic
     vimPlugins.indent-tools-nvim
-    vimPlugins.indentLine
     vimPlugins.inkpot
     vimPlugins.instant-nvim
     vimPlugins.intellitab-nvim
     vimPlugins.intero-neovim
     vimPlugins.investigate-vim
+    vimPlugins.Ionide-vim
     vimPlugins.iosvkem
     vimPlugins.ipython
     vimPlugins.ir_black
@@ -1537,6 +1476,7 @@
     vimPlugins.jedi-vim
     vimPlugins.jellybeans-nvim
     vimPlugins.jellybeans-vim
+    vimPlugins.Jenkinsfile-vim-syntax
     vimPlugins.jinja-vim
     vimPlugins.jj-nvim
     vimPlugins.jq-vim
@@ -1562,29 +1502,34 @@
     vimPlugins.lackluster-nvim
     vimPlugins.lalrpop-vim
     vimPlugins.langmapper-nvim
+    vimPlugins.LanguageClient-neovim
+    vimPlugins.LanguageTool-nvim
     vimPlugins.last256
     vimPlugins.latex-box
     vimPlugins.latex-live-preview
-    vimPlugins.lazy-lsp-nvim
-    vimPlugins.lazy-nvim
     vimPlugins.lazydev-nvim
     vimPlugins.lazydocker-nvim
     vimPlugins.lazygit-nvim
     vimPlugins.lazyjj-nvim
+    vimPlugins.lazy-lsp-nvim
+    vimPlugins.lazy-nvim
+    vimPlugins.LazyVim
+    vimPlugins.LeaderF
     vimPlugins.lean-nvim
     vimPlugins.lean-vim
     vimPlugins.leap-ast-nvim
     vimPlugins.leap-nvim
     vimPlugins.leetcode-nvim
     vimPlugins.legendary-nvim
-    vimPlugins.lens-vim
     vimPlugins.lensline-nvim
+    vimPlugins.lens-vim
     vimPlugins.lessspace-vim
     vimPlugins.lexima-vim
     vimPlugins.lf-nvim
     vimPlugins.lf-vim
     vimPlugins.lh-brackets
     vimPlugins.lh-vim-lib
+    vimPlugins.LibDeflate-nvim
     vimPlugins.lightline-ale
     vimPlugins.lightline-bufferline
     vimPlugins.lightline-gruvbox-vim
@@ -1608,21 +1553,21 @@
     vimPlugins.llama-vim
     vimPlugins.llm-nvim
     vimPlugins.lsp-colors-nvim
+    vimPlugins.lspcontainers-nvim
+    vimPlugins.lspecho-nvim
+    vimPlugins.lsp_extensions-nvim
     vimPlugins.lsp-format-modifications-nvim
     vimPlugins.lsp-format-nvim
     vimPlugins.lsp-inlayhints-nvim
+    vimPlugins.lspkind-nvim
+    vimPlugins.lsp_lines-nvim
     vimPlugins.lsp-overloads-nvim
     vimPlugins.lsp-progress-nvim
     vimPlugins.lsp-rooter-nvim
+    vimPlugins.lspsaga-nvim
+    vimPlugins.lsp_signature-nvim
     vimPlugins.lsp-status-nvim
     vimPlugins.lsp-zero-nvim
-    vimPlugins.lsp_extensions-nvim
-    vimPlugins.lsp_lines-nvim
-    vimPlugins.lsp_signature-nvim
-    vimPlugins.lspcontainers-nvim
-    vimPlugins.lspecho-nvim
-    vimPlugins.lspkind-nvim
-    vimPlugins.lspsaga-nvim
     vimPlugins.ltex_extra-nvim
     vimPlugins.lua-async
     vimPlugins.lua-async-await
@@ -1630,24 +1575,25 @@
     vimPlugins.lualine-nvim
     vimPlugins.luasnip
     vimPlugins.luasnip-latex-snippets-nvim
+    vimPlugins.LuaSnip-snippets-nvim
     vimPlugins.luatab-nvim
     vimPlugins.luau-lsp-nvim
     vimPlugins.lush-nvim
     vimPlugins.lushtags
     vimPlugins.luvit-meta
-    vimPlugins.lz-n
     vimPlugins.lze
     vimPlugins.lzextras
+    vimPlugins.lz-n
     vimPlugins.lzn-auto-require
     vimPlugins.magma-nvim
     vimPlugins.magma-nvim-goose
     vimPlugins.maktaba
     vimPlugins.maple-nvim
-    vimPlugins.mark-radar-nvim
     vimPlugins.markdoc-nvim
     vimPlugins.markdown-nvim
     vimPlugins.markdown-preview-nvim
     vimPlugins.markid
+    vimPlugins.mark-radar-nvim
     vimPlugins.marks-nvim
     vimPlugins.markview-nvim
     vimPlugins.mason-lspconfig-nvim
@@ -1656,6 +1602,7 @@
     vimPlugins.mason-nvim-dap-nvim
     vimPlugins.mason-tool-installer-nvim
     vimPlugins.matchit-zip
+    vimPlugins.MatchTagAlways
     vimPlugins.material-nvim
     vimPlugins.material-vim
     vimPlugins.mattn-calendar-vim
@@ -1697,6 +1644,7 @@
     vimPlugins.mini-jump2d
     vimPlugins.mini-keymap
     vimPlugins.mini-map
+    vimPlugins.minimap-vim
     vimPlugins.mini-misc
     vimPlugins.mini-move
     vimPlugins.mini-notify
@@ -1714,7 +1662,6 @@
     vimPlugins.mini-test
     vimPlugins.mini-trailspace
     vimPlugins.mini-visits
-    vimPlugins.minimap-vim
     vimPlugins.minuet-ai-nvim
     vimPlugins.mkdir-nvim
     vimPlugins.mkdnflow-nvim
@@ -1735,6 +1682,7 @@
     vimPlugins.multiple-cursors
     vimPlugins.muren-nvim
     vimPlugins.nabla-nvim
+    vimPlugins.Navigator-nvim
     vimPlugins.ncm2
     vimPlugins.ncm2-bufword
     vimPlugins.ncm2-cssomni
@@ -1752,11 +1700,10 @@
     vimPlugins.ncm2-ultisnips
     vimPlugins.ncm2-vim
     vimPlugins.neco-ghc
+    vimPlugins.necoGhc
     vimPlugins.neco-look
     vimPlugins.neco-syntax
     vimPlugins.neco-vim
-    vimPlugins.necoGhc
-    vimPlugins.neo-tree-nvim
     vimPlugins.neocomplete
     vimPlugins.neocomplete-vim
     vimPlugins.neoconf-nvim
@@ -1782,6 +1729,7 @@
     vimPlugins.neosnippet
     vimPlugins.neosnippet-snippets
     vimPlugins.neosnippet-vim
+    vimPlugins.NeoSolarized
     vimPlugins.neoterm
     vimPlugins.neotest
     vimPlugins.neotest-bash
@@ -1811,6 +1759,7 @@
     vimPlugins.neotest-testthat
     vimPlugins.neotest-vitest
     vimPlugins.neotest-zig
+    vimPlugins.neo-tree-nvim
     vimPlugins.neovim-ayu
     vimPlugins.neovim-fuzzy
     vimPlugins.neovim-sensible
@@ -1825,27 +1774,29 @@
     vimPlugins.netrw-nvim
     vimPlugins.neuron-vim
     vimPlugins.nfnl
-    vimPlugins.ng-nvim
     vimPlugins.nginx-vim
+    vimPlugins.ng-nvim
     vimPlugins.nidhogg-nvim
-    vimPlugins.night-owl-nvim
     vimPlugins.nightfly
     vimPlugins.nightfox-nvim
     vimPlugins.nightly-nvim
+    vimPlugins.night-owl-nvim
     vimPlugins.nim-vim
     vimPlugins.nix-develop-nvim
     vimPlugins.nlsp-settings-nvim
     vimPlugins.nnn-vim
     vimPlugins.no-clown-fiesta-nvim
-    vimPlugins.no-neck-pain-nvim
     vimPlugins.noctis-nvim
     vimPlugins.noice-nvim
+    vimPlugins.no-neck-pain-nvim
     vimPlugins.none-ls-nvim
+    vimPlugins.nordic-nvim
     vimPlugins.nord-nvim
     vimPlugins.nord-vim
-    vimPlugins.nordic-nvim
+    vimPlugins.NotebookNavigator-nvim
     vimPlugins.notifier-nvim
     vimPlugins.notmuch-vim
+    vimPlugins.NrrwRgn
     vimPlugins.nterm-nvim
     vimPlugins.nui-nvim
     vimPlugins.null-ls-nvim
@@ -1853,7 +1804,6 @@
     vimPlugins.nvchad
     vimPlugins.nvchad-ui
     vimPlugins.nvcode-color-schemes-vim
-    vimPlugins.nvim-FeMaco-lua
     vimPlugins.nvim-ale-diagnostic
     vimPlugins.nvim-autopairs
     vimPlugins.nvim-bacon
@@ -1861,8 +1811,8 @@
     vimPlugins.nvim-biscuits
     vimPlugins.nvim-bqf
     vimPlugins.nvim-bufdel
-    vimPlugins.nvim-cm-racer
     vimPlugins.nvim-cmp
+    vimPlugins.nvim-cm-racer
     vimPlugins.nvim-code-action-menu
     vimPlugins.nvim-cokeline
     vimPlugins.nvim-colorizer-lua
@@ -1870,6 +1820,7 @@
     vimPlugins.nvim-compe
     vimPlugins.nvim-completion-manager
     vimPlugins.nvim-config-local
+    vimPlugins.nvim_context_vt
     vimPlugins.nvim-coverage
     vimPlugins.nvim-cursorline
     vimPlugins.nvim-dap
@@ -1884,9 +1835,11 @@
     vimPlugins.nvim-dap-virtual-text
     vimPlugins.nvim-dap-vscode-js
     vimPlugins.nvim-dbee
+    vimPlugins.nvimdev-nvim
     vimPlugins.nvim-docs-view
     vimPlugins.nvim-early-retirement
     vimPlugins.nvim-expand-expr
+    vimPlugins.nvim-FeMaco-lua
     vimPlugins.nvim-fzf
     vimPlugins.nvim-fzf-commands
     vimPlugins.nvim-gdb
@@ -1911,13 +1864,13 @@
     vimPlugins.nvim-lightline-lsp
     vimPlugins.nvim-lilypond-suite
     vimPlugins.nvim-lint
+    vimPlugins.nvim-lspconfig
     vimPlugins.nvim-lsp-file-operations
     vimPlugins.nvim-lsp-notify
     vimPlugins.nvim-lsp-ts-utils
-    vimPlugins.nvim-lspconfig
     vimPlugins.nvim-lsputils
-    vimPlugins.nvim-lua-gf
     vimPlugins.nvim-luadev
+    vimPlugins.nvim-lua-gf
     vimPlugins.nvim-luapad
     vimPlugins.nvim-metals
     vimPlugins.nvim-moonwalk
@@ -1984,7 +1937,6 @@
     vimPlugins.nvim-treesitter-parsers.brightscript
     vimPlugins.nvim-treesitter-parsers.c
     vimPlugins.nvim-treesitter-parsers.c3
-    vimPlugins.nvim-treesitter-parsers.c_sharp
     vimPlugins.nvim-treesitter-parsers.caddy
     vimPlugins.nvim-treesitter-parsers.cairo
     vimPlugins.nvim-treesitter-parsers.capnp
@@ -1998,6 +1950,7 @@
     vimPlugins.nvim-treesitter-parsers.corn
     vimPlugins.nvim-treesitter-parsers.cpon
     vimPlugins.nvim-treesitter-parsers.cpp
+    vimPlugins.nvim-treesitter-parsers.c_sharp
     vimPlugins.nvim-treesitter-parsers.css
     vimPlugins.nvim-treesitter-parsers.csv
     vimPlugins.nvim-treesitter-parsers.cuda
@@ -2043,11 +1996,11 @@
     vimPlugins.nvim-treesitter-parsers.gaptst
     vimPlugins.nvim-treesitter-parsers.gdscript
     vimPlugins.nvim-treesitter-parsers.gdshader
-    vimPlugins.nvim-treesitter-parsers.git_config
-    vimPlugins.nvim-treesitter-parsers.git_rebase
     vimPlugins.nvim-treesitter-parsers.gitattributes
     vimPlugins.nvim-treesitter-parsers.gitcommit
+    vimPlugins.nvim-treesitter-parsers.git_config
     vimPlugins.nvim-treesitter-parsers.gitignore
+    vimPlugins.nvim-treesitter-parsers.git_rebase
     vimPlugins.nvim-treesitter-parsers.gleam
     vimPlugins.nvim-treesitter-parsers.glimmer
     vimPlugins.nvim-treesitter-parsers.glimmer_javascript
@@ -2153,8 +2106,8 @@
     vimPlugins.nvim-treesitter-parsers.pem
     vimPlugins.nvim-treesitter-parsers.perl
     vimPlugins.nvim-treesitter-parsers.php
-    vimPlugins.nvim-treesitter-parsers.php_only
     vimPlugins.nvim-treesitter-parsers.phpdoc
+    vimPlugins.nvim-treesitter-parsers.php_only
     vimPlugins.nvim-treesitter-parsers.pioasm
     vimPlugins.nvim-treesitter-parsers.pkl
     vimPlugins.nvim-treesitter-parsers.po
@@ -2306,8 +2259,6 @@
     vimPlugins.nvim-whichkey-setup-lua
     vimPlugins.nvim-window-picker
     vimPlugins.nvim-yarp
-    vimPlugins.nvim_context_vt
-    vimPlugins.nvimdev-nvim
     vimPlugins.nvterm
     vimPlugins.nvzone-menu
     vimPlugins.nvzone-minty
@@ -2324,34 +2275,35 @@
     vimPlugins.oil-nvim
     vimPlugins.oklch-color-picker-nvim
     vimPlugins.ollama-nvim
-    vimPlugins.omni-vim
     vimPlugins.omnisharp-extended-lsp-nvim
-    vimPlugins.one-nvim
-    vimPlugins.one-small-step-for-vimkind
-    vimPlugins.onedark-nvim
-    vimPlugins.onedark-vim
+    vimPlugins.omni-vim
     vimPlugins.onedarker-nvim
+    vimPlugins.onedark-nvim
     vimPlugins.onedarkpro-nvim
+    vimPlugins.onedark-vim
     vimPlugins.onehalf
     vimPlugins.onenord-nvim
+    vimPlugins.one-nvim
+    vimPlugins.one-small-step-for-vimkind
     vimPlugins.open-browser
     vimPlugins.open-browser-github-vim
     vimPlugins.open-browser-vim
     vimPlugins.opencode-nvim
     vimPlugins.openingh-nvim
     vimPlugins.openscad-nvim
+    vimPlugins.orgmode
     vimPlugins.org-notebook-nvim
     vimPlugins.org-roam-nvim
-    vimPlugins.orgmode
     vimPlugins.other-nvim
+    vimPlugins.Otree-nvim
     vimPlugins.otter-nvim
     vimPlugins.outline-nvim
     vimPlugins.overseer-nvim
     vimPlugins.oxocarbon-nvim
     vimPlugins.package-info-nvim
     vimPlugins.packer-nvim
-    vimPlugins.palenight-vim
     vimPlugins.palenightfall-nvim
+    vimPlugins.palenight-vim
     vimPlugins.palette-nvim
     vimPlugins.papercolor-theme
     vimPlugins.papercolor-theme-slim
@@ -2362,8 +2314,8 @@
     vimPlugins.pathogen
     vimPlugins.patterns-nvim
     vimPlugins.pckr-nvim
-    vimPlugins.pear-tree
     vimPlugins.pears-nvim
+    vimPlugins.pear-tree
     vimPlugins.peek-nvim
     vimPlugins.perfanno-nvim
     vimPlugins.persisted-nvim
@@ -2387,12 +2339,14 @@
     vimPlugins.precognition-nvim
     vimPlugins.presence-nvim
     vimPlugins.presenting-vim
+    vimPlugins.PreserveNoEOL
     vimPlugins.preto
     vimPlugins.pretty-fold-nvim
     vimPlugins.prettyprint
+    vimPlugins.Preview-nvim
     vimPlugins.prev_indent
-    vimPlugins.project-nvim
     vimPlugins.projections-nvim
+    vimPlugins.project-nvim
     vimPlugins.promise-async
     vimPlugins.psc-ide-vim
     vimPlugins.pum-vim
@@ -2402,17 +2356,18 @@
     vimPlugins.python-syntax
     vimPlugins.pywal-nvim
     vimPlugins.qfctl-nvim
+    vimPlugins.QFEnter
     vimPlugins.qmk-nvim
     vimPlugins.quarto-nvim
-    vimPlugins.quick-scope
     vimPlugins.quicker-nvim
     vimPlugins.quickfix-reflector-vim
     vimPlugins.quickfixstatus
     vimPlugins.quickmath-nvim
     vimPlugins.quickrun
+    vimPlugins.quick-scope
     vimPlugins.rainbow
-    vimPlugins.rainbow-delimiters-nvim
     vimPlugins.rainbow_csv
+    vimPlugins.rainbow-delimiters-nvim
     vimPlugins.rainbow_parentheses
     vimPlugins.rainbow_parentheses-vim
     vimPlugins.random-vim
@@ -2421,17 +2376,20 @@
     vimPlugins.ranger-vim
     vimPlugins.rcshell-vim
     vimPlugins.readline-vim
+    vimPlugins.Recover-vim
     vimPlugins.refactoring-nvim
     vimPlugins.refjump-nvim
     vimPlugins.registers-nvim
     vimPlugins.remember-nvim
     vimPlugins.remote-nvim-nvim
     vimPlugins.remote-sshfs-nvim
+    vimPlugins.Rename
     vimPlugins.renamer-nvim
     vimPlugins.render-markdown
     vimPlugins.render-markdown-nvim
     vimPlugins.repeat
     vimPlugins.replacer-nvim
+    vimPlugins.ReplaceWithRegister
     vimPlugins.repolink-nvim
     vimPlugins.resession-nvim
     vimPlugins.rest-nvim
@@ -2451,14 +2409,15 @@
     vimPlugins.rspec-vim
     vimPlugins.rtorrent-syntax-file
     vimPlugins.rtp-nvim
-    vimPlugins.rust-vim
     vimPlugins.rustaceanvim
+    vimPlugins.rust-vim
     vimPlugins.rzls-nvim
     vimPlugins.sad-vim
     vimPlugins.salt-vim
     vimPlugins.samodostal-image-nvim
     vimPlugins.satellite-nvim
     vimPlugins.schema-companion-nvim
+    vimPlugins.SchemaStore-nvim
     vimPlugins.scnvim
     vimPlugins.scope-nvim
     vimPlugins.scretch-nvim
@@ -2474,19 +2433,23 @@
     vimPlugins.seoul256-vim
     vimPlugins.sg-nvim
     vimPlugins.shabadou-vim
+    vimPlugins.Shade-nvim
     vimPlugins.showkeys
+    vimPlugins.ShowMultiBase
     vimPlugins.sidekick-nvim
     vimPlugins.sideways-vim
     vimPlugins.signature
+    vimPlugins.SimpylFold
     vimPlugins.skim
     vimPlugins.skim-vim
     vimPlugins.sky-color-clock-vim
     vimPlugins.sleuth
     vimPlugins.slimv
-    vimPlugins.smart-open-nvim
-    vimPlugins.smart-splits-nvim
+    vimPlugins.SmartCase
     vimPlugins.smartcolumn-nvim
+    vimPlugins.smart-open-nvim
     vimPlugins.smartpairs-vim
+    vimPlugins.smart-splits-nvim
     vimPlugins.smartyank-nvim
     vimPlugins.smear-cursor-nvim
     vimPlugins.snacks-nvim
@@ -2496,6 +2459,7 @@
     vimPlugins.snippets-nvim
     vimPlugins.sniprun
     vimPlugins.solarized
+    vimPlugins.Solarized
     vimPlugins.solarized-nvim
     vimPlugins.solarized-osaka-nvim
     vimPlugins.solidity
@@ -2506,15 +2470,16 @@
     vimPlugins.sourcemap
     vimPlugins.sourcemap-vim
     vimPlugins.sourcemap.vim
-    vimPlugins.space-vim
+    vimPlugins.SpaceCamp
     vimPlugins.spaceman-nvim
+    vimPlugins.space-vim
     vimPlugins.specs-nvim
     vimPlugins.spellsitter-nvim
     vimPlugins.spellwarn-nvim
     vimPlugins.sphinx-nvim
     vimPlugins.splice-vim
-    vimPlugins.split-term-vim
     vimPlugins.splitjoin-vim
+    vimPlugins.split-term-vim
     vimPlugins.sqlite-lua
     vimPlugins.srcery-vim
     vimPlugins.sslsecure-vim
@@ -2532,23 +2497,27 @@
     vimPlugins.stringbreaker-nvim
     vimPlugins.styler-nvim
     vimPlugins.stylish-haskell
-    vimPlugins.stylish-nvim
     vimPlugins.stylishHaskell
+    vimPlugins.stylish-nvim
     vimPlugins.substitute-nvim
     vimPlugins.substrata-nvim
     vimPlugins.suda-vim
+    vimPlugins.SudoEdit-vim
     vimPlugins.supermaven-nvim
     vimPlugins.supertab
+    vimPlugins.Supertab
     vimPlugins.surround
     vimPlugins.surround-nvim
     vimPlugins.sved
     vimPlugins.swayconfig-vim
     vimPlugins.swift-vim
-    vimPlugins.switch-vim
     vimPlugins.switcher-nvim
-    vimPlugins.symbol-usage-nvim
+    vimPlugins.switch-vim
     vimPlugins.symbols-outline-nvim
+    vimPlugins.symbol-usage-nvim
     vimPlugins.syntastic
+    vimPlugins.Syntastic
+    vimPlugins.SyntaxRange
     vimPlugins.tabby-nvim
     vimPlugins.table-mode
     vimPlugins.tabline-nvim
@@ -2560,12 +2529,14 @@
     vimPlugins.tabpagebuffer-vim
     vimPlugins.tabpagecd
     vimPlugins.tabular
+    vimPlugins.Tabular
     vimPlugins.tagalong-vim
     vimPlugins.tagbar
+    vimPlugins.Tagbar
     vimPlugins.taglist
     vimPlugins.taglist-vim
-    vimPlugins.tailwind-tools-nvim
     vimPlugins.tailwindcss-colors-nvim
+    vimPlugins.tailwind-tools-nvim
     vimPlugins.tardis-nvim
     vimPlugins.targets-vim
     vimPlugins.taskwarrior
@@ -2590,6 +2561,7 @@
     vimPlugins.telescope-github-nvim
     vimPlugins.telescope-glyph-nvim
     vimPlugins.telescope-hierarchy-nvim
+    vimPlugins.telescope_hoogle
     vimPlugins.telescope-live-grep-args-nvim
     vimPlugins.telescope-lsp-handlers-nvim
     vimPlugins.telescope-manix
@@ -2603,12 +2575,11 @@
     vimPlugins.telescope-ultisnips-nvim
     vimPlugins.telescope-undo-nvim
     vimPlugins.telescope-vim-bookmarks-nvim
-    vimPlugins.telescope-z-nvim
     vimPlugins.telescope-zf-native-nvim
+    vimPlugins.telescope-z-nvim
     vimPlugins.telescope-zoxide
-    vimPlugins.telescope_hoogle
-    vimPlugins.templ-vim
     vimPlugins.template-string-nvim
+    vimPlugins.templ-vim
     vimPlugins.tender-vim
     vimPlugins.term-edit-nvim
     vimPlugins.terminal-nvim
@@ -2621,14 +2592,16 @@
     vimPlugins.thanks-nvim
     vimPlugins.themed-tabs-nvim
     vimPlugins.themery-nvim
+    vimPlugins.The_NERD_Commenter
+    vimPlugins.The_NERD_tree
     vimPlugins.thesaurus_query-vim
     vimPlugins.thumbnail
     vimPlugins.thumbnail-vim
     vimPlugins.timerly
     vimPlugins.timestamp-vim
-    vimPlugins.tint-nvim
     vimPlugins.tinted-nvim
     vimPlugins.tinted-vim
+    vimPlugins.tint-nvim
     vimPlugins.tiny-devicons-auto-colors-nvim
     vimPlugins.tiny-glimmer-nvim
     vimPlugins.tiny-inline-diagnostic-nvim
@@ -2636,10 +2609,10 @@
     vimPlugins.tlib
     vimPlugins.tlib_vim
     vimPlugins.tmux-complete-vim
-    vimPlugins.tmux-navigator
-    vimPlugins.tmux-nvim
-    vimPlugins.tmuxNavigator
     vimPlugins.tmuxline-vim
+    vimPlugins.tmux-navigator
+    vimPlugins.tmuxNavigator
+    vimPlugins.tmux-nvim
     vimPlugins.todo-comments-nvim
     vimPlugins.todo-txt-vim
     vimPlugins.toggleterm-nvim
@@ -2658,8 +2631,8 @@
     vimPlugins.true-zen-nvim
     vimPlugins.trust-vim
     vimPlugins.ts-autotag-nvim
-    vimPlugins.ts-comments-nvim
     vimPlugins.tsc-nvim
+    vimPlugins.ts-comments-nvim
     vimPlugins.tslime
     vimPlugins.tslime-vim
     vimPlugins.tssorter-nvim
@@ -2677,6 +2650,7 @@
     vimPlugins.typstwatch-nvim
     vimPlugins.ultimate-autopair-nvim
     vimPlugins.ultisnips
+    vimPlugins.UltiSnips
     vimPlugins.undotree
     vimPlugins.unicode-vim
     vimPlugins.unified-nvim
@@ -2685,25 +2659,24 @@
     vimPlugins.unison
     vimPlugins.unite
     vimPlugins.unite-vim
+    vimPluginsUpdater
     vimPlugins.url-open
     vimPlugins.urlview-nvim
     vimPlugins.utl-vim
     vimPlugins.uv-nvim
-    vimPlugins.vCoolor-vim
     vimPlugins.vader-vim
     vimPlugins.vague-nvim
+    vimPlugins.vCoolor-vim
     vimPlugins.vectorcode-nvim
     vimPlugins.venn-nvim
     vimPlugins.venv-selector-nvim
     vimPlugins.verilog_systemverilog-vim
     vimPlugins.vifm-vim
-    vimPlugins.vim-CtrlXA
-    vimPlugins.vim-DetectSpellLang
-    vimPlugins.vim-LanguageTool
-    vimPlugins.vim-ReplaceWithRegister
-    vimPlugins.vim-ReplaceWithSameIndentRegister
-    vimPlugins.vim-SyntaxRange
+    vimPlugins.vim2hs
+    vimPlugins.vim2nix
+    vimPlugins.vim9-stargate
     vimPlugins.vim-abolish
+    vimPlugins.vimacs
     vimPlugins.vim-addon-actions
     vimPlugins.vim-addon-async
     vimPlugins.vim-addon-background-cmd
@@ -2724,10 +2697,12 @@
     vimPlugins.vim-addon-toggle-buffer
     vimPlugins.vim-addon-vim2nix
     vimPlugins.vim-addon-xdebug
+    vimPlugins.vimade
     vimPlugins.vim-advanced-sorters
-    vimPlugins.vim-after-object
     vimPlugins.vim-afterglow
+    vimPlugins.vim-after-object
     vimPlugins.vim-agda
+    vimPlugins.vimagit
     vimPlugins.vim-airline
     vimPlugins.vim-airline-clock
     vimPlugins.vim-airline-themes
@@ -2742,15 +2717,15 @@
     vimPlugins.vim-asterisk
     vimPlugins.vim-astro
     vimPlugins.vim-asymptote
-    vimPlugins.vim-auto-save
     vimPlugins.vim-autoformat
     vimPlugins.vim-automkdir
+    vimPlugins.vim-auto-save
     vimPlugins.vim-autosource
     vimPlugins.vim-autoswap
     vimPlugins.vim-bazel
     vimPlugins.vim-bbye
-    vimPlugins.vim-be-good
     vimPlugins.vim-beancount
+    vimPlugins.vim-be-good
     vimPlugins.vim-bepoptimist
     vimPlugins.vim-better-whitespace
     vimPlugins.vim-bookmarks
@@ -2780,11 +2755,12 @@
     vimPlugins.vim-codefmt
     vimPlugins.vim-coffee-script
     vimPlugins.vim-colemak
+    vimPlugins.vim-colorschemes
     vimPlugins.vim-colors-paramount
     vimPlugins.vim-colors-solarized
-    vimPlugins.vim-colorschemes
     vimPlugins.vim-colorstepper
     vimPlugins.vim-commentary
+    vimPlugins.VimCompletesMe
     vimPlugins.vim-concourse
     vimPlugins.vim-cool
     vimPlugins.vim-cpp-enhanced-highlight
@@ -2793,13 +2769,16 @@
     vimPlugins.vim-crystalline
     vimPlugins.vim-csharp
     vimPlugins.vim-css-color
+    vimPlugins.vim-CtrlXA
     vimPlugins.vim-cue
+    vimPlugins.vim_current_word
     vimPlugins.vim-cursorword
     vimPlugins.vim-cute-python
     vimPlugins.vim-dadbod
     vimPlugins.vim-dadbod-completion
     vimPlugins.vim-dadbod-ui
     vimPlugins.vim-dasht
+    vimPlugins.vim-DetectSpellLang
     vimPlugins.vim-deus
     vimPlugins.vim-devicons
     vimPlugins.vim-dim
@@ -2818,6 +2797,7 @@
     vimPlugins.vim-easymotion
     vimPlugins.vim-easytags
     vimPlugins.vim-eighties
+    vimPlugins.vimelette
     vimPlugins.vim-elixir
     vimPlugins.vim-elm-syntax
     vimPlugins.vim-emacs-bindings
@@ -2835,6 +2815,7 @@
     vimPlugins.vim-fern
     vimPlugins.vim-fetch
     vimPlugins.vim-figlet
+    vimPlugins.vimfiler-vim
     vimPlugins.vim-fireplace
     vimPlugins.vim-fish
     vimPlugins.vim-flagship
@@ -2873,9 +2854,9 @@
     vimPlugins.vim-gutentags
     vimPlugins.vim-habamax
     vimPlugins.vim-hardtime
-    vimPlugins.vim-haskell-module-name
-    vimPlugins.vim-haskellConcealPlus
     vimPlugins.vim-haskellconceal
+    vimPlugins.vim-haskellConcealPlus
+    vimPlugins.vim-haskell-module-name
     vimPlugins.vim-hcl
     vimPlugins.vim-hdevtools
     vimPlugins.vim-helm
@@ -2920,6 +2901,7 @@
     vimPlugins.vim-julia-cell
     vimPlugins.vim-just
     vimPlugins.vim-kitty-navigator
+    vimPlugins.vim-LanguageTool
     vimPlugins.vim-lark-syntax
     vimPlugins.vim-lastplace
     vimPlugins.vim-latex-live-preview
@@ -2986,10 +2968,12 @@
     vimPlugins.vim-operator-replace
     vimPlugins.vim-operator-surround
     vimPlugins.vim-operator-user
+    vimPlugins.VimOrganizer
     vimPlugins.vim-orgmode
     vimPlugins.vim-ormolu
     vimPlugins.vim-osc52
     vimPlugins.vim-oscyank
+    vimPlugins.vimoutliner
     vimPlugins.vim-over
     vimPlugins.vim-packer
     vimPlugins.vim-pager
@@ -3013,8 +2997,11 @@
     vimPlugins.vim-poweryank
     vimPlugins.vim-prettier
     vimPlugins.vim-prettyprint
+    vimPlugins.vimpreviewpandoc
     vimPlugins.vim-printer
     vimPlugins.vim-prisma
+    vimPlugins.vimproc
+    vimPlugins.vimproc-vim
     vimPlugins.vim-projectionist
     vimPlugins.vim-prosession
     vimPlugins.vim-protobuf
@@ -3033,6 +3020,8 @@
     vimPlugins.vim-rails
     vimPlugins.vim-reasonml
     vimPlugins.vim-repeat
+    vimPlugins.vim-ReplaceWithRegister
+    vimPlugins.vim-ReplaceWithSameIndentRegister
     vimPlugins.vim-rhai
     vimPlugins.vim-rhubarb
     vimPlugins.vim-rooter
@@ -3045,11 +3034,14 @@
     vimPlugins.vim-scouter
     vimPlugins.vim-scriptease
     vimPlugins.vim-search-pulse
+    vimPlugins.vimsence
     vimPlugins.vim-sensible
     vimPlugins.vim-sentence-chopper
     vimPlugins.vim-sexp
     vimPlugins.vim-sexp-mappings-for-regular-people
+    vimPlugins.vimshell
     vimPlugins.vim-shellcheck
+    vimPlugins.vimshell-vim
     vimPlugins.vim-signature
     vimPlugins.vim-signify
     vimPlugins.vim-sile
@@ -3069,6 +3061,7 @@
     vimPlugins.vim-solarized8
     vimPlugins.vim-solidity
     vimPlugins.vim-sort-motion
+    vimPlugins.vimspector
     vimPlugins.vim-speeddating
     vimPlugins.vim-spirv
     vimPlugins.vim-splunk
@@ -3076,14 +3069,15 @@
     vimPlugins.vim-startuptime
     vimPlugins.vim-stationeers-ic10-syntax
     vimPlugins.vim-strip-trailing-whitespace
-    vimPlugins.vim-stylish-haskell
     vimPlugins.vim-stylishask
+    vimPlugins.vim-stylish-haskell
     vimPlugins.vim-substrata
     vimPlugins.vim-subversive
     vimPlugins.vim-suda
     vimPlugins.vim-surround
     vimPlugins.vim-svelte
     vimPlugins.vim-swap
+    vimPlugins.vim-SyntaxRange
     vimPlugins.vim-tabby
     vimPlugins.vim-table-mode
     vimPlugins.vim-tabpagecd
@@ -3093,6 +3087,7 @@
     vimPlugins.vim-terraform
     vimPlugins.vim-terraform-completion
     vimPlugins.vim-test
+    vimPlugins.vimtex
     vimPlugins.vim-textobj-comment
     vimPlugins.vim-textobj-entire
     vimPlugins.vim-textobj-function
@@ -3118,12 +3113,13 @@
     vimPlugins.vim-ultest
     vimPlugins.vim-unicoder
     vimPlugins.vim-unimpaired
+    vimPlugins.vimux
     vimPlugins.vim-vagrant
     vimPlugins.vim-vinegar
     vimPlugins.vim-visual-increment
     vimPlugins.vim-visual-multi
-    vimPlugins.vim-visual-star-search
     vimPlugins.vim-visualstar
+    vimPlugins.vim-visual-star-search
     vimPlugins.vim-vp4
     vimPlugins.vim-vsnip
     vimPlugins.vim-vsnip-integ
@@ -3134,6 +3130,7 @@
     vimPlugins.vim-watchdogs
     vimPlugins.vim-wayland-clipboard
     vimPlugins.vim-which-key
+    vimPlugins.vimwiki
     vimPlugins.vim-windowswap
     vimPlugins.vim-wordmotion
     vimPlugins.vim-wordy
@@ -3144,26 +3141,6 @@
     vimPlugins.vim-yapf
     vimPlugins.vim-zettel
     vimPlugins.vim-zscript
-    vimPlugins.vim2hs
-    vimPlugins.vim2nix
-    vimPlugins.vim9-stargate
-    vimPlugins.vim_current_word
-    vimPlugins.vimacs
-    vimPlugins.vimade
-    vimPlugins.vimagit
-    vimPlugins.vimelette
-    vimPlugins.vimfiler-vim
-    vimPlugins.vimoutliner
-    vimPlugins.vimpreviewpandoc
-    vimPlugins.vimproc
-    vimPlugins.vimproc-vim
-    vimPlugins.vimsence
-    vimPlugins.vimshell
-    vimPlugins.vimshell-vim
-    vimPlugins.vimspector
-    vimPlugins.vimtex
-    vimPlugins.vimux
-    vimPlugins.vimwiki
     vimPlugins.vinegar
     vimPlugins.virt-column-nvim
     vimPlugins.virtual-types-nvim
@@ -3171,11 +3148,13 @@
     vimPlugins.vissort-vim
     vimPlugins.vista-vim
     vimPlugins.visual-whitespace-nvim
-    vimPlugins.vs-tasks-nvim
     vimPlugins.vscode-diff-nvim
     vimPlugins.vscode-nvim
+    vimPlugins.vs-tasks-nvim
+    vimPlugins.Vundle-vim
     vimPlugins.wal-vim
     vimPlugins.watchdogs
+    vimPlugins.WebAPI
     vimPlugins.webapi-vim
     vimPlugins.wezterm-nvim
     vimPlugins.wgsl-vim
@@ -3209,75 +3188,78 @@
     vimPlugins.y9nika-nvim
     vimPlugins.yaml-companion-nvim
     vimPlugins.yaml-schema-detect-nvim
+    vimPlugins.YankAssassin-vim
     vimPlugins.yankring
+    vimPlugins.Yankring
+    vimPlugins.YankRing-vim
     vimPlugins.yanky-nvim
     vimPlugins.yats-vim
     vimPlugins.yazi-nvim
     vimPlugins.yescapsquit-vim
+    vimPlugins.YouCompleteMe
     vimPlugins.yuck-vim
+    vimPlugins.YUNOcommit-vim
     vimPlugins.zarchive-vim-fsharp
     vimPlugins.zeavim
     vimPlugins.zeavim-vim
     vimPlugins.zellij-nav-nvim
     vimPlugins.zellij-nvim
-    vimPlugins.zen-mode-nvim
     vimPlugins.zenbones-nvim
     vimPlugins.zenburn
+    vimPlugins.zen-mode-nvim
     vimPlugins.zephyr-nvim
     vimPlugins.zig-vim
     vimPlugins.zk-nvim
     vimPlugins.zoomwintab-vim
     vimPlugins.zotcite
     vimPlugins.zoxide-vim
-    vimPluginsUpdater
-
-    virt-manager
-    virt-top
     virter
     virtiofsd
+    virt-manager
+    virt-top
     visidata
     vit
     vivid
-    vscodium
-    #    (vscode-with-extensions.override {
-    #      vscode = vscodium;
+    #vllm
     #      vscodeExtensions = with vscode-extensions; [
-    #        ms-vscode.cpptools
-    #      ];
-    #    })
+    #      vscode = vscodium;
+    #    (vscode-with-extensions.override {
+    vscodium
     w3m
     watch
     waybar
     wdisplays
     #    webex
     wezterm
-    #xfce.thunar
     wget
     whipper
     wireguard-tools
     wl-clipboard
     wl-clip-persist
-    # wl-screenrec
     wlogout
+    # wl-screenrec
     wlsunset
     wofi
     wpgtk
-    xan
     wsdd
     wshowkeys
+    xan
+    # xdg-desktop-portal-gtk
+    # xdg-desktop-portal-hyprland
+    #xfce.thunar
     xkcd-font
     xkcdpass
     yarn
     yazi
+    yt-dlp
     zathura
     #zed-editor
     zellij
     #    zenmonitor
-    zoxide
-    deno
-    yt-dlp
     zip
     zlib
+    zoxide
     zstd
+
   ];
 }
