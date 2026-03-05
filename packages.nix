@@ -239,7 +239,8 @@
     libxml2
     libxslt
     libzip
-    light
+    # error: 'light' has been removed because it was unmaintained. 'brightnessctl' and 'acpilight' provide similar functionality.
+    #light
     links2
     #    litestream
     lix
