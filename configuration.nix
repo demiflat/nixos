@@ -36,6 +36,7 @@
     #./qt.nix
     ./programs.nix
     ./virtualization.nix
+    #./vim.nix
     ./3d-printer.nix
     #./rocm-hip.nix
     ./rocm.nix
