@@ -37,6 +37,7 @@
     ./programs.nix
     ./virtualization.nix
     #./vim.nix
+    #./treesitter.nix
     ./3d-printer.nix
     #./rocm-hip.nix
     ./rocm.nix
