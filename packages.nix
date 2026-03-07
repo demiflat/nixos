@@ -542,8 +542,8 @@
     tockloader
     tpm2-tools
     #    tpmmanager
-    transmission_4
-    transmission_4-gtk
+    pkgs-stable.transmission_4
+    pkgs-stable.transmission_4-gtk
     tree
     treesheets
     tree-sitter
