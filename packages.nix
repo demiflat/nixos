@@ -272,6 +272,7 @@
     #        ms-vscode.cpptools
     mupdf
     nautilus
+    nemo
     ##nemo-with-extensions
     #    neovide
     neovim
