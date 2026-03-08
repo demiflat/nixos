@@ -11,12 +11,12 @@
   ...
 }:
 {
-#  nixpkgs.overlays = [
-#    (self: super: {
-#      transmission_4 = pkgs-stable.transmission_4;
-#      transmission_4-gtk = pkgs-stable.transmission_4-gtk;
-#    })
-#  ];
+  #  nixpkgs.overlays = [
+  #    (self: super: {
+  #      transmission_4 = pkgs-stable.transmission_4;
+  #      transmission_4-gtk = pkgs-stable.transmission_4-gtk;
+  #    })
+  #  ];
   imports = [
     ./boot.nix
     ./greetd.nix
