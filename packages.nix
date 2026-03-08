@@ -242,7 +242,7 @@
     #light
     links2
     #    litestream
-    lix
+    #lix
     llama-cpp
     lldb
     # llm
