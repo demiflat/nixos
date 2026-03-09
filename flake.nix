@@ -42,6 +42,7 @@
       #lix-module,
       #lix,
       nvf,
+      nur,
       ...
     }@inputs:
     {
