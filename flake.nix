@@ -72,7 +72,7 @@
             #lix-module.nixosModules.default
             nvf.nixosModules.default
             nur.modules.nixos.default
-            nur.repos.charmbracelet.modules.crush
+            #nur.repos.charmbracelet.modules.crush
             ./configuration.nix
           ];
         };
