@@ -2,6 +2,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
+    nvf.url = "github:notashelf/nvf";
     #    lix = {
     #      url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
     #      flake = false;
@@ -39,6 +40,7 @@
       nixpkgs-stable,
       #      lix-module,
       #      lix,
+      nvf,
       ...
     }@inputs:
     {
@@ -67,6 +69,7 @@
             #inputs.isd.default
             ./configuration.nix
             #            lix-module.nixosModules.default
+            nvf.nixosModules.default
           ];
         };
       };
