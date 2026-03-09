@@ -71,7 +71,7 @@
         vim.theme.style = "dark";
       };
       status.lualine.enable = true;
-      telescope.enable = true
+      telescope.enable = true;
 
     };
     ssh.startAgent = true;
