@@ -70,9 +70,6 @@
         vim.theme.name = "gruvbox";
         vim.theme.style = "dark";
       };
-      statusline.lualine.enable = true;
-      telescope.enable = true;
-
     };
     ssh.startAgent = true;
     gnupg.agent = {
