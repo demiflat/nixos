@@ -350,7 +350,7 @@
     nfs-utils
     nftables
     nginx
-    #    nil
+    nil
     nix-du
     nixfmt
     nixfmt-tree
