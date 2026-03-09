@@ -70,7 +70,7 @@
         vim.theme.name = "gruvbox";
         vim.theme.style = "dark";
       };
-      status.lualine.enable = true;
+      statusline.lualine.enable = true;
       telescope.enable = true;
 
     };
