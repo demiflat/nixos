@@ -63,6 +63,14 @@
       #      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
       #    ];
     };
+    nvf = {
+      enable = true;
+      settings = {
+        vim.theme.enable = true;
+        vim.theme.name = "gruvbox";
+        vim.theme.style = "dark";
+      };
+    };
     ssh.startAgent = true;
     gnupg.agent = {
       enable = true;
