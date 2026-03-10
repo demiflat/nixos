@@ -65,173 +65,17 @@
     #};
     nvf = {
       enable = true;
-      settings = {
-        vim.theme.enable = true;
-        vim.theme.name = "gruvbox";
-        vim.theme.style = "dark";
-      };
       vim = {
         viAlias = true;
         vimAlias = true;
-        options = {
-          expandtab = true;
-          tabstop = 4;
-          shiftwidth = 2;
-          mouse = a;
-        };
         clipboard = {
-          registers = "unnamed,unnamedplus";
           providers = {
             wl-copy = {
               enable = true;
             };
           };
         };
-        lsp = {
-          enable = true;
-        };
-        languages = {
-          enableDAP = true;
-          enableTreesitter = true;
-          go = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-            dap = {
-              enable = true;
-            };
-          };
-          html = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          json = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          lua = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          markdown = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          nix = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          python = {
-            enable = true;
-            dap = {
-              enable = true;
-            };
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          qml = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          r = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          ruby = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          rust = {
-            enable = true;
-            dap = {
-              enable = true;
-            };
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          sql = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          yaml = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          zig = {
-            enable = true;
-            dap = {
-              enable = true;
-            };
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-        };
+
         treesitter = {
           enable = true;
           grammars = [
@@ -337,9 +181,22 @@
             zig
           ];
         };
+        lsp = {
+          enable = true;
+        };
+        options = {
+          expandtab = true;
+          tabstop = 4;
+          shiftwidth = 2;
+          mouse = a;
+        };
+      };
+      settings = {
+        vim.theme.enable = true;
+        vim.theme.name = "gruvbox";
+        vim.theme.style = "dark";
       };
     };
-
     ssh.startAgent = true;
     gnupg.agent = {
       enable = true;
