@@ -165,11 +165,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1773090251,
-        "narHash": "sha256-dKafwJGBdbDhBtIYDLcX38RjACwMlnId+glJSGlONrI=",
+        "lastModified": 1773118793,
+        "narHash": "sha256-bZQv30gyPcp8BdR+nCmftuzbSh67IlrTibMQ0Z3MGXk=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "00b462568165e5be619ad76c1bde0df65266ea78",
+        "rev": "24f286ee3d08b1a156e81bd99c6b3b360ef4c2c9",
         "type": "github"
       },
       "original": {
