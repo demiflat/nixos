@@ -78,6 +78,7 @@
           };
           binds = {
             cheatsheet.enable = true;
+            whichKey.enable = true;
           };
           theme = {
             enable = true;
@@ -236,6 +237,15 @@
               lsp = {
                 enable = true;
               };
+            };
+          };
+          telescope = {
+            enable = true;
+          };
+          git = {
+            enable = true;
+            git-conflict = {
+              enable = true;
             };
           };
         };
