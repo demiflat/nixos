@@ -14,3 +14,4 @@ sudo cp -r * /etc/nixos/
 #)
 #
 sudo nixos-rebuild --log-format internal-json -v -j16 boot --upgrade --show-trace --flake .#yoshi |& nom --json
+echo ""
