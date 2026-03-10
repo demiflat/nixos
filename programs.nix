@@ -33,7 +33,8 @@
     steam.enable = true;
     nix-ld.enable = true;
     bcc.enable = true;
-    sysdig.enable = true;
+    #broken in unstable
+    #sysdig.enable = true;
     dconf.enable = true;
     dconf.profiles.user.databases = [
       {
