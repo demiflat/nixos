@@ -66,279 +66,282 @@
     nvf = {
       enable = true;
       settings = {
-        vim.theme.enable = true;
-        vim.theme.name = "gruvbox";
-        vim.theme.style = "dark";
-      };
-      vim = {
-        viAlias = true;
-        vimAlias = true;
-        options = {
-          expandtab = true;
-          tabstop = 4;
-          shiftwidth = 2;
-          mouse = "a";
-        };
-        clipboard = {
-          registers = "unnamed,unnamedplus";
-          providers = {
-            wl-copy = {
-              enable = true;
-            };
+        vim = {
+          viAlias = true;
+          vimAlias = true;
+          options = {
+            expandtab = true;
+            tabstop = 4;
+            shiftwidth = 2;
+            mouse = "a";
           };
-        };
-        lsp = {
-          enable = true;
-        };
-        languages = {
-          enableDAP = true;
-          enableTreesitter = true;
-          go = {
+          theme = {
             enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-            dap = {
-              enable = true;
+            name = "gruvbox";
+            style = "dark";
+          };
+          clipboard = {
+            registers = "unnamed,unnamedplus";
+            providers = {
+              wl-copy = {
+                enable = true;
+              };
             };
           };
-          html = {
+          lsp = {
             enable = true;
-            treesitter = {
+          };
+          languages = {
+            enableDAP = true;
+            enableTreesitter = true;
+            go = {
               enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+              dap = {
+                enable = true;
+              };
             };
-            lsp = {
+            html = {
               enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            json = {
+              enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            lua = {
+              enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            markdown = {
+              enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            nix = {
+              enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            python = {
+              enable = true;
+              dap = {
+                enable = true;
+              };
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            qml = {
+              enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            r = {
+              enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            ruby = {
+              enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            rust = {
+              enable = true;
+              dap = {
+                enable = true;
+              };
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            sql = {
+              enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            yaml = {
+              enable = true;
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
+            };
+            zig = {
+              enable = true;
+              dap = {
+                enable = true;
+              };
+              treesitter = {
+                enable = true;
+              };
+              lsp = {
+                enable = true;
+              };
             };
           };
-          json = {
+          treesitter = {
             enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          lua = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          markdown = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          nix = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          python = {
-            enable = true;
-            dap = {
-              enable = true;
-            };
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          qml = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          r = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          ruby = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          rust = {
-            enable = true;
-            dap = {
-              enable = true;
-            };
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          sql = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          yaml = {
-            enable = true;
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-          zig = {
-            enable = true;
-            dap = {
-              enable = true;
-            };
-            treesitter = {
-              enable = true;
-            };
-            lsp = {
-              enable = true;
-            };
-          };
-        };
-        treesitter = {
-          enable = true;
-          grammars = [
+            grammars = [
 
-            "awk"
-            "bash"
-            "caddyfile"
-            "cmake"
-            "commonlisp"
-            "cpp"
-            "css"
-            "csv"
-            "cuda"
-            "cue"
-            "debian"
-            "devicetree"
-            "dhall"
-            "diff"
-            "dockerfile"
-            "dot"
-            "dtd"
-            "erlang"
-            "fish"
-            "forth"
-            "ghostty"
-            "gitattributes"
-            "gitcommit"
-            "git-config"
-            "gitignore"
-            "git-rebase"
-            "go"
-            "go-template"
-            "gotmpl"
-            "gowork"
-            "graphql"
-            "hjson"
-            "hosts"
-            "html"
-            "ini"
-            "java"
-            "javascript"
-            "jinja2"
-            "jq"
-            "json"
-            "json5"
-            "jsonnet"
-            "just"
-            "kotlin"
-            "latex"
-            "ld"
-            "ldif"
-            "llvm"
-            "llvm-mir"
-            "log"
-            "lua"
-            "luau"
-            "make"
-            "markdown"
-            "markdown-inline"
-            "meson"
-            "mojo"
-            "nasm"
-            "nginx"
-            "nix"
-            "nu"
-            "opencl"
-            "openscad"
-            "org"
-            "org-nvim"
-            "passwd"
-            "pem"
-            "perl"
-            "php"
-            "phpdoc"
-            "pioasm"
-            "powershell"
-            "prolog"
-            "properties"
-            "proto"
-            "python"
-            "readline"
-            "regex"
-            "river"
-            "rust"
-            "rust-format-args"
-            "scala"
-            "scheme"
-            "scss"
-            "sql"
-            "strace"
-            "svelte"
-            "sway"
-            "swift"
-            "tcl"
-            "todotxt"
-            "toml"
-            "typescript"
-            "vala"
-            "verilog"
-            "vhdl"
-            "vim"
-            "xml"
-            "yaml"
-            "zig"
-          ];
+              "awk"
+              "bash"
+              "caddyfile"
+              "cmake"
+              "commonlisp"
+              "cpp"
+              "css"
+              "csv"
+              "cuda"
+              "cue"
+              "debian"
+              "devicetree"
+              "dhall"
+              "diff"
+              "dockerfile"
+              "dot"
+              "dtd"
+              "erlang"
+              "fish"
+              "forth"
+              "ghostty"
+              "gitattributes"
+              "gitcommit"
+              "git-config"
+              "gitignore"
+              "git-rebase"
+              "go"
+              "go-template"
+              "gotmpl"
+              "gowork"
+              "graphql"
+              "hjson"
+              "hosts"
+              "html"
+              "ini"
+              "java"
+              "javascript"
+              "jinja2"
+              "jq"
+              "json"
+              "json5"
+              "jsonnet"
+              "just"
+              "kotlin"
+              "latex"
+              "ld"
+              "ldif"
+              "llvm"
+              "llvm-mir"
+              "log"
+              "lua"
+              "luau"
+              "make"
+              "markdown"
+              "markdown-inline"
+              "meson"
+              "mojo"
+              "nasm"
+              "nginx"
+              "nix"
+              "nu"
+              "opencl"
+              "openscad"
+              "org"
+              "org-nvim"
+              "passwd"
+              "pem"
+              "perl"
+              "php"
+              "phpdoc"
+              "pioasm"
+              "powershell"
+              "prolog"
+              "properties"
+              "proto"
+              "python"
+              "readline"
+              "regex"
+              "river"
+              "rust"
+              "rust-format-args"
+              "scala"
+              "scheme"
+              "scss"
+              "sql"
+              "strace"
+              "svelte"
+              "sway"
+              "swift"
+              "tcl"
+              "todotxt"
+              "toml"
+              "typescript"
+              "vala"
+              "verilog"
+              "vhdl"
+              "vim"
+              "xml"
+              "yaml"
+              "zig"
+            ];
+          };
         };
       };
+
     };
 
     ssh.startAgent = true;
