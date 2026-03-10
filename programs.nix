@@ -76,6 +76,7 @@
             tabstop = 4;
             shiftwidth = 2;
             mouse = "a";
+            relativenumber = false;
           };
           binds = {
             cheatsheet.enable = true;
