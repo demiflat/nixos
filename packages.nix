@@ -351,6 +351,7 @@
     nftables
     nginx
     nil
+    nixd
     nix-du
     nixfmt
     nixfmt-tree
@@ -522,6 +523,7 @@
     strace
     #streamlit
     sudo-font
+    superhtml
     sway
     swayidle
     swaylock

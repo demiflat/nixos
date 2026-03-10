@@ -2,8 +2,8 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
-    nvf.url = "github:notashelf/nvf";
-    nur.url = "github:nix-community/NUR";
+    #nvf.url = "github:notashelf/nvf";
+    #nur.url = "github:nix-community/NUR";
     #    lix = {
     #      url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
     #      flake = false;
@@ -33,6 +33,22 @@
     # jeezyvim.url = "github:LGUG2Z/JeezyVim";
     #home-manager.url = "github:nix-community/home-manager";
     #home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    # nvf:
+    # Optional, if you intend to follow nvf's obsidian-nvim input
+    # you must also add it as a flake input.
+    obsidian-nvim.url = "github:epwalsh/obsidian.nvim";
+
+    # Required, nvf works best and only directly supports flakes
+    nvf = {
+      url = "github:NotAShelf/nvf";
+      # You can override the input nixpkgs to follow your system's
+      # instance of nixpkgs. This is safe to do as nvf does not depend
+      # on a binary cache.
+      inputs.nixpkgs.follows = "nixpkgs";
+      # Optionally, you can also override individual plugins
+      # for example:
+      inputs.obsidian-nvim.follows = "obsidian-nvim"; # <- this will use the obsidian-nvim from your inputs
+    };
   };
   outputs =
     {
@@ -42,7 +58,7 @@
       #lix-module,
       #lix,
       nvf,
-      nur,
+      #nur,
       ...
     }@inputs:
     {
@@ -71,7 +87,7 @@
             #inputs.isd.default
             #lix-module.nixosModules.default
             nvf.nixosModules.default
-            nur.modules.nixos.default
+            #nur.modules.nixos.default
             #nur.repos.charmbracelet.modules.crush
             ./configuration.nix
           ];
