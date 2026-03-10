@@ -75,6 +75,9 @@
             shiftwidth = 2;
             mouse = "a";
           };
+          binds = {
+            cheatsheet.enable = true;
+          };
           theme = {
             enable = true;
             name = "gruvbox";
