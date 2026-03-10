@@ -80,8 +80,9 @@
           };
           theme = {
             enable = true;
-            name = "gruvbox";
-            style = "dark";
+            #name = "gruvbox";
+            name = "tokyonight";
+            style = "night";
           };
           clipboard = {
             registers = "unnamed,unnamedplus";
