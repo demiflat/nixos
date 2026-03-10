@@ -77,7 +77,7 @@
           expandtab = true;
           tabstop = 4;
           shiftwidth = 2;
-          mouse = a;
+          mouse = "a";
         };
         clipboard = {
           registers = "unnamed,unnamedplus";
