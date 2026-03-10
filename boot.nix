@@ -32,7 +32,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   #boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.kernelPackages = pkgs.linuxKernel.kernels.linux_zen;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
   #  boot.kernelModules = [ "8821au" ];
   #boot.extraModulePackages = [
   #  config.boot.kernelPackages.rtl8821au
