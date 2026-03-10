@@ -241,6 +241,10 @@
               };
             };
           };
+          fzf-lua = {
+            enable = true;
+            profile = "fzf-native";
+          };
           telescope = {
             enable = true;
             extensions = [
