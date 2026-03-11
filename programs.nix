@@ -7,6 +7,10 @@
 }:
 {
   programs = {
+    nix-index = {
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+    };
     uwsm.enable = true;
     #    regreet = {
     #  enable = true;
