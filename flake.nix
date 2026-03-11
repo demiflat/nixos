@@ -45,6 +45,7 @@
       #lix,
       nvf,
       #nur,
+      nix-index-database,
       ...
     }@inputs:
     {
@@ -74,6 +75,7 @@
             #lix-module.nixosModules.default
             nvf.nixosModules.default
             nix-index-database.nixosModules.default
+            { programs.nix-index-database.comma.enable = true; }
             #nur.modules.nixos.default
             #nur.repos.charmbracelet.modules.crush
             ./configuration.nix
