@@ -91,6 +91,7 @@
     amdgpu = {
       initrd.enable = true;
       opencl.enable = true;
+      overdrive.ppfeaturemask = "0xffffffff";
     };
     enableRedistributableFirmware = true;
     graphics.enable = true;
