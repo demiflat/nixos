@@ -589,6 +589,7 @@
     wl-clip-persist
     wlogout
     # wl-screenrec
+    wlr-which-key
     wlsunset
     wofi
     wpgtk
