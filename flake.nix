@@ -3,6 +3,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
     nvf.url = "github:notashelf/nvf";
+    nix-index-database.url = "github:nix-community/nix-index-database";
+    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
     #nur.url = "github:nix-community/NUR";
     #    lix = {
     #      url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
@@ -71,6 +73,7 @@
             #inputs.isd.default
             #lix-module.nixosModules.default
             nvf.nixosModules.default
+            nix-index-database.nixosModules.default
             #nur.modules.nixos.default
             #nur.repos.charmbracelet.modules.crush
             ./configuration.nix
