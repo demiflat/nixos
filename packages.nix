@@ -28,7 +28,7 @@
     #    beets
     binocle
     blocky
-    blueberry
+    #blueberry
     bluetui
     bluetuith
     bluez-tools
