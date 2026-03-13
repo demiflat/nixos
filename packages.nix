@@ -30,7 +30,7 @@
     blocky
     #blueberry
     bluetui
-    bluetuith
+    #bluetuith
     bluez-tools
     bottom
     #    brasero
