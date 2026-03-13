@@ -3,14 +3,12 @@
   config,
   pkgs,
   pkgs-stable,
-  opencode,
   inputs,
   ...
 }:
 {
 
   environment.systemPackages = with pkgs; [
-    opencode.opencode
     abcde
     abiword
     akkuPackages.scheme-langserver
