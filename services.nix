@@ -242,4 +242,6 @@
   #  hardwareAcceleration.type = "amf";
   #  transcoding.hardwareEncodingCodecs.hevc = true;
   #};
+  # logi mouse
+  services.ratbagd.enable = true;
 }
