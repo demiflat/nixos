@@ -7,6 +7,10 @@
 }:
 {
   programs = {
+    appimage = {
+      enable = true;
+      binfmt = true;
+    };
     uwsm.enable = true;
     #    regreet = {
     #  enable = true;
