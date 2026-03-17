@@ -32,6 +32,7 @@
     ./network.nix
     ./security.nix
     ./services.nix
+    ./systemd.nix
     #    ./user-services.nix
     #./qt.nix
     ./programs.nix
