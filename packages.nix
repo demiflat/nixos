@@ -399,7 +399,7 @@
     playerctl
     podman
     podman-compose
-    podman-desktop
+    #podman-desktop
     podman-tui
     #    popcorntime
     poppler-utils
