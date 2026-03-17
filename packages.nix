@@ -102,7 +102,7 @@
     fastfetch
     fastgron
     fd
-    feishin
+    #    feishin
     ffmpeg_6-full
     figlet
     file
