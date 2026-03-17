@@ -64,6 +64,7 @@
     criu
     crrcsim
     crun
+    cudatoolkit
     cups-brother-hll3230cdw
     cups-browsed
     cups-filters
@@ -251,6 +252,7 @@
     losslesscut-bin
     loupe
     lsd
+    lshw
     lsix
     lsof
     ltunify
@@ -372,6 +374,7 @@
     numbat
     nushell
     #nvtopPackages.amd
+    nvtopPackages.full
     nwg-look
     #    ollama
     #ollama-rocm
