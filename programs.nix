@@ -400,7 +400,7 @@
               pkgs.vimPlugins.nvim-treesitter-parsers.textproto
               pkgs.vimPlugins.nvim-treesitter-parsers.thrift
               pkgs.vimPlugins.nvim-treesitter-parsers.tlaplus
-              pkgs.vimPlugins.nvim-treesitter-parsers.tmux
+              #              pkgs.vimPlugins.nvim-treesitter-parsers.tmux
               pkgs.vimPlugins.nvim-treesitter-parsers.todotxt
               pkgs.vimPlugins.nvim-treesitter-parsers.toml
               pkgs.vimPlugins.nvim-treesitter-parsers.tsv
