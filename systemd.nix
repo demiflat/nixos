@@ -1,4 +1,4 @@
-{ lib,... }:
+{ lib, ... }:
 {
-  systemd.user.services.waybar.wantedBy = lib.mkForce [];
+  systemd.user.services.waybar.wantedBy = lib.mkForce [ ];
 }

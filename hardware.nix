@@ -20,11 +20,13 @@
   boot.initrd.kernelModules = [
     "kvm-amd"
     "amdgpu"
+    "nvidia"
     "i2c-dev"
   ];
   boot.kernelModules = [
     "kvm-amd"
     "amdgpu"
+    "nvidia"
     "i2c-dev"
   ];
   boot.extraModulePackages = [ ];
@@ -96,6 +98,30 @@
     enableRedistributableFirmware = true;
     graphics.enable = true;
     ksm.enable = true;
+
+    opengl.enable = true;
+    nvidia = {
+      #  enabled = true;
+      open = false;
+      modesetting.enable = true;
+      powerManagement = {
+        enable = false;
+        finegrained = false;
+      };
+      nvidiaSettings = true;
+      #nvidiaPersistenced = true;
+      #prime = {
+      #  offload = {
+      #    enable = true;
+      #    enableOffloadCmd = true;
+      #  };
+      #  # nix run github:eclairevoyant/pcids
+      #  nvidiaBusId = "PCI:1:0:0";
+      #  amdgpuBusId = "PCI:8:0:0";
+      #};
+    };
+    nvidia-container-toolkit.enable = true;
+
     #    graphics.extraPackages = with pkgs; [
     #amdvlk
     #rocmPackages.clr
