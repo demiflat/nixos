@@ -303,7 +303,7 @@
               pkgs.vimPlugins.nvim-treesitter-parsers.fish
               pkgs.vimPlugins.nvim-treesitter-parsers.forth
               pkgs.vimPlugins.nvim-treesitter-parsers.git_config
-              pkgs.vimPlugins.nvim-treesitter-parsers.git_rebase
+              #              pkgs.vimPlugins.nvim-treesitter-parsers.git_rebase
               pkgs.vimPlugins.nvim-treesitter-parsers.gitattributes
               pkgs.vimPlugins.nvim-treesitter-parsers.gitcommit
               pkgs.vimPlugins.nvim-treesitter-parsers.gitignore
