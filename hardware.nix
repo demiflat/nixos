@@ -102,7 +102,8 @@
     opengl.enable = true;
     nvidia = {
       #  enabled = true;
-      open = false;
+      #open = false;
+      open = true;
       modesetting.enable = true;
       powerManagement = {
         enable = false;
