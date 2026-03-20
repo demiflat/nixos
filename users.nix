@@ -12,6 +12,7 @@
         "input"
         "uinput"
         # "jupyter"
+        "kvm"
         "libvirt"
         "libvirtd"
         "lp"
