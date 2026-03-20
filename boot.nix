@@ -25,8 +25,8 @@
   boot.extraModprobeConfig = "options kvm_amd nested=1";
 
   boot.loader.timeout = 2;
-  #boot.loader.systemd-boot.consoleMode = "max";
-  boot.loader.systemd-boot.consoleMode = "3";
+  boot.loader.systemd-boot.consoleMode = "max";
+  #boot.loader.systemd-boot.consoleMode = "5";
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 3;
   boot.loader.systemd-boot.memtest86.enable = true;
