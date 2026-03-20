@@ -564,6 +564,7 @@
     usbutils
     #ustreamer
     utterly-nord-plasma
+    uv
     vanilla-dmz
     vhs
     via
