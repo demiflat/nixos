@@ -576,7 +576,7 @@
     visidata
     vit
     vivid
-    vllm
+    #vllm
     #      vscodeExtensions = with vscode-extensions; [
     #      vscode = vscodium;
     #    (vscode-with-extensions.override {
