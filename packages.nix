@@ -373,6 +373,7 @@
     ntfs3g
     numbat
     nushell
+    nvidia-vaapi-driver
     #nvtopPackages.amd
     nvtopPackages.full
     nwg-look
