@@ -379,6 +379,7 @@
     nwg-look
     #    ollama
     #ollama-rocm
+    opencode
     # openocd
     openocd
     openssl
