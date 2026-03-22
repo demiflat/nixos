@@ -243,7 +243,7 @@
     links2
     #    litestream
     #lix
-    llama-cpp
+    #llama-cpp
     lldb
     # llm
     #llvmPackages.mlir
