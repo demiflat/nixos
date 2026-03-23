@@ -23,21 +23,25 @@
     search = [ "demiflat.org" ];
 
     # Open ports in the firewall.
-    firewall.allowedTCPPorts = [
-      80
-      443
-      8080
-      8888
-    ];
-    # networking.firewall.allowedUDPPorts = [ ... ];
-    # Or disable the firewall altogether.
-    firewall.enable = true;
-    # Allow PMTU / DHCP
-    firewall.allowPing = true;
-
-    # Keep dmesg/journalctl -k output readable by NOT logging
-    # each refused connection on the open internet.
-    firewall.logRefusedConnections = false;
+    firewall = {
+      # networking.firewall.allowedUDPPorts = [ ... ];
+      # Or disable the firewall altogether.
+      enable = true;
+      # Allow PMTU / DHCP
+      allowPing = true;
+      allowedTCPPorts = [
+        80
+        443
+        8080
+        8888
+      ];
+      # Keep dmesg/journalctl -k output readable by NOT logging
+      # each refused connection on the open internet.
+      logRefusedConnections = false;
+      trustedInterfaces = [
+        "virbr0"
+      ];
+    };
   };
 
   # networking.wireless = {
