@@ -38,10 +38,10 @@
       # Keep dmesg/journalctl -k output readable by NOT logging
       # each refused connection on the open internet.
       logRefusedConnections = false;
-      #trustedInterfaces = [
-      ##  "virbr0"
-      #  "cloud"
-      #];
+      trustedInterfaces = [
+        "virbr0"
+        "cloud"
+      ];
       #interfaces."virbr*".allowedTCPPorts = [ 53 ];
       #interfaces."virbr*".allowedUDPPorts = [
       #  53
