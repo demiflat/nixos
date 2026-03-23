@@ -99,7 +99,6 @@
     graphics.enable = true;
     ksm.enable = true;
 
-    opengl.enable = true;
     nvidia = {
       #  enabled = true;
       #open = false;

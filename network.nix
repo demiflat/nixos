@@ -124,7 +124,9 @@
           #   "10.1.1.213/24"
           # ];
           routes = [
-            { routeConfig.Gateway = "10.1.1.1"; }
+            {
+              Gateway = "10.1.1.1";
+            }
           ];
           networkConfig = {
             DHCP = "yes";
