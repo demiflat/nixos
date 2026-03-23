@@ -187,7 +187,7 @@
           dhcpV4Config.UseRoutes = "no";
           dhcpV4Config.UseDNS = "no";
           linkConfig.RequiredForOnline = "no";
-          # dhcpV4Config.RouteMetric = 2048;
+          dhcpV4Config.RouteMetric = 2048;
           # dhcpV6Config.RouteMetric = 2048;
         };
         # "41-sonic" = {
