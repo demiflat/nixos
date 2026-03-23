@@ -38,9 +38,10 @@
       # Keep dmesg/journalctl -k output readable by NOT logging
       # each refused connection on the open internet.
       logRefusedConnections = false;
-      trustedInterfaces = [
-        "virbr0"
-      ];
+      #trustedInterfaces = [
+      ##  "virbr0"
+      #  "cloud"
+      #];
       #interfaces."virbr*".allowedTCPPorts = [ 53 ];
       #interfaces."virbr*".allowedUDPPorts = [
       #  53
@@ -78,53 +79,53 @@
       #   matchConfig.PermanentMACAddress = "98:48:27:46:90:76";
       #   linkConfig.Name = "wifi";
       # };
-      # netdevs = {
-      #   "20-cloud" = {
-      #     netdevConfig = {
-      #       Kind = "vlan";
-      #       Name = "cloud";
-      #     };
-      #     vlanConfig.Id = 25;
-      #   };
-      #   "21-sonic" = {
-      #     netdevConfig = {
-      #       Kind = "vlan";
-      #       Name = "sonic";
-      #     };
-      #     vlanConfig.Id = 5;
-      #   };
-      #   "22-public" = {
-      #     netdevConfig = {
-      #       Kind = "vlan";
-      #       Name = "public";
-      #     };
-      #     vlanConfig.Id = 15;
-      #   };
-      #   "23-iot" = {
-      #     netdevConfig = {
-      #       Kind = "vlan";
-      #       Name = "iot";
-      #     };
-      #     vlanConfig.Id = 99;
-      #   };
-      # };
+      netdevs = {
+        "20-cloud" = {
+          netdevConfig = {
+            Kind = "vlan";
+            Name = "cloud";
+          };
+          vlanConfig.Id = 25;
+        };
+        #   "21-sonic" = {
+        #     netdevConfig = {
+        #       Kind = "vlan";
+        #       Name = "sonic";
+        #     };
+        #     vlanConfig.Id = 5;
+        #   };
+        #   "22-public" = {
+        #     netdevConfig = {
+        #       Kind = "vlan";
+        #       Name = "public";
+        #     };
+        #     vlanConfig.Id = 15;
+        #   };
+        #   "23-iot" = {
+        #     netdevConfig = {
+        #       Kind = "vlan";
+        #       Name = "iot";
+        #     };
+        #     vlanConfig.Id = 99;
+        #   };
+      };
 
       networks = {
         "30-wired" = {
           matchConfig.Name = "wired";
           # tag vlan on this link
-          #          vlan = [
-          #            "sonic"
-          #            "public"
-          #            "cloud"
-          #            "iot"
-          #          ];
+          vlan = [
+            #            "sonic"
+            #            "public"
+            "cloud"
+            #            "iot"
+          ];
           # address = [
           #   "10.1.1.213/24"
           # ];
-          # routes = [
-          #   { routeConfig.Gateway = "10.1.1.1"; }
-          # ];
+          routes = [
+            { routeConfig.Gateway = "10.1.1.1"; }
+          ];
           networkConfig = {
             DHCP = "yes";
             DNSSEC = "no";
@@ -172,21 +173,21 @@
         #   domains = [ "demiflat.org" ];
         #   linkConfig.RequiredForOnline = "no";
         # };
-        # "40-cloud" = {
-        #   matchConfig.Name = "cloud";
-        #   networkConfig = {
-        #     DHCP = "ipv4";
-        #     DNSSEC = "no";
-        #     DefaultRouteOnDevice = "no";
-        #     ConfigureWithoutCarrier = "no";
-        #     IPv6PrivacyExtensions = "no";
-        #   };
-        #   dhcpV4Config.UseRoutes = "no";
-        #   dhcpV4Config.UseDNS = "no";
-        #   linkConfig.RequiredForOnline = "no";
-        #   # dhcpV4Config.RouteMetric = 2048;
-        #   # dhcpV6Config.RouteMetric = 2048;
-        # };
+        "40-cloud" = {
+          matchConfig.Name = "cloud";
+          networkConfig = {
+            DHCP = "ipv4";
+            DNSSEC = "no";
+            DefaultRouteOnDevice = "no";
+            ConfigureWithoutCarrier = "no";
+            IPv6PrivacyExtensions = "no";
+          };
+          dhcpV4Config.UseRoutes = "no";
+          dhcpV4Config.UseDNS = "no";
+          linkConfig.RequiredForOnline = "no";
+          # dhcpV4Config.RouteMetric = 2048;
+          # dhcpV6Config.RouteMetric = 2048;
+        };
         # "41-sonic" = {
         #   matchConfig.Name = "sonic";
         #   networkConfig = {
