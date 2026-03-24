@@ -87,6 +87,12 @@
           };
           vlanConfig.Id = 25;
         };
+        "25-cloudrouter" = {
+          netdevConfig = {
+            Kind = "bridge";
+            Name = "cloudrouter";
+          };
+        };
         #   "21-sonic" = {
         #     netdevConfig = {
         #       Kind = "vlan";
