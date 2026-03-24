@@ -92,6 +92,10 @@
             Kind = "bridge";
             Name = "cloudrouter";
           };
+          bridgeConfig = {
+            STP = "no";
+            ForwardDelaySec = 0;
+          };
         };
         #   "21-sonic" = {
         #     netdevConfig = {
@@ -181,8 +185,8 @@
         #   domains = [ "demiflat.org" ];
         #   linkConfig.RequiredForOnline = "no";
         # };
-        "40-cloud" = {
-          matchConfig.Name = "cloud";
+        "40-cloudrouter" = {
+          matchConfig.Name = "cloudrouter";
           networkConfig = {
             DHCP = "ipv4";
             DNSSEC = "no";
@@ -195,6 +199,12 @@
           linkConfig.RequiredForOnline = "no";
           dhcpV4Config.RouteMetric = 2048;
           # dhcpV6Config.RouteMetric = 2048;
+        };
+        "60-cloud" = {
+          matchConfig.Name = "cloud";
+          networkConfig = {
+            Bridge = "cloudrouter";
+          };
         };
         # "41-sonic" = {
         #   matchConfig.Name = "sonic";
