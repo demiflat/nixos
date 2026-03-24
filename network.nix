@@ -41,6 +41,7 @@
       trustedInterfaces = [
         "virbr0"
         "cloud"
+        "cloudrouter"
       ];
       #interfaces."virbr*".allowedTCPPorts = [ 53 ];
       #interfaces."virbr*".allowedUDPPorts = [
