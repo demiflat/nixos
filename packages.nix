@@ -60,6 +60,12 @@
     conky
     #    copyq
     cosmic-term
+    # fonts
+    courier-prime
+    courier-unicode
+    font-ibm-type1
+    input-fonts
+
     cri-o
     cri-tools
     criu
