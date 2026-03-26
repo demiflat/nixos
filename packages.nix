@@ -27,6 +27,7 @@
     bc
     #    beets
     binocle
+    blesh
     blocky
     #blueberry
     bluetui
