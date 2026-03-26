@@ -8,8 +8,6 @@
 }:
 {
 
-  config.input-fonts.acceptLicense = true;
-
   environment.systemPackages = with pkgs; [
     abcde
     abiword
