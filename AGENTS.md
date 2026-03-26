@@ -1,0 +1,1 @@
+- `nix flake check` validates the config
