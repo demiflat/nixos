@@ -203,6 +203,7 @@
     #    jmtpfs
     jq
     jql
+    jujutsu
     # jupyter
     kdiff3
     killall
