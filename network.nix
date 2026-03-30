@@ -16,7 +16,7 @@
     networkmanager.enable = false;
     iproute2.enable = true;
 
-    useNetworkd = true;
+    # useNetworkd = true;
     hostName = "yoshi";
     domain = "demiflat.org";
     #    fqdn = "yoshi.demiflat.org";
