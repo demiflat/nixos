@@ -10,6 +10,7 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    #nix-gl-host.url = "github:numtide/nix-gl-host";
     #nur.url = "github:nix-community/NUR";
     #    lix = {
     #      url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
@@ -51,6 +52,7 @@
       nvf,
       nur,
       nix-index-database,
+      #nix-gl-host,
       ...
     }@inputs:
     {

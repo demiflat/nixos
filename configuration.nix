@@ -42,6 +42,7 @@
     ./3d-printer.nix
     #./rocm-hip.nix
     ./rocm.nix
+    ./cuda.nix
     #./jupiter.nix
     #./llama.nix
     #./auto-upgrade.nix
