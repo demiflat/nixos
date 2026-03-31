@@ -11,6 +11,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-gl-host.url = "github:numtide/nix-gl-host";
+    nix-flox.url = "github:flox/flox";
     #nur.url = "github:nix-community/NUR";
     #    lix = {
     #      url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
@@ -53,6 +54,7 @@
       nur,
       nix-index-database,
       nix-gl-host,
+      nix-flox,
       ...
     }@inputs:
     {
@@ -81,6 +83,7 @@
             #inputs.isd.default
             #lix-module.nixosModules.default
             nvf.nixosModules.default
+            nix-flox.nixosModules.flox
             nix-index-database.nixosModules.default
             { programs.nix-index-database.comma.enable = true; }
             nur.modules.nixos.default
