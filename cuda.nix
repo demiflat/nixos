@@ -14,7 +14,7 @@
     gcc
     libtool
     uv
-    openssl_3_5
+    openssl_oqs
     python313
     zlib
     cudaPackages.cudatoolkit

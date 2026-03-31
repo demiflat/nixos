@@ -390,7 +390,7 @@
     opencode
     # openocd
     openocd
-    openssl
+    openssl_oqs
     #    opentoonz
     #openvswitch
     p7zip
