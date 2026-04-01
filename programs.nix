@@ -72,6 +72,7 @@
       enable = true;
       enableManpages = true;
       settings = {
+        vim.lsp.servers.nixd.settings.nil.nix.autoArchive = true;
         vim = {
           viAlias = true;
           vimAlias = true;
