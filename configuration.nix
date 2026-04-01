@@ -49,6 +49,7 @@
   ];
 
   nix = {
+    channel.enable = true;
     extraOptions = "experimental-features = nix-command flakes cgroups";
     #    registry = {
     #  nixpkgs = {
@@ -64,6 +65,7 @@
 
     gc.automatic = true;
     settings = {
+      nix-path = config.nix.nixPath;
       #      download-buffer-size = 524288000;
       cores = 8;
       trusted-users = [
