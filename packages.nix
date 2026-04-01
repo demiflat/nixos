@@ -11,7 +11,6 @@
   environment.systemPackages = with pkgs; [
     abcde
     abiword
-    akkuPackages.scheme-langserver
     alacritty
     alsa-utils
     amd-blis
