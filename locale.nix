@@ -109,6 +109,7 @@
     ];
 
     fontconfig = {
+      subpixel.rgba = "rgb";
       defaultFonts = {
         serif = [ "NotoSerif Nerd Font Propo" ];
         sansSerif = [ "NotoSans Nerd Font Propo" ];
