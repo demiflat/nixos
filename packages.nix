@@ -110,7 +110,7 @@
     fastgron
     fd
     #    feishin
-    ffmpeg-full
+    ffmpeg_6-full
     figlet
     file
     file-roller
