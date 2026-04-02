@@ -261,6 +261,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.cudaSupport = true;
   nixpkgs.config.input-fonts.acceptLicense = true;
 
   # List packages installed in system profile. To search, run:
