@@ -261,6 +261,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.hostPlatform.system = "x86_64-linux";
   nixpkgs.config.cudaSupport = true;
   nixpkgs.config.input-fonts.acceptLicense = true;
 
