@@ -34,7 +34,7 @@
     #      padding: 50px;
     #    }";
     #};
-    steam.enable = true;
+    #steam.enable = true;
     nix-ld.enable = true;
     bcc.enable = true;
     #broken in unstable
