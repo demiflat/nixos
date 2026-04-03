@@ -281,18 +281,20 @@
             blasSupport = true;
           }).overrideAttrs
             (oldAttrs: rec {
-              version = "8204";
+              version = "8660";
               src = pkgs.fetchFromGitHub {
                 owner = "ggml-org";
                 repo = "llama.cpp";
                 tag = "b${version}";
-                hash = "sha256-j3RLNiY6u36qdLah4Zcrac804Ub1wnBtv066PtzBvt0=";
+                hash = "sha256-PmrgGHKAxK+Z6AVKNZnHcwxVw8NgtRzjuUG2I2MpQg4=";
                 leaveDotGit = true;
                 postFetch = ''
                   git -C "$out" rev-parse --short HEAD > $out/COMMIT
                   find "$out" -name .git -print0 | xargs -0 rm -rf
                 '';
               };
+              # grep sha256 /nix/store/n98gbk25cqx62grrcajlqr5cjaybnmab-llama-cpp-8660-npm-deps.drv
+              # ("outputHash","sha256-FKjoZTKm0ddoVdpxzYrRUmTiuafEfbKc4UD2fz2fb8A=")
               npmDepsHash = "sha256-FKjoZTKm0ddoVdpxzYrRUmTiuafEfbKc4UD2fz2fb8A=";
               # Enable native CPU optimizations for massively better CPU performance
               # This enables AVX, AVX2, AVX-512, FMA, etc. for your specific CPU
