@@ -62,7 +62,7 @@
       nix-index-database,
       nix-gl-host,
       nix-flox,
-      llama-cpp,
+      #llama-cpp,
       ...
     }@inputs:
     {
