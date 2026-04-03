@@ -15,10 +15,10 @@
       url = "github:flox/flox";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    llama-cpp = {
-      url = "github:ggerganov/llama.cpp#cuda";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #llama-cpp = {
+    #  url = "github:ggerganov/llama.cpp#cuda";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
     #nur.url = "github:nix-community/NUR";
     #    lix = {
     #      url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
