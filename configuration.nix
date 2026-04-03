@@ -8,7 +8,7 @@
   pkgs,
   pkgs-stable,
   modulesPath,
-  llama-cpp,
+  #llama-cpp,
   ...
 }:
 {
