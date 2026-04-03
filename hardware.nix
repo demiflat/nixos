@@ -104,6 +104,7 @@
       #open = false;
       open = true;
       modesetting.enable = true;
+      prime.offload.enable = true;
       powerManagement = {
         enable = true;
         finegrained = true;
