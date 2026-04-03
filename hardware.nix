@@ -104,22 +104,21 @@
       #open = false;
       open = true;
       modesetting.enable = true;
-      prime.offload.enable = true;
       powerManagement = {
         enable = true;
         finegrained = true;
       };
       nvidiaSettings = true;
       #nvidiaPersistenced = true;
-      #prime = {
-      #  offload = {
-      #    enable = true;
-      #    enableOffloadCmd = true;
-      #  };
-      #  # nix run github:eclairevoyant/pcids
-      #  nvidiaBusId = "PCI:1:0:0";
-      #  amdgpuBusId = "PCI:8:0:0";
-      #};
+      prime = {
+        offload = {
+          enable = true;
+          enableOffloadCmd = true;
+        };
+        # nix run github:eclairevoyant/pcids
+        nvidiaBusId = "PCI:1:0:0";
+        amdgpuBusId = "PCI:8:0:0";
+      };
     };
     nvidia-container-toolkit.enable = true;
 
