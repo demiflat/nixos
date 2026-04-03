@@ -11,7 +11,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-gl-host.url = "github:numtide/nix-gl-host";
-    nix-flox.url = "github:flox/flox";
+    nix-flox = {
+      url = "github:flox/flox";
+      inputs.nixpkgs.follows = "nixpkgs";
+    }
     #nur.url = "github:nix-community/NUR";
     #    lix = {
     #      url = "https://git.lix.systems/lix-project/lix/archive/main.tar.gz";
@@ -87,8 +90,6 @@
             nix-index-database.nixosModules.default
             { programs.nix-index-database.comma.enable = true; }
             nur.modules.nixos.default
-            #nur.repos.charmbracelet.modules.crush
-            #{ programs.crush.enable = true; }
             ./configuration.nix
           ];
         };
