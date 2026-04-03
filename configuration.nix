@@ -41,6 +41,7 @@
     #./treesitter.nix
     ./3d-printer.nix
     #./rocm-hip.nix
+    ./llama.nix
     ./rocm.nix
     #./cuda.nix
     #./jupiter.nix
