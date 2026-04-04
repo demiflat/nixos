@@ -15,6 +15,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-utils.url = "github:numtide/flake-utils";
+    nix-alien.url = "github:thiagokokada/nix-alien";
     #llama-cpp = {
     #  url = "github:ggerganov/llama.cpp";
     #  inputs.nixpkgs.follows = "nixpkgs";
@@ -62,6 +63,7 @@
       nur,
       nix-index-database,
       nix-flox,
+      nix-alien,
       #llama-cpp,
       ...
     }@inputs:
