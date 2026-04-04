@@ -70,7 +70,7 @@
       ...
     }@inputs:
     {
-      devShells.x86_64-linux = import ./nvcuda.nix;
+      devShells.x86_64-linux.default = import ./nvcuda.nix;
       nixosConfigurations = {
         yoshi = nixpkgs.lib.nixosSystem {
           specialArgs =
