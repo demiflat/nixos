@@ -161,7 +161,7 @@
                 enable = true;
               };
               lsp = {
-                enable = true;
+                enable = false;
               };
             };
             python = {
