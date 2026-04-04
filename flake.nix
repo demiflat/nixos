@@ -10,7 +10,6 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-gl-host.url = "github:numtide/nix-gl-host";
     nix-flox = {
       url = "github:flox/flox";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -65,13 +64,12 @@
       nvf,
       nur,
       nix-index-database,
-      nix-gl-host,
       nix-flox,
       #llama-cpp,
       ...
     }@inputs:
     {
-      packages.x86_64-linux.nix-gl-host = nix-gl-host.defaultPackage.x86_64-linux;
+      devShells.default = import ./nvcuda.nix { inherit pkgs; };
       nixosConfigurations = {
         yoshi = nixpkgs.lib.nixosSystem {
           specialArgs =
