@@ -65,7 +65,6 @@
       nur,
       nix-index-database,
       nix-flox,
-      devShells,
       #llama-cpp,
       ...
     }@inputs:
