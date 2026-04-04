@@ -69,7 +69,7 @@
       ...
     }@inputs:
     {
-      devShells.default = import ./nvcuda.nix { inherit pkgs; };
+      devShells.default = import ./nvcuda.nix;
       nixosConfigurations = {
         yoshi = nixpkgs.lib.nixosSystem {
           specialArgs =
