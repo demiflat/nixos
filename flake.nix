@@ -16,7 +16,7 @@
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
     #llama-cpp = {
-    #  url = "github:ggerganov/llama.cpp#cuda";
+    #  url = "github:ggerganov/llama.cpp";
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
     #nur.url = "github:nix-community/NUR";
