@@ -15,6 +15,10 @@
       url = "github:flox/flox";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    flake-utils = {
+      url = "github:numtide/flake-utils";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     #llama-cpp = {
     #  url = "github:ggerganov/llama.cpp";
     #  inputs.nixpkgs.follows = "nixpkgs";
@@ -55,6 +59,7 @@
       self,
       nixpkgs,
       nixpkgs-stable,
+      flake-utils,
       #lix-module,
       #lix,
       nvf,
