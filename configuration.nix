@@ -45,7 +45,6 @@
     #./llama.nix
     ./rocm.nix
     #./cuda.nix
-    ./nvcuda.nix
     #./jupiter.nix
     #./llama.nix
     #./auto-upgrade.nix
