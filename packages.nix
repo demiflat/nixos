@@ -360,6 +360,7 @@
     nginx
     nil
     nixd
+    nix-alien
     nix-du
     nixfmt
     nixfmt-tree
