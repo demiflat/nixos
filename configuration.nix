@@ -293,9 +293,9 @@
                   find "$out" -name .git -print0 | xargs -0 rm -rf
                 '';
               };
-              # grep sha256 /nix/store/n98gbk25cqx62grrcajlqr5cjaybnmab-llama-cpp-8660-npm-deps.drv
-              # ("outputHash","sha256-FKjoZTKm0ddoVdpxzYrRUmTiuafEfbKc4UD2fz2fb8A=")
-              npmDepsHash = "";
+              # clear and replace
+              #npmDepsHash = "";
+              npmDepsHash = "sha256-DxgUDVr+kwtW55C4b89Pl+j3u2ILmACcQOvOBjKWAKQ=";
               # Enable native CPU optimizations for massively better CPU performance
               # This enables AVX, AVX2, AVX-512, FMA, etc. for your specific CPU
               # NOTE: This is intentionally opposite of nixpkgs (which uses -DGGML_NATIVE=off
