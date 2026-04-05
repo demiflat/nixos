@@ -4,7 +4,6 @@
   pkgs,
   pkgs-stable,
   inputs,
-  nix-alien,
   ...
 }:
 {
@@ -361,7 +360,6 @@
     nginx
     nil
     nixd
-    nix-alien.nix-alien
     nix-du
     nixfmt
     nixfmt-tree
