@@ -8,7 +8,6 @@
   pkgs,
   pkgs-stable,
   modulesPath,
-  nix-alien,
   #llama-cpp,
   ...
 }:
