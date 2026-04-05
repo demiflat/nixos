@@ -18,7 +18,7 @@
     "fenix": {
       "inputs": {
         "nixpkgs": [
-          "nix-flox",
+          "flox",
           "nixpkgs"
         ],
         "rust-analyzer-src": "rust-analyzer-src"
@@ -38,12 +38,13 @@
       }
     },
     "flake-compat": {
+      "flake": false,
       "locked": {
-        "lastModified": 1767039857,
-        "narHash": "sha256-vNpUSpF5Nuw8xvDLj2KCwwksIbjua2LZCqhV1LNRDns=",
+        "lastModified": 1761588595,
+        "narHash": "sha256-XKUZz9zewJNUj46b4AJdiRZJAvSZ0Dqj2BNfXvFlJC4=",
         "owner": "edolstra",
         "repo": "flake-compat",
-        "rev": "5edf11c44bc78a0d334f6334cdaf7d60d732daab",
+        "rev": "f387cd2afec9419c8ee37694406ca490c3f34ee5",
         "type": "github"
       },
       "original": {
@@ -53,13 +54,12 @@
       }
     },
     "flake-compat_2": {
-      "flake": false,
       "locked": {
-        "lastModified": 1761588595,
-        "narHash": "sha256-XKUZz9zewJNUj46b4AJdiRZJAvSZ0Dqj2BNfXvFlJC4=",
+        "lastModified": 1767039857,
+        "narHash": "sha256-vNpUSpF5Nuw8xvDLj2KCwwksIbjua2LZCqhV1LNRDns=",
         "owner": "edolstra",
         "repo": "flake-compat",
-        "rev": "f387cd2afec9419c8ee37694406ca490c3f34ee5",
+        "rev": "5edf11c44bc78a0d334f6334cdaf7d60d732daab",
         "type": "github"
       },
       "original": {
@@ -144,10 +144,34 @@
         "type": "github"
       }
     },
+    "flox": {
+      "inputs": {
+        "crane": "crane",
+        "fenix": "fenix",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "pre-commit-hooks": "pre-commit-hooks"
+      },
+      "locked": {
+        "lastModified": 1774022720,
+        "narHash": "sha256-oYnqhx8j/9YiGp7SfeuXI5jXmMb8ug15t7SMmFLj9AE=",
+        "owner": "flox",
+        "repo": "flox",
+        "rev": "d57adf4ecb33b335d6690d1d95992394b17db59e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "flox",
+        "ref": "latest",
+        "repo": "flox",
+        "type": "github"
+      }
+    },
     "gitignore": {
       "inputs": {
         "nixpkgs": [
-          "nix-flox",
+          "flox",
           "pre-commit-hooks",
           "nixpkgs"
         ]
@@ -205,7 +229,7 @@
     },
     "nix-alien": {
       "inputs": {
-        "flake-compat": "flake-compat",
+        "flake-compat": "flake-compat_2",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs"
       },
@@ -220,29 +244,6 @@
       "original": {
         "owner": "thiagokokada",
         "repo": "nix-alien",
-        "type": "github"
-      }
-    },
-    "nix-flox": {
-      "inputs": {
-        "crane": "crane",
-        "fenix": "fenix",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "pre-commit-hooks": "pre-commit-hooks"
-      },
-      "locked": {
-        "lastModified": 1775155775,
-        "narHash": "sha256-pjLyBKv04lsla6rVWcrR+MqgjbpdTXybkm2XvveQMt0=",
-        "owner": "flox",
-        "repo": "flox",
-        "rev": "31a8ceb1693e26b2fe34992a488d738cd041adf4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "flox",
-        "repo": "flox",
         "type": "github"
       }
     },
@@ -359,11 +360,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775333746,
-        "narHash": "sha256-wGUVdJgol/FQFcjiRmi7UXf6etssfIJih/mv5HdKptE=",
+        "lastModified": 1775358158,
+        "narHash": "sha256-m0CXhnElAiLKOrn6XGn1t8+j8INjWKjClDSCu5bsqfU=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "558d848eb16827ed938b68911d8dbab546250877",
+        "rev": "1b4e9f47e58dd0cbb586f3dcb3f19ef7d6aabaae",
         "type": "github"
       },
       "original": {
@@ -397,10 +398,10 @@
     },
     "pre-commit-hooks": {
       "inputs": {
-        "flake-compat": "flake-compat_2",
+        "flake-compat": "flake-compat",
         "gitignore": "gitignore",
         "nixpkgs": [
-          "nix-flox",
+          "flox",
           "nixpkgs"
         ]
       },
@@ -421,8 +422,8 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "flox": "flox",
         "nix-alien": "nix-alien",
-        "nix-flox": "nix-flox",
         "nix-index-database": "nix-index-database_2",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-stable": "nixpkgs-stable",

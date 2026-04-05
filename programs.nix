@@ -7,6 +7,7 @@
 }:
 {
   programs = {
+    flox.enable = true;
     appimage = {
       enable = true;
       binfmt = true;
