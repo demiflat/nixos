@@ -61,7 +61,7 @@
       nvf,
       nur,
       nix-index-database,
-    #flox,
+      #flox,
       #llama-cpp,
       ...
     }@inputs:
