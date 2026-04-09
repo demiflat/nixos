@@ -7,39 +7,27 @@
 {
 
   environment.systemPackages = with pkgs; [
-    cmake
-    ninja
-    boost
-    boost-build
     gcc
     libtool
-    uv
+    ninja
     openssl_oqs
     python313
+    uv
     zlib
-    cudaPackages.cudatoolkit
-    cudaPackages.cuda_cudart
-    cudaPackages.cuda_cupti
-    cudaPackages.cuda_nvrtc
-    cudaPackages.cuda_nvtx
-    cudaPackages.cudnn
-    cudaPackages.libcublas
-    cudaPackages.libcufft
-    cudaPackages.libcurand
-    cudaPackages.libcusolver
-    cudaPackages.libcusparse
-    cudaPackages.libnvjitlink
-    cudaPackages.nccl
+    boost
+    boost-build
+    cmake
     cudaPackages.autoAddCudaCompatRunpath
     cudaPackages.backendStdenv
-    cudaPackages.cuda-samples
     cudaPackages.cuda_cccl
     #cudaPackages.cuda_compat
     #cudaPackages.cuda_crt
     #cudaPackages.cuda_ctadvisor
     cudaPackages.cuda_cudart
+    cudaPackages.cuda_cudart
     #cudaPackages.cuda_culibos
     cudaPackages.cuda_cuobjdump
+    cudaPackages.cuda_cupti
     cudaPackages.cuda_cupti
     cudaPackages.cuda_cuxxfilt
     cudaPackages.cuda_demo_suite
@@ -52,12 +40,17 @@
     cudaPackages.cuda_nvprof
     cudaPackages.cuda_nvprune
     cudaPackages.cuda_nvrtc
+    cudaPackages.cuda_nvrtc
+    cudaPackages.cuda_nvtx
     cudaPackages.cuda_nvtx
     cudaPackages.cuda_nvvp
     cudaPackages.cuda_opencl
     cudaPackages.cuda_profiler_api
+    cudaPackages.cuda-samples
     cudaPackages.cuda_sanitizer_api
     cudaPackages.cudatoolkit
+    cudaPackages.cudatoolkit
+    cudaPackages.cudnn
     cudaPackages.cudnn
     cudaPackages.cudnn-frontend
     cudaPackages.cuquantum
@@ -66,20 +59,26 @@
     cudaPackages.gdrcopy
     cudaPackages.imex
     cudaPackages.libcublas
+    cudaPackages.libcublas
     cudaPackages.libcublasmp
     #cudaPackages.libcudla
     cudaPackages.libcudss
     cudaPackages.libcufft
+    cudaPackages.libcufft
     cudaPackages.libcufile
     cudaPackages.libcurand
+    cudaPackages.libcurand
+    cudaPackages.libcusolver
     cudaPackages.libcusolver
     cudaPackages.libcusolvermp
+    cudaPackages.libcusparse
     cudaPackages.libcusparse
     cudaPackages.libcusparse_lt
     cudaPackages.libcutensor
     cudaPackages.libnpp
     cudaPackages.libnpp_plus
     cudaPackages.libnvfatbin
+    cudaPackages.libnvjitlink
     cudaPackages.libnvjitlink
     cudaPackages.libnvjpeg
     cudaPackages.libnvjpeg_2k
@@ -88,6 +87,7 @@
     cudaPackages.libnvtiff
     #cudaPackages.libnvvm
     cudaPackages.markForCudatoolkitRootHook
+    cudaPackages.nccl
     cudaPackages.nccl
     cudaPackages.nccl-tests
     cudaPackages.nsight_compute
