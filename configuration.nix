@@ -65,7 +65,7 @@
     #    "/nix/var/nix/profiles/per-user/root/channels"
     #  ];
 
-    gc.automatic = true;
+    #gc.automatic = true;
     settings = {
       nix-path = config.nix.nixPath;
       #      download-buffer-size = 524288000;
