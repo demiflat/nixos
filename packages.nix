@@ -40,6 +40,7 @@
     buildah
     bun
     caddy
+    caligula
     canta-theme
     can-utils
     cargo
