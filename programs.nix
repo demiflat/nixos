@@ -451,7 +451,10 @@
     };
     hyprlock.enable = true;
     waybar.enable = true;
-    fish.enable = true;
+    fish = {
+      enable = true;
+      generateCompletions = false;
+    };
 
     # Avoid TOFU MITM with github by providing their public key here.
     ssh.knownHosts = {
