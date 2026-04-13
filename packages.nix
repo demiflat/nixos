@@ -404,6 +404,7 @@
     perf-tools
     picocom
     pinentry-curses
+    pinta
     piper
     #    planify
     #    plasma-theme-switcher
