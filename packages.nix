@@ -592,6 +592,7 @@
     #    (vscode-with-extensions.override {
     vscodium
     w3m
+    walker
     watch
     waybar
     wdisplays
