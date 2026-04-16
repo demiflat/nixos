@@ -43,7 +43,7 @@
     ./3d-printer.nix
     #./rocm-hip.nix
     #./llama.nix
-    ./rocm.nix
+    #./rocm.nix
     ./cuda.nix
     #./jupiter.nix
     #./llama.nix
