@@ -92,6 +92,7 @@
     diskus
     dive
     #    doublecmd
+    dmidecode
     duf
     duff
     dunst
