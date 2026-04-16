@@ -13,5 +13,5 @@ sudo cp -r * /etc/nixos/
 #  cat nixos-boot.log | grep --color error && false
 #)
 #
-sudo nixos-rebuild --log-format internal-json -v -j16 boot --upgrade --show-trace --flake .#yoshi |& nom --json
+sudo nixos-rebuild --log-format internal-json -v -j32 boot --upgrade --show-trace --flake .#yoshi |& nom --json
 echo ""
