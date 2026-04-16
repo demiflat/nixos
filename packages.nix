@@ -63,6 +63,7 @@
     # fonts
     courier-prime
     courier-unicode
+    cpu-x
     font-ibm-type1
     input-fonts
 
