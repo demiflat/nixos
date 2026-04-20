@@ -109,6 +109,7 @@
     evtest
     exfat
     exfatprogs
+    expresslrs-configurator
     fastfetch
     fastgron
     fd
@@ -530,6 +531,7 @@
     sioyek
     skopeo
     socat
+    solaar
     solo2-cli
     # sommelier
     spice-gtk
