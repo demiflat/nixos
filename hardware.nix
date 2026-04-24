@@ -28,6 +28,7 @@
     "amdgpu"
     "nvidia"
     "i2c-dev"
+    "usblp"
   ];
   boot.extraModulePackages = [ ];
 
