@@ -15,8 +15,9 @@
     platformTheme = "kde";
     #platformTheme = "gtk2";
 
-    style = "kvantum";
-    #    style = "breeze";
+    #style = "kvantum";
+    #style = "breeze";
+    style = "breeze-dark";
     #style = "adwaita-dark";
   };
 

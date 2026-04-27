@@ -35,7 +35,7 @@
     ./services.nix
     ./systemd.nix
     #    ./user-services.nix
-    #./qt.nix
+    ./qt.nix
     ./programs.nix
     ./virtualization.nix
     #./vim.nix
