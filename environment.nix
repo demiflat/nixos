@@ -10,7 +10,7 @@
     "xdg/gtk-2.0/gtkrc".text = ''
       gtk-application-prefer-dark-theme = 1
       gtk-error-bell = false
-      gtk-theme-name = "Mojave-dark"
+      gtk-theme-name = "Tokyonight-Dark"
       gtk-enable-event-sounds=0
       gtk-enable-input-feedback-sounds=0
       gtk-xft-antialias=1
@@ -23,18 +23,24 @@
       gtk-cursor-theme-size=24
       gtk-toolbar-style=GTK_TOOLBAR_ICONS
       gtk-toolbar-icon-size=GTK_ICON_SIZE_SMALL_TOOLBAR
-      gtk-button-images=1
-      gtk-menu-images=1
+      gtk-button-images=0
+      gtk-menu-images=0
     '';
     "xdg/gtk-3.0/settings.ini".text = ''
       [Settings]
       gtk-error-bell = false
       gtk-application-prefer-dark-theme=1
+      gtk-theme-name=Tokyonight-Dark
+      gtk-cursor-theme-name="Vanilla-DMZ-AA"
+      gtk-cursor-theme-size=24
     '';
     "xdg/gtk-4.0/settings.ini".text = ''
       [Settings]
       gtk-error-bell = false
       gtk-application-prefer-dark-theme = 1
+      gtk-theme-name=Tokyonight-Dark
+      gtk-cursor-theme-name="Vanilla-DMZ-AA"
+      gtk-cursor-theme-size=24
     '';
   };
 
