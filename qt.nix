@@ -17,8 +17,7 @@
 
     #style = "kvantum";
     #style = "breeze";
-    style = "breeze-dark";
-    #style = "adwaita-dark";
+    style = "adwaita-dark";
   };
 
   #  nixpkgs.config.qt5 = {
