@@ -10,7 +10,7 @@
     "xdg/gtk-2.0/gtkrc".text = ''
       gtk-application-prefer-dark-theme = 1
       gtk-error-bell = false
-      gtk-theme-name = "Adwaita-dark"
+      gtk-theme-name = "Mojave-dark"
       gtk-enable-event-sounds=0
       gtk-enable-input-feedback-sounds=0
       gtk-xft-antialias=1
@@ -61,11 +61,11 @@
     #PYTORCH_ROCM_ARCH = "gfx1030";
     #USE_ROCM = "1";
 
-    #GTK_THEME = "Mojave-Dark";
+    GTK_THEME = "Mojave-Dark";
     #XDG_SESSION_TYPE = "wayland";
     #XDG_SESSION_DESKTOP = "Hyprland";
 
-    #GDK_BACKEND = "wayland";
+    GDK_BACKEND = "wayland";
     QT_QPA_PLATFORM = "wayland";
     #QT_QPA_PLATFORMTHEME = "qt5ct";
     #QT_AUTO_SCREEN_SCALE_FACTOR = "1";
