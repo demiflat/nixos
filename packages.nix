@@ -566,6 +566,7 @@
     pkgs-stable.transmission_4
     pkgs-stable.transmission_4-gtk
     themechanger
+    tokyonight-gtk-theme
     tree
     treesheets
     tree-sitter
