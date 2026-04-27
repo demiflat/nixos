@@ -11,8 +11,8 @@
     enable = true;
 
     #platformTheme = "qt5ct";
-    #platformTheme = "gnome";
-    platformTheme = "kde";
+    platformTheme = "gnome";
+    #platformTheme = "kde";
     #platformTheme = "gtk2";
 
     #style = "kvantum";
