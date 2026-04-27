@@ -47,7 +47,8 @@
           gtk-theme = "Adwaita-dark";
           #gtk-theme = "Mojave-Dark";
           #icon-theme = "Flat-Remix-Red-Dark";
-          icon-theme = "Adwaita-dark";
+          #icon-theme = "Adwaita-dark";
+          icon-theme = "Canta";
           font-name = "Noto Sans Medium 11";
           document-font-name = "Noto Sans Medium 11";
           monospace-font-name = "Noto Sans Mono Medium 11";

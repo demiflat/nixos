@@ -565,6 +565,7 @@
     #    tpmmanager
     pkgs-stable.transmission_4
     pkgs-stable.transmission_4-gtk
+    themechanger
     tree
     treesheets
     tree-sitter
