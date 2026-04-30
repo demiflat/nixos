@@ -57,15 +57,18 @@
     };
   };
 
-  # networking.wireless = {
-  #   enable = true;
-  #   userControlled.enable = true;
-  #   networks = {
-  #     shire = {
-  #       pskRaw = "af47317b5ca6818ee7d799e00b988d93c9cc1ab9b6cce907703348feba94ffb2";
-  #     };
-  #   };
-  # };
+  networking.wireless = {
+    enable = true;
+    iwd = {
+      enable = true;
+    };
+    userControlled.enable = true;
+    networks = {
+      shire = {
+        pskRaw = "af47317b5ca6818ee7d799e00b988d93c9cc1ab9b6cce907703348feba94ffb2";
+      };
+    };
+  };
 
   #systemd.network.enable = true;
 
