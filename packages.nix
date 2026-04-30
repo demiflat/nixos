@@ -199,6 +199,7 @@
     ifuse
     imagemagick
     imhex
+    impala
     impl
     imv
     #    input-remapper
@@ -209,6 +210,7 @@
     iproute2
     #isd
     isd
+    iwd
     jc
     #    jmtpfs
     jq
