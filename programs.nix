@@ -57,7 +57,7 @@
     ];
     direnv.enable = true;
     mtr.enable = true;
-    wireshark.enable = true;
+    #wireshark.enable = true;
     iotop.enable = true;
     iftop.enable = true;
     # nixvim.enable = true;
