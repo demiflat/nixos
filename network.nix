@@ -179,7 +179,7 @@
           #   dhcpV4Config.SendHostname = "yes";
           #   dhcpV4Config.Hostname = "yoshi";
           #   dhcpV4Config.RouteMetric = 1024;
-          dhcpV6Config.RouteMetric = 1024;
+          #   dhcpV6Config.RouteMetric = 1024;
           dhcpV4Config.UseDNS = "no";
           dhcpV6Config.UseDNS = "no";
           #   ipv6AcceptRAConfig = {
