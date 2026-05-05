@@ -79,10 +79,10 @@
         matchConfig.PermanentMACAddress = "3c:7c:3f:d9:a1:0a";
         linkConfig.Name = "wired";
       };
-      # links."10-wifi" = {
-      #   matchConfig.PermanentMACAddress = "98:48:27:46:90:76";
-      #   linkConfig.Name = "wifi";
-      # };
+      links."10-wifi" = {
+        matchConfig.PermanentMACAddress = "90:de:80:1c:69:d9";
+        linkConfig.Name = "wifi";
+      };
       netdevs = {
         "20-cloud" = {
           netdevConfig = {
@@ -162,33 +162,35 @@
           #   DHCPv6Client = "always";
           #   UseDNS = false;
           # };
-          domains = [
-            "demiflat.org"
-            #            "demiflat.com"
-          ];
+          domains = [ "demiflat.org" ];
           linkConfig.RequiredForOnline = "routable";
         };
-        # "30-wifi" = {
-        #   matchConfig.Name = "wifi";
-        #   networkConfig = {
-        #     DHCP = "yes";
-        #     DNSSEC = "no";
-        #     ConfigureWithoutCarrier = "no";
-        #     IPv6PrivacyExtensions = "no";
-        #     IgnoreCarrierLoss = "3s";
-        #   };
-        #   dhcpV4Config.UseHostname = "yes";
-        #   dhcpV4Config.SendHostname = "yes";
-        #   dhcpV4Config.Hostname = "yoshi";
-        #   dhcpV4Config.RouteMetric = 1024;
-        #   dhcpV6Config.RouteMetric = 1024;
-        #   ipv6AcceptRAConfig = {
-        #     DHCPv6Client = "always";
-        #     UseDNS = true;
-        #   };
-        #   domains = [ "demiflat.org" ];
-        #   linkConfig.RequiredForOnline = "no";
-        # };
+        "30-wifi" = {
+          matchConfig.Name = "wifi";
+          networkConfig = {
+            DHCP = "yes";
+            DNSSEC = "no";
+            DNS = "10.1.1.1";
+            ConfigureWithoutCarrier = "no";
+            IPv6PrivacyExtensions = "no";
+            ConfigureWithoutCarrier = "no";
+            IPv6PrivacyExtensions = "no";
+            IgnoreCarrierLoss = "3s";
+          };
+          #   dhcpV4Config.UseHostname = "yes";
+          #   dhcpV4Config.SendHostname = "yes";
+          #   dhcpV4Config.Hostname = "yoshi";
+          #   dhcpV4Config.RouteMetric = 1024;
+          dhcpV6Config.RouteMetric = 1024;
+          dhcpV4Config.UseDNS = "no";
+          dhcpV6Config.UseDNS = "no";
+          #   ipv6AcceptRAConfig = {
+          #     DHCPv6Client = "always";
+          #     UseDNS = true;
+          #   };
+          domains = [ "demiflat.org" ];
+          linkConfig.RequiredForOnline = "no";
+        };
         "40-cloudrouter" = {
           matchConfig.Name = "cloudrouter";
           networkConfig = {
