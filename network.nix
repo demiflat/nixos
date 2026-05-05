@@ -173,8 +173,6 @@
             DNS = "10.1.1.1";
             ConfigureWithoutCarrier = "no";
             IPv6PrivacyExtensions = "no";
-            ConfigureWithoutCarrier = "no";
-            IPv6PrivacyExtensions = "no";
             IgnoreCarrierLoss = "3s";
           };
           #   dhcpV4Config.UseHostname = "yes";
