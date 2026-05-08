@@ -48,8 +48,16 @@
 
     enableDefaultPackages = true;
     enableGhostscriptFonts = true;
+    # fonts
     packages = with pkgs; [
-      #nerdfonts
+      courier-prime
+      courier-unicode
+      cpu-x
+      dina-font
+      font-awesome
+      font-ibm-type1
+      hack-font
+      input-fonts
       nerd-fonts._0xproto
       nerd-fonts._3270
       nerd-fonts.agave
@@ -75,8 +83,8 @@
       nerd-fonts.fira-code
       nerd-fonts.fira-mono
       nerd-fonts.geist-mono
-      nerd-fonts.go-mono
       nerd-fonts.gohufont
+      nerd-fonts.go-mono
       nerd-fonts.hack
       nerd-fonts.hasklug
       nerd-fonts.heavy-data
@@ -99,7 +107,7 @@
       nerd-fonts.monofur
       nerd-fonts.monoid
       nerd-fonts.mononoki
-      #      nerd-fonts.mplus
+      #    nerd-fonts.mplus
       nerd-fonts.noto
       nerd-fonts.open-dyslexic
       nerd-fonts.overpass
