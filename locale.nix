@@ -47,6 +47,7 @@
     fontDir.enable = true;
 
     enableDefaultPackages = true;
+    enableGhostscriptFonts = true;
     packages = with pkgs; [
       #nerdfonts
       nerd-fonts._0xproto
@@ -121,6 +122,7 @@
 
     fontconfig = {
       subpixel.rgba = "rgb";
+      useEmbeddedBitmaps = true;
       defaultFonts = {
         serif = [ "NotoSerif Nerd Font Propo" ];
         sansSerif = [ "NotoSans Nerd Font Propo" ];
