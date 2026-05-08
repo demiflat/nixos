@@ -12,23 +12,24 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
-  #  i18n.inputMethod = {
-  #  #enabled = "ibus";
-  #  enable = true;
-  #  type = "ibus";
-  #  ibus.engines = with pkgs.ibus-engines; [ pinyin ];
-  #};
   i18n.inputMethod = {
-    type = "fcitx5";
+    #enabled = "ibus";
     enable = true;
-    fcitx5 = {
-      waylandFrontend = true;
-      addons = with pkgs; [
-        fcitx5-mozc
-        fcitx5-gtk
-      ];
-    };
+    type = "ibus";
+    ibus.engines = with pkgs.ibus-engines; [ pinyin ];
   };
+
+  #i18n.inputMethod = {
+  #  type = "fcitx5";
+  #  enable = true;
+  #  fcitx5 = {
+  #    waylandFrontend = true;
+  #    addons = with pkgs; [
+  #      fcitx5-mozc
+  #      fcitx5-gtk
+  #    ];
+  #  };
+  #};
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";
