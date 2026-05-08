@@ -18,6 +18,14 @@
   #  type = "ibus";
   #  ibus.engines = with pkgs.ibus-engines; [ pinyin ];
   #};
+  i18n.inputMethod = {
+    type = "fcitx5";
+    enable = true;
+    fcitx5.addons = with pkgs; [
+      fcitx5-mozc
+      fcitx5-gtk
+    ];
+  };
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";
