@@ -127,6 +127,8 @@
       nerd-fonts.ubuntu-sans
       nerd-fonts.victor-mono
       nerd-fonts.zed-mono
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
     ];
 
     fontconfig = {
