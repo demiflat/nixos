@@ -71,6 +71,7 @@
           specialArgs =
             let
               system = "x86_64-linux";
+              pkgs = nixpkgs.legacyPackages.${system};
             in
             {
               # To use packages from nixpkgs-stable,
@@ -85,6 +86,12 @@
               # inherit system;
               #config.allowUnfree = true;
               #};
+              packages.${system}.default = pkgs.inav-configurator.overrideAttrs (oldAttrs: {
+                src = pkgs.fetchurl {
+                  url = "" "https://github.com/iNavFlight/inav-configurator/releases/download/untagged-58a74ccc453672f866b7/INAV-Configurator_linux_x64_9.0.2.zip";
+                  sha256 = "0000000000000000000000000000000000000000000000000000";
+                };
+              });
             };
           modules = [
             #inputs.isd.default
