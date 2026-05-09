@@ -193,9 +193,9 @@
     impala
     impl
     imv
+    inav-configurator
     #    input-remapper
     #    inputs.zen-browser.packages."${system}".twilight
-    #    iotop
     iotop-c
     iperf3
     iproute2
