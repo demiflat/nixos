@@ -36,7 +36,19 @@
     #    }";
     #};
     steam.enable = true;
-    nix-ld.enable = true;
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+        stdenv.cc.cc
+        openssl
+        zlib
+        nss
+        curl
+        icu
+        fuse3
+        expat
+      ];
+    };
     bcc.enable = true;
     #broken in unstable
     #sysdig.enable = true;
