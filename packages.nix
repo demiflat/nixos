@@ -115,6 +115,8 @@
     firefox
     fish
     #    flightgear
+    flashprog
+    flashrom
     fnm
     foliate
     foot
@@ -548,6 +550,7 @@
     #xfce.thunar
     xkcd-font
     xkcdpass
+    xxd
     yarn
     yazi
     yt-dlp
