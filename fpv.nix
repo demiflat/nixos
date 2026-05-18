@@ -9,6 +9,6 @@
     expresslrs-configurator
     betaflight-configurator
     inav-configurator
-    gyroflow
+    #broken gyroflow
   ];
 }
