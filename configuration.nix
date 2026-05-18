@@ -48,6 +48,7 @@
     #./jupiter.nix
     #./llama.nix
     #./auto-upgrade.nix
+    ./fpv.nix
   ];
 
   nix = {

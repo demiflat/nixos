@@ -91,6 +91,7 @@
     NIXOS_OZONE_WL = "1";
 
     FREETYPE_PROPERTIES = "cff:no-stem-darkening=0 autofitter:no-stem-darkening=0";
+    QT_IM_MODULES = "wayland;fcitx;ibus";
   };
 
   environment.systemPackages = [
