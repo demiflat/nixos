@@ -301,7 +301,7 @@
     nix-top
     nix-tree
     nmap
-    nodejs_20
+    nodejs
     nordzy-cursor-theme
     noto-fonts
     noto-fonts-cjk-sans
