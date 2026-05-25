@@ -105,7 +105,7 @@
     cudaPackages.removeStubsFromRunpathHook
     cudaPackages.saxpy
     cudaPackages.setupCudaHook
-    cudaPackages.tensorrt
-    cudaPackages.tensorrt-samples
+    #cudaPackages.tensorrt
+    #cudaPackages.tensorrt-samples
   ];
 }
