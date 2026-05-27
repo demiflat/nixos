@@ -249,7 +249,8 @@
     links2
     #    litestream
     #lix
-    llama-cpp
+    #llama-cpp
+    pkgs-stable.llama-cpp
     #(pkgs.llama-cpp.override { cudaSupport = true; })
     lldb
     # llm
