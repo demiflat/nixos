@@ -266,6 +266,7 @@
     lsof
     ltunify
     luajit
+    lua-language-server
     lvm2
     lvm2_dmeventd
     lvm2_vdo
