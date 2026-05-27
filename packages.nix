@@ -249,8 +249,9 @@
     links2
     #    litestream
     #lix
+    # use nsp
     #llama-cpp
-    pkgs-stable.llama-cpp
+    #pkgs-stable.llama-cpp
     #(pkgs.llama-cpp.override { cudaSupport = true; })
     lldb
     # llm
