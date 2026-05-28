@@ -12,18 +12,22 @@
       enable = true;
       binfmt = true;
     };
-    uwsm.enable = true;
-    hyprland = {
-      prettyName = "Hyprland";
-      comment = "Hyprland compositor managed by UWSM";
-      binPath = "/run/current-system/sw/bin/Hyprland";
-    };
-    sway = {
-      prettyName = "Sway";
-      comment = "Sway compositor managed by UWSM";
-      binPath = "/run/current-system/sw/bin/sway";
-    };
+    uwsm = {
+      enable = true;
+      waylandCompositors = {
 
+        hyprland = {
+          prettyName = "Hyprland";
+          comment = "Hyprland compositor managed by UWSM";
+          binPath = "/run/current-system/sw/bin/Hyprland";
+        };
+        sway = {
+          prettyName = "Sway";
+          comment = "Sway compositor managed by UWSM";
+          binPath = "/run/current-system/sw/bin/sway";
+        };
+      };
+    };
     #    regreet = {
     #  enable = true;
     #  theme.name = "Canta-dark";
