@@ -233,7 +233,10 @@
     libfido2
     libimobiledevice
     libnotify
-    libreoffice-fresh
+    # too heavy to build
+    #libreoffice-fresh
+    #libreoffice
+    libreoffice-qt
     #    libreoffice-qt6-fresh
     #librewolf
     #    libsForQt5.qt5ct
