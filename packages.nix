@@ -38,7 +38,7 @@
     broot
     btop
     buildah
-    bun
+    #bun
     caddy
     caligula
     canta-theme
