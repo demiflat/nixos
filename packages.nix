@@ -44,6 +44,7 @@
     canta-theme
     can-utils
     cargo
+    cdparanoia
     cfssl
     chafa
     chromium
