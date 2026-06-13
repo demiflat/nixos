@@ -474,7 +474,7 @@
     hyprland = {
       enable = true;
       withUWSM = true;
-      xwayland.enable = true;
+      #xwayland.enable = true;
       portalPackage = pkgs.xdg-desktop-portal-hyprland;
     };
     hyprlock.enable = true;
