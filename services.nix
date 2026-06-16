@@ -233,6 +233,11 @@
   #    rocmOverrideGfx = "9.0.0";
   #  };
 
+  services.open-webui = {
+    enabled = true;
+    port = 3000;
+  };
+
   #  services.tabby.enable = true;
   #  services.tabby.acceleration = "rocm";
 
