@@ -12,6 +12,7 @@
         "input"
         "uinput"
         # "jupyter"
+        # "incus-admin"
         "kvm"
         "libvirt"
         "libvirtd"
