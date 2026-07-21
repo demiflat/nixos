@@ -10,6 +10,39 @@
     # WARN[0000] Failed to decode the keys ["driver"] from "/etc/containers/storage.conf"
     # WARN[0000] The storage 'driver' option should be set in /etc/containers/storage.conf. A driver was picked automatically.
     # containers.storage.settings.driver = "btrfs";
+    #    incus = {
+    #  enable = true;
+    #  ui.enable = true;
+    #
+    #  preseed = {
+    #
+    #    networks = [
+    #      {
+    #        name = "incus";
+    #        type = "bridge";
+    #        config = {
+    #          "ipv4.address" = "auto";
+    #          "ipv6.address" = "auto";
+    #        };
+    #      }
+    #    ];
+    #
+    #    profiles = [
+    #
+    #
+    #    ];
+    #
+    #    storage_pools = [
+    #      {
+    #        config = {
+    #          source = "/data/libvirt/incus";
+    #        };
+    #
+    #      }
+    #    ];
+    #
+    #  };
+    #};
 
     podman = {
       enable = true;
