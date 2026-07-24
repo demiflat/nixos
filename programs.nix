@@ -378,7 +378,7 @@
               pkgs.vimPlugins.nvim-treesitter-parsers.markdown_inline
               pkgs.vimPlugins.nvim-treesitter-parsers.meson
               pkgs.vimPlugins.nvim-treesitter-parsers.mlir
-              pkgs.vimPlugins.nvim-treesitter-parsers.muttrc
+              #              pkgs.vimPlugins.nvim-treesitter-parsers.muttrc
               pkgs.vimPlugins.nvim-treesitter-parsers.nasm
               pkgs.vimPlugins.nvim-treesitter-parsers.nginx
               pkgs.vimPlugins.nvim-treesitter-parsers.ninja
