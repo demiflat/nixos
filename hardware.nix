@@ -41,11 +41,15 @@
     ];
   };
 
-  # fileSystems."/nix" =
-  #   { device = "/dev/disk/by-label/nixos";
-  #     fsType = "btrfs";
-  #     options = [ "subvol=nix" "compress=zstd" "noatime" ];
-  #   };
+  fileSystems."/nix" = {
+    device = "/dev/disk/by-label/nixos";
+    fsType = "btrfs";
+    options = [
+      "subvol=nix"
+      "compress=zstd"
+      "noatime"
+    ];
+  };
 
   fileSystems."/boot" = {
     device = "/dev/disk/by-label/boot";
