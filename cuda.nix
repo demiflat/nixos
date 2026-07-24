@@ -19,15 +19,14 @@
     cmake
     cudaPackages.autoAddCudaCompatRunpath
     cudaPackages.backendStdenv
-    cudaPackages.cccl
-    cudaPackages.cuda-samples
-    cudaPackages.cuda_cccl
-    cudaPackages.cuda_compat
-    cudaPackages.cuda_crt
-    cudaPackages.cuda_ctadvisor
+    #cudaPackages.cccl
+    #cudaPackages.cuda_compat
+    #cudaPackages.cuda_crt
+    #cudaPackages.cuda_ctadvisor
     cudaPackages.cuda_cudart
-    cudaPackages.cuda_culibos
+    #cudaPackages.cuda_culibos
     cudaPackages.cuda_cuobjdump
+    cudaPackages.cuda_cupti
     cudaPackages.cuda_cupti
     cudaPackages.cuda_cuxxfilt
     cudaPackages.cuda_demo_suite
@@ -44,6 +43,7 @@
     cudaPackages.cuda_nvvp
     cudaPackages.cuda_opencl
     cudaPackages.cuda_profiler_api
+    cudaPackages.cuda-samples
     cudaPackages.cuda_sanitizer_api
     cudaPackages.cudatoolkit
     cudaPackages.cudnn
@@ -55,11 +55,10 @@
     cudaPackages.imex
     cudaPackages.libcublas
     cudaPackages.libcublasmp
-    cudaPackages.libcudla
+    #cudaPackages.libcudla
     cudaPackages.libcudss
     cudaPackages.libcufft
     cudaPackages.libcufile
-    cudaPackages.libcuobjclient
     cudaPackages.libcurand
     cudaPackages.libcusolver
     cudaPackages.libcusolvermp
@@ -72,30 +71,29 @@
     cudaPackages.libnvjitlink
     cudaPackages.libnvjpeg
     cudaPackages.libnvjpeg_2k
-    cudaPackages.libnvptxcompiler
+    #cudaPackages.libnvptxcompiler
     cudaPackages.libnvshmem
     cudaPackages.libnvtiff
-    cudaPackages.libnvvm
+    #cudaPackages.libnvvm
     cudaPackages.markForCudatoolkitRootHook
     cudaPackages.nccl
-    cudaPackages.nccl-tests
+    #cudaPackages.nccl-tests
     cudaPackages.nsight_compute
     cudaPackages.nsight_systems
-    cudaPackages.nvbandwidth
     cudaPackages.nvcomp
     cudaPackages.nvidia_fs
-    cudaPackages.nvpl_blas
-    cudaPackages.nvpl_common
-    cudaPackages.nvpl_fft
-    cudaPackages.nvpl_lapack
-    cudaPackages.nvpl_rand
-    cudaPackages.nvpl_scalapack
-    cudaPackages.nvpl_sparse
-    cudaPackages.nvpl_tensor
+    #cudaPackages.nvpl_blas
+    #cudaPackages.nvpl_common
+    #cudaPackages.nvpl_fft
+    #cudaPackages.nvpl_lapack
+    #cudaPackages.nvpl_rand
+    #cudaPackages.nvpl_scalapack
+    #cudaPackages.nvpl_sparse
+    #cudaPackages.nvpl_tensor
     cudaPackages.removeStubsFromRunpathHook
     cudaPackages.saxpy
     cudaPackages.setupCudaHook
-    cudaPackages.tensorrt
-    cudaPackages.tensorrt-samples
+    #cudaPackages.tensorrt
+    #cudaPackages.tensorrt-samples
   ];
 }
