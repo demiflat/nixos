@@ -1,7 +1,7 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    #nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
+    #nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
     nvf.url = "github:notashelf/nvf";
     #opencode.url = "github:anomalyco/opencode";
