@@ -394,7 +394,7 @@
               pkgs.vimPlugins.nvim-treesitter-parsers.phpdoc
               pkgs.vimPlugins.nvim-treesitter-parsers.pioasm
               pkgs.vimPlugins.nvim-treesitter-parsers.printf
-              pkgs.vimPlugins.nvim-treesitter-parsers.prolog
+              #              pkgs.vimPlugins.nvim-treesitter-parsers.prolog
               pkgs.vimPlugins.nvim-treesitter-parsers.properties
               pkgs.vimPlugins.nvim-treesitter-parsers.proto
               pkgs.vimPlugins.nvim-treesitter-parsers.python
