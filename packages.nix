@@ -75,6 +75,7 @@
     #    cups-zj-58
     dbus-broker
     ddcutil
+    ddcui
     debootstrap
     delta
     delve
