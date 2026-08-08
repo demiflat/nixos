@@ -159,6 +159,11 @@
 
   services.gvfs.enable = true;
 
+  services.udev.packages = with pkgs; [ 
+    platformio-core.udev
+    openocd
+  ];
+
   # udev
   services.udev.extraRules = ''
     # solokey
