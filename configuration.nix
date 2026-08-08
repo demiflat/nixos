@@ -96,7 +96,7 @@
       connect-timeout = 5;
 
       substituters = [
-        "https://cache.nixos.org" 
+        "https://cache.nixos.org"
         "https://cache.nixos-cuda.org"
         "https://hyprland.cachix.org"
         "https://cache.flox.dev"
