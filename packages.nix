@@ -533,6 +533,7 @@
     #      vscode = vscodium;
     #    (vscode-with-extensions.override {
     vscodium
+    vscode-fhs
     w3m
     walker
     watch
