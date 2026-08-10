@@ -116,7 +116,7 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
   services.printing.cups-pdf.enable = true;
-  #services.printing.browsed.enable = true;
+  services.printing.browsed.enable = true;
   services.printing.drivers = [
     #  "cups-brother-dcpt725dw"
     #  "cups-brother-hl1110"
