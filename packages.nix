@@ -521,7 +521,7 @@
     uv
     vanilla-dmz
     vhs
-    vllm
+    # vllm
     via
     virter
     virtiofsd
