@@ -272,55 +272,58 @@
   nixpkgs = {
     hostPlatform.system = "x86_64-linux";
     config = {
+      permittedInsecurePackages = [
+        "python3.13-vllm-0.16.0"
+      ];
       allowUnfree = true;
       cudaSupport = true;
       input-fonts.acceptLicense = true;
-      packageOverrides = pkgs: {
+      # packageOverrides = pkgs: {
 
-        # Override llama-cpp to latest version b6150 with CUDA support
-        llama-cpp =
-          (pkgs.llama-cpp.override {
-            cudaSupport = true;
-            rocmSupport = false;
-            metalSupport = false;
-            # Enable BLAS for optimized CPU layer performance (OpenBLAS)
-            # This is crucial for models using split-mode or CPU offloading
-            blasSupport = true;
-          }).overrideAttrs
-            (oldAttrs: rec {
-              version = "8660";
-              src = pkgs.fetchFromGitHub {
-                owner = "ggml-org";
-                repo = "llama.cpp";
-                tag = "b${version}";
-                hash = "sha256-PmrgGHKAxK+Z6AVKNZnHcwxVw8NgtRzjuUG2I2MpQg4=";
-                leaveDotGit = true;
-                postFetch = ''
-                  git -C "$out" rev-parse --short HEAD > $out/COMMIT
-                  find "$out" -name .git -print0 | xargs -0 rm -rf
-                '';
-              };
-              # clear and replace
-              #npmDepsHash = "";
-              npmDepsHash = "sha256-DxgUDVr+kwtW55C4b89Pl+j3u2ILmACcQOvOBjKWAKQ=";
-              # Enable native CPU optimizations for massively better CPU performance
-              # This enables AVX, AVX2, AVX-512, FMA, etc. for your specific CPU
-              # NOTE: This is intentionally opposite of nixpkgs (which uses -DGGML_NATIVE=off
-              # for reproducible builds). We sacrifice portability for faster CPU layers.
-              cmakeFlags = (oldAttrs.cmakeFlags or [ ]) ++ [
-                "-DGGML_NATIVE=ON"
-                "-DCMAKE_CUDA_ARCHITECTURES=120" # RTX 5060ti - needed since sandbox has no GPU
-              ];
+      #   # Override llama-cpp to latest version b6150 with CUDA support
+      #   llama-cpp =
+      #     (pkgs.llama-cpp.override {
+      #       cudaSupport = true;
+      #       rocmSupport = false;
+      #       metalSupport = false;
+      #       # Enable BLAS for optimized CPU layer performance (OpenBLAS)
+      #       # This is crucial for models using split-mode or CPU offloading
+      #       blasSupport = true;
+      #     }).overrideAttrs
+      #       (oldAttrs: rec {
+      #         version = "8660";
+      #         src = pkgs.fetchFromGitHub {
+      #           owner = "ggml-org";
+      #           repo = "llama.cpp";
+      #           tag = "b${version}";
+      #           hash = "sha256-PmrgGHKAxK+Z6AVKNZnHcwxVw8NgtRzjuUG2I2MpQg4=";
+      #           leaveDotGit = true;
+      #           postFetch = ''
+      #             git -C "$out" rev-parse --short HEAD > $out/COMMIT
+      #             find "$out" -name .git -print0 | xargs -0 rm -rf
+      #           '';
+      #         };
+      #         # clear and replace
+      #         #npmDepsHash = "";
+      #         npmDepsHash = "sha256-DxgUDVr+kwtW55C4b89Pl+j3u2ILmACcQOvOBjKWAKQ=";
+      #         # Enable native CPU optimizations for massively better CPU performance
+      #         # This enables AVX, AVX2, AVX-512, FMA, etc. for your specific CPU
+      #         # NOTE: This is intentionally opposite of nixpkgs (which uses -DGGML_NATIVE=off
+      #         # for reproducible builds). We sacrifice portability for faster CPU layers.
+      #         cmakeFlags = (oldAttrs.cmakeFlags or [ ]) ++ [
+      #           "-DGGML_NATIVE=ON"
+      #           "-DCMAKE_CUDA_ARCHITECTURES=120" # RTX 5060ti - needed since sandbox has no GPU
+      #         ];
 
-              # Disable Nix's NIX_ENFORCE_NO_NATIVE which strips -march=native flags
-              # See: https://github.com/NixOS/nixpkgs/issues/357736
-              # See: https://github.com/NixOS/nixpkgs/pull/377484 (intentionally contradicts this)
-              preConfigure = ''
-                export NIX_ENFORCE_NO_NATIVE=0
-                ${oldAttrs.preConfigure or ""}
-              '';
-            });
-      };
+      #         # Disable Nix's NIX_ENFORCE_NO_NATIVE which strips -march=native flags
+      #         # See: https://github.com/NixOS/nixpkgs/issues/357736
+      #         # See: https://github.com/NixOS/nixpkgs/pull/377484 (intentionally contradicts this)
+      #         preConfigure = ''
+      #           export NIX_ENFORCE_NO_NATIVE=0
+      #           ${oldAttrs.preConfigure or ""}
+      #         '';
+      #       });
+      # };
     };
   };
 
