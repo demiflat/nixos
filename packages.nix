@@ -410,6 +410,7 @@
     qmk-udev-rules
     qrencode
     kdePackages.qtwayland
+    qt6Packages.qt6ct
     quickemu
     racket
     ranger
