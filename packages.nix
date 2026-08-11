@@ -521,7 +521,7 @@
     uv
     vanilla-dmz
     vhs
-    # vllm
+    pkgs-stable.vllm
     via
     virter
     virtiofsd
