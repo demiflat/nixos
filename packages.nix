@@ -521,7 +521,6 @@
     uv
     vanilla-dmz
     vhs
-    pkgs-stable.vllm
     via
     virter
     virtiofsd
@@ -531,6 +530,7 @@
     vit
     vivid
     #vllm
+    #pkgs-stable.vllm
     #      vscodeExtensions = with vscode-extensions; [
     #      vscode = vscodium;
     #    (vscode-with-extensions.override {
