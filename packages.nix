@@ -413,6 +413,7 @@
     kdePackages.qtwayland
     qt6Packages.qt6ct
     quickemu
+    quickshell
     racket
     ranger
     recutils
