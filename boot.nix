@@ -10,8 +10,8 @@
   # Bootloader
   boot.kernelParams = [
     "mitigations=off"
-     "video=card0-DP-2:2560x1440@240"
-     "video=card0-DP-3:2560x1440@240"
+    "video=card0-DP-2:2560x1440@240"
+    "video=card0-DP-3:2560x1440@240"
   ];
 
   # use TCP BBR has significantly increased throughput and reduced latency for connections
