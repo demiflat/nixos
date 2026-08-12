@@ -402,6 +402,7 @@
     # python312Packages.python
     # python312Packages.setuptools
     python313
+    python313Packages.virtualenv
     #python313Packages.smolagents
     #    python3Full
     pywal
