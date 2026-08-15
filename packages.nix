@@ -327,6 +327,7 @@
     #    ollama
     #ollama-rocm
     opencode
+    openshell
     # openocd
     openocd
     openssl_oqs
