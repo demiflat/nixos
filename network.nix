@@ -42,6 +42,7 @@
         "virbr0"
         "cloud"
         "cloudrouter"
+        "incus"
       ];
       #interfaces."virbr*".allowedTCPPorts = [ 53 ];
       #interfaces."virbr*".allowedUDPPorts = [

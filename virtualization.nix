@@ -10,39 +10,81 @@
     # WARN[0000] Failed to decode the keys ["driver"] from "/etc/containers/storage.conf"
     # WARN[0000] The storage 'driver' option should be set in /etc/containers/storage.conf. A driver was picked automatically.
     # containers.storage.settings.driver = "btrfs";
-    #    incus = {
-    #  enable = true;
-    #  ui.enable = true;
-    #
-    #  preseed = {
-    #
-    #    networks = [
-    #      {
-    #        name = "incus";
-    #        type = "bridge";
-    #        config = {
-    #          "ipv4.address" = "auto";
-    #          "ipv6.address" = "auto";
-    #        };
-    #      }
-    #    ];
-    #
-    #    profiles = [
-    #
-    #
-    #    ];
-    #
-    #    storage_pools = [
-    #      {
-    #        config = {
-    #          source = "/data/libvirt/incus";
-    #        };
-    #
-    #      }
-    #    ];
-    #
-    #  };
-    #};
+    incus = {
+      enable = true;
+      ui.enable = true;
+
+      preseed = {
+
+        networks = [
+          {
+            name = "incus";
+            type = "bridge";
+            config = {
+              "ipv4.address" = "auto";
+              "ipv4.nat" = "true";
+              "ipv4.firewall" = "false";
+              "ipv6.address" = "auto";
+              "ipv6.nat" = "true";
+              "ipv6.firewall" = "false";
+            };
+          }
+        ];
+
+        profiles = [
+          {
+            name = "default";
+            description = "Default Incus Profile";
+
+            devices = {
+              eth0 = {
+                name = "eth0";
+                network = "incus";
+                type = "nic";
+              };
+
+              root = {
+                path = "/";
+                pool = "default";
+                type = "disk";
+              };
+            };
+          }
+
+          {
+            name = "bridged";
+            description = "Instances bridged to LAN";
+
+            devices = {
+              eth0 = {
+                name = "eth0";
+                nictype = "bridged";
+                parent = "cloudrouter";
+                type = "nic";
+              };
+
+              root = {
+                path = "/";
+                pool = "default";
+                type = "disk";
+              };
+            };
+          }
+        ];
+
+        storage_pools = [
+          {
+            config = {
+              source = "/data/libvirt/incus";
+            };
+
+            driver = "dir";
+            name = "default";
+          }
+        ];
+
+      };
+    };
 
     podman = {
       enable = true;
