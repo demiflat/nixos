@@ -142,7 +142,7 @@
       ensureDefaultPrinter = "color";
       ensurePrinters = [
         {
-          deviceUri = "ipp://10.1.1.111/ipp";
+          deviceUri = "ipp://10.1.1.111:631";
           location = "home";
           name = "Brother";
           model = "everywhere";
