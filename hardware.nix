@@ -105,6 +105,7 @@
     ksm.enable = true;
 
     nvidia = {
+      branch = "latest";
       #  enabled = true;
       #open = false;
       open = true;
