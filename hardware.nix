@@ -138,6 +138,17 @@
     libftdi.enable = true;
     i2c.enable = true;
     keyboard.qmk.enable = true;
+    printers = {
+      ensureDefaultPrinter = "color";
+      ensurePrinters = [
+        {
+          deviceUri = "ipp://10.1.1.111/ipp";
+          location = "home";
+          name = "Brother";
+          model = "everywhere";
+        }
+      ];
+    };
     rtl-sdr.enable = true;
     sane = {
       enable = true;
