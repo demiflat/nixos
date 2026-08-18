@@ -144,7 +144,7 @@
         {
           deviceUri = "ipp://10.1.1.111:631";
           location = "home";
-          name = "Brother";
+          name = "color";
           model = "everywhere";
         }
       ];
