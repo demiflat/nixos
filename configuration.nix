@@ -272,9 +272,9 @@
   nixpkgs = {
     hostPlatform.system = "x86_64-linux";
     config = {
-      permittedInsecurePackages = [
-        "python3.13-vllm-0.16.0"
-      ];
+      #permittedInsecurePackages = [
+      #  "python3.13-vllm-0.16.0"
+      #];
       allowUnfree = true;
       cudaSupport = true;
       input-fonts.acceptLicense = true;
