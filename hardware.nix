@@ -106,6 +106,7 @@
 
     nvidia = {
       branch = "latest";
+      package = config.boot.kernelPackages.nvidiaPackages.latest;
       #  enabled = true;
       #open = false;
       open = true;
