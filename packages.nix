@@ -23,6 +23,7 @@
     asciinema
     b612
     bat
+    bazel
     bc
     #    beets
     binocle
