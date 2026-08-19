@@ -33,6 +33,7 @@
         80
         443
         8080
+        8443
         8888
       ];
       # Keep dmesg/journalctl -k output readable by NOT logging
