@@ -144,8 +144,8 @@
       ensureDefaultPrinter = "color";
       ensurePrinters = [
         {
-          #deviceUri = "ipp://10.1.1.111:631";
-          deviceUri = "ipp://color.demiflat.org";
+          deviceUri = "ipp://10.1.1.111:631";
+          #deviceUri = "ipp://color.demiflat.org";
           location = "home";
           name = "color";
           model = "everywhere";
