@@ -110,6 +110,7 @@
     fastgron
     fd
     #    feishin
+    fff
     ffmpeg-full
     figlet
     file
