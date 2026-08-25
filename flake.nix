@@ -93,7 +93,7 @@
             #inputs.isd.default
             #lix-module.nixosModules.default
             nvf.nixosModules.default
-            flox.nixosModules.flox
+            #flox.nixosModules.flox
             nix-index-database.nixosModules.default
             { programs.nix-index-database.comma.enable = true; }
             nur.modules.nixos.default
