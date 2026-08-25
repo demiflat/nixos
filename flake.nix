@@ -12,10 +12,10 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    #flox = {
-    #  url = "github:flox/flox";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #};
+    flox = {
+      url = "github:flox/flox";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     flake-utils.url = "github:numtide/flake-utils";
     #llama-cpp = {
     #  url = "github:ggerganov/llama.cpp";
@@ -63,7 +63,7 @@
       nvf,
       nur,
       nix-index-database,
-      #flox,
+      flox,
       #llama-cpp,
       ...
     }@inputs:
@@ -92,7 +92,7 @@
             #inputs.isd.default
             #lix-module.nixosModules.default
             nvf.nixosModules.default
-            #flox.nixosModules.flox
+            flox.nixosModules.flox
             nix-index-database.nixosModules.default
             { programs.nix-index-database.comma.enable = true; }
             nur.modules.nixos.default
