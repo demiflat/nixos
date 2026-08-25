@@ -19,8 +19,8 @@
     cmake
     cudaPackages.autoAddCudaCompatRunpath
     cudaPackages.backendStdenv
-    #cudaPackages.cccl
-    cudaPackages.cuda_cccl
+    cudaPackages.cccl
+    #cudaPackages.cuda_cccl
     #cudaPackages.cuda_compat
     #cudaPackages.cuda_crt
     #cudaPackages.cuda_ctadvisor
