@@ -42,7 +42,7 @@
     #bun
     caddy
     caligula
-    canta-theme
+    #canta-theme
     can-utils
     cargo
     cdparanoia
