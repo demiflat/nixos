@@ -141,7 +141,7 @@
     #gitMinimal
     git-repo
     git-repo-updater
-    gkrellm
+    #gkrellm
     glib
     glow
     # gnomeExtensions.easyeffects-preset-selector
