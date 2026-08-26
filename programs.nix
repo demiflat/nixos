@@ -73,7 +73,7 @@
         settings."org/gnome/desktop/interface" = {
           #gtk-theme = "Adwaita-dark";
           #gtk-theme = "Mojave-Dark";
-          gtk-theme = "Dexy-GTK";
+          gtk-theme = "Catppuccin-GTK";
           #icon-theme = "Flat-Remix-Red-Dark";
           #icon-theme = "Adwaita-dark";
           #icon-theme = "Canta";
