@@ -277,6 +277,7 @@
     lvm2_dmeventd
     lvm2_vdo
     lynx
+    magnetic-catppuccin-gtk
     mako
     maven
     mc

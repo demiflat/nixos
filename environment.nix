@@ -10,7 +10,7 @@
     "xdg/gtk-2.0/gtkrc".text = ''
       gtk-application-prefer-dark-theme = 1
       gtk-error-bell = false
-      gtk-theme-name = "Tokyonight-Dark"
+      gtk-theme-name = Catppuccin-GTK
       gtk-enable-event-sounds=0
       gtk-enable-input-feedback-sounds=0
       gtk-xft-antialias=1
@@ -18,8 +18,8 @@
       gtk-xft-hintstyle="hintfull"
       gtk-xft-rgba="rgb"
       gtk-icon-theme-name="Adwaita"
-      gtk-font-name="Cantarell 11"
-      gtk-cursor-theme-name="Vanilla-DMZ-AA"
+      gtk-font-name="NotoSans Nerd Font Propo"
+      gtk-cursor-theme-name=dmz-black
       gtk-cursor-theme-size=24
       gtk-toolbar-style=GTK_TOOLBAR_ICONS
       gtk-toolbar-icon-size=GTK_ICON_SIZE_SMALL_TOOLBAR
@@ -30,16 +30,18 @@
       [Settings]
       gtk-error-bell = false
       gtk-application-prefer-dark-theme=1
-      gtk-theme-name=Tokyonight-Dark
-      gtk-cursor-theme-name="Vanilla-DMZ-AA"
+      gtk-font-name="NotoSans Nerd Font Propo"
+      gtk-theme-name = Catppuccin-GTK
+      gtk-cursor-theme-name=dmz-black
       gtk-cursor-theme-size=24
     '';
     "xdg/gtk-4.0/settings.ini".text = ''
       [Settings]
       gtk-error-bell = false
       gtk-application-prefer-dark-theme = 1
-      gtk-theme-name=Tokyonight-Dark
-      gtk-cursor-theme-name="Vanilla-DMZ-AA"
+      gtk-font-name="NotoSans Nerd Font Propo"
+      gtk-theme-name = Catppuccin-GTK
+      gtk-cursor-theme-name=dmz-black
       gtk-cursor-theme-size=24
     '';
   };
