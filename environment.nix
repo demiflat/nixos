@@ -10,14 +10,14 @@
     "xdg/gtk-2.0/gtkrc".text = ''
       gtk-application-prefer-dark-theme = 1
       gtk-error-bell = false
-      gtk-theme-name = Catppuccin-GTK
+      gtk-theme-name = Dexy-GTK
       gtk-enable-event-sounds=0
       gtk-enable-input-feedback-sounds=0
       gtk-xft-antialias=1
       gtk-xft-hinting=1
       gtk-xft-hintstyle="hintfull"
       gtk-xft-rgba="rgb"
-      gtk-icon-theme-name="Adwaita"
+      gtk-icon-theme-name="Nordzy-catppuccin-latte-peach"
       gtk-font-name="NotoSans Nerd Font Propo"
       gtk-cursor-theme-name=dmz-black
       gtk-cursor-theme-size=24
@@ -31,7 +31,7 @@
       gtk-error-bell = false
       gtk-application-prefer-dark-theme=1
       gtk-font-name="NotoSans Nerd Font Propo"
-      gtk-theme-name = Catppuccin-GTK
+      gtk-theme-name = Dexy-GTK
       gtk-cursor-theme-name=dmz-black
       gtk-cursor-theme-size=24
     '';
@@ -40,7 +40,7 @@
       gtk-error-bell = false
       gtk-application-prefer-dark-theme = 1
       gtk-font-name="NotoSans Nerd Font Propo"
-      gtk-theme-name = Catppuccin-GTK
+      gtk-theme-name = Dexy-GTK
       gtk-cursor-theme-name=dmz-black
       gtk-cursor-theme-size=24
     '';
