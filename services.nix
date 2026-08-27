@@ -241,7 +241,7 @@
   #  };
 
   services.open-webui = {
-    enable = false;
+    enable = true;
     port = 3000;
   };
 
