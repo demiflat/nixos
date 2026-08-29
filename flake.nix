@@ -17,6 +17,10 @@
       url = "github:flox/flox";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    zen-browser = {
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     flake-utils.url = "github:numtide/flake-utils";
     #llama-cpp = {
     #  url = "github:ggerganov/llama.cpp";
