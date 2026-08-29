@@ -18,6 +18,7 @@
           "~."
         ];
         DNSSEC = "false";
+        MulticastDNS = "resolve";
         LLMNR = "false";
         FallbackDNS = [
           "1.1.1.1#one.one.one.one"
