@@ -2,7 +2,7 @@
   #  system,
   config,
   pkgs,
-  pkgs-stable,
+  # pkgs-stable,
   inputs,
   ...
 }:
@@ -257,7 +257,7 @@
     #lix
     # use nsp
     #llama-cpp
-    #pkgs-stable.llama-cpp
+    #llama-cpp
     #(pkgs.llama-cpp.override { cudaSupport = true; })
     lldb
     # llm
@@ -505,8 +505,10 @@
     tockloader
     tpm2-tools
     #    tpmmanager
-    pkgs-stable.transmission_4
-    pkgs-stable.transmission_4-gtk
+    # pkgs-stable.transmission_4
+    # pkgs-stable.transmission_4-gtk
+    transmission_4
+    transmission_4-gtk
     themechanger
     #tokyonight-gtk-theme
     tree
