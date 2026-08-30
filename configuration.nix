@@ -6,7 +6,7 @@
   config,
   lib,
   pkgs,
-  pkgs-stable,
+  # pkgs-stable,
   modulesPath,
   #llama-cpp,
   ...
