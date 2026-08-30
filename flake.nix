@@ -1,27 +1,34 @@
 {
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    #nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
-    #nixpkgs.url = "github:flox/nixpkgs/unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
-    nvf.url = "github:notashelf/nvf";
-    #opencode.url = "github:anomalyco/opencode";
-    nix-index-database.url = "github:nix-community/nix-index-database";
-    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    omniflake = {
+      url = "github:fzakaria/omniflake";
+      nixpkgs.follows = "nixpkgs";
     };
-    flox = {
-      url = "github:flox/flox";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    zen-browser = {
-      url = "github:youwen5/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    flake-utils.url = "github:numtide/flake-utils";
+
+    # previous
+    # nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    # #nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
+    # #nixpkgs.url = "github:flox/nixpkgs/unstable";
+    # nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
+    # nvf.url = "github:notashelf/nvf";
+    # #opencode.url = "github:anomalyco/opencode";
+    # nix-index-database.url = "github:nix-community/nix-index-database";
+    # nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+    # nur = {
+    #   url = "github:nix-community/NUR";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # flox = {
+    #   url = "github:flox/flox";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # zen-browser = {
+    #   url = "github:youwen5/zen-browser-flake";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # flake-utils.url = "github:numtide/flake-utils";
     #llama-cpp = {
     #  url = "github:ggerganov/llama.cpp";
     #  inputs.nixpkgs.follows = "nixpkgs";
@@ -61,14 +68,15 @@
     {
       self,
       nixpkgs,
-      nixpkgs-stable,
-      flake-utils,
-      #lix-module,
-      #lix,
-      nvf,
-      nur,
-      nix-index-database,
-      flox,
+      omniflake,
+      # nixpkgs-stable,
+      # flake-utils,
+      # #lix-module,
+      # #lix,
+      # nvf,
+      # nur,
+      # nix-index-database,
+      # flox,
       #llama-cpp,
       ...
     }@inputs:
@@ -82,12 +90,6 @@
             {
               # To use packages from nixpkgs-stable,
               # we configure some parameters for it first
-              pkgs-stable = import nixpkgs-stable {
-                inherit system;
-                # To use Chrome, we need to allow the
-                # installation of non-free software.
-                config.allowUnfree = true;
-              };
               # pkgs-fd40cef8d = import nixpkgs-fd40cef8d {
               # inherit system;
               #config.allowUnfree = true;
@@ -96,11 +98,15 @@
           modules = [
             #inputs.isd.default
             #lix-module.nixosModules.default
-            nvf.nixosModules.default
+            # nvf.nixosModules.default
             #flox.nixosModules.flox
-            nix-index-database.nixosModules.default
+            # nix-index-database.nixosModules.default
+            # { programs.nix-index-database.comma.enable = true; }
+            # nur.modules.nixos.default
+            omniflake.flakes.nvf.nixosModules.default
+            omniflake.flakes.nur.modules.nixos.default
+            omniflake.flakes.nix-index-database.nixosModules.default
             { programs.nix-index-database.comma.enable = true; }
-            nur.modules.nixos.default
             ./configuration.nix
           ];
         };
