@@ -96,6 +96,7 @@
               #};
             };
           modules = [
+            ./configuration.nix
             #inputs.isd.default
             #lix-module.nixosModules.default
             # nvf.nixosModules.default
@@ -107,7 +108,7 @@
             omniflake.flakes.nur.modules.nixos.default
             omniflake.flakes.nix-index-database.nixosModules.default
             { programs.nix-index-database.comma.enable = true; }
-            ./configuration.nix
+            omniflake.flakes.catppuccin.nixosModules.catppuccin
           ];
         };
       };

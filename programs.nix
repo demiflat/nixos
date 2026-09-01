@@ -73,11 +73,11 @@
         settings."org/gnome/desktop/interface" = {
           #gtk-theme = "Adwaita-dark";
           #gtk-theme = "Mojave-Dark";
-          gtk-theme = "Catppuccin-GTK";
+          # gtk-theme = "Catppuccin-GTK";
           #icon-theme = "Flat-Remix-Red-Dark";
           #icon-theme = "Adwaita-dark";
           #icon-theme = "Canta";
-          icon-theme = "Nordzy-catppuccin-latte-peach";
+          # icon-theme = "Nordzy-catppuccin-latte-peach";
           font-name = "Noto Sans Medium 11";
           document-font-name = "Noto Sans Medium 11";
           monospace-font-name = "Noto Sans Mono Medium 11";
