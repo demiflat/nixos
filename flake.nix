@@ -108,7 +108,7 @@
             omniflake.flakes.nur.modules.nixos.default
             omniflake.flakes.nix-index-database.nixosModules.default
             { programs.nix-index-database.comma.enable = true; }
-            omniflake.flakes.nix-catppuccin.nixosModules.catppuccin
+            omniflake.flakes.nix-catppuccin.nixosModules.default
           ];
         };
       };
