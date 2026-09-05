@@ -8,7 +8,7 @@
   environment.systemPackages = with pkgs; [
     expresslrs-configurator
     # now a webapp: betaflight-configurator
-    inav-configurator
+    #inav-configurator
     #broken gyroflow
   ];
 }
