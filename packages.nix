@@ -198,7 +198,6 @@
     impala
     impl
     imv
-    inav-configurator
     #    input-remapper
     #    inputs.zen-browser.packages."${system}".twilight
     iotop-c
