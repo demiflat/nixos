@@ -7,7 +7,7 @@
 {
   environment.systemPackages = with pkgs; [
     # pkgs-stable.freecad
-    freecad
+    #freecad
     #cura
     orca-slicer
     #prusa-slicer
