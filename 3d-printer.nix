@@ -9,7 +9,7 @@
     # pkgs-stable.freecad
     #freecad
     #cura
-    orca-slicer
+    #    orca-slicer
     #prusa-slicer
     #super-slicer-latest
   ];
