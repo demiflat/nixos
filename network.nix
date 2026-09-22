@@ -78,8 +78,12 @@
     network = {
       enable = true;
       links."10-wired" = {
-        matchConfig.PermanentMACAddress = "3c:7c:3f:d9:a1:0a";
+        matchConfig.PermanentMACAddress = "34:97:f6:31:ad:7a";
         linkConfig.Name = "wired";
+      };
+      links."10-aux" = {
+        matchConfig.PermanentMACAddress = "34:97:f6:32:70:ca";
+        linkConfig.Name = "aux";
       };
       links."10-wifi" = {
         matchConfig.PermanentMACAddress = "90:de:80:1c:69:d9";
