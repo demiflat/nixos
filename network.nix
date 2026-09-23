@@ -171,6 +171,46 @@
           domains = [ "demiflat.org" ];
           linkConfig.RequiredForOnline = "routable";
         };
+        "30-aux" = {
+          matchConfig.Name = "aux";
+          # tag vlan on this link
+          vlan = [
+            #            "sonic"
+            #            "public"
+            "cloud"
+            #            "iot"
+          ];
+          # address = [
+          #   "10.1.1.213/24"
+          # ];
+          routes = [
+            {
+              Gateway = "10.1.1.1";
+            }
+          ];
+          networkConfig = {
+            DHCP = "yes";
+            DNSSEC = "no";
+            DNS = "10.1.1.1";
+            ConfigureWithoutCarrier = "no";
+            IPv6PrivacyExtensions = "no";
+            # DefaultRouteOnDevice = "yes";
+          };
+          # dhcpV4Config.UseHostname = "yes"; #default
+          # dhcpV4Config.SendHostname = "yes"; #default
+          # dhcpV4Config.Hostname = "yoshi";
+          # dhcpV4Config.RouteMetric = 10;
+          # dhcpV4Config.UseRoutes = "yes";
+          dhcpV4Config.UseDNS = "no";
+          dhcpV6Config.UseDNS = "no";
+          # dhcpV6Config.RouteMetric = 10;
+          # ipv6AcceptRAConfig = {
+          #   DHCPv6Client = "always";
+          #   UseDNS = false;
+          # };
+          domains = [ "demiflat.org" ];
+          linkConfig.RequiredForOnline = "routable";
+        };
         "30-wifi" = {
           matchConfig.Name = "wifi";
           networkConfig = {
