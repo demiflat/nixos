@@ -159,7 +159,7 @@
           # dhcpV4Config.UseHostname = "yes"; #default
           # dhcpV4Config.SendHostname = "yes"; #default
           # dhcpV4Config.Hostname = "yoshi";
-          # dhcpV4Config.RouteMetric = 10;
+          dhcpV4Config.RouteMetric = 10;
           # dhcpV4Config.UseRoutes = "yes";
           dhcpV4Config.UseDNS = "no";
           dhcpV6Config.UseDNS = "no";
@@ -199,7 +199,7 @@
           # dhcpV4Config.UseHostname = "yes"; #default
           # dhcpV4Config.SendHostname = "yes"; #default
           # dhcpV4Config.Hostname = "yoshi";
-          # dhcpV4Config.RouteMetric = 10;
+          dhcpV4Config.RouteMetric = 1024;
           # dhcpV4Config.UseRoutes = "yes";
           dhcpV4Config.UseDNS = "no";
           dhcpV6Config.UseDNS = "no";
@@ -224,7 +224,7 @@
           #   dhcpV4Config.UseHostname = "yes";
           #   dhcpV4Config.SendHostname = "yes";
           #   dhcpV4Config.Hostname = "yoshi";
-          #   dhcpV4Config.RouteMetric = 1024;
+          dhcpV4Config.RouteMetric = 2048;
           #   dhcpV6Config.RouteMetric = 1024;
           dhcpV4Config.UseDNS = "no";
           dhcpV6Config.UseDNS = "no";
@@ -247,7 +247,7 @@
           dhcpV4Config.UseRoutes = "no";
           dhcpV4Config.UseDNS = "no";
           linkConfig.RequiredForOnline = "no";
-          dhcpV4Config.RouteMetric = 2048;
+          dhcpV4Config.RouteMetric = 4096;
           # dhcpV6Config.RouteMetric = 2048;
         };
         "60-cloud" = {
