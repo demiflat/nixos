@@ -1,1 +1,1 @@
-{ powerManagement.cpuFreqGovernor = "ondemand"; }
+{ powerManagement.cpuFreqGovernor = "powersave"; }
