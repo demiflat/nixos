@@ -86,6 +86,8 @@
 
   # For the hacking.
   documentation.dev.enable = true;
+  documentation.man.enable = true;
+  documentation.nixos.enable = true;
 
   nixpkgs.config = {
     allowUnfree = true;
