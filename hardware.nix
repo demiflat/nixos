@@ -30,7 +30,6 @@
     "i2c-dev"
     "usblp"
   ];
-  boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-label/nixos";
@@ -88,7 +87,6 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
-  # specific hardware
   hardware = {
     bluetooth = {
       enable = true;
@@ -106,37 +104,13 @@
 
     nvidia = {
       branch = "latest";
-      package = config.boot.kernelPackages.nvidiaPackages.latest;
-      #package = config.boot.kernelPackages.nvidiaPackages.stable;
-      #package = config.boot.kernelPackages.nvidiaPackages.production;
-      #  enabled = true;
-      #open = false;
       open = true;
       modesetting.enable = true;
-      powerManagement = {
-        enable = true;
-        #  finegrained = true;
-      };
+      powerManagement.enable = true;
       nvidiaSettings = true;
-      #nvidiaPersistenced = true;
-      #prime = {
-      #  offload = {
-      #    enable = true;
-      #    enableOffloadCmd = true;
-      #  };
-      #  # nix run github:eclairevoyant/pcids
-      #  nvidiaBusId = "PCI:1:0:0";
-      #  amdgpuBusId = "PCI:8:0:0";
-      #};
     };
     nvidia-container-toolkit.enable = true;
 
-    #    graphics.extraPackages = with pkgs; [
-    #amdvlk
-    #rocmPackages.clr
-    #rocm-opencl-icd
-    #rocm-opencl-runtime
-    #    ];
     libftdi.enable = true;
     i2c.enable = true;
     keyboard.qmk.enable = true;
@@ -145,7 +119,6 @@
       ensurePrinters = [
         {
           deviceUri = "ipp://10.1.1.111:631";
-          #deviceUri = "ipp://color.demiflat.org";
           location = "home";
           name = "color";
           model = "everywhere";
@@ -157,12 +130,6 @@
       enable = true;
       drivers.scanSnap.enable = true;
     };
-    # pulseaudio.enable = false;
-    #    printers = {
-    #      ensurePrinters = [
-    #
-    #      ];
-    #    };
     usbStorage.manageShutdown = true;
     sensor = {
       hddtemp.enable = true;

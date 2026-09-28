@@ -1,1 +1,1 @@
-- `nix flake check` validates the config
+- `./upd build` validates the config (`nixos-rebuild build --flake .#yoshi`); the flake defines no `checks` output, so `nix flake check` does nothing useful

@@ -3,31 +3,15 @@
   pkgs,
   ...
 }:
-
 {
-
+  # CUDA build dependencies (gcc, libtool, ninja, cmake, zlib, ...) live in
+  # packages.nix; only the CUDA toolchain itself is listed here.
   environment.systemPackages = with pkgs; [
-    gcc
-    libtool
-    ninja
-    openssl_oqs
-    python313
-    uv
-    zlib
-    boost
-    boost-build
-    cmake
     cudaPackages.autoAddCudaCompatRunpath
     cudaPackages.backendStdenv
     cudaPackages.cccl
-    #cudaPackages.cuda_cccl
-    #cudaPackages.cuda_compat
-    #cudaPackages.cuda_crt
-    #cudaPackages.cuda_ctadvisor
     cudaPackages.cuda_cudart
-    #cudaPackages.cuda_culibos
     cudaPackages.cuda_cuobjdump
-    cudaPackages.cuda_cupti
     cudaPackages.cuda_cupti
     cudaPackages.cuda_cuxxfilt
     cudaPackages.cuda_demo_suite
@@ -56,7 +40,6 @@
     cudaPackages.imex
     cudaPackages.libcublas
     cudaPackages.libcublasmp
-    #cudaPackages.libcudla
     cudaPackages.libcudss
     cudaPackages.libcufft
     cudaPackages.libcufile
@@ -72,29 +55,16 @@
     cudaPackages.libnvjitlink
     cudaPackages.libnvjpeg
     cudaPackages.libnvjpeg_2k
-    #cudaPackages.libnvptxcompiler
     cudaPackages.libnvshmem
     cudaPackages.libnvtiff
-    #cudaPackages.libnvvm
     cudaPackages.markForCudatoolkitRootHook
     cudaPackages.nccl
-    #cudaPackages.nccl-tests
     cudaPackages.nsight_compute
     cudaPackages.nsight_systems
     cudaPackages.nvcomp
     cudaPackages.nvidia_fs
-    #cudaPackages.nvpl_blas
-    #cudaPackages.nvpl_common
-    #cudaPackages.nvpl_fft
-    #cudaPackages.nvpl_lapack
-    #cudaPackages.nvpl_rand
-    #cudaPackages.nvpl_scalapack
-    #cudaPackages.nvpl_sparse
-    #cudaPackages.nvpl_tensor
     cudaPackages.removeStubsFromRunpathHook
     cudaPackages.saxpy
     cudaPackages.setupCudaHook
-    #cudaPackages.tensorrt
-    #cudaPackages.tensorrt-samples
   ];
 }

@@ -1,1 +1,53 @@
-upd.boot
+#!/usr/bin/env bash
+#
+# yoshi update script (replaces the old upd/upds/upd.now/upd.boot/upd.trace/test variants)
+#
+# usage: upd [boot|switch|test|build] [-j N] [--poweroff] [--accept] [extra nixos-rebuild args...]
+#
+#   boot    (default) build and make bootable; next boot picks it up
+#   switch  build and activate immediately
+#   test    build and boot a test VM
+#   build   evaluate + build only (validation; see AGENTS.md)
+#
+#   -j N         parallel builds (default 16)
+#   --poweroff   power off the machine after a successful run
+#   --accept     pass --accept-flake-config (tolerate unsupported options)
+#
+# Examples:
+#   upd                     == old upd/upd.boot   (boot, -j16)
+#   upd --poweroff          == old upds
+#   upd switch              == old upd.now
+#   upd test                == old test
+#   upd -j32 --accept       == old upd
+#   upd --impure --option abort-on-warn true   == old upd.trace
+
+set -euo pipefail
+
+action=boot
+j=16
+poweroff=0
+accept=0
+extra=()
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    boot|switch|test|build) action="$1"; shift ;;
+    -j) j="$2"; shift 2 ;;
+    --poweroff) poweroff=1; shift ;;
+    --accept) accept=1; shift ;;
+    --) shift; extra+=("$@"); break ;;
+    *) extra+=("$1"); shift ;;
+  esac
+done
+
+treefmt
+git status
+
+args=(--log-format internal-json -v -j"$j" "$action" --upgrade --show-trace --flake .#yoshi)
+[[ $accept -eq 1 ]] && args+=(--accept-flake-config)
+
+sudo nixos-rebuild "${args[@]}" "${extra[@]}" |& nom --json
+
+if [[ $poweroff -eq 1 ]]; then
+  sudo systemctl poweroff
+fi

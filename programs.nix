@@ -7,7 +7,6 @@
 }:
 {
   programs = {
-    #flox.enable = true;
     appimage = {
       enable = true;
       binfmt = true;
@@ -28,57 +27,14 @@
         };
       };
     };
-    #    regreet = {
-    #  enable = true;
-    #  theme.name = "Canta-dark";
-    #  font.name = "roboto-mono";
-    #  font.size = 22;
-    #  iconTheme.name = "elementary-xfce-icon-theme";
-    #  cursorTheme.name = "nordzy-cursor-theme";
-    #  settings = {
-    #    background = {
-    #      #path = "${pkgs.nixos-artwork.wallpapers.stripes}/share/backgrounds/nixos/nix-wallpaper-stripes.png";
-    #      #path = "${pkgs.nixos-artwork.wallpapers.stripes.gnomeFilePath} }";
-    #      path = "/nix/store/9dv4n8qajmbjd7k1yxrnw6q6hs7pxzzy-nix-wallpaper-stripes.png";
-    #      #fit = "Fill";
-    #      fit = "Cover";
-    #    };
-    #  };
-    #  extraCss = "box#body {
-    #      background-color: rgba(46, 139, 87, 0.8);
-    #      border-radius: 10px;
-    #      padding: 50px;
-    #    }";
-    #};
     steam.enable = true;
-    #nix-ld = {
-    #  enable = true;
-    #  libraries = with pkgs; [
-    #    stdenv.cc.cc
-    #    openssl
-    #    zlib
-    #    nss
-    #    curl
-    #    icu
-    #    fuse3
-    #    expat
-    #  ];
-    #};
     bcc.enable = true;
-    #broken in unstable
-    #sysdig.enable = true;
     dconf.enable = true;
     dconf.profiles.user.databases = [
       {
         settings."org/gnome/desktop/interface" = {
-          #gtk-theme = "Adwaita-dark";
           gtk-theme = "Mojave-Dark";
           color-scheme = "prefer-dark";
-          # gtk-theme = "Catppuccin-GTK";
-          #icon-theme = "Flat-Remix-Red-Dark";
-          #icon-theme = "Adwaita-dark";
-          #icon-theme = "Canta";
-          # icon-theme = "Nordzy-catppuccin-latte-peach";
           font-name = "Noto Sans Medium 11";
           document-font-name = "Noto Sans Medium 11";
           monospace-font-name = "Noto Sans Mono Medium 11";
@@ -87,19 +43,8 @@
     ];
     direnv.enable = true;
     mtr.enable = true;
-    #wireshark.enable = true;
     iotop.enable = true;
     iftop.enable = true;
-    # nixvim.enable = true;
-    #neovim = {
-    #  enable = true;
-    #  defaultEditor = true;
-    #  viAlias = true;
-    #  vimAlias = true;
-    #    plugins = [
-    #      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-    #    ];
-    #};
     nvf = {
       enable = true;
       enableManpages = true;
@@ -121,7 +66,6 @@
           };
           theme = {
             enable = true;
-            #name = "gruvbox";
             name = "tokyonight";
             style = "night";
           };
@@ -152,27 +96,10 @@
           statusline = {
             lualine = {
               enable = true;
-              #    theme = "catppuccin";
             };
           };
 
-          # theme = {
-          #   enable = true;
-          #   name = "catppuccin";
-          #   style = "mocha";
-          #   transparent = false;
-          # };
-
           autopairs.nvim-autopairs.enable = true;
-
-          # nvf provides various autocomplete options. The tried and tested nvim-cmp
-          # is enabled in default package, because it does not trigger a build. We
-          # enable blink-cmp in maximal because it needs to build its rust fuzzy
-          # matcher library.
-          #autocomplete = {
-          #  nvim-cmp.enable = false;
-          #  blink-cmp.enable = true;
-          #};
 
           snippets.luasnip.enable = true;
 
@@ -457,16 +384,9 @@
               }
             ];
           };
-          # git = {
-          #   enable = true;
-          #   git-conflict = {
-          #     enable = true;
-          #   };
-          # };
           treesitter = {
             enable = true;
             grammars = [
-
               pkgs.vimPlugins.nvim-treesitter-parsers.arduino
               pkgs.vimPlugins.nvim-treesitter-parsers.asm
               pkgs.vimPlugins.nvim-treesitter-parsers.awk
@@ -497,7 +417,6 @@
               pkgs.vimPlugins.nvim-treesitter-parsers.fish
               pkgs.vimPlugins.nvim-treesitter-parsers.forth
               pkgs.vimPlugins.nvim-treesitter-parsers.git_config
-              #              pkgs.vimPlugins.nvim-treesitter-parsers.git_rebase
               pkgs.vimPlugins.nvim-treesitter-parsers.gitattributes
               pkgs.vimPlugins.nvim-treesitter-parsers.gitcommit
               pkgs.vimPlugins.nvim-treesitter-parsers.gitignore
@@ -542,7 +461,6 @@
               pkgs.vimPlugins.nvim-treesitter-parsers.markdown_inline
               pkgs.vimPlugins.nvim-treesitter-parsers.meson
               pkgs.vimPlugins.nvim-treesitter-parsers.mlir
-              #              pkgs.vimPlugins.nvim-treesitter-parsers.muttrc
               pkgs.vimPlugins.nvim-treesitter-parsers.nasm
               pkgs.vimPlugins.nvim-treesitter-parsers.nginx
               pkgs.vimPlugins.nvim-treesitter-parsers.ninja
@@ -558,7 +476,6 @@
               pkgs.vimPlugins.nvim-treesitter-parsers.phpdoc
               pkgs.vimPlugins.nvim-treesitter-parsers.pioasm
               pkgs.vimPlugins.nvim-treesitter-parsers.printf
-              #              pkgs.vimPlugins.nvim-treesitter-parsers.prolog
               pkgs.vimPlugins.nvim-treesitter-parsers.properties
               pkgs.vimPlugins.nvim-treesitter-parsers.proto
               pkgs.vimPlugins.nvim-treesitter-parsers.python
@@ -594,7 +511,6 @@
               pkgs.vimPlugins.nvim-treesitter-parsers.textproto
               pkgs.vimPlugins.nvim-treesitter-parsers.thrift
               pkgs.vimPlugins.nvim-treesitter-parsers.tlaplus
-              #              pkgs.vimPlugins.nvim-treesitter-parsers.tmux
               pkgs.vimPlugins.nvim-treesitter-parsers.todotxt
               pkgs.vimPlugins.nvim-treesitter-parsers.toml
               pkgs.vimPlugins.nvim-treesitter-parsers.tsv
@@ -617,7 +533,6 @@
     ssh.startAgent = true;
     gnupg.agent = {
       enable = true;
-      #enableSSHSupport = true;
       enableBrowserSocket = true;
       pinentryPackage = pkgs.pinentry-curses;
     };
@@ -627,18 +542,15 @@
     chromium.enable = true;
     criu.enable = true;
     evince.enable = true;
-    #    file-roller.enable = true;
     firefox.enable = true;
     git.enable = true;
     git.prompt.enable = true;
     htop.enable = true;
     mosh.enable = true;
 
-    #  sway.enable = true;
     hyprland = {
       enable = true;
       withUWSM = true;
-      #xwayland.enable = true;
       portalPackage = pkgs.xdg-desktop-portal-hyprland;
     };
     hyprlock.enable = true;
@@ -662,7 +574,5 @@
       "git.sr.ht".publicKey =
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMZvRd4EtM7R+IHVMWmDkVU3VLQTSwQDSAvW0t2Tkj60";
     };
-    # post quantum
-    #ssh.kexAlgorithms = config.services.openssh.settings.KexAlgorithms;
   };
 }

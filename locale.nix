@@ -12,27 +12,6 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
-  #i18n.inputMethod = {
-  #  enable = true;
-  #  type = "ibus";
-  #  ibus = {
-  #    waylandFrontend = true;
-  #    engines = with pkgs.ibus-engines; [ pinyin ];
-  #  };
-  #};
-
-  #i18n.inputMethod = {
-  #  type = "fcitx5";
-  #  enable = true;
-  #  fcitx5 = {
-  #    waylandFrontend = true;
-  #    addons = with pkgs; [
-  #      fcitx5-mozc
-  #      fcitx5-gtk
-  #    ];
-  #  };
-  #};
-
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";
     LC_IDENTIFICATION = "en_US.UTF-8";
@@ -48,10 +27,8 @@
   # fonts
   fonts = {
     fontDir.enable = true;
-
     enableDefaultPackages = true;
     enableGhostscriptFonts = true;
-    # fonts
     packages = with pkgs; [
       courier-prime
       courier-unicode
@@ -110,7 +87,6 @@
       nerd-fonts.monofur
       nerd-fonts.monoid
       nerd-fonts.mononoki
-      #    nerd-fonts.mplus
       nerd-fonts.noto
       nerd-fonts.open-dyslexic
       nerd-fonts.overpass

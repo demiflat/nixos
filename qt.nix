@@ -7,25 +7,5 @@
   ...
 }:
 {
-  qt = {
-    enable = true;
-
-    #platformTheme = "qt5ct";
-    #platformTheme = "gnome";
-    #platformTheme = "kde";
-    #platformTheme = "gtk2";
-
-    #style = "kvantum";
-    #style = "breeze";
-    #style = "adwaita-dark";
-  };
-
-  #  nixpkgs.config.qt5 = {
-  #    enable = true;
-  #    platformTheme = "qt5ct";
-  #      style = {
-  #        package = pkgs.utterly-nord-plasma;
-  #        name = "Utterly Nord Plasma";
-  #      };
-  #  };
+  qt.enable = true;
 }

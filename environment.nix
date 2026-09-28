@@ -46,54 +46,10 @@
     '';
   };
 
-  # env
-  #  environment.variables = {
   environment.sessionVariables = {
     EDITOR = "nvim";
-    # Print the URL instead on servers
-    #BROWSER = "echo";
     HYPRCURSOR_THEME = "dmz-black";
     HYPRCURSOR_SIZE = "24";
-    #XCURSOR_THEME = "dmz-black";
-    #XCURSOR_SIZE = "24";
-
-    #HSA_OVERRIDE_GFX_VERSION = "10.3.0";
-
-    ### gpu info: https://github.com/ROCm/ROCm/issues/2774
-    #HSA_OVERRIDE_GFX_VERSION = "9.0.0";
-    #HSA_ENABLE_SDMA = "0";
-
-    #DEVICE = "cuda";
-    #PYTORCH_ROCM_ARCH = "gfx90c";
-    #PYTORCH_ROCM_ARCH = "gfx900";
-    #PYTORCH_ROCM_ARCH = "gfx1030";
-    #USE_ROCM = "1";
-
-    #GTK_THEME = "Mojave-Dark";
-    #XDG_SESSION_TYPE = "wayland";
-    #XDG_SESSION_DESKTOP = "Hyprland";
-
-    #GDK_BACKEND = "wayland";
-    #QT_QPA_PLATFORM = "wayland";
-    #QT_QPA_PLATFORMTHEME = "qt5ct";
-    #QT_AUTO_SCREEN_SCALE_FACTOR = "1";
-    #QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-
-    #SDL_VIDEODRIVER = "wayland";
-    #_JAVA_AWT_WM_NONREPARENTING = "1";
-    # nvidia:
-    #WLR_NO_HARDWARE_CURSORS = "1";
-    #WLR_DRM_NO_ATOMIC = "1";
-
-    #MOZ_DISABLE_RDD_SANDBOX = "1";
-    #MOZ_ENABLE_WAYLAND = "1";
-    #MOZ_DBUS_REMOTE = "1";
-
-    #OZONE_PLATFORM = "wayland";
-    #NIXOS_OZONE_WL = "1";
-
-    #FREETYPE_PROPERTIES = "cff:no-stem-darkening=0 autofitter:no-stem-darkening=0";
-    #QT_IM_MODULES = "wayland;fcitx;ibus";
   };
 
   environment.systemPackages = with pkgs; [

@@ -1,13 +1,10 @@
 {
-  #  system,
   config,
   pkgs,
-  # pkgs-stable,
   inputs,
   ...
 }:
 {
-
   environment.systemPackages = with pkgs; [
     abcde
     abiword
@@ -16,7 +13,6 @@
     amd-blis
     amdctl
     amdgpu_top
-    #amdvlk
     android-file-transfer
     appimage-run
     aria2
@@ -25,24 +21,17 @@
     bat
     bazel
     bc
-    #    beets
     binocle
     blesh
     blocky
-    #blueberry
     bluetui
-    #bluetuith
     bluez-tools
     bottom
-    #    brasero
-    # broken
     broot
     btop
     buildah
-    #bun
     caddy
     caligula
-    #canta-theme
     can-utils
     cargo
     cdparanoia
@@ -52,28 +41,22 @@
     circt
     clblast
     clinfo
-    #    clipgrab
-    #    cliphist
     clipman
     clipse
     clolcat
     cmake
     colordiff
     conky
-    #    copyq
     cosmic-term
-
     cri-o
     cri-tools
     criu
     crrcsim
     crun
-    cudatoolkit
     cups-brother-hll3230cdw
     cups-browsed
     cups-filters
     cups-printers
-    #    cups-zj-58
     dbus-broker
     ddcutil
     ddcui
@@ -82,25 +65,20 @@
     delve
     deno
     detox
-    #diffoscope
     difftastic
     diffuse
     dig
     diskus
     dive
-    #    doublecmd
     dmidecode
     duf
     duff
     dunst
     dust
-    #easyeffects
     elementary-xfce-icon-theme
     emacs
-    # end rocm
     envsubst
     epson-escpr
-    # esphome
     eternal-terminal
     evtest
     exfat
@@ -109,7 +87,6 @@
     fastfetch
     fastgron
     fd
-    #    feishin
     ffmpeg-full
     figlet
     file
@@ -117,7 +94,6 @@
     fio
     firefox
     fish
-    #    flightgear
     flashprog
     flashrom
     fnm
@@ -127,32 +103,22 @@
     freetube
     fx
     fzf
-    #    gbar
     gdu
     gedit
     ghostty
     gimp
-    #    gitAndTools.git-extras
     gitbatch
     git-extras
     gitFull
     gitg
     git-lfs
-    #gitMinimal
     git-repo
     git-repo-updater
-    #gkrellm
     glib
     glow
-    # gnomeExtensions.easyeffects-preset-selector
     gnome-firmware
-    # gnome-themes-extra
-    # gnome-tweaks
     gnumeric
-    #go
     go
-    #    golangci-lint
-    #    golangci-lint-langserver
     gomi
     gomodifytags
     gopls
@@ -164,7 +130,6 @@
     gping
     gptfdisk
     graphviz
-    # gron
     guile
     gvproxy
     helix
@@ -178,7 +143,6 @@
     hypr
     hyprcursor
     hypridle
-    # hyprland
     hyprland
     hyprland-protocols
     hyprlauncher
@@ -198,25 +162,19 @@
     impala
     impl
     imv
-    #    input-remapper
-    #    inputs.zen-browser.packages."${system}".twilight
     iotop-c
     iperf3
     iproute2
-    #isd
     isd
     iwd
     jc
-    #    jmtpfs
     jq
     jql
     jujutsu
-    # jupyter
     kdiff3
     killall
     kind
     kitty
-    # klipper graphs
     koreader
     kubebuilder
     kubecolor
@@ -235,32 +193,14 @@
     libfido2
     libimobiledevice
     libnotify
-    # too heavy to build
-    #libreoffice-fresh
-    #libreoffice
     libreoffice-qt
-    #    libreoffice-qt6-fresh
-    #librewolf
-    #    libsForQt5.qt5ct
-    #    libsForQt5.qt5.qtwayland
-    #    libsForQt5.qtstyleplugin-kvantum
     libva-utils
     libvirt
     libxml2
     libxslt
     libzip
-    # error: 'light' has been removed because it was unmaintained. 'brightnessctl' and 'acpilight' provide similar functionality.
-    #light
     links2
-    #    litestream
-    #lix
-    # use nsp
-    #llama-cpp
-    #llama-cpp
-    #(pkgs.llama-cpp.override { cudaSupport = true; })
     lldb
-    # llm
-    #llvmPackages.mlir
     logiops
     logitech-udev-rules
     losslesscut-bin
@@ -283,21 +223,14 @@
     meld
     microcode-amd
     minicom
-    # ml:
     most
     mpv
-    #        ms-vscode.cpptools
     mupdf
     nautilus
     nemo
-    ##nemo-with-extensions
-    #    neovide
     neovim
-
-    # netbird-ui
     nettools
     nfs-utils
-    nftables
     nginx
     nil
     nixd
@@ -317,26 +250,18 @@
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
     noto-fonts-color-emoji
-    #    nrfutil
     ntfs3g
     numbat
     nushell
     nvidia-vaapi-driver
-    #nvtopPackages.amd
     nvtopPackages.full
     nwg-look
-    #    ollama
-    #ollama-rocm
     opencode
     openshell
-    # openocd
     openocd
     openssl_oqs
-    #    opentoonz
-    #openvswitch
     p7zip
     pamixer
-    #    paperless-ngx
     pass
     passExtensions.pass-otp
     pastel
@@ -347,16 +272,10 @@
     pinentry-curses
     pinta
     piper
-    #    planify
-    #    plasma-theme-switcher
-    # platformio
-    # platformio-core
     playerctl
     podman
     podman-compose
-    #podman-desktop
     podman-tui
-    #    popcorntime
     poppler-utils
     procs
     profont
@@ -369,44 +288,8 @@
     pwgen
     pwru
     pw-volume
-    # python310Packages.catboost
-    # python310Packages.ipykernel
-    # python310Packages.jupyter
-    # python310Packages.jupyter-core
-    # python310Packages.kaggle
-    # python310Packages.lightgbm
-    # python310Packages.matplotlib
-    # python310Packages.notebook
-    # python310Packages.numpy
-    # python310Packages.pandas
-    # python310Packages.pre-commit-hooks
-    # python310Packages.requests
-    # python310Packages.scikit-learn
-    # python310Packages.seaborn
-    # python310Packages.tensorboard
-    # python310Packages.torchaudio
-    # python310Packages.torchvision
-    # python310Packages.torchWithRocm
-    # python310Packages.tqdm
-    # python310Packages.venvShellHook
-    # python310Packages.wandb
-    # python310Packages.xgboost
-    # python311Full
-    #python311Packages.matplotlib
-    #python311Packages.numpy
-    # python311Packages.pip
-    #python311Packages.pip
-    # python311Packages.pyserial
-    # python311Packages.setuptools
-    # python312Full
-    # python312Packages.pip
-    # python312Packages.pyserial
-    # python312Packages.python
-    # python312Packages.setuptools
     python313
     python313Packages.virtualenv
-    #python313Packages.smolagents
-    #    python3Full
     pywal
     pywalfox-native
     qemu
@@ -420,47 +303,8 @@
     ranger
     recutils
     rename
-    #    rgp
     rio
     ripgrep
-    # rocm
-    # rocmPackages.hipblas
-    # rocmPackages.hipsolver
-    # rocmPackages.hipsparse
-    # rocmPackages.llvm.bintools
-    # rocmPackages.llvm.clang
-    # rocmPackages.llvm.clang-tools-extra
-    # rocmPackages.llvm.compiler-rt
-    # rocmPackages.llvm.libc
-    # rocmPackages.llvm.libcxx
-    # rocmPackages.llvm.libcxxabi
-    # rocmPackages.llvm.libunwind
-    # rocmPackages.llvm.lld
-    # rocmPackages.llvm.lldb
-    # rocmPackages.llvm.llvm
-    # rocmPackages.llvm.mlir
-    # rocmPackages.llvm.openmp
-    # rocmPackages.llvm.polly
-    # rocmPackages.llvm.pstl
-    # rocmPackages.llvm.rocmClangStdenv
-    # rocmPackages.miopen
-    # rocmPackages.miopengemm
-    # rocmPackages.rccl
-    # rocmPackages.rocalution
-    # rocmPackages.rocgdb
-    # rocmPackages.rocm-cmake
-    # rocmPackages.rocm-comgr
-    # rocmPackages.rocm-core
-    # rocmPackages.rocm-device-libs
-    # rocmPackages.rocm-docs-core
-    # rocmPackages.rocminfo
-    # rocmPackages.rocmlir
-    # rocmPackages.rocmlir-rock
-    # rocmPackages.rocm-runtime
-    # rocmPackages.rocm-thunk
-    # rocmPackages.rocprim
-    # rocmPackages.rocsolver
-    # rocmPackages.rocsparse
     rofi
     rr
     runc
@@ -474,13 +318,10 @@
     socat
     solaar
     solo2-cli
-    # sommelier
     spice-gtk
     sqlite
-    #    sqlitebrowser
     starship
     strace
-    #streamlit
     sudo-font
     superhtml
     sway
@@ -496,20 +337,15 @@
     telescope
     termdown
     terraform-providers.dmacvicar_libvirt
-    #terraform-providers.libvirt
     tesseract
     tig
     tio
     tmux
     tockloader
     tpm2-tools
-    #    tpmmanager
-    # pkgs-stable.transmission_4
-    # pkgs-stable.transmission_4-gtk
     transmission_4
     transmission_4-gtk
     themechanger
-    #tokyonight-gtk-theme
     tree
     treesheets
     tree-sitter
@@ -522,7 +358,6 @@
     usbmuxd
     usbtop
     usbutils
-    #ustreamer
     utterly-nord-plasma
     uv
     vanilla-dmz
@@ -535,11 +370,6 @@
     visidata
     vit
     vivid
-    #vllm
-    #pkgs-stable.vllm
-    #      vscodeExtensions = with vscode-extensions; [
-    #      vscode = vscodium;
-    #    (vscode-with-extensions.override {
     vscodium
     vscode-fhs
     w3m
@@ -547,7 +377,6 @@
     watch
     waybar
     wdisplays
-    #    webex
     wezterm
     wget
     whipper
@@ -555,7 +384,6 @@
     wl-clipboard
     wl-clip-persist
     wlogout
-    # wl-screenrec
     wlr-which-key
     wlsunset
     wofi
@@ -563,9 +391,6 @@
     wsdd
     wshowkeys
     xan
-    # xdg-desktop-portal-gtk
-    # xdg-desktop-portal-hyprland
-    #xfce.thunar
     xkcd-font
     xkcdpass
     xxd
@@ -573,13 +398,10 @@
     yazi
     yt-dlp
     zathura
-    #zed-editor
     zellij
-    #    zenmonitor
     zip
     zlib
     zoxide
     zstd
-
   ];
 }

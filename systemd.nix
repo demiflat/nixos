@@ -1,9 +1,7 @@
 { lib, ... }:
 {
   systemd.user.services.waybar.wantedBy = lib.mkForce [ ];
-  #systemd.services.ensure-printers.requires = [ "multi-user.target" ];
-  #systemd.services.ensure-printers.after = [ "multi-user.target" ];
-  #systemd.services.ensure-printers.wants = [ "multi-user.target" ];
+
   systemd.services.cups = {
     overrideStrategy = "asDropin";
     after = [ "multi-user.target" ];
