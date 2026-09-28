@@ -43,7 +43,7 @@ done
 treefmt
 git status
 
-args=(--log-format internal-json -v -j"$j" "$action" --upgrade --show-trace --flake .#yoshi)
+args=(--log-format internal-json -v -j"$j" "$action" --show-trace --flake .#yoshi)
 [[ $accept -eq 1 ]] && args+=(--accept-flake-config)
 
 sudo nixos-rebuild "${args[@]}" "${extra[@]}" |& nom --json
