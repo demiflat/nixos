@@ -7,6 +7,10 @@
 }:
 {
   programs = {
+    vivid = {
+      enable = true;
+      theme = "gruvbox-dark-soft";
+    };
     appimage = {
       enable = true;
       binfmt = true;

@@ -20,7 +20,7 @@
     ./security.nix
     ./services.nix
     ./systemd.nix
-    ./qt.nix
+    #./qt.nix
     ./programs.nix
     ./virtualization.nix
     ./cuda.nix
