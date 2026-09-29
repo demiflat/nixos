@@ -295,7 +295,7 @@
     qemu
     qmk-udev-rules
     qrencode
-    kdePackages.qtwayland
+    #kdePackages.qtwayland
     #qt6Packages.qt6ct
     quickemu
     quickshell
