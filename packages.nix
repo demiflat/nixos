@@ -296,7 +296,7 @@
     qmk-udev-rules
     qrencode
     kdePackages.qtwayland
-    qt6Packages.qt6ct
+    #qt6Packages.qt6ct
     quickemu
     quickshell
     racket

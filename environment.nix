@@ -50,6 +50,7 @@
     EDITOR = "nvim";
     HYPRCURSOR_THEME = "dmz-black";
     HYPRCURSOR_SIZE = "24";
+    QT_QPA_PLATFORMTHEME = "gtk3";
   };
 
   environment.systemPackages = with pkgs; [
