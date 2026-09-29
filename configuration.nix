@@ -29,7 +29,7 @@
   nix = {
     channel.enable = true;
     settings = {
-      nix-path = config.nix.nixPath;
+      #nix-path = config.nix.nixPath;
       cores = 8;
       trusted-users = [
         "root"
