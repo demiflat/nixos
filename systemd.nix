@@ -7,6 +7,7 @@
     after = [ "multi-user.target" ];
     requires = [ "multi-user.target" ];
     wants = [ "multi-user.target" ];
+    serviceConfig.ExecStartPre = "sleep 2";
     serviceConfig.Restart = "always";
     serviceConfig.RestartSec = "1s";
     serviceConfig.RestartSteps = "5";
