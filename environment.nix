@@ -51,6 +51,7 @@
     HYPRCURSOR_THEME = "dmz-black";
     HYPRCURSOR_SIZE = "24";
     QT_QPA_PLATFORMTHEME = "gtk3";
+    GTK_THEME = "Mojave-Dark";
   };
 
   environment.systemPackages = with pkgs; [
