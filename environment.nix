@@ -50,6 +50,7 @@
     EDITOR = "nvim";
     HYPRCURSOR_THEME = "dmz-black";
     HYPRCURSOR_SIZE = "24";
+    # the following two variables are how we get dark theme!
     QT_QPA_PLATFORMTHEME = "gtk3";
     GTK_THEME = "Mojave-Dark";
   };
