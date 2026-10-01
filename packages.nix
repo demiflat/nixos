@@ -79,7 +79,7 @@
     emacs
     envsubst
     epson-escpr
-    eternal-terminal
+    #eternal-terminal
     evtest
     exfat
     exfatprogs
