@@ -279,7 +279,7 @@
     procs
     profont
     progress
-    progress-tracker
+    #progress-tracker
     pstree
     pulseaudio
     pulsemixer
