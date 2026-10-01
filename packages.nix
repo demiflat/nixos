@@ -199,7 +199,6 @@
     libxml2
     libxslt
     libzip
-    links2
     lldb
     logiops
     logitech-udev-rules
