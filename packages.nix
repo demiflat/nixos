@@ -385,6 +385,7 @@
     wlogout
     wlr-which-key
     wlsunset
+    woeusb
     wofi
     wpgtk
     wsdd
