@@ -28,7 +28,7 @@
     #cudaPackages.cuda_nvvp
     cudaPackages.cuda_opencl
     cudaPackages.cuda_profiler_api
-    cudaPackages.cuda-samples
+    #cudaPackages.cuda-samples
     cudaPackages.cuda_sanitizer_api
     cudaPackages.cudatoolkit
     cudaPackages.cudnn
