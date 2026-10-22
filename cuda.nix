@@ -35,7 +35,7 @@
     cudaPackages.cudnn-frontend
     cudaPackages.cuquantum
     cudaPackages.cutlass
-    cudaPackages.fabricmanager
+    #cudaPackages.fabricmanager
     cudaPackages.gdrcopy
     cudaPackages.imex
     cudaPackages.libcublas
