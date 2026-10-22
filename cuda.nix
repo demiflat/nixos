@@ -17,7 +17,7 @@
     #cudaPackages.cuda_demo_suite
     cudaPackages.cuda_documentation
     cudaPackages.cuda_gdb
-    cudaPackages.cuda_nsight
+    #cudaPackages.cuda_nsight
     cudaPackages.cuda_nvcc
     cudaPackages.cuda_nvdisasm
     cudaPackages.cuda_nvml_dev
