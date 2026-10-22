@@ -289,8 +289,8 @@
     pw-volume
     python313
     python313Packages.virtualenv
-    pywal
-    pywalfox-native
+    #pywal
+    #pywalfox-native
     qemu
     qmk-udev-rules
     qrencode
