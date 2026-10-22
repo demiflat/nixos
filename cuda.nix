@@ -14,7 +14,7 @@
     cudaPackages.cuda_cuobjdump
     cudaPackages.cuda_cupti
     cudaPackages.cuda_cuxxfilt
-    cudaPackages.cuda_demo_suite
+    #cudaPackages.cuda_demo_suite
     cudaPackages.cuda_documentation
     cudaPackages.cuda_gdb
     cudaPackages.cuda_nsight
