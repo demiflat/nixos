@@ -21,7 +21,7 @@
     cudaPackages.cuda_nvcc
     cudaPackages.cuda_nvdisasm
     cudaPackages.cuda_nvml_dev
-    cudaPackages.cuda_nvprof
+    #cudaPackages.cuda_nvprof
     cudaPackages.cuda_nvprune
     cudaPackages.cuda_nvrtc
     cudaPackages.cuda_nvtx
