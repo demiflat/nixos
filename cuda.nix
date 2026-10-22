@@ -62,7 +62,7 @@
     cudaPackages.nsight_compute
     cudaPackages.nsight_systems
     cudaPackages.nvcomp
-    cudaPackages.nvidia_fs
+    #cudaPackages.nvidia_fs
     cudaPackages.removeStubsFromRunpathHook
     cudaPackages.saxpy
     cudaPackages.setupCudaHook
