@@ -25,7 +25,7 @@
     cudaPackages.cuda_nvprune
     cudaPackages.cuda_nvrtc
     cudaPackages.cuda_nvtx
-    cudaPackages.cuda_nvvp
+    #cudaPackages.cuda_nvvp
     cudaPackages.cuda_opencl
     cudaPackages.cuda_profiler_api
     cudaPackages.cuda-samples
