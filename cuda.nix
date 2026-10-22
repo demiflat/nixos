@@ -50,7 +50,7 @@
     cudaPackages.libcusparse_lt
     cudaPackages.libcutensor
     cudaPackages.libnpp
-    cudaPackages.libnpp_plus
+    #cudaPackages.libnpp_plus
     cudaPackages.libnvfatbin
     cudaPackages.libnvjitlink
     cudaPackages.libnvjpeg
