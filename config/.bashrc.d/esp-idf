@@ -1,0 +1,4 @@
+#!/bin/bash
+esp-idf() {
+  . /development/os/embedded/esp-idf/export.sh
+}

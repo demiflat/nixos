@@ -1,0 +1,17 @@
+#!/bin/bash
+mvnteston() {
+  export MAVEN_OPTS="-Xmx8G -DdownloadSources=true -Djava.awt.headless=true -Dfile.encoding=UTF-8"
+}
+
+mvntestoff() {
+  export MAVEN_OPTS="-DdownloadSources=true -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Dmaven.javadoc.skip=true -Dmaven.test.skip=true -DskipTests=true"
+}
+# using osmvn as default
+#export M2_HOME=~/development/tools/maven/dist
+#export PATH=$PATH:$M2_HOME/bin
+export MAVEN_OPTS="-DdownloadSources=true -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Dmaven.test.skip=true -DskipTests=true"
+#export MAVEN_OPTS="-DdownloadSources=true -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Dmaven.test.skip=true -DskipTests=true -DdownloadJavadocs=false -Dmaven.javadoc.skip=true"
+#export MAVEN_OPTS="-ea -server -Xms1500m -Xmx1500m -XX:PermSize=384m -XX:MaxPermSize=384m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -DdownloadSources=true -DdownloadJavadocs=true -Dmaven.test.skip=true -DskipTests=true"
+#export MAVEN_OPTS="-ea -server -Xms1500m -Xmx1500m -XX:PermSize=384m -XX:MaxPermSize=384m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -DdownloadSources=true"
+#export MAVEN_OPTS="-DdownloadSources=true -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Dmaven.test.skip=true -DskipTests=true -DdownloadJavadocs=false"
+#export MAVEN_OPTS="-DdownloadSources=true -Djava.awt.headless=true -Dfile.encoding=UTF-8"

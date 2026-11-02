@@ -1,0 +1,2 @@
+#export GRADLE_HOME=/development/tools/gradle/dist
+#export PATH=$PATH:$GRADLE_HOME/bin

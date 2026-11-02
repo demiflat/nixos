@@ -1,0 +1,2 @@
+#export PATH=/var/home/dak/.local/share/node/node_modules/yarn/bin:$PATH
+

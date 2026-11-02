@@ -1,0 +1,7 @@
+#!/bin/bash
+export K8SBIN=/development/os/cloud/k8s/k8s.bin/
+#export PATH=$PATH:$K8SBIN
+#export KUBE_EDITOR=/usr/bin/nvim
+export KUBE_EDITOR=nvim
+alias k="kubectl"
+complete -F __start_kubectl k

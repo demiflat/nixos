@@ -1,0 +1,4 @@
+#!/bin/bash
+#EDITOR=/usr/bin/nvim
+#EDITOR=/run/current-system/sw/bin/nvim
+EDITOR=nvim

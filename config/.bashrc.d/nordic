@@ -1,0 +1,2 @@
+#!/bin/bash
+export NRF_USER_DATA_DIR=/development/projects/nordic

@@ -1,0 +1,10 @@
+#!/bin/bash
+#export JAVA_HOME=/development/tools/jdk/graalvm
+#export JAVA_HOME=/nix/store/hzkz13xq44avv9ff5vkswwv513lm6py7-graalvm11-ce-22.3.1
+export JPDA_OPTS="-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
+
+#export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
+export PATH=$JAVA_HOME/bin:$PATH
+#export JRE_HOME=$JAVA_HOME/jre
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$JAVA_HOME/jre/lib/amd64
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$JAVA_HOME/lib:$JAVA_HOME/lib/server

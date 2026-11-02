@@ -1,0 +1,1 @@
+#export DOCKER_REGISTRY="control.demiflat.org:5000"

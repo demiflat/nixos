@@ -1,0 +1,1 @@
+#export PATH=/development/os/tools/rust_tools/wezterm/target/release:$PATH

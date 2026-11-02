@@ -1,0 +1,9 @@
+  function man-http() {
+    code="$1"
+    if [[ -z $code ]]; then
+      echo "Usage: man-http <status code>"
+      exit 0
+    fi
+
+    firefox "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/$code"  
+  }

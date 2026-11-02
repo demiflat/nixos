@@ -1,0 +1,4 @@
+#!/bin/bash
+if [ -f "$HOME/.local/bin" ]; then
+   export PATH="$HOME/.local/bin:$PATH"
+fi

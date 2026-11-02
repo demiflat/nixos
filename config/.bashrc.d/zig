@@ -1,0 +1,34 @@
+#!/bin/bash
+#export arch=x86_64
+export ARCH="$(uname -m)"
+export MCPU="baseline"
+export OS=linux
+export ABI=musl
+export TARGET=$ARCH-$OS-$ABI
+export ZIG_BOOTSTRAP=/development/os/ziglang/zig-bootstrap
+export LLVM_PREFIX=$ZIG_BOOTSTRAP/out/$TARGET-$MCPU
+#export ZIG_PREFIX=$ZIG_BOOTSTRAP/out/zig-$TARGET-$MCPU
+#export ZIG="$ZIG_PREFIX/bin/zig"
+export ZIG_PREFIX="/development/os/ziglang/dist/zig"
+export ZIG_BUILD="/development/os/ziglang/zig/zig-out"
+#export ZIG_ZLS="/development/os/ziglang/tools/zls/zig-out"
+export ZIG_ZLS=/development/os/ziglang/tools/zls/zig-out
+export ZIG_ZIGUP=/development/os/ziglang/tools/zigup/zig-out
+export ZIG=/development/os/ziglang/tools/zigup/zig-out/bin/zig
+export PATH=$PATH:$ZIG_ZIGUP/bin:$ZIG_ZLS/bin:$PATH
+#export CC=/usr/bin/clang
+#export CXX=/usr/bin/clang++
+#export CC="$ZIG cc -target $TARGET -mcpu=$MCPU"
+#export CXX="$ZIG c++ -target $TARGET -mcpu=$MCPU"
+
+#export PATH=/development/os/ziglang/official/zig:/development/os/ziglang/zls/zig-out/bin:$PATH
+#export PATH=/development/os/ziglang/zig/stage3/bin:$PATH
+#if [ -d /development/os/ziglang/zig/build ]; then
+#   export PATH=/development/os/ziglang/zig/zig-out/bin:$PATH
+#fi
+#if [ -d /development/os/ziglang/zig/zig-out/bin ]; then
+#   export PATH=/development/os/ziglang/zig/zig-out/bin:$PATH
+#fi
+#if [ -d /development/os/ziglang/zls/zig-out/bin ]; then
+#   export PATH=/development/os/ziglang/zls/zig-out/bin:$PATH
+#fi

@@ -1,0 +1,33 @@
+#!/bin/bash
+# skip hello if we're already running fish
+if [ $(awk '{print $1}'  /proc/"$PPID"/comm) == "fish" ]; then
+  return
+fi
+function is_bin_in_path {
+  builtin type -P "$1" &> /dev/null
+}
+#linuxlogo -L 27
+#cowsay -f /usr/share/cowsay/cows/calvin.cow `fortune`|clolcat
+#cowsay -f /usr/share/cowsay/cows/tux.cow `fortune`|clolcat
+#weather -u uk2 -l 94070
+#cbonsai -p
+if is_bin_in_path pacman; then
+  pacman
+fi
+if is_bin_in_path figlet; then
+  if is_bin_in_path clolcat; then
+    echo `hostname -s`|figlet|clolcat -f;
+    echo "";
+  fi
+fi
+#echo "=============================="|clolcat
+#export PF_INFO="ascii title os kernel uptime pkgs memory wm pallete"
+#export PF_ASCII="linux"
+#neofetch
+if is_bin_in_path fortune; then
+  if is_bin_in_path clolcat; then
+    fortune|clolcat -f;
+  fi
+fi
+
+echo ""

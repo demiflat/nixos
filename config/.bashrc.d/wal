@@ -1,0 +1,3 @@
+#!/bin/bash
+#wal -i ~/linux/wallpapers/current
+#(/run/current-system/sw/bin/cat ~/.cache/wal/sequences &)
