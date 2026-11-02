@@ -8,7 +8,6 @@
 {
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
-  boot.initrd.systemd.enable = true;
   boot.initrd.availableKernelModules = [
     "xhci_pci"
     "ahci"
