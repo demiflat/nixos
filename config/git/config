@@ -1,0 +1,190 @@
+[alias]
+  aa = "!git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 git add"
+  a = add
+  cpk = cherry-pick
+  amend = commit --amend
+  f = fetch --all --prune --tags
+  force = push --force-with-lease
+  c = commit -m
+  s = status -s
+  sclone = clone --depth=1
+  co = checkout
+  dft = difftool
+  df = diff --color --color-words --abbrev
+  # Show the diff between the latest commit and the current state
+  #d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
+  d = diff --color --color-words --abbrev --stat -p -w --find-renames=50%
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --find-renames=50%
+  lw = log --decorate=short --graph --color-words --color -w --find-renames=50%
+  git = !exec git
+  substatus = submodule foreach git status
+  sub = submodule update --init --recursive
+  subr = submodule update --init --recursive --remote
+  sl = smartlog
+  br = branch
+  st = status
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  visual = !gitk
+  fza = "!git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 git add"
+  gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
+  root = rev-parse --show-toplevel
+  history = log --reverse --date-order
+  sw = switch
+  cl = clone
+  br = branch
+  st = status
+  sb = status -sb
+  ds = diff --staged
+  tag = tag -l
+  branch = branch -a
+  remotes = remote -v
+  undo = reset --soft HEAD~1
+  untrack = rm --cached
+[user]
+  #email = darrell.kundel@gmail.com
+  #email = darrell@demiflat.com
+  name = Darrell Kundel
+[core]
+  fsmonitor = true
+  editor = nvim
+#  autocrlf = input
+  pager = delta
+  abbrev = 9
+  untrackedCache = true
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate
+[tag]
+  sort = version:refname
+[help]
+  autocorrect = 1
+[init]
+  defaultBranch = main
+[transfer]
+  fsckobjects = true
+[fetch]
+  fsckobjects = true
+  prune = true
+  pruneTags = true
+  all = true
+[receive]
+  fsckObjects = true
+[push]
+  default = matching
+  recurseSubmodules = check
+  autoSetupRemote = true
+  followTags = true
+[pull]
+  ff = only
+  rebase = true
+[branch]
+  mergeoptions = --ff-only
+  defaultBranch = main
+  sort = -committerdate
+[submodule]
+  recurse = true
+[status]
+  submoduleSummary = true
+  showUntrackedFiles = all
+[checkout]
+  defaultRemote = origin
+[commit]
+  template = ~/.git-message
+  verbose = true
+[rebase]
+  autosquash = true
+  autoStash = true
+  updateRefs = true
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  dark = true
+[merge]
+  conflictstyle = zdiff3
+[diff]
+  tool = difftastic
+[difftool]
+  prompt = false
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+[diff]
+  renameLimit = 999999
+  algorithm = histogram
+  colorMoved = plain
+  renames = true
+  submodule = log
+  mnemonicPrefix = true
+# tool = bc3
+# indentheuristic = true
+# submodule = log
+[merge]
+  renameLimit = 999999
+# tool = bc3
+# ff = only
+# conflictstyle = diff3
+#[merge]
+# tool = meld
+# useAutoMerge = true
+#[merge]
+#tool = mymeld
+#conflictstyle = diff3
+#[mergetool "mymeld"]
+[mergetool]
+  prompt = false
+  keepBackup = false
+  bc3 = trustExitCode
+# so much color
+[color]
+  ui = always
+[color "diff"]
+  meta = yellow bold
+  commit = green bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+#[http]
+  # fr
+  # proxy = socks5h://192.168.1.101:1081
+  # ca
+  # proxy = socks5h://192.168.1.101:1082
+  # la
+  # proxy = socks5h://192.168.1.101:1083
+  # la2
+  # proxy = socks5h://192.168.1.101:1084
+  # la3
+  # proxy = socks5h://192.168.1.101:1085
+  # local.la
+  # proxy = socks5h://127.0.0.1:1083
+  # local.la2
+  # proxy = socks5h://127.0.0.1:1084
+  # local.la3
+  #  proxy = socks5h://127.0.0.1:1085
+  # sslVerify = false
+  # local.la4
+  # proxy = socks5h://127.0.0.1:1086
+  # local.la5
+  # proxy = socks5h://127.0.0.1:1087
+[gc]
+  auto = 0
+[rerere]
+  enabled = true
+  autoupdate = true
+[tag]
+  sort = taggerdate
