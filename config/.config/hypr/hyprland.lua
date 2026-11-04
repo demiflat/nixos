@@ -1,0 +1,8 @@
+require("conf.env")
+require("conf.monitor")
+require("conf.binds")
+require("conf.input")
+require("conf.looknfeel")
+require("conf.workspaces")
+require("conf.windows")
+require("conf.autostart")

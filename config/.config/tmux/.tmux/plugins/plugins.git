@@ -1,0 +1,5 @@
+/home/dak/nixos/yoshi/config/.config/tmux/.tmux/plugins/nord-tmux => https://git::@github.com/arcticicestudio/nord-tmux
+/home/dak/nixos/yoshi/config/.config/tmux/.tmux/plugins/tmux-menus => https://git::@github.com/jaclu/tmux-menus
+/home/dak/nixos/yoshi/config/.config/tmux/.tmux/plugins/tmux-mighty-scroll => https://git::@github.com/noscript/tmux-mighty-scroll
+/home/dak/nixos/yoshi/config/.config/tmux/.tmux/plugins/tpm => https://github.com/tmux-plugins/tpm
+[4] git repositories

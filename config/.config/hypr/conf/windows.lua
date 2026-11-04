@@ -1,0 +1,8 @@
+hl.window_rule({ match = { class = "firefox" }, workspace = "1 silent" })
+hl.window_rule({ match = { class = "chromium-browser" }, workspace = "4 silent" })
+-- hl.window_rule({ match = { class = "transmission-gtk" }, workspace = "9 silent" })
+-- hl.window_rule({ match = { class = "com.transmissionbt.transmission_*" }, workspace = "9 silent" })
+hl.window_rule({ match = { initial_title = "Transmission" }, workspace = "9 silent" })
+hl.window_rule({ match = { class = "codium" }, workspace = "6 silent" })
+hl.window_rule({ match = { class = "jetbrains-idea" }, workspace = "6 silent" })
+hl.window_rule({ match = { class = "code" }, workspace = "8 silent" })
